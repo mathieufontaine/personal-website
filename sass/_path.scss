@@ -1,0 +1,74 @@
+// section path
+
+#path {
+  .container p {
+    color: $light-color;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+  .city {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    .headings {
+      position: absolute;
+      top: 100px;
+      padding: 30px 100px;
+      h2 {
+        font-size: 3.5rem;
+        color: $primary-color;
+        left: 100px;
+      }
+      p {
+        font-size: 2rem;
+      }
+    }
+    .card {
+      position: absolute;
+      width: 40%;
+      top: 30%;
+      right: 100px;
+      background: rgba(255, 254, 254, 0.619);
+      padding: 20px;
+      margin-top: 10px;
+      border-radius: 10px;
+      img {
+        height: 100px;
+        width: 100px;
+      }
+    }
+  }
+
+  #toulouse {
+    background-image: url("/img/cities/toulouse.jpg");
+  }
+  #singapore {
+    background-image: url("/img/cities/singapore2.jpg");
+    h2 {
+      // color: $light-color;
+    }
+  }
+  #bangkok {
+    background-image: url("/img/cities/bangkok2.jpg");
+    h2 {
+      color: $light-color;
+    }
+  }
+  #paris {
+    background-image: url("/img/cities/paris.jpg");
+    h2 {
+      color: $primary-color;
+    }
+  }
+  #lisbon {
+    background-image: url("/img/cities/lisbon.jpg");
+    h2 {
+      color: $light-color;
+    }
+  }
+}

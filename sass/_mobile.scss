@@ -1,0 +1,163 @@
+/* Mobile */
+
+@media (max-width: 1200px) {
+  .section-about .about-top {
+    .quote {
+      font-size: 1.5rem;
+    }
+
+    .content {
+      padding: 0;
+      > div .icon {
+        font-size: 1.6rem;
+      }
+      h2 {
+        font-size: 1rem;
+      }
+      p {
+        font-size: 0.8rem;
+      }
+    }
+    .photo {
+      height: 450px;
+      width: 300px;
+      right: 0;
+    }
+  }
+}
+
+@media (max-width: 880px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+
+  .showcase {
+    padding-left: 5rem;
+    .content,
+    &-btn {
+      position: relative;
+      width: 100%;
+      text-align: center;
+      padding: 20px;
+      left: auto;
+    }
+    &-btn {
+      top: 150px;
+      right: 0;
+    }
+  }
+  .title,
+  .sm-header {
+    position: relative !important;
+    width: 100%;
+    // padding-left: 5rem;
+    left: auto !important;
+    top: auto !important;
+    padding: 20px 10px 0px 10px;
+    text-align: center;
+    height: auto !important;
+  }
+  .section-about {
+    .about-top {
+      height: auto;
+      .grid-4-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .content {
+        width: auto;
+      }
+      .photo {
+        margin: auto;
+      }
+    }
+  }
+  #path .container p {
+    font-size: 1rem;
+  }
+
+  .portfolio {
+    padding-left: 5rem;
+    .gallery {
+      position: relative;
+      display: block;
+      width: 100%;
+      margin: auto;
+      top: 0;
+      .projects img {
+        height: auto;
+        width: 90%;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.7rem;
+  }
+
+  .section {
+    padding: 0;
+  }
+
+  .section-about {
+    .about-top {
+      height: 100%;
+      padding: 0 20px;
+      .photo,
+      .content {
+        position: relative;
+        margin: auto;
+        // right: 0;
+        // left: 0;
+        // top: 0;
+        width: 100%;
+      }
+      .photo {
+        top: 0;
+      }
+      .content > div {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  #path .city {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .headings {
+      position: relative;
+      padding: 30px;
+    }
+    .card {
+      // position: static;
+      right: auto;
+      top: auto;
+      width: auto;
+      bottom: 8rem;
+      margin: 20px;
+      // border-radius: 0;
+    }
+  }
+}

@@ -1,0 +1,121 @@
+.btn {
+  display: inline-block;
+  border: 0;
+  background: $secondary-color;
+  color: #fff;
+  border-radius: 20px;
+  padding: 8px 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: 1s ease;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  background: $primary-color;
+}
+
+// buttons
+
+.showcase-btn {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 350px;
+  right: 20px;
+  width: 70%;
+}
+// scrollTop
+
+#scroll-top-btn {
+  display: inline-block;
+  background-color: $secondary-color;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 80px;
+  right: 10px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 10;
+  &:after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: $primary-color;
+    transition: all 0.6;
+  }
+  &:hover {
+    cursor: pointer;
+    background-color: $primary-color;
+    &:after {
+      color: $secondary-color;
+    }
+  }
+  &:active {
+    background-color: $primary-color;
+    color: $secondary-color;
+  }
+  &.show {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.scroll-down-btn {
+  position: relative;
+  margin: auto;
+  a {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 3px solid $secondary-color;
+    border-bottom: 3px solid $secondary-color;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: scrollDown 1.5s infinite;
+    animation: scrollDown 1.5s infinite;
+    box-sizing: border-box;
+  }
+}
+
+@-webkit-keyframes scrollDown {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+@keyframes scrollDown {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
