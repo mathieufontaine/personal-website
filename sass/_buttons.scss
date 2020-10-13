@@ -4,10 +4,10 @@
   background: $secondary-color;
   color: #fff;
   border-radius: 20px;
-  padding: 8px 30px;
+  padding: 1rem 3rem;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1.5rem;
   margin-top: 10px;
   transition: 1s ease;
 }
@@ -17,30 +17,17 @@
   background: $primary-color;
 }
 
-// buttons
-
-.showcase-btn {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 350px;
-  right: 20px;
-  width: 70%;
-}
 // scrollTop
 
 #scroll-top-btn {
   display: inline-block;
   background-color: $secondary-color;
-  width: 50px;
-  height: 50px;
+  width: 5rem;
+  height: 5rem;
   text-align: center;
   border-radius: 4px;
   position: fixed;
-  bottom: 80px;
+  bottom: 60px;
   right: 10px;
   transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
   opacity: 0;
@@ -51,8 +38,8 @@
     font-family: FontAwesome;
     font-weight: normal;
     font-style: normal;
-    font-size: 2em;
-    line-height: 50px;
+    font-size: 2rem;
+    line-height: 5rem;
     color: $primary-color;
     transition: all 0.6;
   }

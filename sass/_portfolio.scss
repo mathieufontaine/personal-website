@@ -1,9 +1,12 @@
 /* Section portfolio */
 
-.portfolio {
+#portfolio {
   .title {
     position: sticky;
     top: 20px;
+    z-index: 4;
+    background: $secondary-color;
+    color: $light-color;
   }
   .gallery {
     width: 100%;
@@ -16,7 +19,6 @@
     align-content: center;
     justify-content: center;
     text-align: center;
-    z-index: 5;
     .sm-header {
       position: sticky;
       top: 140px;
@@ -28,6 +30,8 @@
       flex-wrap: wrap;
       align-content: center;
       justify-content: center;
+      z-index: 5;
+
       img {
         height: 400px;
         width: 600px;

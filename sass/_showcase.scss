@@ -20,4 +20,17 @@
     align-self: center;
     margin-top: 30px;
   }
+  // buttons
+
+  .showcase-btn {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 280px;
+    right: 20px;
+    width: 70%;
+  }
 }

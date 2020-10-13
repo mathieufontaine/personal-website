@@ -46,7 +46,7 @@
 
 .nav-item {
   width: 100%;
-  min-height: 6rem;
+  height: 10vh;
 }
 
 .nav-item:last-child {
@@ -75,7 +75,7 @@
 }
 
 .nav-link .fas {
-  font-size: 2rem;
+  font-size: 3rem;
   // margin: 0 1.5rem;
 }
 
@@ -117,7 +117,7 @@
   .navbar {
     bottom: 0;
     width: 100vw;
-    height: 5rem;
+    height: 8vh;
 
     .logo {
       display: none;
@@ -128,11 +128,12 @@
 
       .nav-item {
         margin: auto;
+        height: 8vh;
 
         .nav-link {
           justify-content: center;
           .fas {
-            font-size: 1.5rem;
+            // font-size: 2.5rem;
             height: 50%;
           }
         }
@@ -145,12 +146,12 @@
 @media only screen and (min-width: 600px) {
   .navbar {
     top: 0;
-    width: 5rem;
+    width: 8rem;
     height: 100vh;
   }
 
   .navbar:hover {
-    width: 16rem;
+    width: 25rem;
   }
 
   .navbar:hover .link-text {
