@@ -1,23 +1,11 @@
 /* Mobile */
 
 @media (max-width: 1200px) {
-  .section-about .about-top {
-    .quote {
-      font-size: 1.5rem;
-    }
-
-    .content {
-      padding: 0;
-      > div .icon {
-        font-size: 1.6rem;
-      }
-      h2 {
-        font-size: 1rem;
-      }
-      p {
-        font-size: 0.8rem;
-      }
-    }
+  html {
+    font-size: 55%;
+  }
+  .content {
+    padding: 0;
     .photo {
       height: 450px;
       width: 300px;
@@ -27,68 +15,60 @@
 }
 
 @media (max-width: 880px) {
-  h1 {
-    font-size: 3rem;
+  html {
+    font-size: 50%;
   }
   h2 {
-    font-size: 2rem;
-  }
-  h3 {
-    font-size: 1.2rem;
-  }
-  p {
-    font-size: 1rem;
+    text-align: center;
   }
 
   .showcase {
     padding-left: 5rem;
     .content,
-    &-btn {
+    .showcase-btn {
       position: relative;
       width: 100%;
       text-align: center;
       padding: 20px;
       left: auto;
     }
-    &-btn {
-      top: 150px;
+    .showcase-btn {
+      top: 120px;
       right: 0;
+      width: 100%;
     }
   }
-  .title,
-  .sm-header {
-    position: relative !important;
-    width: 100%;
-    // padding-left: 5rem;
-    left: auto !important;
-    top: auto !important;
-    padding: 20px 10px 0px 10px;
-    text-align: center;
-    height: auto !important;
-  }
-  .section-about {
-    .about-top {
-      height: auto;
-      .grid-4-1 {
+
+  #about {
+    .section-inner {
+      .container div {
         display: flex;
         flex-direction: column;
         justify-content: center;
-      }
-      .content {
-        width: auto;
-      }
-      .photo {
-        margin: auto;
+        .content {
+          width: auto;
+        }
+        .photo {
+          margin: auto;
+        }
       }
     }
   }
-  #path .container p {
-    font-size: 1rem;
-  }
 
-  .portfolio {
-    padding-left: 5rem;
+  #portfolio {
+    .title {
+      position: relative;
+      top: 0;
+    }
+    // padding-left: 8rem;
     .gallery {
+      .sm-header {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        height: 80px;
+        line-height: 80px;
+      }
       position: relative;
       display: block;
       width: 100%;
@@ -100,44 +80,30 @@
       }
     }
   }
+  #contact .section-inner {
+    grid-template-columns: 1fr;
+    .img {
+      display: none;
+    }
+  }
 }
 
 @media (max-width: 600px) {
-  h1 {
-    font-size: 2.5rem;
+  html {
+    font-size: 45%;
   }
-  h2 {
-    font-size: 1.5rem;
-  }
-  h3 {
-    font-size: 1rem;
-  }
-  p {
-    font-size: 0.7rem;
-  }
-
   .section {
     padding: 0;
   }
 
-  .section-about {
-    .about-top {
-      height: 100%;
-      padding: 0 20px;
-      .photo,
-      .content {
+  #about {
+    .section-inner .container {
+      .photo {
         position: relative;
         margin: auto;
-        // right: 0;
-        // left: 0;
-        // top: 0;
         width: 100%;
-      }
-      .photo {
-        top: 0;
-      }
-      .content > div {
-        margin-bottom: 10px;
+        height: 100%;
+        order: -1;
       }
     }
   }

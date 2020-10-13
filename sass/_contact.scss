@@ -3,67 +3,70 @@
     background: $secondary-color;
     color: $light-color;
   }
-  .container {
-    background-color: #f5f5dc;
-    padding: 0;
+  .section-inner {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    justify-content: center;
+    .img {
+      width: 100%;
+      height: 100%;
+      background: url("../img/bg2.jpg") center center/cover;
+      height: calc(100vh - 130px);
+    }
+
+    .form-container {
+      height: 100%;
+      background: $primary-color;
+      width: 100%;
+      position: relative;
+      display: flex;
+      form {
+        border-radius: 5px;
+        padding: 20px;
+        width: 80%;
+        margin: auto;
+
+        input[type="text"],
+        textarea {
+          width: 100%; /* Full width */
+          padding: 10px; /* Some padding */
+          border: none;
+          border-bottom: 1px solid $light-color; /* Gray border */
+          // border-radius: 4px; /* Rounded borders */
+          box-sizing: border-box; /* Make sure that padding and width stays in place */
+          margin-top: 6px; /* Add a top margin */
+          margin-bottom: 16px; /* Bottom margin */
+          resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+          background: none;
+          font-family: inherit;
+          color: $light-color;
+        }
+
+        textarea {
+          height: 150px;
+          margin-bottom: 20px;
+          // border: 1px solid $light-color;
+        }
+        /* Style the submit button with a specific background color etc */
+        input[type="submit"] {
+          background-color: #4caf50;
+          color: white;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          width: 100%;
+        }
+
+        label {
+          color: $light-color;
+        }
+        /* When moving the mouse over the submit button, add a darker green color */
+        input[type="submit"]:hover {
+          background-color: #45a049;
+        }
+      }
+    }
   }
-}
-.left-form {
-  width: 100%;
-  height: 100%;
-  background: url("../img/bg2.jpg") center center/cover;
-  height: calc(100vh - 130px);
-}
-
-.right-form {
-  height: 100%;
-  background: $primary-color;
-  width: 100%;
-}
-
-form {
-  border-radius: 5px;
-  padding: 20px;
-  width: 70%;
-  margin: auto;
-}
-
-input[type="text"],
-textarea {
-  width: 100%; /* Full width */
-  padding: 10px; /* Some padding */
-  border: none;
-  border-bottom: 1px solid $light-color; /* Gray border */
-  // border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
-  background: none;
-  font-family: inherit;
-  color: $light-color;
-}
-
-textarea {
-  height: 150px;
-  margin-bottom: 20px;
-  // border: 1px solid $light-color;
-}
-/* Style the submit button with a specific background color etc */
-input[type="submit"] {
-  background-color: #4caf50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  width: 100%;
-}
-
-label {
-  color: $light-color;
-}
-/* When moving the mouse over the submit button, add a darker green color */
-input[type="submit"]:hover {
-  background-color: #45a049;
 }

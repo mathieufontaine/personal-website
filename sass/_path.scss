@@ -3,7 +3,6 @@
 #path {
   .container p {
     color: $light-color;
-    font-size: 1.2rem;
     margin-bottom: 20px;
     margin-top: 0;
   }
@@ -21,11 +20,7 @@
       padding: 30px 100px;
       h2 {
         font-size: 3.5rem;
-        color: $primary-color;
         left: 100px;
-      }
-      p {
-        font-size: 2rem;
       }
     }
     .card {
@@ -49,9 +44,6 @@
   }
   #singapore {
     background-image: url("../img/cities/singapore2.jpg");
-    h2 {
-      // color: $light-color;
-    }
   }
   #bangkok {
     background-image: url("../img/cities/bangkok2.jpg");
