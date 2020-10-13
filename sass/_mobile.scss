@@ -12,6 +12,35 @@
       right: 0;
     }
   }
+
+  #portfolio {
+    .gallery .projects .project {
+      grid-template-columns: 1fr;
+      .project-text {
+        padding: 2rem 5rem;
+        text-align: center;
+        p {
+          width: 80%;
+          margin: auto;
+          text-align: left;
+        }
+        .btn-container {
+          display: flex;
+          justify-content: center;
+          .btn {
+            width: 30%;
+            margin: 3rem 1rem 0 1rem;
+          }
+        }
+      }
+      .project-img {
+        order: -1;
+      }
+    }
+    .landing .projects .project .project-text p {
+      text-align: center;
+    }
+  }
 }
 
 @media (max-width: 880px) {
@@ -21,7 +50,6 @@
   h2 {
     text-align: center;
   }
-
   .showcase {
     padding-left: 5rem;
     .content,
@@ -124,6 +152,23 @@
       bottom: 8rem;
       margin: 20px;
       // border-radius: 0;
+    }
+  }
+  #portfolio .gallery .projects .project {
+    .project-text {
+      h3 {
+        margin-bottom: 1rem;
+      }
+      padding: 1rem;
+      p {
+        width: 90%;
+      }
+      .btn-container {
+        .btn {
+          width: 50%;
+          margin: 1rem;
+        }
+      }
     }
   }
 }
