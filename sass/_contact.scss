@@ -3,6 +3,12 @@
     background: $secondary-color;
     color: $light-color;
   }
+  .section-description {
+    padding-bottom: 5rem;
+    h4 {
+      // font-size: rem;
+    }
+  }
   .section-inner {
     display: grid;
     grid-template-columns: 1fr 2fr;

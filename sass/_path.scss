@@ -1,40 +1,53 @@
 // section path
 
 #path {
-  .container p {
-    color: $light-color;
-    margin-bottom: 20px;
-    margin-top: 0;
-  }
-  .city {
-    position: sticky;
-    top: 0;
-    height: 100vh;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    .headings {
-      position: absolute;
-      top: 100px;
-      padding: 30px 100px;
-      h2 {
-        font-size: 3.5rem;
-        left: 100px;
-      }
+  .section-inner {
+    .container p {
+      color: $light-color;
+      margin-bottom: 20px;
+      margin-top: 0;
     }
-    .card {
-      position: absolute;
-      width: 40%;
-      top: 30%;
-      right: 100px;
-      background: rgba(255, 254, 254, 0.619);
-      padding: 20px;
-      margin-top: 10px;
-      border-radius: 10px;
-      img {
-        height: 100px;
-        width: 100px;
+    .city {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      .headings {
+        position: absolute;
+        top: 100px;
+        padding: 30px 100px;
+        h2 {
+          font-size: 3.5rem;
+          left: 100px;
+        }
+      }
+      .card {
+        position: absolute;
+        width: 40%;
+        top: 30%;
+        right: 100px;
+        background: rgba(255, 254, 254, 0.8);
+        padding: 20px;
+        margin-top: 10px;
+        border-radius: 10px;
+        img {
+          height: 100px;
+          width: 100px;
+        }
+        p {
+          margin: 10px;
+          text-align: left;
+        }
+        h3 {
+          margin-bottom: 20px;
+        }
+        a {
+          color: $secondary-color;
+          font-weight: 900;
+        }
       }
     }
   }
