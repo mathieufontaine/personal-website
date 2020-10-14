@@ -28,13 +28,17 @@
       width: 40%;
       top: 30%;
       right: 100px;
-      background: rgba(255, 254, 254, 0.619);
+      background: rgba(255, 254, 254, 0.8);
       padding: 20px;
       margin-top: 10px;
       border-radius: 10px;
       img {
         height: 100px;
         width: 100px;
+      }
+      p {
+        margin: 10px;
+        text-align: left;
       }
     }
   }

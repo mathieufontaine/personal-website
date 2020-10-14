@@ -31,6 +31,13 @@ body::-webkit-scrollbar-thumb {
   background: #2f6ef5;
 }
 
+h1,
+h2,
+h3,
+p {
+  margin-bottom: 10px;
+}
+
 h1 {
   color: #2f6ef5;
   font-size: 4.5rem;
@@ -586,7 +593,7 @@ ul {
   width: 40%;
   top: 30%;
   right: 100px;
-  background: rgba(255, 254, 254, 0.619);
+  background: rgba(255, 254, 254, 0.8);
   padding: 20px;
   margin-top: 10px;
   border-radius: 10px;
@@ -595,6 +602,11 @@ ul {
 #path .city .card img {
   height: 100px;
   width: 100px;
+}
+
+#path .city .card p {
+  margin: 10px;
+  text-align: left;
 }
 
 #path #toulouse {
