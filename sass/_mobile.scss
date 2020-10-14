@@ -125,6 +125,9 @@
     .img {
       display: none;
     }
+    > div .form-container form {
+      width: 90%;
+    }
   }
 }
 
@@ -202,13 +205,14 @@
       }
     }
   }
+
   footer {
     margin-bottom: 8vh;
     height: 14vh;
     padding: 1rem 0;
     grid-template-columns: 1fr;
-    background: $light-color;
-    color: $primary-color;
+    // background: $light-color;
+    // color: $secondary-color;
     border: none;
     p {
       margin: 0;
@@ -216,7 +220,7 @@
       // font-size: 1.3rem;
     }
     a {
-      color: $primary-color;
+      // color: $primary-color;
     }
     .logos .fa {
       margin: 0;
