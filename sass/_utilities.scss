@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
 
 $primary-color: #1e1d21;
 $secondary-color: #2f6ef5;
@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   background: $primary-color;
   color: $text-color;
   font-size: 1.5rem;
@@ -37,8 +37,7 @@ body::-webkit-scrollbar-thumb {
 
 h1,
 h2,
-h3,
-p {
+h3 {
   margin-bottom: 10px;
 }
 
@@ -51,10 +50,15 @@ h1 {
 h2 {
   color: $primary-color;
   font-size: 2.3rem;
+  font-weight: 700;
 }
 
 h3 {
   font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.8rem;
 }
 
 p {
@@ -77,15 +81,6 @@ ul {
   color: $secondary-color;
 }
 
-.title {
-  position: sticky;
-  background: $primary-color;
-  z-index: 10;
-  h2 {
-    color: $light-color;
-  }
-}
-
 .sm-header {
   font-size: 2.5rem;
   color: white;
@@ -95,6 +90,7 @@ ul {
 .hidden {
   visibility: hidden;
 }
+
 // sections
 
 .section {
@@ -103,6 +99,24 @@ ul {
   // min-height: 100vh;
   min-width: 100%;
   padding-left: 8rem;
+}
+
+.section-title {
+  position: sticky;
+  background: $secondary-color;
+  z-index: 10;
+  h2 {
+    color: $light-color;
+    margin-bottom: 0;
+  }
+}
+
+.section-description {
+  background: $primary-color;
+  color: $light-color !important;
+  text-align: left;
+  width: 100%;
+  margin: auto;
 }
 
 .container {
