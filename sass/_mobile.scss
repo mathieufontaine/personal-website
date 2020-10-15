@@ -135,13 +135,16 @@
   html {
     font-size: 45%;
   }
+  .btn:hover {
+    transform: initial;
+    background: initial;
+  }
   .section {
     padding: 0;
   }
   #scroll-top-btn {
     bottom: 10vh;
   }
-
   #about {
     .section-inner .container {
       .quote {
@@ -158,6 +161,7 @@
         grid-gap: 6rem;
         .cards > div {
           display: block;
+          margin-bottom: 30px;
           .icon {
             padding: 2rem;
             border-top-right-radius: 10px;
@@ -229,6 +233,19 @@
       margin: 0;
       font-size: 2.5rem;
       margin: 8px;
+    }
+  }
+}
+
+body[data-aos-duration="custom"] [data-aos],
+[data-aos][data-aos][data-aos-duration="custom"] {
+  transition-duration: 0s;
+
+  &.aos-animate {
+    transition-duration: 1.5s;
+
+    @media (min-width: 700px) {
+      transition-duration: 3s;
     }
   }
 }

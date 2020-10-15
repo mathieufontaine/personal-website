@@ -23,7 +23,7 @@
         max-width: 1200px;
         margin: auto;
         display: grid;
-        grid-template-columns: 3fr 1fr;
+        grid-template-columns: 2fr 1.2fr;
         grid-gap: 2rem;
         align-items: center;
         justify-content: center;
@@ -44,7 +44,7 @@
             grid-template-columns: 1fr 5fr;
             justify-content: center;
             align-items: center;
-            margin-bottom: 30px;
+            margin-bottom: 10px;
             .icon {
               margin: auto;
               font-size: 3rem;
@@ -82,8 +82,8 @@
       .photo {
         // height: 600px;
         // width: 400px;
-        object-fit: cover;
-        height: 100%;
+        // object-fit: fill;
+        // height: 100%;
         width: 100%;
         border-radius: 10px;
         z-index: 0;
