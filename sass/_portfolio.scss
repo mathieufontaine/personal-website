@@ -72,3 +72,16 @@
     }
   }
 }
+
+body[data-aos-duration="custom"] [data-aos],
+[data-aos][data-aos][data-aos-duration="custom"] {
+  transition-duration: 0s;
+
+  &.aos-animate {
+    transition-duration: 1.5s;
+
+    @media (min-width: 700px) {
+      transition-duration: 3s;
+    }
+  }
+}
