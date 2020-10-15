@@ -154,16 +154,19 @@
         height: 100%;
         order: -1;
       }
-      > div:nth-child(2) .cards > div {
-        display: block;
-        .icon {
-          padding: 1rem;
-          border-top-right-radius: 10px;
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
-        }
-        h2 {
-          text-align: center;
+      > div:nth-child(2) {
+        grid-gap: 6rem;
+        .cards > div {
+          display: block;
+          .icon {
+            padding: 2rem;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+          }
+          h2 {
+            text-align: center;
+          }
         }
       }
     }
