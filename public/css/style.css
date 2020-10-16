@@ -506,7 +506,7 @@ ul {
   margin: auto;
 }
 
-#about .section-inner .container > div:nth-child(2) {
+#about .section-inner .container .content {
   max-width: 1200px;
   margin: auto;
   display: -ms-grid;
@@ -522,31 +522,18 @@ ul {
           justify-content: center;
 }
 
-#about .section-inner .container > div:nth-child(2) .cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+#about .section-inner .container .content .cards {
   margin: auto;
   z-index: 1;
   height: 100%;
 }
 
-#about .section-inner .container > div:nth-child(2) .cards h2 {
+#about .section-inner .container .content .cards h2 {
   text-align: left;
   color: #2f6ef5;
 }
 
-#about .section-inner .container > div:nth-child(2) .cards > div {
+#about .section-inner .container .content .cards .card {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 5fr;
@@ -560,7 +547,7 @@ ul {
   margin-bottom: 10px;
 }
 
-#about .section-inner .container > div:nth-child(2) .cards > div .icon {
+#about .section-inner .container .content .cards .card .icon {
   margin: auto;
   font-size: 3rem;
   background: #1e1d21;
@@ -581,14 +568,14 @@ ul {
   border-bottom-left-radius: 10px;
 }
 
-#about .section-inner .container > div:nth-child(2) .cards > div > div:last-child {
+#about .section-inner .container .content .cards .card .text {
   background: #fffefe;
   padding: 20px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
 
-#about .section-inner .container > div:nth-child(2) .cards > div:last-child {
+#about .section-inner .container .content .cards > .card:last-child {
   margin-bottom: 0;
 }
 
@@ -1081,7 +1068,7 @@ footer .logos .fa:hover {
     right: 0;
     width: 100%;
   }
-  #about .section-inner .container > div:nth-child(2) {
+  #about .section-inner .container .content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1093,7 +1080,7 @@ footer .logos .fa:hover {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  #about .section-inner .container > div:nth-child(2) .photo {
+  #about .section-inner .container .content .photo {
     margin: auto;
     width: 60%;
     -webkit-box-ordinal-group: 0;
@@ -1164,20 +1151,20 @@ footer .logos .fa:hover {
         -ms-flex-order: -1;
             order: -1;
   }
-  #about .section-inner .container > div:nth-child(2) {
+  #about .section-inner .container > .content {
     grid-gap: 6rem;
   }
-  #about .section-inner .container > div:nth-child(2) .cards > div {
+  #about .section-inner .container > .content .cards > div {
     display: block;
     margin-bottom: 30px;
   }
-  #about .section-inner .container > div:nth-child(2) .cards > div .icon {
+  #about .section-inner .container > .content .cards > div .icon {
     padding: 2rem;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
   }
-  #about .section-inner .container > div:nth-child(2) .cards > div h2 {
+  #about .section-inner .container > .content .cards > div h2 {
     text-align: center;
   }
   #path .section-inner .city {
@@ -1199,9 +1186,7 @@ footer .logos .fa:hover {
   }
   #path .section-inner .city .card {
     right: auto;
-    top: auto;
     width: auto;
-    bottom: 8rem;
     margin: 20px;
   }
   #portfolio .gallery .projects .project .project-text {

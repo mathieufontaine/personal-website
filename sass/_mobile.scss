@@ -74,7 +74,7 @@
   #about {
     .section-inner {
       .container {
-        > div:nth-child(2) {
+        .content {
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -157,7 +157,7 @@
         height: 100%;
         order: -1;
       }
-      > div:nth-child(2) {
+      > .content {
         grid-gap: 6rem;
         .cards > div {
           display: block;
@@ -188,9 +188,9 @@
     .card {
       // position: static;
       right: auto;
-      top: auto;
+      // top: auto;
       width: auto;
-      bottom: 8rem;
+      // bottom: 8rem;
       margin: 20px;
       // border-radius: 0;
     }
