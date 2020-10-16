@@ -625,12 +625,11 @@ ul {
 
 #path .section-inner .city .card {
   position: absolute;
-  width: 40%;
-  top: 30%;
+  width: 50%;
+  top: 28%;
   right: 100px;
   background: rgba(255, 254, 254, 0.8);
-  padding: 20px;
-  margin-top: 10px;
+  padding: 16px;
   border-radius: 10px;
 }
 
@@ -1236,7 +1235,7 @@ body[data-aos-duration="custom"] [data-aos].aos-animate,
 @media (min-width: 700px) {
   body[data-aos-duration="custom"] [data-aos].aos-animate,
   [data-aos][data-aos][data-aos-duration="custom"].aos-animate {
-    -webkit-transition-duration: 3s;
-            transition-duration: 3s;
+    -webkit-transition-duration: 2.5s;
+            transition-duration: 2.5s;
   }
 }
