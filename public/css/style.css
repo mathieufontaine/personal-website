@@ -1153,17 +1153,17 @@ footer .logos .fa:hover {
   #about .section-inner .container > .content {
     grid-gap: 6rem;
   }
-  #about .section-inner .container > .content .cards > div {
+  #about .section-inner .container > .content .cards .card {
     display: block;
     margin-bottom: 30px;
   }
-  #about .section-inner .container > .content .cards > div .icon {
+  #about .section-inner .container > .content .cards .card .icon {
     padding: 2rem;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
   }
-  #about .section-inner .container > .content .cards > div h2 {
+  #about .section-inner .container > .content .cards .card h2 {
     text-align: center;
   }
   #path .section-inner .city {
