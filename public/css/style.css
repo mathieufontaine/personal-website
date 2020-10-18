@@ -485,20 +485,40 @@ ul {
 }
 
 /* Section about */
-#about .section-inner .container {
-  background: #f4f2f2 no-repeat center center/cover;
+#about .section-inner .quote {
+  width: 70%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  background: #1e1d21;
 }
 
-#about .section-inner .container .quote {
+#about .section-inner .quote h3 {
   font-size: 2.5rem;
-  color: #1e1d21;
+  color: white;
   padding: 3rem;
-  padding-top: 0;
-  left: 150px;
   font-style: italic;
   margin: auto;
   font-weight: 400;
   text-align: center;
+}
+
+#about .section-inner .quote .photo {
+  width: 70%;
+  margin: auto;
+  z-index: 0;
+}
+
+#about .section-inner .container {
+  background: #fffefe no-repeat center center/cover;
 }
 
 #about .section-inner .container > div {
@@ -506,53 +526,29 @@ ul {
   margin: auto;
 }
 
-#about .section-inner .container .content {
-  max-width: 1200px;
+#about .section-inner .container .cards {
   margin: auto;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 2fr 1.2fr;
-      grid-template-columns: 2fr 1.2fr;
-  grid-gap: 2rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#about .section-inner .container .content .cards {
-  margin: auto;
+  margin-bottom: 3rem;
   z-index: 1;
   height: 100%;
+  width: 100%;
 }
 
-#about .section-inner .container .content .cards h2 {
-  text-align: left;
-  color: #2f6ef5;
-}
-
-#about .section-inner .container .content .cards .card {
+#about .section-inner .container .cards .card {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 5fr;
-      grid-template-columns: 1fr 5fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
 }
 
-#about .section-inner .container .content .cards .card .icon {
-  margin: auto;
-  font-size: 3rem;
-  background: #1e1d21;
-  color: white;
-  width: 100%;
+#about .section-inner .container .cards .card > div {
   height: 100%;
   text-align: center;
   display: -webkit-box;
@@ -564,35 +560,44 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
 }
 
-#about .section-inner .container .content .cards .card .text {
+#about .section-inner .container .cards .card > div .icon {
+  width: 70%;
+  height: 100%;
+  margin: auto;
+}
+
+#about .section-inner .container .cards .card .text {
   background: #fffefe;
   padding: 20px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
 }
 
-#about .section-inner .container .content .cards > .card:last-child {
-  margin-bottom: 0;
+#about .section-inner .container .cards .card .text h2 {
+  text-align: left;
+  color: #2f6ef5;
 }
 
-#about .section-inner .container > :nth-child(3) {
+#about .section-inner .container .cards :last-child {
+  margin-bottom: 0 !important;
+}
+
+#about .section-inner .container .cta {
   padding: 7rem 0 5rem 0;
   text-align: center;
 }
 
-#about .section-inner .container > :nth-child(3) h4 {
+#about .section-inner .container .cta h4 {
   margin-bottom: 10px;
   font-weight: 400;
-}
-
-#about .section-inner .container .photo {
-  width: 100%;
-  border-radius: 10px;
-  z-index: 0;
 }
 
 #path .section-inner .container p {
@@ -1138,30 +1143,33 @@ footer .logos .fa:hover {
   #scroll-top-btn {
     bottom: 10vh;
   }
-  #about .section-inner .container .quote {
-    font-size: 2rem;
+  #about .section-inner .quote {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  #about .section-inner .container .photo {
-    position: relative;
-    margin: auto;
-    width: 100%;
-    height: 100%;
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
+  #about .section-inner .quote h3 {
+    font-size: 2rem;
   }
   #about .section-inner .container > .content {
     grid-gap: 6rem;
   }
+  #about .section-inner .container > .content .cards > .card:nth-child(2) .draw {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
   #about .section-inner .container > .content .cards .card {
-    display: block;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
     margin-bottom: 30px;
   }
   #about .section-inner .container > .content .cards .card .icon {
     padding: 2rem;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
   }
   #about .section-inner .container > .content .cards .card h2 {
     text-align: center;

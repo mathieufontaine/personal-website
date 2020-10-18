@@ -146,36 +146,36 @@
     bottom: 10vh;
   }
   #about {
-    .section-inner .container {
+    .section-inner {
       .quote {
-        font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        h3 {
+          font-size: 2rem;
+        }
       }
-      .photo {
-        position: relative;
-        margin: auto;
-        width: 100%;
-        height: 100%;
-        order: -1;
-      }
-      > .content {
-        grid-gap: 6rem;
-        .cards .card {
-          display: block;
-          margin-bottom: 30px;
-          .icon {
-            padding: 2rem;
-            border-top-right-radius: 10px;
-            border-bottom-left-radius: 0;
-            border-bottom-right-radius: 0;
-          }
-          h2 {
-            text-align: center;
+      .container {
+        > .content {
+          grid-gap: 6rem;
+          .cards {
+            > .card:nth-child(2) .draw {
+              order: -1;
+            }
+            .card {
+              grid-template-columns: 1fr;
+              margin-bottom: 30px;
+              .icon {
+                padding: 2rem;
+              }
+              h2 {
+                text-align: center;
+              }
+            }
           }
         }
       }
     }
   }
-
   #path .section-inner .city {
     display: flex;
     flex-direction: column;

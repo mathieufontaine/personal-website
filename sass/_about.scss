@@ -2,91 +2,89 @@
 
 #about {
   .section-inner {
-    .container {
-      background: #f4f2f2 no-repeat center center/cover;
-      .quote {
+    .quote {
+      width: 70%;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      background: $primary-color;
+      h3 {
         font-size: 2.5rem;
-        color: $primary-color;
+        color: $light-color;
         padding: 3rem;
-        padding-top: 0;
-        left: 150px;
+        // left: 150px;
         font-style: italic;
         margin: auto;
         font-weight: 400;
         text-align: center;
-      }
-      > div {
-        max-width: 1200px;
-        margin: auto;
-      }
-      .content {
-        max-width: 1200px;
-        margin: auto;
-        display: grid;
-        grid-template-columns: 2fr 1.2fr;
-        grid-gap: 2rem;
-        align-items: center;
-        justify-content: center;
-        .cards {
-          // display: flex;
-          // flex-direction: column;
-          // justify-content: space-between;
-          // align-items: center;
-          margin: auto;
-          z-index: 1;
-          height: 100%;
-          h2 {
-            text-align: left;
-            color: $secondary-color;
-          }
-          .card {
-            display: grid;
-            grid-template-columns: 1fr 5fr;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 10px;
-            .icon {
-              margin: auto;
-              font-size: 3rem;
-              background: $primary-color;
-              color: $light-color;
-              width: 100%;
-              height: 100%;
-              text-align: center;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              border-top-left-radius: 10px;
-              border-bottom-left-radius: 10px;
-            }
-            .text {
-              background: rgb(255, 254, 254);
-              padding: 20px;
-              border-top-right-radius: 10px;
-              border-bottom-right-radius: 10px;
-            }
-          }
-          & > .card:last-child {
-            margin-bottom: 0;
-          }
-        }
-      }
-      > :nth-child(3) {
-        padding: 7rem 0 5rem 0;
-        text-align: center;
-        h4 {
-          margin-bottom: 10px;
-          font-weight: 400;
-        }
       }
       .photo {
         // height: 600px;
         // width: 400px;
         // object-fit: fill;
         // height: 100%;
-        width: 100%;
-        border-radius: 10px;
+        width: 70%;
+        margin: auto;
         z-index: 0;
+      }
+    }
+    .container {
+      background: rgb(255, 254, 254) no-repeat center center/cover;
+      > div {
+        max-width: 1200px;
+        margin: auto;
+      }
+      .cards {
+        margin: auto;
+        margin-bottom: 3rem;
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+
+        .card {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 40px;
+          > div {
+            // background: $light-color;
+            height: 100%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .icon {
+              width: 70%;
+              height: 100%;
+              margin: auto;
+            }
+          }
+          .text {
+            h2 {
+              text-align: left;
+              color: $secondary-color;
+            }
+            background: rgb(255, 254, 254);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+          }
+        }
+        :last-child {
+          margin-bottom: 0 !important;
+        }
+      }
+      .cta {
+        padding: 7rem 0 5rem 0;
+        text-align: center;
+        h4 {
+          margin-bottom: 10px;
+          font-weight: 400;
+        }
       }
     }
   }
