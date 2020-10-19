@@ -56,7 +56,7 @@
 
   .showcase {
     padding-left: 5rem;
-    .content,
+    .headers,
     .showcase-btn {
       position: relative;
       width: 100%;
@@ -225,9 +225,6 @@
       margin: 0;
       padding: 2px;
       // font-size: 1.3rem;
-    }
-    a {
-      // color: $primary-color;
     }
     .logos .fa {
       margin: 0;

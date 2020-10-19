@@ -378,15 +378,8 @@ ul {
 .scroll-down-btn {
   position: relative;
   margin: auto;
-}
-
-.scroll-down-btn a {
-  position: absolute;
-  top: 0;
-  left: 50%;
   width: 24px;
   height: 24px;
-  margin-left: -12px;
   border-left: 3px solid #2f6ef5;
   border-bottom: 3px solid #2f6ef5;
   -webkit-transform: rotate(-45deg);
@@ -432,13 +425,7 @@ ul {
   background: url("../img/bg3.jpg") no-repeat bottom center/cover;
 }
 
-.showcase h2 {
-  color: #1e1d21;
-  font-style: italic;
-  font-weight: 400;
-}
-
-.showcase .content {
+.showcase .headers {
   position: absolute;
   top: 150px;
   right: 0px;
@@ -453,6 +440,12 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.showcase .headers h2 {
+  color: #1e1d21;
+  font-style: italic;
+  font-weight: 400;
 }
 
 .showcase .btn {
@@ -1059,7 +1052,7 @@ footer .logos .fa:hover {
   .showcase {
     padding-left: 5rem;
   }
-  .showcase .content,
+  .showcase .headers,
   .showcase .showcase-btn {
     position: relative;
     width: 100%;

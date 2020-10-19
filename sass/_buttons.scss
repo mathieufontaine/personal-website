@@ -64,21 +64,21 @@
 .scroll-down-btn {
   position: relative;
   margin: auto;
-  a {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 24px;
-    height: 24px;
-    margin-left: -12px;
-    border-left: 3px solid $secondary-color;
-    border-bottom: 3px solid $secondary-color;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    -webkit-animation: scrollDown 1.5s infinite;
-    animation: scrollDown 1.5s infinite;
-    box-sizing: border-box;
-  }
+  // a {
+  //   position: absolute;
+  //   top: 0;
+  //   left: 50%;
+  width: 24px;
+  height: 24px;
+  // margin-left: -12px;
+  border-left: 3px solid $secondary-color;
+  border-bottom: 3px solid $secondary-color;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: scrollDown 1.5s infinite;
+  animation: scrollDown 1.5s infinite;
+  box-sizing: border-box;
+  //   }
 }
 
 @-webkit-keyframes scrollDown {
