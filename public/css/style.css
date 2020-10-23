@@ -478,6 +478,10 @@ ul {
 }
 
 /* Section about */
+#about {
+  overflow: hidden;
+}
+
 #about .section-inner .quote {
   width: 70%;
   display: -ms-grid;
@@ -1128,7 +1132,7 @@ footer .logos .fa:hover {
   .btn:hover {
     -webkit-transform: initial;
             transform: initial;
-    background: initial;
+    background: #2f6ef5;
   }
   .section {
     padding: 0;

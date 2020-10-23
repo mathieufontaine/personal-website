@@ -1,6 +1,7 @@
 /* Section about */
 
 #about {
+  overflow: hidden;
   .section-inner {
     .quote {
       width: 70%;
@@ -21,10 +22,6 @@
         text-align: center;
       }
       .photo {
-        // height: 600px;
-        // width: 400px;
-        // object-fit: fill;
-        // height: 100%;
         width: 70%;
         margin: auto;
         z-index: 0;
