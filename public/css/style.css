@@ -17,6 +17,9 @@ body {
   color: #0f0f10;
   font-size: 1.5rem;
   line-height: 1.6;
+  height: 100%;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 body::-webkit-scrollbar {
@@ -261,9 +264,13 @@ ul {
   .navbar {
     bottom: 0;
     width: 100vw;
-    height: 8vh;
+    height: 10vh;
+    padding: 5px 10px;
   }
   .navbar .logo {
+    display: none;
+  }
+  .navbar #home-link {
     display: none;
   }
   .navbar .navbar-nav {
@@ -273,8 +280,10 @@ ul {
             flex-direction: row;
   }
   .navbar .navbar-nav .nav-item {
-    margin: auto;
-    height: 8vh;
+    padding: -5px auto 5px auto;
+  }
+  .navbar .navbar-nav .nav-item:last-child {
+    margin-top: 0;
   }
   .navbar .navbar-nav .nav-item .nav-link {
     -webkit-box-pack: center;
@@ -900,6 +909,30 @@ ul {
   margin-bottom: 20px;
 }
 
+#contact .section-inner > div .form-container form input::-webkit-input-placeholder,
+#contact .section-inner > div .form-container form textarea::-webkit-input-placeholder {
+  opacity: 0.7;
+  font-size: 1.5rem;
+}
+
+#contact .section-inner > div .form-container form input:-ms-input-placeholder,
+#contact .section-inner > div .form-container form textarea:-ms-input-placeholder {
+  opacity: 0.7;
+  font-size: 1.5rem;
+}
+
+#contact .section-inner > div .form-container form input::-ms-input-placeholder,
+#contact .section-inner > div .form-container form textarea::-ms-input-placeholder {
+  opacity: 0.7;
+  font-size: 1.5rem;
+}
+
+#contact .section-inner > div .form-container form input::placeholder,
+#contact .section-inner > div .form-container form textarea::placeholder {
+  opacity: 0.7;
+  font-size: 1.5rem;
+}
+
 #contact .section-inner > div .form-container form input[type="submit"] {
   background-color: #1e1d21;
   color: white;
@@ -1140,6 +1173,9 @@ footer .logos .fa:hover {
   #scroll-top-btn {
     bottom: 10vh;
   }
+  .showcase {
+    height: 95vh;
+  }
   #about .section-inner .quote {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1207,7 +1243,7 @@ footer .logos .fa:hover {
     margin: 1rem;
   }
   footer {
-    margin-bottom: 8vh;
+    margin-bottom: 10vh;
     height: 14vh;
     padding: 1rem 0;
     -ms-grid-columns: 1fr;

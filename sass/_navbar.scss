@@ -94,19 +94,25 @@
   .navbar {
     bottom: 0;
     width: 100vw;
-    height: 8vh;
-
+    height: 10vh;
+    padding: 5px 10px;
     .logo {
       display: none;
     }
-
+    #home-link {
+      display: none;
+    }
     .navbar-nav {
       flex-direction: row;
 
       .nav-item {
-        margin: auto;
-        height: 8vh;
-
+        padding: -5px auto 5px auto;
+        // height: 9vh;
+        // margin-top: 0;
+        // margin-bottom: 1vh;
+        &:last-child {
+          margin-top: 0;
+        }
         .nav-link {
           justify-content: center;
           flex-direction: column;

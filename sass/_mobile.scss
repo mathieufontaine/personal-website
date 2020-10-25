@@ -145,6 +145,9 @@
   #scroll-top-btn {
     bottom: 10vh;
   }
+  .showcase {
+    height: 95vh;
+  }
   #about {
     .section-inner {
       .quote {
@@ -214,7 +217,7 @@
   }
 
   footer {
-    margin-bottom: 8vh;
+    margin-bottom: 10vh;
     height: 14vh;
     padding: 1rem 0;
     grid-template-columns: 1fr;
