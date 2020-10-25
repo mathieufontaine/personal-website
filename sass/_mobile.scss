@@ -56,21 +56,21 @@
 
   .showcase {
     padding-left: 5rem;
-    .headers,
-    .showcase-btn {
-      position: relative;
-      width: 100%;
-      text-align: center;
-      padding: 20px;
-      left: auto;
-    }
-    .showcase-btn {
+    .headers {
+      // position: relative;
+      // width: 100%;
+      // text-align: center;
+      // left: auto;
       top: 120px;
-      right: 0;
-      width: 100%;
+      padding: 20px;
+      .showcase-btn {
+        margin-top: 20px;
+        // top: 120px;
+        // right: 0;
+        // width: 100%;
+      }
     }
   }
-
   #about {
     .section-inner {
       .container {
@@ -125,6 +125,9 @@
     .img {
       display: none;
     }
+    .section-description {
+      text-align: left;
+    }
     > div .form-container form {
       width: 90%;
     }
@@ -146,7 +149,7 @@
     bottom: 10vh;
   }
   .showcase {
-    height: 95vh;
+    height: 97vh;
   }
   #about {
     .section-inner {

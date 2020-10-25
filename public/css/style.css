@@ -58,6 +58,8 @@ h3 {
 
 h4 {
   font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 12px;
 }
 
 p {
@@ -438,7 +440,7 @@ ul {
   position: absolute;
   top: 150px;
   right: 0px;
-  width: 70%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -449,9 +451,20 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
+  padding-left: 8rem;
+}
+
+.showcase .headers h1 {
+  margin-bottom: 50px;
 }
 
 .showcase .headers h2 {
+  color: #1e1d21;
+  font-weight: 800;
+}
+
+.showcase .headers h3 {
   color: #1e1d21;
   font-style: italic;
   font-weight: 400;
@@ -462,10 +475,11 @@ ul {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .showcase .showcase-btn {
+  margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -480,10 +494,6 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
-  top: 280px;
-  right: 20px;
-  width: 70%;
 }
 
 /* Section about */
@@ -1089,18 +1099,12 @@ footer .logos .fa:hover {
   .showcase {
     padding-left: 5rem;
   }
-  .showcase .headers,
-  .showcase .showcase-btn {
-    position: relative;
-    width: 100%;
-    text-align: center;
-    padding: 20px;
-    left: auto;
-  }
-  .showcase .showcase-btn {
+  .showcase .headers {
     top: 120px;
-    right: 0;
-    width: 100%;
+    padding: 20px;
+  }
+  .showcase .headers .showcase-btn {
+    margin-top: 20px;
   }
   #about .section-inner .container .content {
     display: -webkit-box;
@@ -1153,6 +1157,9 @@ footer .logos .fa:hover {
   #contact .section-inner .img {
     display: none;
   }
+  #contact .section-inner .section-description {
+    text-align: left;
+  }
   #contact .section-inner > div .form-container form {
     width: 90%;
   }
@@ -1174,7 +1181,7 @@ footer .logos .fa:hover {
     bottom: 10vh;
   }
   .showcase {
-    height: 95vh;
+    height: 97vh;
   }
   #about .section-inner .quote {
     display: -webkit-box;
