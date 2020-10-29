@@ -43,7 +43,7 @@
 
 .nav-link:hover {
   filter: grayscale(0%) opacity(1);
-  background: $secondary-color;
+  background: $gradient;
 }
 
 .link-text {
@@ -65,7 +65,7 @@
   text-transform: uppercase;
   margin-bottom: 1rem;
   color: $light-color;
-  background: $secondary-color;
+  background: $gradient;
   font-size: 1rem;
   letter-spacing: 0.2ch;
   width: 100%;

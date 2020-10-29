@@ -106,7 +106,7 @@ ul {
 .section-title {
   position: -webkit-sticky;
   position: sticky;
-  background: #509cd9;
+  background: linear-gradient(87deg, #348cd2 0%, #5cc9f7 100%);
   z-index: 10;
 }
 
@@ -212,7 +212,7 @@ ul {
 .nav-link:hover {
   -webkit-filter: grayscale(0%) opacity(1);
           filter: grayscale(0%) opacity(1);
-  background: #509cd9;
+  background: linear-gradient(87deg, #348cd2 0%, #5cc9f7 100%);
 }
 
 .link-text {
@@ -238,7 +238,7 @@ ul {
   text-transform: uppercase;
   margin-bottom: 1rem;
   color: white;
-  background: #509cd9;
+  background: linear-gradient(87deg, #348cd2 0%, #5cc9f7 100%);
   font-size: 1rem;
   letter-spacing: 0.2ch;
   width: 100%;
@@ -322,7 +322,7 @@ ul {
 .btn {
   display: inline-block;
   border: 0;
-  background: #509cd9;
+  background: linear-gradient(87deg, #348cd2 0%, #5cc9f7 100%);
   color: #fff;
   border-radius: 20px;
   padding: 1rem 3rem;
@@ -338,12 +338,11 @@ ul {
 .btn:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  background: #1e1d21;
 }
 
 #scroll-top-btn {
   display: inline-block;
-  background-color: #509cd9;
+  background-color: linear-gradient(87deg, #348cd2 0%, #5cc9f7 100%);
   width: 5rem;
   height: 5rem;
   text-align: center;
@@ -392,10 +391,10 @@ ul {
 .scroll-down-btn {
   position: relative;
   margin: auto;
-  width: 24px;
-  height: 24px;
-  border-left: 3px solid #509cd9;
-  border-bottom: 3px solid #509cd9;
+  width: 34px;
+  height: 34px;
+  border-left: 5px solid #509cd9;
+  border-bottom: 5px solid #509cd9;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   -webkit-animation: scrollDown 1.5s infinite;
@@ -447,6 +446,7 @@ ul {
   width: 70%;
   height: 100%;
   z-index: 0;
+  opacity: 0.8;
 }
 
 .showcase .container {
@@ -520,6 +520,7 @@ ul {
 }
 
 .showcase .container .content .headers .showcase-btn .btn {
+  padding: 1.5rem 5rem;
   margin: auto;
 }
 
@@ -789,7 +790,7 @@ ul {
       -ms-flex-pack: center;
           justify-content: center;
   grid-gap: 1rem;
-  padding: 4rem;
+  padding: 4rem 0;
 }
 
 #portfolio .gallery .projects .project .project-text {
@@ -826,7 +827,7 @@ ul {
 }
 
 #portfolio .gallery .projects .project .project-text .btn-container > .btn:first-child {
-  background: #1e1d21;
+  background: linear-gradient(87deg, #3d4c59 0%, #1e1d21 65%);
 }
 
 #portfolio .gallery .projects .project .project-img {
@@ -839,6 +840,7 @@ ul {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 10px;
 }
 
 #contact {

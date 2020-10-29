@@ -20,3 +20,10 @@ inputs.forEach(input =>
 );
 
 inputs.forEach(input => input.addEventListener("blur", validate));
+
+let tl = gsap.timeline({
+  defaults: {
+    duration: 1,
+    ease: "power2.inOut"
+  }
+});

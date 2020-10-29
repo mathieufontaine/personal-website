@@ -1,7 +1,7 @@
 .btn {
   display: inline-block;
   border: 0;
-  background: $secondary-color;
+  background: $gradient;
   color: #fff;
   border-radius: 20px;
   padding: 1rem 3rem;
@@ -15,14 +15,14 @@
 
 .btn:hover {
   transform: scale(1.1);
-  background: $primary-color;
+  // background: $primary-color;
 }
 
 // scrollTop
 
 #scroll-top-btn {
   display: inline-block;
-  background-color: $secondary-color;
+  background-color: $gradient;
   width: 5rem;
   height: 5rem;
   text-align: center;
@@ -68,11 +68,11 @@
   //   position: absolute;
   //   top: 0;
   //   left: 50%;
-  width: 24px;
-  height: 24px;
+  width: 34px;
+  height: 34px;
   // margin-left: -12px;
-  border-left: 3px solid $secondary-color;
-  border-bottom: 3px solid $secondary-color;
+  border-left: 5px solid $secondary-color;
+  border-bottom: 5px solid $secondary-color;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   -webkit-animation: scrollDown 1.5s infinite;
