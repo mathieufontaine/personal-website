@@ -2,48 +2,72 @@
 
 .showcase {
   height: 100vh;
-  background: url("../img/bg3.jpg") no-repeat bottom center/cover;
+  // background: url("../img/bg3.jpg") no-repeat bottom center/cover;
+  background: #f8f8ff;
+  padding-left: 8rem;
 
-  .headers {
+  img {
     position: absolute;
-    top: 150px;
-    right: 0px;
-    width: 100%;
+    bottom: 0%;
+    right: 0;
+    width: 70%;
+    height: 100%;
+    z-index: 0;
+  }
+
+  .container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding-left: 8rem;
+    width: 90%;
+    margin: auto;
     h1 {
-      margin-bottom: 50px;
+      margin-bottom: 30px;
+      color: $primary-color;
     }
     h2 {
       color: $primary-color;
-      font-weight: 800;
+      font-weight: 500;
+      margin-bottom: 0;
     }
     h3 {
-      color: $primary-color;
+      color: $secondary-color;
       font-style: italic;
-      font-weight: 400;
+      font-size: 1.8rem;
+      // font-weight: lighter;
     }
-  }
-  .btn {
-    margin: auto;
-    align-self: center;
-    margin-top: 10px;
-  }
-  // buttons
 
-  .showcase-btn {
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    // position: absolute;
-    // top: 280px;
-    // right: 20px;
-    // width: 70%;
+    .content {
+      height: 100%;
+      display: flex;
+      // width: 100%;
+      // display: grid;
+      // grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      // text-align: center;
+      justify-content: flex-start;
+
+      .headers {
+        // position: absolute;
+        // top: 40%;
+        // left: 0%;
+        width: 40%;
+        // height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        // transform: translate(-30%, -35%);
+
+        .showcase-btn {
+          margin-top: 20px;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+
+          .btn {
+            margin: auto;
+          }
+        }
+      }
+    }
   }
 }
