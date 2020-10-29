@@ -1123,14 +1123,31 @@ footer .logos .fa:hover {
     font-size: 1.5rem;
   }
   .showcase {
-    padding-left: 5rem;
+    text-align: center;
   }
-  .showcase .headers {
-    top: 120px;
+  .showcase h1 {
+    margin-bottom: 0;
+  }
+  .showcase img {
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
+  }
+  .showcase .container .content {
+    height: 50%;
+  }
+  .showcase .container .content .headers {
+    width: 100%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     padding: 20px;
   }
-  .showcase .headers .showcase-btn {
-    margin-top: 20px;
+  .showcase .container .content .headers .showcase-btn {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 100%;
   }
   #about .section-inner .container .content {
     display: -webkit-box;
@@ -1207,7 +1224,10 @@ footer .logos .fa:hover {
     bottom: 10vh;
   }
   .showcase {
-    height: 97vh;
+    height: 90vh;
+  }
+  .showcase .container {
+    width: 100%;
   }
   #about .section-inner .quote {
     display: -webkit-box;

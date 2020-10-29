@@ -55,19 +55,33 @@
   }
 
   .showcase {
-    padding-left: 5rem;
-    .headers {
-      // position: relative;
-      // width: 100%;
-      // text-align: center;
-      // left: auto;
-      top: 120px;
-      padding: 20px;
-      .showcase-btn {
-        margin-top: 20px;
+    // padding-left: 5rem;
+    text-align: center;
+    h1 {
+      margin-bottom: 0;
+    }
+    img {
+      // bottom: 0;
+      width: 100%;
+      height: auto;
+      opacity: 0.8;
+    }
+    .container .content {
+      height: 50%;
+      .headers {
+        // position: relative;
+        width: 100%;
+        align-items: flex-start;
+        // left: auto;
         // top: 120px;
-        // right: 0;
-        // width: 100%;
+        padding: 20px;
+        .showcase-btn {
+          // margin-top: 20px;
+          // top: 120px;
+          // right: 0;
+          align-items: flex-start;
+          width: 100%;
+        }
       }
     }
   }
@@ -149,7 +163,10 @@
     bottom: 10vh;
   }
   .showcase {
-    height: 97vh;
+    height: 90vh;
+    .container {
+      width: 100%;
+    }
   }
   #about {
     .section-inner {
