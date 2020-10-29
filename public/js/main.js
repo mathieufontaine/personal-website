@@ -57,4 +57,4 @@ const contactAnimation = () => {
 };
 
 startAnimation();
-contactAnimation();
+// contactAnimation();
