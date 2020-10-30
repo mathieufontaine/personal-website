@@ -159,6 +159,9 @@
   html {
     font-size: 45%;
   }
+  .navbar .nav-item {
+    height: 10vh;
+  }
   .btn:hover {
     transform: initial;
     background: $secondary-color;
@@ -167,7 +170,7 @@
     padding: 0;
   }
   #scroll-top-btn {
-    bottom: 10vh;
+    bottom: 11vh;
   }
   .showcase {
     height: 90vh;

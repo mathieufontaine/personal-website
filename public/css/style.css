@@ -1268,6 +1268,9 @@ footer .logos .fa:hover {
   html {
     font-size: 45%;
   }
+  .navbar .nav-item {
+    height: 10vh;
+  }
   .btn:hover {
     -webkit-transform: initial;
             transform: initial;
@@ -1277,7 +1280,7 @@ footer .logos .fa:hover {
     padding: 0;
   }
   #scroll-top-btn {
-    bottom: 10vh;
+    bottom: 11vh;
   }
   .showcase {
     height: 90vh;
