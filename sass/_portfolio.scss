@@ -8,10 +8,26 @@
     background: $secondary-color;
     color: $light-color;
   }
+  .apps {
+    background: $grey-color;
+    .sm-header {
+      color: $primary-color;
+    }
+    .project-text {
+      background: $secondary-gradient-vertical !important;
+    }
+    .btn-container .btn:nth-child(2) {
+      background: $gradient !important;
+    }
+  }
+  .websites {
+    background: $primary-color;
+  }
   .gallery {
+    padding-top: 0;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 7fr;
     grid-gap: 10px;
     align-content: center;
     justify-content: center;
@@ -41,7 +57,9 @@
           flex-direction: column;
           text-align: left;
           justify-content: space-evenly;
-          background: #c3c3c4;
+          // background: #c3c3c4;
+          background: $gradient-vertical;
+          color: white;
           padding: 3rem;
           height: 100%;
           width: 100%;
@@ -57,9 +75,13 @@
             .btn {
               width: 100%;
               text-align: center;
-            }
-            > .btn:first-child {
-              background: $secondary-gradient;
+              &:first-child {
+                background: $light-color;
+                color: $primary-color;
+              }
+              &:nth-child(2) {
+                background: $secondary-gradient;
+              }
             }
           }
         }

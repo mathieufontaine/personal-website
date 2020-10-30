@@ -22,7 +22,7 @@
 
 #scroll-top-btn {
   display: inline-block;
-  background-color: $gradient;
+  background-color: $primary-color;
   width: 5rem;
   height: 5rem;
   text-align: center;
@@ -41,7 +41,7 @@
     font-style: normal;
     font-size: 2rem;
     line-height: 5rem;
-    color: $primary-color;
+    color: $light-color;
     transition: all 0.6;
   }
   &:hover {

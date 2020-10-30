@@ -22,7 +22,7 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: 0.5rem;
+  width: 1.2rem;
 }
 
 body::-webkit-scrollbar-track {
@@ -30,7 +30,8 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background: #509cd9;
+  background: -webkit-gradient(linear, left top, left bottom, from(#348cd2), to(#5cc9f7));
+  background: linear-gradient(to bottom, #348cd2 0%, #5cc9f7 100%);
 }
 
 h1,
@@ -99,7 +100,12 @@ ul {
   position: relative;
   padding: 0px;
   min-width: 100%;
+  min-height: 90vh;
   padding-left: 8rem;
+}
+
+.section .section-inner {
+  height: 100%;
 }
 
 .section-title {
@@ -179,13 +185,9 @@ ul {
 
 .nav-item {
   width: 100%;
-  height: 10vh;
+  height: 18vh;
   -webkit-transform: translateX(-100vw);
           transform: translateX(-100vw);
-}
-
-.nav-item:last-child {
-  margin-top: auto;
 }
 
 .nav-link {
@@ -199,11 +201,15 @@ ul {
       justify-content: space-around;
   color: white;
   text-decoration: none;
-  -webkit-filter: grayscale(50%) opacity(0.7);
-          filter: grayscale(50%) opacity(0.7);
+  -webkit-filter: grayscale(50%) opacity(1);
+          filter: grayscale(50%) opacity(1);
   -webkit-transition: 1s;
   transition: 1s;
   height: 100%;
+}
+
+.nav-link span {
+  font-size: 2rem;
 }
 
 .nav-link p {
@@ -313,7 +319,7 @@ ul {
     height: 100vh;
   }
   .navbar:hover {
-    width: 25rem;
+    width: 35rem;
   }
   .navbar:hover .link-text {
     display: inline;
@@ -343,7 +349,7 @@ ul {
 
 #scroll-top-btn {
   display: inline-block;
-  background-color: linear-gradient(87deg, #348cd2 0%, #5cc9f7 100%);
+  background-color: #1e1d21;
   width: 5rem;
   height: 5rem;
   text-align: center;
@@ -365,7 +371,7 @@ ul {
   font-style: normal;
   font-size: 2rem;
   line-height: 5rem;
-  color: #1e1d21;
+  color: white;
   -webkit-transition: all 0.6;
   transition: all 0.6;
 }
@@ -673,12 +679,16 @@ ul {
   left: 100px;
 }
 
+#path .section-inner .city .headings h3 {
+  font-weight: bold;
+}
+
 #path .section-inner .city .card {
   position: absolute;
   width: 50%;
   top: 28%;
   right: 100px;
-  background: rgba(255, 254, 254, 0.8);
+  background: rgba(255, 254, 254, 0.9);
   padding: 16px;
   border-radius: 10px;
 }
@@ -695,11 +705,12 @@ ul {
 
 #path .section-inner .city .card h3 {
   margin-bottom: 20px;
+  font-weight: bold;
 }
 
 #path .section-inner .city .card a {
   color: #509cd9;
-  font-weight: 900;
+  font-weight: 500;
 }
 
 #path #toulouse {
@@ -730,7 +741,8 @@ ul {
   background-image: url("../img/cities/lisbon.jpg");
 }
 
-#path #lisbon h2 {
+#path #lisbon h2,
+#path #lisbon .secondary-text em {
   color: white;
 }
 
@@ -744,12 +756,34 @@ ul {
   color: white;
 }
 
+#portfolio .apps {
+  background: #f8f8ff;
+}
+
+#portfolio .apps .sm-header {
+  color: #1e1d21;
+}
+
+#portfolio .apps .project-text {
+  background: -webkit-gradient(linear, left top, left bottom, from(#425260), color-stop(65%, #151e2d)) !important;
+  background: linear-gradient(to bottom, #425260 0%, #151e2d 65%) !important;
+}
+
+#portfolio .apps .btn-container .btn:nth-child(2) {
+  background: linear-gradient(87deg, #348cd2 0%, #5cc9f7 100%) !important;
+}
+
+#portfolio .websites {
+  background: #1e1d21;
+}
+
 #portfolio .gallery {
+  padding-top: 0;
   width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 5fr;
-      grid-template-columns: 1fr 5fr;
+  -ms-grid-columns: 1fr 7fr;
+      grid-template-columns: 1fr 7fr;
   grid-gap: 10px;
   -ms-flex-line-pack: center;
       align-content: center;
@@ -806,7 +840,9 @@ ul {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  background: #c3c3c4;
+  background: -webkit-gradient(linear, left top, left bottom, from(#348cd2), to(#5cc9f7));
+  background: linear-gradient(to bottom, #348cd2 0%, #5cc9f7 100%);
+  color: white;
   padding: 3rem;
   height: 100%;
   width: 100%;
@@ -827,8 +863,13 @@ ul {
   text-align: center;
 }
 
-#portfolio .gallery .projects .project .project-text .btn-container > .btn:first-child {
-  background: linear-gradient(87deg, #3d4c59 0%, #1e1d21 65%);
+#portfolio .gallery .projects .project .project-text .btn-container .btn:first-child {
+  background: white;
+  color: #1e1d21;
+}
+
+#portfolio .gallery .projects .project .project-text .btn-container .btn:nth-child(2) {
+  background: linear-gradient(87deg, #425260 0%, #151e2d 65%);
 }
 
 #portfolio .gallery .projects .project .project-img {
@@ -846,6 +887,7 @@ ul {
 
 #contact {
   background: white;
+  overflow: hidden;
 }
 
 #contact .title {
@@ -856,7 +898,12 @@ ul {
 #contact .section-description {
   top: 0;
   padding: 4rem;
-  text-align: center;
+  text-align: left;
+}
+
+#contact .section-description h4 {
+  width: 80%;
+  margin: auto;
 }
 
 #contact .section-inner {
@@ -872,10 +919,13 @@ ul {
           justify-content: center;
 }
 
-#contact .section-inner .img {
+#contact .section-inner img {
   width: 100%;
-  height: 100%;
-  background: url("../img/bg2.jpg") center center/cover;
+  height: 110%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #contact .section-inner > div {
@@ -894,11 +944,12 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 0 4rem;
 }
 
 #contact .section-inner > div .form-container form {
   border-radius: 5px;
-  padding: 20px;
+  padding: 4rem 0;
   width: 80%;
   max-width: 900px;
   margin: auto;
@@ -949,25 +1000,25 @@ ul {
 
 #contact .section-inner > div .form-container form input::-webkit-input-placeholder,
 #contact .section-inner > div .form-container form textarea::-webkit-input-placeholder {
-  opacity: 0.7;
+  opacity: 0.4;
   font-size: 1.5rem;
 }
 
 #contact .section-inner > div .form-container form input:-ms-input-placeholder,
 #contact .section-inner > div .form-container form textarea:-ms-input-placeholder {
-  opacity: 0.7;
+  opacity: 0.4;
   font-size: 1.5rem;
 }
 
 #contact .section-inner > div .form-container form input::-ms-input-placeholder,
 #contact .section-inner > div .form-container form textarea::-ms-input-placeholder {
-  opacity: 0.7;
+  opacity: 0.4;
   font-size: 1.5rem;
 }
 
 #contact .section-inner > div .form-container form input::placeholder,
 #contact .section-inner > div .form-container form textarea::placeholder {
-  opacity: 0.7;
+  opacity: 0.4;
   font-size: 1.5rem;
 }
 
@@ -1015,7 +1066,7 @@ ul {
 
 /* Footer */
 footer {
-  background: #509cd9;
+  background: linear-gradient(87deg, #348cd2 0%, #5cc9f7 100%);
   height: 10vh;
   padding-left: 8rem;
   display: -ms-grid;
@@ -1079,6 +1130,10 @@ footer .logos .fa:hover {
     width: 300px;
     right: 0;
   }
+  #portfolio .gallery {
+    -ms-grid-columns: 1fr 5fr;
+        grid-template-columns: 1fr 5fr;
+  }
   #portfolio .gallery .projects .project {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -1109,7 +1164,7 @@ footer .logos .fa:hover {
         -ms-flex-order: -1;
             order: -1;
   }
-  #portfolio .landing .projects .project .project-text p {
+  #portfolio .gallery .landing .projects .project .project-text p {
     text-align: center;
   }
 }
@@ -1185,8 +1240,9 @@ footer .logos .fa:hover {
     position: relative;
     top: 0px;
     left: 0px;
-    height: 80px;
-    line-height: 80px;
+    height: 50px;
+    line-height: 50px;
+    padding: 2rem 0 0 0;
   }
   #portfolio .gallery .projects img {
     height: auto;
@@ -1198,6 +1254,9 @@ footer .logos .fa:hover {
   #contact .section-inner {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+  #contact .section-inner .section-description h4 {
+    width: 90%;
   }
   #contact .section-inner .img {
     display: none;

@@ -20,12 +20,12 @@
 
 .nav-item {
   width: 100%;
-  height: 10vh;
+  height: 18vh;
   transform: translateX(-100vw);
 }
 
 .nav-item:last-child {
-  margin-top: auto;
+  // margin-top: auto;
 }
 
 .nav-link {
@@ -34,9 +34,12 @@
   justify-content: space-around;
   color: $light-color;
   text-decoration: none;
-  filter: grayscale(50%) opacity(0.7);
+  filter: grayscale(50%) opacity(1);
   transition: 1s;
   height: 100%;
+  span {
+    font-size: 2rem;
+  }
   p {
     display: none;
   }
@@ -120,10 +123,6 @@
           p {
             display: inline;
           }
-          .fas {
-            // font-size: 2.5rem;
-            // height: 50%;
-          }
         }
       }
     }
@@ -139,7 +138,7 @@
   }
 
   .navbar:hover {
-    width: 25rem;
+    width: 35rem;
   }
 
   .navbar:hover .link-text {
