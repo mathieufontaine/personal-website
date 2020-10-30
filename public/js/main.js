@@ -33,15 +33,26 @@ const startAnimation = () => {
       ease: "power2.inOut"
     }
   });
+  let tl2 = gsap.timeline({
+    defaults: {
+      duration: 2,
+      ease: "power1.easeIn"
+    }
+  });
 
-  const svgAnimation = () => {
-    tl.to(computer, 0.5, { opacity: 1, scale: 1.5, transformOrigin: "center" });
-    tl.to(computer, 0.5, { scale: 1 });
-    tl.to(picture, 0.5, { opacity: 1, scale: 1.5, transformOrigin: "center" });
-    tl.to(picture, 0.5, { scale: 1 });
-    tl.to(mobile, 0.5, { opacity: 1, scale: 1.5, transformOrigin: "center" });
-    tl.to(mobile, 0.5, { scale: 1 });
-  };
+  let tl3 = gsap.timeline({
+    // yoyo: true,
+    // delay: 2,
+    // repeat: -1,
+    defaults: {
+      duration: 3,
+      ease: "power3.easeIn",
+      transformOrigin: "center",
+      yoyo: true,
+      repeat: -1
+      // delay: 1
+    }
+  });
 
   tl.to(computer, 0, { opacity: 0, scale: 0, transformOrigin: "center" });
   tl.to(mobile, 0, { opacity: 0, scale: 0, transformOrigin: "center" });
@@ -57,11 +68,51 @@ const startAnimation = () => {
     },
     "-=2"
   );
-  svgAnimation();
 
-  setInterval(() => {
-    svgAnimation();
-  }, 10000);
+  tl2.to(computer, {
+    opacity: 1,
+    scale: 1.2,
+    transformOrigin: "center"
+  });
+  tl2.to(picture, {
+    opacity: 1,
+    scale: 1.2,
+    transformOrigin: "center"
+  });
+  tl2.to(
+    mobile,
+    {
+      opacity: 1,
+      scale: 1.2,
+      transformOrigin: "center"
+    },
+    "-=1"
+  );
+
+  tl3.fromTo(
+    computer,
+    {
+      scale: 1.2
+    },
+    { scale: 0.7 },
+    "=5"
+  );
+  tl3.fromTo(
+    picture,
+    {
+      scale: 1.2
+    },
+    { scale: 0.7 },
+    "-=1"
+  );
+  tl3.fromTo(
+    mobile,
+    {
+      scale: 1.2
+    },
+    { scale: 0.7 },
+    "-=1"
+  );
 };
 
 startAnimation();
