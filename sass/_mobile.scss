@@ -63,11 +63,11 @@
     h1 {
       margin-bottom: 0;
     }
-    img {
+    svg {
       // bottom: 0;
-      width: 100%;
-      height: auto;
-      opacity: 0.8;
+      width: 100% !important;
+      height: auto !important;
+      opacity: 0.8 !important;
     }
     .container .content {
       height: 50%;

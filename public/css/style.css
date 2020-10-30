@@ -446,14 +446,19 @@ ul {
   padding-left: 8rem;
 }
 
-.showcase img {
-  position: absolute;
-  bottom: 0%;
-  right: 0;
-  width: 70%;
-  height: 100%;
-  z-index: 0;
-  opacity: 0.8;
+.showcase svg {
+  position: absolute !important;
+  bottom: 0% !important;
+  right: 0 !important;
+  width: 70% !important;
+  height: 100% !important;
+  z-index: 0 !important;
+}
+
+.showcase svg #computer linearGradient,
+.showcase svg #picture linearGradient,
+.showcase svg #mobile linearGradient {
+  background: linear-gradient(87deg, #348cd2 0%, #5cc9f7 100%) !important;
 }
 
 .showcase .container {
@@ -764,15 +769,6 @@ ul {
   color: #1e1d21;
 }
 
-#portfolio .apps .project-text {
-  background: -webkit-gradient(linear, left top, left bottom, from(#425260), color-stop(65%, #151e2d)) !important;
-  background: linear-gradient(to bottom, #425260 0%, #151e2d 65%) !important;
-}
-
-#portfolio .apps .btn-container .btn:nth-child(2) {
-  background: linear-gradient(87deg, #348cd2 0%, #5cc9f7 100%) !important;
-}
-
 #portfolio .websites {
   background: #1e1d21;
 }
@@ -840,9 +836,9 @@ ul {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  background: -webkit-gradient(linear, left top, left bottom, from(#348cd2), to(#5cc9f7));
-  background: linear-gradient(to bottom, #348cd2 0%, #5cc9f7 100%);
-  color: white;
+  background: -webkit-gradient(linear, left top, right top, from(#e1ecf5), to(#95c8f2));
+  background: linear-gradient(to right, #e1ecf5 0%, #95c8f2 100%);
+  color: #1e1d21;
   padding: 3rem;
   height: 100%;
   width: 100%;
@@ -864,12 +860,11 @@ ul {
 }
 
 #portfolio .gallery .projects .project .project-text .btn-container .btn:first-child {
-  background: white;
-  color: #1e1d21;
+  background: linear-gradient(87deg, #348cd2 0%, #5cc9f7 100%);
 }
 
 #portfolio .gallery .projects .project .project-text .btn-container .btn:nth-child(2) {
-  background: linear-gradient(87deg, #425260 0%, #151e2d 65%);
+  background: linear-gradient(87deg, #566776 0%, #151e2d 65%);
 }
 
 #portfolio .gallery .projects .project .project-img {
@@ -1186,10 +1181,10 @@ footer .logos .fa:hover {
   .showcase h1 {
     margin-bottom: 0;
   }
-  .showcase img {
-    width: 100%;
-    height: auto;
-    opacity: 0.8;
+  .showcase svg {
+    width: 100% !important;
+    height: auto !important;
+    opacity: 0.8 !important;
   }
   .showcase .container .content {
     height: 50%;

@@ -14,10 +14,11 @@
       color: $primary-color;
     }
     .project-text {
-      background: $secondary-gradient-vertical !important;
+      // background: $white-gradient !important;
+      // color: $primary-color !important;
     }
     .btn-container .btn:nth-child(2) {
-      background: $gradient !important;
+      // background: $gradient !important;
     }
   }
   .websites {
@@ -58,8 +59,8 @@
           text-align: left;
           justify-content: space-evenly;
           // background: #c3c3c4;
-          background: $gradient-vertical;
-          color: white;
+          background: $white-gradient;
+          color: $primary-color;
           padding: 3rem;
           height: 100%;
           width: 100%;
@@ -76,8 +77,8 @@
               width: 100%;
               text-align: center;
               &:first-child {
-                background: $light-color;
-                color: $primary-color;
+                background: $gradient;
+                // color: $primary-color;
               }
               &:nth-child(2) {
                 background: $secondary-gradient;
