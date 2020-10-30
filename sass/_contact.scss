@@ -1,5 +1,5 @@
 #contact {
-  background: $light-color;
+  background: $grey-color;
   overflow: hidden;
   .title {
     background: $secondary-color;
@@ -13,11 +13,12 @@
     h4 {
       width: 80%;
       margin: auto;
+      max-width: 900px;
     }
   }
   .section-inner {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 2.5fr;
     align-items: center;
     justify-content: center;
     img {

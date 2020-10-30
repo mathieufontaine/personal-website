@@ -886,7 +886,7 @@ ul {
 }
 
 #contact {
-  background: white;
+  background: #f8f8ff;
   overflow: hidden;
 }
 
@@ -904,13 +904,14 @@ ul {
 #contact .section-description h4 {
   width: 80%;
   margin: auto;
+  max-width: 900px;
 }
 
 #contact .section-inner {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 2fr;
-      grid-template-columns: 1fr 2fr;
+  -ms-grid-columns: 1fr 2.5fr;
+      grid-template-columns: 1fr 2.5fr;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
