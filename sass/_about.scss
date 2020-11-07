@@ -1,8 +1,13 @@
 /* Section about */
 
-#about {
+.about {
   overflow: hidden;
   .section-inner {
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
     .quote {
       width: 70%;
       display: grid;
@@ -10,10 +15,10 @@
       justify-content: center;
       align-items: center;
       margin: 0 auto;
-      background: $primary-color;
+      // background: $primary-color;
       h3 {
         font-size: 2.5rem;
-        color: $light-color;
+        // color: $light-color;
         padding: 3rem;
         // left: 150px;
         font-style: italic;
@@ -27,12 +32,8 @@
         z-index: 0;
       }
     }
-    .container {
+    .content {
       background: rgb(255, 254, 254) no-repeat center center/cover;
-      > div {
-        max-width: 1200px;
-        margin: auto;
-      }
       .cards {
         margin: auto;
         margin-bottom: 3rem;
@@ -75,13 +76,13 @@
           margin-bottom: 0 !important;
         }
       }
-      .cta {
-        padding: 7rem 0 5rem 0;
-        text-align: center;
-        h4 {
-          margin-bottom: 10px;
-          font-weight: 400;
-        }
+    }
+    .cta {
+      padding: 7rem 0 5rem 0;
+      text-align: center;
+      h4 {
+        margin-bottom: 10px;
+        font-weight: 400;
       }
     }
   }

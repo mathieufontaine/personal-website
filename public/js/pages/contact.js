@@ -1,4 +1,8 @@
-export const validate = event => {
+// Select DOM items
+const submit = document.querySelector("#submit");
+const inputs = document.querySelectorAll(".input");
+
+const validate = event => {
   //   event.preventDefault();
 
   const fname = document.getElementById("fname").value;
@@ -61,3 +65,34 @@ export const validate = event => {
   submit.style.pointerEvents = "initial";
   return true;
 };
+
+// Event Listener
+
+// submit.addEventListener("click", validate);
+inputs.forEach(input =>
+  input.addEventListener("focus", function() {
+    error_message.style.display = "none";
+    input.classList.remove("redShadow");
+  })
+);
+
+inputs.forEach(input => input.addEventListener("blur", validate));
+
+// const contactAnimation = () => {
+//   gsap.registerPlugin(ScrollTrigger);
+
+//   let tl = gsap.timeline({
+//     scrollTrigger: {
+//       trigger: ".form-container",
+//       start: "center 50%",
+//       end: "bottom 20%",
+//       toggleActions: "play none none reset",
+
+//       defaults: {
+//         ease: "power2.inOut"
+//       }
+//     }
+//   });
+
+//   tl.from(".form-container", { duration: 1, scale: 0 });
+// };

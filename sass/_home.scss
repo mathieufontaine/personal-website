@@ -1,0 +1,141 @@
+.home {
+  color: $primary-color;
+  // background: $grey-color;
+  background: $main-gradient;
+  // background: radial-gradient(#2b3760, #0b1023);
+  overflow-y: hidden;
+  height: 100vh;
+
+  .page {
+    min-height: 90vh;
+    display: grid;
+    // grid-template-columns: 5% 1fr 1fr 1fr 5%;
+
+    &#about,
+    &#work,
+    &#experience,
+    &#contact {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    // &#showcase {
+    //   h1 {
+    //     font-size: 4.5rem;
+    //   }
+    // }
+    .hero {
+      display: block;
+      position: relative;
+      width: 50%;
+      height: 80%;
+      margin: 0 5% 0 auto;
+      overflow: hidden;
+      height: 70%;
+      display: flex;
+      align-self: center;
+      justify-self: center;
+      cursor: pointer;
+      z-index: 0;
+      transition: all 1s ease;
+      //   a {
+      // display: flex;
+
+      img {
+        height: 100%;
+        width: 100%;
+        transition: transform 0.3s ease-out;
+      }
+      .overlay {
+        // position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        z-index: 2;
+      }
+      //   .model-right {
+      //     transform: translate(0%, 10%);
+      //   }
+      //   .model-left {
+      //     transform: translate(0%, -10%);
+      //   }
+      //   &:hover {
+      //     .model-right,
+      //     .model-left {
+      //       transform: translate(0%, 0%);
+      //     }
+      //   }
+      //   }
+    }
+
+    .details {
+      //   grid-column: 2/3;
+      //   align-self: end;
+      position: absolute;
+      top: 30%;
+      left: 15%;
+      width: 50%;
+      z-index: 1;
+
+      h2,
+      p {
+        color: $light-color !important;
+      }
+      h1 {
+        font-size: 10rem;
+        color: rgb(167, 212, 245);
+      }
+      h2 {
+        font-size: 3rem;
+        // color: white;
+      }
+      p {
+        padding: 20px 0 50px 0;
+      }
+    }
+  }
+
+  .pages {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    > div {
+      height: 5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    h3 {
+      padding: 3rem;
+    }
+    .slide {
+      cursor: pointer;
+      opacity: 0.5;
+      transform: scale(2);
+      &:hover {
+        animation: dot 0.5s ease-in-out infinite alternate;
+      }
+      &.active {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+@keyframes dot {
+  0% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(3);
+  }
+}

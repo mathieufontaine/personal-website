@@ -1,4 +1,4 @@
-#contact {
+.contact {
   background: $grey-color;
   overflow: hidden;
   .title {
@@ -10,11 +10,11 @@
     top: 0;
     padding: 4rem;
     text-align: left;
-    h4 {
-      width: 80%;
-      margin: auto;
-      max-width: 900px;
-    }
+    width: 80%;
+    margin: auto;
+    max-width: 900px;
+    // h4 {
+    // }
   }
   .section-inner {
     display: grid;

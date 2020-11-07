@@ -1,137 +1,52 @@
-import { validate } from "./formValidation.js";
-
-// Select DOM items
-const submit = document.querySelector("#submit");
-const inputs = document.querySelectorAll(".input");
-
 // Call Functionss
-AOS.init();
-const lightbox = new SimpleLightbox(".project-img");
 
-// Event Listener
+// const lightbox = new SimpleLightbox(".project-img");
 
-// submit.addEventListener("click", validate);
-inputs.forEach(input =>
-  input.addEventListener("focus", function() {
-    error_message.style.display = "none";
-    input.classList.remove("redShadow");
-  })
-);
+const toggleMenuAnimation = () => {
+  const hamburger = document.querySelector(".menu");
+  const hamburgerLines = document.querySelectorAll(".menu line");
+  const navOpen = document.querySelector(".nav-open");
+  const logo = document.querySelector(".logo");
+  const navItem = navOpen.querySelectorAll("li");
 
-inputs.forEach(input => input.addEventListener("blur", validate));
+  const tl = new TimelineMax({ reversed: true });
 
-// Animations
-
-const computer = document.querySelector("svg #Computer");
-const picture = document.querySelector("svg #picture");
-const mobile = document.querySelector("svg #mobile");
-
-const startAnimation = () => {
-  let tl = gsap.timeline({
-    defaults: {
-      duration: 2,
-      ease: "power2.inOut"
-    }
-  });
-  let tl2 = gsap.timeline({
-    defaults: {
-      duration: 2,
-      ease: "power1.easeIn"
-    }
-  });
-
-  let tl3 = gsap.timeline({
-    // yoyo: true,
-    // delay: 2,
-    // repeat: -1,
-    defaults: {
-      duration: 3,
-      ease: "power3.easeIn",
-      transformOrigin: "center",
-      yoyo: true,
-      repeat: -1
-      // delay: 1
-    }
-  });
-
-  tl.to(computer, 0, { opacity: 0, scale: 0, transformOrigin: "center" });
-  tl.to(mobile, 0, { opacity: 0, scale: 0, transformOrigin: "center" });
-  tl.to(picture, 0, { opacity: 0, scale: 0, transformOrigin: "center" });
-  tl.from(".showcase h2", { x: "-100vw" });
-  tl.from(".showcase h3", { x: "100vw" }, "-=2");
-  tl.from(".navbar", { x: "-100vw" }, "-=2");
-  tl.to(".nav-item", { x: 0, stagger: 0.2 }, "-=2");
-  tl.from(
-    [".showcase .headers", ".showcase svg"],
-    {
-      opacity: 0
-    },
-    "-=2"
+  tl.to(navOpen, 0.5, { y: 0 }).fromTo(
+    navItem,
+    0.5,
+    { opacity: 0, y: 50 },
+    { opacity: 1, y: 0, stagger: 0.1 },
+    "-=0.1"
   );
+  // .fromTo(logo, 0.2, { color: "white" }, { color: "black" }, "-=1")
+  // .fromTo(
+  //   hamburgerLines,
+  //   0.2,
+  //   { stroke: "white" },
+  //   { stroke: "black" },
+  //   "-=1"
+  // );
 
-  tl2.to(computer, {
-    opacity: 1,
-    scale: 1.2,
-    transformOrigin: "center"
+  hamburger.addEventListener("click", () => {
+    tl.reversed() ? tl.play() : tl.reverse();
   });
-  tl2.to(picture, {
-    opacity: 1,
-    scale: 1.2,
-    transformOrigin: "center"
-  });
-  tl2.to(
-    mobile,
-    {
-      opacity: 1,
-      scale: 1.2,
-      transformOrigin: "center"
-    },
-    "-=1"
-  );
-
-  tl3.fromTo(
-    computer,
-    {
-      scale: 1.2
-    },
-    { scale: 0.7 },
-    "=5"
-  );
-  tl3.fromTo(
-    picture,
-    {
-      scale: 1.2
-    },
-    { scale: 0.7 },
-    "-=1"
-  );
-  tl3.fromTo(
-    mobile,
-    {
-      scale: 1.2
-    },
-    { scale: 0.7 },
-    "-=1"
-  );
 };
 
-startAnimation();
+const hideNavpage = () => {
+  const navbar = document.querySelector(".nav-page");
 
-const contactAnimation = () => {
-  gsap.registerPlugin(ScrollTrigger);
-
-  let tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".form-container",
-      start: "center 50%",
-      end: "bottom 20%",
-      toggleActions: "play none none reset",
-
-      defaults: {
-        ease: "power2.inOut"
-      }
+  let prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+    const currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      navbar.style.top = "0";
+    } else {
+      navbar.style.top = "-100%";
     }
-  });
-
-  tl.from(".form-container", { duration: 1, scale: 0 });
+    prevScrollpos = currentScrollPos;
+  };
 };
+
+// Call functions
+toggleMenuAnimation();
+hideNavpage();
