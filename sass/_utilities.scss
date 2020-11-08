@@ -144,9 +144,9 @@ ul {
   visibility: hidden;
 }
 
-// sections
+// pages
 
-.section {
+.page {
   position: relative;
   padding: 0px;
   // min-height: 100vh;
@@ -154,12 +154,12 @@ ul {
   min-height: 84vh;
   background: #f8f8ff;
   // padding-left: 8rem;
-  .section-inner {
+  .page-inner {
     height: 100%;
   }
 }
 
-.section-title {
+.page-title {
   // position: sticky;
   background: $main-gradient;
   z-index: 10;
@@ -187,7 +187,7 @@ ul {
   }
 }
 
-.section-description {
+.page-description {
   // background: $primary-color;
   // color: $light-color !important;
   text-align: left;

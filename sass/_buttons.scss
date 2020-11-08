@@ -1,7 +1,7 @@
 .btn {
   display: inline-block;
   border: 0;
-  background: $small-gradient;
+  // background: $secondary-color;
   color: #fff;
   border-radius: 20px;
   padding: 1rem 3rem;
@@ -9,11 +9,20 @@
   font-weight: bold;
   font-size: 1.5rem;
   margin-top: 10px;
+  background-image: linear-gradient(
+    to right,
+    #00d2ff 0%,
+    #3a7bd5 51%,
+    #00d2ff 100%
+  );
+  background-size: 200% auto;
+  box-shadow: 0 0 20px #eee;
   transition: 1s ease;
   cursor: pointer;
 }
 
 .btn:hover {
+  background-position: right center;
   transform: scale(1.1);
   // background: $primary-color;
 }

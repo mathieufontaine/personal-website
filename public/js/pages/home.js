@@ -206,4 +206,37 @@ const slidesAnimation = () => {
 
 // Call Functions
 startAnimation();
-slidesAnimation();
+// slidesAnimation();
+
+const scrollAnimation = () => {
+  new fullpage("#home-sections", {
+    autoScrolling: true,
+    navigation: true,
+    scrollingSpeed: 700,
+    slidesNavigation: true,
+    keyboardScrolling: true,
+    loopBottom: true,
+    fadingEffect: true,
+    easing: "easeInOutCubic",
+    onLeave: (origin, destination, direction) => {
+      const section = destination.item;
+      console.log(destination);
+
+      const details = section.querySelector(".details");
+      const text = section.querySelectorAll(".text");
+      const img = section.querySelector(".hero img");
+      const tl = gsap.timeline({ delay: 0.2 });
+      tl.fromTo(img, 0.8, { x: "150vw", opacity: 0 }, { x: 0, opacity: 1 });
+      tl.fromTo(text, 1, { y: "100%" }, { y: 0, stagger: 0.2 }, "-=.4");
+      // tl.fromTo(
+      //   details,
+      //   1,
+      //   { y: "50", opacity: 0 },
+      //   { y: 0, opacity: 1 },
+      //   "-=0.5"
+      // );
+    }
+  });
+};
+
+scrollAnimation();

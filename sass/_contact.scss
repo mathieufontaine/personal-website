@@ -5,7 +5,7 @@
     background: $secondary-color;
     color: $light-color;
   }
-  .section-description {
+  .page-description {
     // position: absolute;
     top: 0;
     padding: 4rem;
@@ -16,7 +16,7 @@
     // h4 {
     // }
   }
-  .section-inner {
+  .page-inner {
     display: grid;
     grid-template-columns: 1fr 2.5fr;
     align-items: center;
