@@ -5,168 +5,169 @@
   // background: radial-gradient(#2b3760, #0b1023);
   overflow-y: hidden;
   // height: 100vh;
+}
+.section {
+  &#showcase {
+    margin-bottom: 10vh;
+  }
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  // grid-template-columns: 5% 1fr 1fr 1fr 5%;
 
-  .section {
-    &#showcase {
-      margin-bottom: 10vh;
-    }
-    position: relative;
-    min-height: 90vh;
+  // &#about,
+  // &#work,
+  // &#experience,
+  // &#contact {
+  //   position: absolute;
+  //   bottom: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   opacity: 0;
+  //   pointer-events: none;
+  // }
+
+  // &#showcase {
+  //   h1 {
+  //     font-size: 4.5rem;
+  //   }
+  // }
+
+  .fullpage {
+    height: 100vh;
+    width: 100%;
     display: flex;
-    // grid-template-columns: 5% 1fr 1fr 1fr 5%;
-
-    // &#about,
-    // &#work,
-    // &#experience,
-    // &#contact {
-    //   position: absolute;
-    //   bottom: 0;
-    //   left: 0;
-    //   width: 100%;
-    //   opacity: 0;
-    //   pointer-events: none;
-    // }
-
-    // &#showcase {
-    //   h1 {
-    //     font-size: 4.5rem;
-    //   }
-    // }
-
-    .fullpage {
-      height: 100vh;
-      width: 100%;
-      display: flex;
-      align-items: center;
+    align-items: center;
+    position: relative;
+    .hero {
       position: relative;
-      .hero {
-        position: relative;
-        width: 50%;
-        height: 60%;
-        margin: 0 5% 0 auto;
-        overflow: hidden;
-        z-index: 0;
-        transition: all 1s ease;
-        //   a {
-        // display: flex;
+      width: 55%;
+      height: 65%;
+      margin: 0 5% 5% auto;
+      overflow: hidden;
+      z-index: 0;
+      transition: all 1s ease;
+      //   a {
+      // display: flex;
 
-        img {
-          height: 100%;
-          width: 100%;
-          object-fit: cover;
-
-          transition: transform 0.3s ease-out;
-        }
-        .overlay {
-          // position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          width: 100%;
-          height: 100%;
-          background-color: black;
-          z-index: 2;
-        }
-        //   .model-right {
-        //     transform: translate(0%, 10%);
-        //   }
-        //   .model-left {
-        //     transform: translate(0%, -10%);
-        //   }
-        //   &:hover {
-        //     .model-right,
-        //     .model-left {
-        //       transform: translate(0%, 0%);
-        //     }
-        //   }
-        //   }
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease-out;
       }
-
-      .details {
-        //   grid-column: 2/3;
-        //   align-self: end;
-        position: absolute;
-        top: 30%;
+      .overlay {
+        // position: absolute;
+        top: 0;
         left: 0;
-        width: 50%;
-        z-index: 1;
-        margin: 0 auto 0 5%;
-        .hide {
-          overflow: hidden;
-          .text {
-            display: inline-block;
-            transition: transform 0.5s ease;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        z-index: 2;
+      }
+      //   .model-right {
+      //     transform: translate(0%, 10%);
+      //   }
+      //   .model-left {
+      //     transform: translate(0%, -10%);
+      //   }
+      //   &:hover {
+      //     .model-right,
+      //     .model-left {
+      //       transform: translate(0%, 0%);
+      //     }
+      //   }
+      //   }
+    }
 
-            // transform: translateY(100%);
-          }
-        }
-        h1 .text {
-          font-size: 10rem;
-          color: rgb(167, 212, 245);
-        }
-        h2 .text {
-          font-size: 3rem;
-          color: $light-color !important;
-        }
-        p .text {
-          padding: 20px 0;
-          color: $light-color !important;
-        }
-      }
-    }
-  }
+    .details {
+      //   grid-column: 2/3;
+      //   align-self: end;
+      position: absolute;
+      top: 30%;
+      left: 0;
+      width: 50%;
+      z-index: 1;
+      margin: 0 auto 0 5%;
+      .hide {
+        overflow: hidden;
+        .text {
+          display: inline-block;
+          transition: transform 0.5s ease;
 
-  #fp-nav {
-    ul li {
-      width: 40px;
-      height: 40px;
-      span {
-        background: white;
-        opacity: 0.5;
-        width: 20px;
-        height: 20px;
+          // transform: translateY(100%);
+        }
       }
-      a.active span {
-        opacity: 1;
-        width: 22px;
-        height: 22px;
+      h1 .text {
+        font-size: 10rem;
+        color: rgb(167, 212, 245);
       }
-      &:hover span {
-        width: 22px;
-        height: 22px;
-        transform: scale(1.5);
-        opacity: 1;
+      h2 .text {
+        font-size: 3rem;
+        color: $light-color !important;
       }
-    }
-  }
-  .pages {
-    position: absolute;
-    left: 5%;
-    top: 50%;
-    transform: translateY(-50%);
-    > div {
-      height: 5rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    h3 {
-      padding: 3rem;
-    }
-    .slide {
-      cursor: pointer;
-      opacity: 0.5;
-      transform: scale(2);
-      &:hover {
-        animation: dot 0.5s ease-in-out infinite alternate;
-      }
-      &.active {
-        opacity: 1;
+      p .text {
+        padding: 20px 0;
+        color: $light-color !important;
       }
     }
   }
 }
+
+#fp-nav {
+  margin-top: 0;
+  ul li {
+    width: 40px !important;
+    height: 40px !important;
+    a span {
+      background: white;
+      opacity: 0.5;
+      width: 20px !important;
+      height: 20px !important;
+    }
+    a.active span {
+      opacity: 1;
+      width: 22px;
+      height: 22px;
+      margin: -2px 0 0 -2px;
+    }
+    &:hover span {
+      width: 22px;
+      height: 22px;
+      transform: scale(1.5);
+      opacity: 1;
+    }
+  }
+}
+
+// .pages {
+//   position: absolute;
+//   left: 5%;
+//   top: 50%;
+//   transform: translateY(-50%);
+//   > div {
+//     height: 5rem;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//   }
+//   h3 {
+//     padding: 3rem;
+//   }
+//   .slide {
+//     cursor: pointer;
+//     opacity: 0.5;
+//     transform: scale(2);
+//     &:hover {
+//       animation: dot 0.5s ease-in-out infinite alternate;
+//     }
+//     &.active {
+//       opacity: 1;
+//     }
+//   }
+// }
 
 @keyframes dot {
   0% {

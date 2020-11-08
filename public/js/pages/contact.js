@@ -1,3 +1,4 @@
+// export const formValidation = () => {
 // Select DOM items
 const submit = document.querySelector("#submit");
 const inputs = document.querySelectorAll(".input");
@@ -77,6 +78,7 @@ inputs.forEach(input =>
 );
 
 inputs.forEach(input => input.addEventListener("blur", validate));
+// };
 
 // const contactAnimation = () => {
 //   gsap.registerPlugin(ScrollTrigger);

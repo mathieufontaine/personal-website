@@ -1,4 +1,6 @@
-// Call Functionss
+// import { startAnimation, scrollAnimation } from "./pages/home.js";
+// import { formValidation } from "./pages/contact.js";
+// import { pageTransition } from "./transitions.js";
 
 // const lightbox = new SimpleLightbox(".project-img");
 
@@ -9,7 +11,7 @@ const toggleMenuAnimation = () => {
   const logo = document.querySelector(".logo");
   const navItem = navOpen.querySelectorAll("li");
 
-  const tl = new TimelineMax({ reversed: true });
+  const tl = gsap.timeline({ reversed: true });
 
   tl.to(navOpen, 0.5, { y: 0 }).fromTo(
     navItem,

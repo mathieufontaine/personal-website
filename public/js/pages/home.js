@@ -1,8 +1,8 @@
-import { throttle } from "../modules/throttle.js";
+// import { throttle } from "../modules/throttle.js";
 
 // Home Animations
 
-const startAnimation = () => {
+export const startAnimation = () => {
   const computer = document.querySelector("svg #Computer");
   const picture = document.querySelector("svg #picture");
   const mobile = document.querySelector("svg #mobile");
@@ -204,19 +204,19 @@ const slidesAnimation = () => {
   document.addEventListener("touchmove", throttle(scrollChange, 1500));
 };
 
-// Call Functions
-startAnimation();
-// slidesAnimation();
+export const scrollAnimation = () => {
+  if (document.querySelector("body").classList.contains("fp-enabled")) {
+    fullpage_api.reBuild();
+  }
 
-const scrollAnimation = () => {
   new fullpage("#home-sections", {
     autoScrolling: true,
     navigation: true,
-    scrollingSpeed: 700,
+    scrollingSpeed: 1600,
     slidesNavigation: true,
     keyboardScrolling: true,
     loopBottom: true,
-    fadingEffect: true,
+    // fadingEffect: true,
     easing: "easeInOutCubic",
     onLeave: (origin, destination, direction) => {
       const section = destination.item;
@@ -225,9 +225,12 @@ const scrollAnimation = () => {
       const details = section.querySelector(".details");
       const text = section.querySelectorAll(".text");
       const img = section.querySelector(".hero img");
+      const btn = section.querySelector(".details .btn");
+
       const tl = gsap.timeline({ delay: 0.2 });
       tl.fromTo(img, 0.8, { x: "150vw", opacity: 0 }, { x: 0, opacity: 1 });
-      tl.fromTo(text, 1, { y: "100%" }, { y: 0, stagger: 0.2 }, "-=.4");
+      tl.fromTo(btn, 0.5, { x: "-100vw" }, { x: 0 }, "-=.8");
+      tl.fromTo(text, 1, { y: "100%" }, { y: 0, stagger: 0.2 });
       // tl.fromTo(
       //   details,
       //   1,
@@ -235,8 +238,13 @@ const scrollAnimation = () => {
       //   { y: 0, opacity: 1 },
       //   "-=0.5"
       // );
+      document.querySelector("body").classList.add("fp-enabled");
     }
   });
 };
 
+// Call Functions
+
+startAnimation();
+// slidesAnimation();
 scrollAnimation();

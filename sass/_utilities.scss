@@ -7,12 +7,24 @@ $third-color: #2b3760;
 $text-color: #0f0f10;
 $grey-color: #f8f8ff;
 $light-color: rgb(255, 255, 255);
+$easing: cubic-bezier(0.5, 0.7, 0.4, 1);
+
 $main-gradient: linear-gradient(
   96deg,
   rgba(30, 29, 33, 1) 0%,
   rgba(43, 55, 96, 1) 30%,
   rgba(52, 140, 210, 1) 80%,
-  rgba(80, 156, 217, 1) 100%
+  rgba($secondary-color, 1) 100%
+);
+$yellow-gradient: linear-gradient(
+  109.6deg,
+  #ea2967 11.2%,
+  rgba($secondary-color, 1) 91.1%
+);
+$yellow1-gradient: linear-gradient(
+  109.6deg,
+  #edce29 11.2%,
+  rgba($secondary-color, 1) 91.1%
 );
 $small-gradient: linear-gradient(
   96deg,
@@ -62,7 +74,7 @@ html {
 
 body {
   font-family: "Noto Sans JP", sans-serif;
-  background: $primary-color;
+  background: $main-gradient;
   color: $text-color;
   font-size: 1.5rem;
   line-height: 1.6;
@@ -151,7 +163,7 @@ ul {
   padding: 0px;
   // min-height: 100vh;
   min-width: 100%;
-  min-height: 84vh;
+  min-height: 90vh;
   background: #f8f8ff;
   // padding-left: 8rem;
   .page-inner {
