@@ -1,20 +1,10 @@
 .contact {
   background: $grey-color;
   overflow: hidden;
+  min-height: unset;
   .title {
     background: $secondary-color;
     color: $light-color;
-  }
-  .page-description {
-    // position: absolute;
-    top: 0;
-    padding: 4rem;
-    text-align: left;
-    width: 80%;
-    margin: auto;
-    max-width: 900px;
-    // h4 {
-    // }
   }
   .page-inner {
     display: grid;
@@ -27,8 +17,14 @@
       -webkit-filter: grayscale(100%);
       filter: grayscale(100%);
       object-fit: cover;
-      // background: url("../img/bg2.jpg") center center/cover;
-      // height: calc(100vh - 130px);
+    }
+    .page-info {
+      top: 0;
+      padding: 4rem;
+      text-align: left;
+      width: 80%;
+      margin: auto;
+      max-width: 900px;
     }
     > div {
       height: 100%;

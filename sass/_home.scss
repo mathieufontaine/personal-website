@@ -5,27 +5,35 @@
   // background: radial-gradient(#2b3760, #0b1023);
   overflow-y: hidden;
   // height: 100vh;
+  #home-sections {
+    width: 95%;
+    margin: auto;
+    margin-left: 5%;
+  }
 }
 .section {
+  position: relative;
+  min-height: 90vh;
+  width: 100%;
+  margin: auto;
+  display: flex;
   &#showcase {
     margin-bottom: 10vh;
   }
-
-  position: relative;
-  min-height: 90vh;
-  display: flex;
-
   .fullpage {
     height: 100vh;
-    width: 100%;
-    display: flex;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    grid-gap: 2rem;
+    // margin: auto;
     align-items: center;
     position: relative;
     .hero {
       position: relative;
-      width: 55%;
-      height: 65%;
-      margin: 0 5% 5% auto;
+      // width: 90%;
+      // height: 60%;
+      margin: auto;
       overflow: hidden;
       z-index: 0;
       transition: all 1s ease;
@@ -35,7 +43,7 @@
       img {
         height: 100%;
         width: 100%;
-        object-fit: cover;
+        // object-fit: cover;
         transition: transform 0.3s ease-out;
       }
       .overlay {
@@ -52,14 +60,10 @@
     }
 
     .details {
-      //   grid-column: 2/3;
-      //   align-self: end;
-      position: absolute;
-      top: 30%;
-      left: 0;
-      width: 50%;
+      width: 100%;
       z-index: 1;
-      margin: 0 auto 0 5%;
+      margin: auto;
+      padding-left: 2rem;
       .hide {
         overflow: hidden;
         .text {
@@ -86,7 +90,8 @@
 }
 
 #fp-nav {
-  margin-top: 0;
+  left: 0;
+  margin-top: 0 !important;
   z-index: 20;
   ul li {
     width: 40px !important;
@@ -112,6 +117,9 @@
   }
 }
 
+#contact img {
+  filter: grayscale(100%);
+}
 // .pages {
 //   position: absolute;
 //   left: 5%;

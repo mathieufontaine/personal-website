@@ -9,13 +9,13 @@
     }
 
     .quote {
-      width: 70%;
+      width: 100%;
       display: grid;
       grid-template-columns: 2fr 1fr;
       justify-content: center;
       align-items: center;
       margin: 0 auto;
-      // background: $primary-color;
+      background: $grey-color;
       h3 {
         font-size: 2.5rem;
         // color: $light-color;
@@ -33,7 +33,7 @@
       }
     }
     .content {
-      background: rgb(255, 254, 254) no-repeat center center/cover;
+      background: #fffefe no-repeat center center/cover;
       .cards {
         margin: auto;
         margin-bottom: 3rem;
@@ -46,7 +46,7 @@
           grid-template-columns: 1fr 1fr;
           justify-content: center;
           align-items: center;
-          margin-bottom: 40px;
+          margin-bottom: 10rem;
           > div {
             // background: $light-color;
             height: 100%;
@@ -80,6 +80,7 @@
     .cta {
       padding: 7rem 0 5rem 0;
       text-align: center;
+      background: $grey-color;
       h4 {
         margin-bottom: 10px;
         font-weight: 400;

@@ -245,6 +245,6 @@ export const scrollAnimation = () => {
 
 // Call Functions
 
-startAnimation();
+// startAnimation();
 // slidesAnimation();
 scrollAnimation();

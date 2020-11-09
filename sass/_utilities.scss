@@ -6,7 +6,7 @@ $secondary-color: #509cd9;
 $third-color: #2b3760;
 $text-color: #0f0f10;
 $grey-color: #f8f8ff;
-$light-color: rgb(255, 255, 255);
+$light-color: #fffefe;
 $light-blue: rgb(167, 212, 245);
 $easing: cubic-bezier(0.5, 0.7, 0.4, 1);
 
@@ -155,77 +155,6 @@ ul {
 
 .hidden {
   visibility: hidden;
-}
-
-// pages
-
-.page {
-  position: relative;
-  padding: 0px;
-  // min-height: 100vh;
-  min-width: 100%;
-  min-height: 90vh;
-  background: #f8f8ff;
-  // padding-left: 8rem;
-  .page-inner {
-    height: 100%;
-  }
-}
-
-.page-sections .section .fullpage {
-  height: 90vh;
-  .hero {
-    width: 45%;
-    height: 50%;
-    margin: 0 5% 15% auto;
-  }
-  .details {
-    top: 20%;
-    .showcase-btn {
-      width: 20%;
-    }
-  }
-}
-
-.page-title {
-  // position: sticky;
-  background: $main-gradient;
-  z-index: 10;
-  // top: 10vh;
-  height: 6vh;
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 2rem 6rem;
-    img {
-      height: 30px;
-      margin-right: 2rem;
-      transition: all 1s ease;
-      &:hover {
-        // transform: scale(1.3);
-        animation: scale 1s ease-in-out infinite alternate;
-      }
-    }
-    h2 {
-      color: $light-color;
-      margin-bottom: 0;
-      font-size: 2rem;
-    }
-  }
-}
-
-.page-description {
-  // background: $primary-color;
-  // color: $light-color !important;
-  text-align: left;
-  width: 100%;
-  margin: auto;
-  position: absolute;
-  bottom: 0;
-  background: rgba($color: white, $alpha: 0.2);
-  color: white;
-  text-align: center;
 }
 
 .container {

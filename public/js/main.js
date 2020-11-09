@@ -1,6 +1,7 @@
 // import { startAnimation, scrollAnimation } from "./pages/home.js";
 // import { formValidation } from "./pages/contact.js";
 // import { pageTransition } from "./transitions.js";
+// import { s } from "./transitions.js";
 
 // const lightbox = new SimpleLightbox(".project-img");
 
