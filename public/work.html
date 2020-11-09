@@ -28,9 +28,9 @@
                 <!-- <img src="img/hamburger.svg" alt="hamburger"> -->
                 <svg class="menu" width="43" height="23" viewBox="0 0 43 23" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
-                    <line y1="1.5" x2="43" y2="1.5" stroke="white" stroke-width="3" />
-                    <line y1="11.5" x2="28" y2="11.5" stroke="white" stroke-width="3" />
-                    <line y1="21.5" x2="16" y2="21.5" stroke="white" stroke-width="3" />
+                    <line class="line1" y1="1.5" x2="43" y2="1.5" stroke="white" stroke-width="3" />
+                    <line class="line2" y1="11.5" x2="28" y2="11.5" stroke="white" stroke-width="3" />
+                    <line class="line3" y1="21.5" x2="16" y2="21.5" stroke="white" stroke-width="3" />
                 </svg>
                 <div class="nav-open">
                     <ul>
@@ -44,7 +44,7 @@
             </nav>
         </header>
 
-        <div id="work-sections">
+        <div class="page-sections">
 
             <section class="section" id="work">
                 <div class="fullpage">
@@ -58,17 +58,14 @@
                         <p class="hide">
                             <span class="text">I have built around 20 websites & applications in 2020</span>
                         </p>
+                        <div class="showcase-btn">
+                            <a href="#portfolio" class="scroll-down-btn"></a>
+                        </div>
                     </div>
                     <div class="hero">
                         <img src="img/bg.jpg" alt="work-img" class="photo" />
                     </div>
                 </div>
-            </section>
-
-            <!-- Portfolio -->
-
-            <section class="page" id="portfolio">
-
                 <div class="page-description">
                     <div class="container">
                         <h4> Below you will find some of the projects I have built in 2020, including 5 web applications
@@ -81,6 +78,11 @@
                         </h4>
                     </div>
                 </div>
+            </section>
+
+            <!-- Portfolio -->
+
+            <section class="page" id="portfolio">
                 <div class="page-inner">
                     <div class="container gallery apps">
                         <h2 class="sm-header">Web Apps</h2>
@@ -101,10 +103,10 @@
                                         that location.</p>
                                     <div class="btn-container">
                                         <a class="btn" href="https://github.com/mathieufontaine/react-live-weather-app"
-                                            target="_blank">Check
-                                            Code</a>
+                                            target="_blank">Source Code</a>
                                         </a>
-                                        <a class="btn" href="https://live-weather.vercel.app/" target="_blank">Visit</a>
+                                        <a class="btn" href="https://live-weather.vercel.app/"
+                                            target="_blank">Website</a>
                                     </div>
                                 </div>
                                 <a href="img/projects/live-weather-webcam.png" class="project-img">
@@ -123,10 +125,9 @@
                                         the games they want to buy.</p>
                                     <div class="btn-container">
                                         <a class="btn" href="https://github.com/mathieufontaine/react-video-games-store"
-                                            target="_blank">Check
-                                            Code</a>
+                                            target="_blank">Source Code</a>
                                         <a class="btn" href="https://video-games-manager.vercel.app/"
-                                            target="_blank">Visit</a>
+                                            target="_blank">Website</a>
                                     </div>
                                 </div>
                                 <a href="img/projects/video-games-manager.png" class="project-img">
@@ -143,10 +144,9 @@
                                         movie.</p>
                                     <div class="btn-container">
                                         <a class="btn" href="https://github.com/mathieufontaine/react-movies-search"
-                                            target="_blank">Check
-                                            Code</a>
+                                            target="_blank">Source Code</a>
                                         <a class="btn" href="https://movies-search.vercel.app/"
-                                            target="_blank">Visit</a>
+                                            target="_blank">Website</a>
                                     </div>
                                 </div>
                                 <a href="img/projects/movie-search.png" class="project-img">
@@ -164,10 +164,9 @@
                                         exact location on the map.</p>
                                     <div class="btn-container">
                                         <a class="btn" href="https://github.com/mathieufontaine/Ip-address-tracker"
-                                            target="_blank">Check
-                                            Code</a>
+                                            target="_blank">Source Code</a>
                                         <a class="btn" href="https://ip-address-tracking.vercel.app/"
-                                            target="_blank">Visit</a>
+                                            target="_blank">Website</a>
                                     </div>
                                 </div>
                                 <a href="img/projects/ip-tracking.png" class="project-img">
@@ -186,9 +185,9 @@
                                         own relaxing sound.</p>
                                     <div class="btn-container">
                                         <a class="btn" href="https://github.com/mathieufontaine/js-breathing-app"
-                                            target="_blank">Check Code</a>
+                                            target="_blank">Source Code</a>
                                         <a class="btn" href="https://breath-control.vercel.app/"
-                                            target="_blank">Visit</a>
+                                            target="_blank">Website</a>
                                     </div>
                                 </div>
                                 <a href="img/projects/breath-control.png" class="project-img">
@@ -207,10 +206,9 @@
                                     <p>Responsive website with sign up form, animations and pages transitions</p>
                                     <div class="btn-container">
                                         <a class="btn" href="https://github.com/mathieufontaine/soundwave-website"
-                                            target="_blank">Check
-                                            Code</a>
+                                            target="_blank">Source Code</a>
                                         <a class="btn" href="https://soundwave-website.vercel.app/"
-                                            target="_blank">Visit</a>
+                                            target="_blank">Website</a>
                                     </div>
                                 </div>
                                 <a href="img/projects/soundwave.png" class="project-img">
@@ -224,10 +222,9 @@
                                     <p>Full Page responsive website with JS animations between sections.</p>
                                     <div class="btn-container">
                                         <a class="btn" href="https://github.com/mathieufontaine/smartphone-website"
-                                            target="_blank">Check
-                                            Code</a>
+                                            target="_blank">Source Code</a>
                                         <a class="btn" href="https://smartphone-website.vercel.app/"
-                                            target="_blank">Visit</a>
+                                            target="_blank">Website</a>
                                     </div>
                                 </div>
                                 <a href="img/projects/ziko-website.png" class="project-img">
@@ -241,12 +238,13 @@
                                     <p>Responsive landing page with gradient colors and animations.</p>
                                     <div class="btn-container">
                                         <a class="btn" href="https://github.com/mathieufontaine/easybank-lp"
-                                            target="_blank">Check Code</a>
-                                        <a class="btn" href="https://easybank-lp.vercel.app/" target="_blank">Visit</a>
+                                            target="_blank">Source Code</a>
+                                        <a class="btn" href="https://easybank-lp.vercel.app/"
+                                            target="_blank">Website</a>
                                     </div>
                                 </div>
                                 <a href="img/projects/easybank.png" class="project-img">
-                                    <img src="img/projects/easybank.png" alt="easybank-img" />
+                                    <img src="img/projects/mockup-easybank.png" alt="easybank-img" />
                                 </a>
                             </div>
                             <div class="project" data-aos="fade-up" data-aos-duration="custom">
@@ -257,9 +255,9 @@
                                     </p>
                                     <div class="btn-container">
                                         <a class="btn" href="https://github.com/mathieufontaine/mountain-park-lp"
-                                            target="_blank">Check Code</a>
+                                            target="_blank">Source Code</a>
                                         <a class="btn" href="https://mountain-park.vercel.app/"
-                                            target="_blank">Visit</a>
+                                            target="_blank">Website</a>
                                     </div>
                                 </div>
                                 <a href="img/projects/mountain-park.png" class="project-img">
@@ -273,9 +271,9 @@
                                     <p>Responsive landing page with slider.</p>
                                     <div class="btn-container">
                                         <a class="btn" href="https://github.com/mathieufontaine/room-homepage"
-                                            target="_blank">Check Code</a>
+                                            target="_blank">Source Code</a>
                                         <a class="btn" href="https://room-homepage.mathieufontaine.vercel.app/"
-                                            target="_blank">Visit</a>
+                                            target="_blank">Website</a>
                                     </div>
                                 </div>
                                 <a href="img/projects/room.png" class="project-img">
@@ -288,8 +286,8 @@
               <p>Landing Page built with HTML/CSS/JS</p>
               <p>Responsive landing page with CSS grid and animations</p>
               <div class="btn-container">
-                <a class="btn" href="https://github.com/mathieufontaine/soundify-lp" target="_blank">Check Code</a>
-                <a class="btn" href="https://soundify-page.netlify.app/" target="_blank">Visit</a>
+                <a class="btn" href="https://github.com/mathieufontaine/soundify-lp" target="_blank">Source Code</a>
+                <a class="btn" href="https://soundify-page.netlify.app/" target="_blank">Website</a>
               </div>
             </div>
             <a href="img/projects/soundify.png" class="project-img">
@@ -303,9 +301,9 @@
                                     <p>Responsive interface with CSS grid</p>
                                     <div class="btn-container">
                                         <a class="btn" href="https://github.com/mathieufontaine/sport-interface"
-                                            target="_blank">Check Code</a>
+                                            target="_blank">Source Code</a>
                                         <a class="btn" href="https://sport-interface.vercel.app/"
-                                            target="_blank">Visit</a>
+                                            target="_blank">Website</a>
                                     </div>
                                 </div>
                                 <a href="img/projects/sport-interface.png" class="project-img">
@@ -350,6 +348,7 @@
     <!-- <script src="https://unpkg.com/@barba/css"></script> -->
     <!-- <script src="https://unpkg.com/@barba/core"></script> -->
     <!-- <script type="module" src="js/transitions.js"></script> -->
+
     <script type="module" src="js/main.js"></script>
 
 </body>

@@ -10,28 +10,10 @@
   &#showcase {
     margin-bottom: 10vh;
   }
+
   position: relative;
   min-height: 90vh;
   display: flex;
-  // grid-template-columns: 5% 1fr 1fr 1fr 5%;
-
-  // &#about,
-  // &#work,
-  // &#experience,
-  // &#contact {
-  //   position: absolute;
-  //   bottom: 0;
-  //   left: 0;
-  //   width: 100%;
-  //   opacity: 0;
-  //   pointer-events: none;
-  // }
-
-  // &#showcase {
-  //   h1 {
-  //     font-size: 4.5rem;
-  //   }
-  // }
 
   .fullpage {
     height: 100vh;
@@ -67,19 +49,6 @@
         background-color: black;
         z-index: 2;
       }
-      //   .model-right {
-      //     transform: translate(0%, 10%);
-      //   }
-      //   .model-left {
-      //     transform: translate(0%, -10%);
-      //   }
-      //   &:hover {
-      //     .model-right,
-      //     .model-left {
-      //       transform: translate(0%, 0%);
-      //     }
-      //   }
-      //   }
     }
 
     .details {
@@ -102,7 +71,7 @@
       }
       h1 .text {
         font-size: 10rem;
-        color: rgb(167, 212, 245);
+        color: $light-blue;
       }
       h2 .text {
         font-size: 3rem;
@@ -118,6 +87,7 @@
 
 #fp-nav {
   margin-top: 0;
+  z-index: 20;
   ul li {
     width: 40px !important;
     height: 40px !important;

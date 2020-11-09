@@ -65,26 +65,26 @@
         flex-direction: column;
         align-items: flex-start;
         // transform: translate(-30%, -35%);
-
-        .showcase-btn {
-          margin-top: 20px;
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          // transform: scale(0);
-          // opacity: 0;
-          .btn {
-            padding: 1.5rem 5rem;
-            margin: auto;
-            background-image: linear-gradient(
-              to right,
-              #00d2ff 0%,
-              #3a7bd5 51%,
-              #00d2ff 100%
-            );
-          }
-        }
       }
     }
+  }
+}
+
+.showcase-btn {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  // transform: scale(0);
+  // opacity: 0;
+  .btn {
+    padding: 1.5rem 5rem;
+    margin: auto;
+    background-image: linear-gradient(
+      to right,
+      #00d2ff 0%,
+      #3a7bd5 51%,
+      #00d2ff 100%
+    );
   }
 }

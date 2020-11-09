@@ -7,6 +7,7 @@ $third-color: #2b3760;
 $text-color: #0f0f10;
 $grey-color: #f8f8ff;
 $light-color: rgb(255, 255, 255);
+$light-blue: rgb(167, 212, 245);
 $easing: cubic-bezier(0.5, 0.7, 0.4, 1);
 
 $main-gradient: linear-gradient(
@@ -171,6 +172,21 @@ ul {
   }
 }
 
+.page-sections .section .fullpage {
+  height: 90vh;
+  .hero {
+    width: 45%;
+    height: 50%;
+    margin: 0 5% 15% auto;
+  }
+  .details {
+    top: 20%;
+    .showcase-btn {
+      width: 20%;
+    }
+  }
+}
+
 .page-title {
   // position: sticky;
   background: $main-gradient;
@@ -205,6 +221,11 @@ ul {
   text-align: left;
   width: 100%;
   margin: auto;
+  position: absolute;
+  bottom: 0;
+  background: rgba($color: white, $alpha: 0.2);
+  color: white;
+  text-align: center;
 }
 
 .container {
