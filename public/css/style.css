@@ -411,7 +411,7 @@ nav {
 }
 
 .nav-open ul li.active a {
-  font-size: 2.5rem;
+  font-size: larger;
   color: #a7d4f5;
 }
 
@@ -420,7 +420,7 @@ nav {
 }
 
 .nav-open ul li:hover a {
-  font-size: 2.5rem;
+  font-size: xx-large;
 }
 
 .nav-open ul li.active:hover {
@@ -776,7 +776,7 @@ nav {
   font-size: 1.8rem;
 }
 
-#showcase .container .titles {
+#showcase .container .headers-container {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -789,7 +789,7 @@ nav {
           justify-content: flex-start;
 }
 
-#showcase .container .titles .headers {
+#showcase .container .headers-container .headers {
   width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1458,31 +1458,121 @@ footer .logos .fa:hover {
   p {
     font-size: 1.5rem;
   }
-  .showcase {
-    text-align: center;
+  nav .nav-open {
+    height: 100vh;
   }
-  .showcase h1 {
+  nav .nav-open ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  nav .nav-open ul li {
+    width: unset;
+    height: unset;
+  }
+  nav .nav-open ul li.active, nav .nav-open ul li:hover {
+    background: none;
+  }
+  nav .nav-open ul li.active a, nav .nav-open ul li:hover a {
+    font-size: 6rem;
+  }
+  nav .nav-open ul li a {
+    font-size: 5rem;
+    padding: 3rem 0;
+  }
+  #fp-nav ul li {
+    margin: 0;
+    width: 30px !important;
+    height: 30px !important;
+  }
+  #fp-nav ul li a span {
+    width: 10px !important;
+    height: 10px !important;
+  }
+  .home #home-sections,
+  .page-sections {
+    width: 100%;
+    margin-left: 0;
+  }
+  .home #home-sections .fullpage,
+  .page-sections .fullpage {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1.5fr;
+        grid-template-rows: 1fr 1.5fr;
+    grid-gap: 0;
+    width: 90%;
+    margin: auto;
+  }
+  .home #home-sections .fullpage .details,
+  .page-sections .fullpage .details {
+    text-align: center;
+    padding: 2rem;
     margin-bottom: 0;
   }
-  .showcase svg {
+  .home #home-sections .fullpage .details h1 .text,
+  .page-sections .fullpage .details h1 .text {
+    font-size: 4rem;
+  }
+  .home #home-sections .fullpage .details h2 .text,
+  .page-sections .fullpage .details h2 .text {
+    font-size: 2.5rem;
+  }
+  .home #home-sections .fullpage .hero,
+  .page-sections .fullpage .hero {
+    margin: 10% 10% auto 10%;
+  }
+  .home #home-sections .fullpage #showcase,
+  .page-sections .fullpage #showcase {
+    text-align: center;
+  }
+  .home #home-sections .fullpage #showcase h1,
+  .page-sections .fullpage #showcase h1 {
+    margin-bottom: 0;
+  }
+  .home #home-sections .fullpage #showcase svg,
+  .page-sections .fullpage #showcase svg {
+    bottom: 10% !important;
     width: 100% !important;
     height: auto !important;
   }
-  .showcase .container .content {
+  .home #home-sections .fullpage #showcase .container .headers-container,
+  .page-sections .fullpage #showcase .container .headers-container {
     height: 50%;
   }
-  .showcase .container .content .headers {
+  .home #home-sections .fullpage #showcase .container .headers-container .headers,
+  .page-sections .fullpage #showcase .container .headers-container .headers {
     width: 100%;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
     padding: 20px;
   }
-  .showcase .container .content .headers .showcase-btn {
+  .home #home-sections .fullpage #showcase .container .headers-container .headers .showcase-btn,
+  .page-sections .fullpage #showcase .container .headers-container .headers .showcase-btn {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
     width: 100%;
+  }
+  .page-sections .section .fullpage .hero {
+    width: 70%;
+    margin: 0 auto auto auto;
+  }
+  .page-sections .section .fullpage .details {
+    margin: auto;
+  }
+  .page-sections .section .fullpage .details .showcase-btn {
+    margin-top: 0;
+    width: 100%;
+  }
+  .page-sections .section .fullpage .details .showcase-btn .scroll-down-btn {
+    width: 20px;
+    height: 20px;
   }
   #about .page-inner .container .content {
     display: -webkit-box;
