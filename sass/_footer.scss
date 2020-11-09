@@ -19,19 +19,19 @@ footer {
       color: $primary-color;
     }
   }
-  .logos {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    .fa {
-      font-size: 3rem;
-      margin-left: 20px;
-      transition: 0.5s ease;
+}
+.logos {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  .fa {
+    font-size: 3rem;
+    margin-left: 20px;
+    transition: 0.5s ease;
 
-      &:hover {
-        color: $primary-color;
-      }
+    &:hover {
+      color: $primary-color;
     }
   }
 }

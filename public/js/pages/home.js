@@ -229,7 +229,7 @@ export const scrollAnimation = () => {
 
       const tl = gsap.timeline({ delay: 0.2 });
       tl.fromTo(img, 0.8, { x: "150vw", opacity: 0 }, { x: 0, opacity: 1 });
-      tl.fromTo(btn, 0.5, { x: "-100vw" }, { x: 0 }, "-=.8");
+      tl.fromTo(btn, 0.5, { x: "-250vw" }, { x: 0 }, "-=.8");
       tl.fromTo(text, 1, { y: "100%" }, { y: 0, stagger: 0.2 });
       // tl.fromTo(
       //   details,

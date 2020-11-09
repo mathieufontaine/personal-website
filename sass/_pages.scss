@@ -13,20 +13,27 @@
   }
 }
 
-.page-sections .section .fullpage {
-  height: 90vh;
-  width: 90%;
-  margin: auto;
-  .hero {
-    margin: 0 5% 15% auto;
-  }
-  .details {
-    margin: 0 auto 15% 5%;
+.page-sections .section {
+  display: flex;
+  .fullpage {
+    // min-height: 90vh;
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    .hero {
+      margin: 15% 5% 15% auto;
+    }
+    .details {
+      margin: 0 auto 15% 5%;
 
-    .showcase-btn {
-      width: 20%;
+      .showcase-btn {
+        width: 20%;
+      }
     }
   }
+}
+.page-sections.about .section .fullpage {
+  grid-template-columns: 1fr 1fr;
 }
 
 .page-title {
@@ -63,7 +70,7 @@
   text-align: left;
   width: 100%;
   margin: auto;
-  position: absolute;
+  position: relative;
   bottom: 0;
   background: rgba($color: white, $alpha: 0.2);
   color: white;
