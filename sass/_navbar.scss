@@ -91,14 +91,14 @@ nav {
         transition: all 0.5s ease;
       }
       &.active a {
-        font-size: larger;
+        font-size: x-large;
         color: $light-blue;
         // border-bottom: 2px solid white;
       }
       &:hover {
         background: rgba($color: white, $alpha: 0.4);
         a {
-          font-size: xx-large;
+          font-size: x-large;
         }
       }
 

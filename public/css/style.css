@@ -171,6 +171,35 @@ ul {
   display: flex;
 }
 
+.section#work svg, .section#about svg, .section#experience svg, .section#contact svg {
+  width: 105% !important;
+  height: 100% !important;
+  margin-left: auto !important;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+
+.section#work svg circle, .section#about svg circle, .section#experience svg circle, .section#contact svg circle {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.section .svg-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  opacity: 0.1;
+  position: absolute;
+  bottom: 0%;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
 .section#showcase {
   margin-bottom: 10vh;
 }
@@ -438,7 +467,7 @@ nav .logos a {
 }
 
 .nav-open ul li.active a {
-  font-size: larger;
+  font-size: x-large;
   color: #a7d4f5;
 }
 
@@ -447,7 +476,7 @@ nav .logos a {
 }
 
 .nav-open ul li:hover a {
-  font-size: xx-large;
+  font-size: x-large;
 }
 
 .nav-open ul li.active:hover {
@@ -1553,12 +1582,26 @@ footer span:hover {
     width: 100%;
     margin-left: 0;
   }
+  .home #home-sections .section svg,
+  .home #home-sections .section#work svg,
+  .home #home-sections .section#about svg,
+  .home #home-sections .section#experience svg,
+  .home #home-sections .section#contact svg,
+  .page-sections .section svg,
+  .page-sections .section#work svg,
+  .page-sections .section#about svg,
+  .page-sections .section#experience svg,
+  .page-sections .section#contact svg {
+    bottom: 10% !important;
+    width: 100% !important;
+    height: auto !important;
+  }
   .home #home-sections .fullpage,
   .page-sections .fullpage {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr 1.5fr;
-        grid-template-rows: 1fr 1.5fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     grid-gap: 0;
     width: 90%;
     margin: auto;
@@ -1567,7 +1610,6 @@ footer span:hover {
   .page-sections .fullpage .details {
     text-align: center;
     padding: 2rem;
-    margin-bottom: 0;
   }
   .home #home-sections .fullpage .details h1 .text,
   .page-sections .fullpage .details h1 .text {
@@ -1588,12 +1630,6 @@ footer span:hover {
   .home #home-sections #showcase h1,
   .page-sections #showcase h1 {
     margin-bottom: 0;
-  }
-  .home #home-sections #showcase svg,
-  .page-sections #showcase svg {
-    bottom: 10% !important;
-    width: 100% !important;
-    height: auto !important;
   }
   .home #home-sections #showcase .container .headers-container,
   .page-sections #showcase .container .headers-container {

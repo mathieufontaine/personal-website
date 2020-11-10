@@ -107,16 +107,28 @@
   .page-sections {
     width: 100%;
     margin-left: 0;
+    .section {
+      svg,
+      &#work svg,
+      &#about svg,
+      &#experience svg,
+      &#contact svg {
+        bottom: 10% !important;
+        width: 100% !important;
+        height: auto !important;
+        // opacity: 0.8 !important;
+      }
+    }
     .fullpage {
       grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1.5fr;
+      grid-template-rows: 1fr 1fr;
       grid-gap: 0;
       width: 90%;
       margin: auto;
       .details {
         text-align: center;
         padding: 2rem;
-        margin-bottom: 0;
+        // margin-bottom: 0;
         h1 .text {
           font-size: 4rem;
         }
@@ -134,12 +146,7 @@
       h1 {
         margin-bottom: 0;
       }
-      svg {
-        bottom: 10% !important;
-        width: 100% !important;
-        height: auto !important;
-        // opacity: 0.8 !important;
-      }
+
       .container .headers-container {
         height: 50%;
         .headers {

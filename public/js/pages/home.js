@@ -1,4 +1,4 @@
-// import { throttle } from "../modules/throttle.js";
+import { initMotion } from "../animations/motion.js";
 
 // Home Animations
 
@@ -220,7 +220,7 @@ export const scrollAnimation = () => {
     easing: "easeInOutCubic",
     onLeave: (origin, destination, direction) => {
       const section = destination.item;
-      console.log(destination);
+      // console.log(destination);
 
       const details = section.querySelector(".details");
       const text = section.querySelectorAll(".text");
@@ -248,3 +248,4 @@ export const scrollAnimation = () => {
 // startAnimation();
 // slidesAnimation();
 scrollAnimation();
+initMotion();
