@@ -14,6 +14,7 @@
 }
 
 .page-sections .section {
+  min-height: unset;
   display: block;
   .fullpage {
     // min-height: 90vh;
@@ -25,7 +26,9 @@
     }
     .details {
       margin: 0 auto 15% 5%;
-
+      h1 .text {
+        font-size: 8rem;
+      }
       .showcase-btn {
         width: 20%;
       }

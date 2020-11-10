@@ -287,6 +287,10 @@ ul {
   z-index: 20;
 }
 
+#fp-nav.fp-right {
+  right: unset;
+}
+
 #fp-nav ul li {
   width: 40px !important;
   height: 40px !important;
@@ -526,6 +530,7 @@ nav .logos a {
 }
 
 .page-sections .section {
+  min-height: unset;
   display: block;
 }
 
@@ -541,6 +546,10 @@ nav .logos a {
 
 .page-sections .section .fullpage .details {
   margin: 0 auto 15% 5%;
+}
+
+.page-sections .section .fullpage .details h1 .text {
+  font-size: 8rem;
 }
 
 .page-sections .section .fullpage .details .showcase-btn {
@@ -1654,7 +1663,6 @@ footer span:hover {
     display: block;
   }
   .page-sections .section .fullpage {
-    height: 90vh;
     -ms-grid-columns: 1fr !important;
         grid-template-columns: 1fr !important;
     -ms-grid-rows: (1fr)[2];

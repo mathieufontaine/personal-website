@@ -124,6 +124,9 @@
   left: 0;
   margin-top: 0 !important;
   z-index: 20;
+  &.fp-right {
+    right: unset;
+  }
   ul li {
     width: 40px !important;
     height: 40px !important;
