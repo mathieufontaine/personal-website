@@ -496,9 +496,7 @@ nav .logos a {
 }
 
 .page-sections .section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
 }
 
 .page-sections .section .fullpage {
@@ -517,6 +515,12 @@ nav .logos a {
 
 .page-sections .section .fullpage .details .showcase-btn {
   width: 20%;
+}
+
+.page-sections.about .section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .page-sections.about .section .fullpage {

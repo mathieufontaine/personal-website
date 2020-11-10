@@ -14,7 +14,7 @@
 }
 
 .page-sections .section {
-  display: flex;
+  display: block;
   .fullpage {
     // min-height: 90vh;
     height: 100%;
@@ -32,8 +32,11 @@
     }
   }
 }
-.page-sections.about .section .fullpage {
-  grid-template-columns: 1fr 1fr;
+.page-sections.about .section {
+  display: flex;
+  .fullpage {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .page-title {
