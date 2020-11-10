@@ -24,9 +24,9 @@
     <title>Mathieu Fontaine</title>
 </head>
 
-<body data-barba="wrapper">
+<body>
 
-    <main data-barba="container" data-barba-namespace="contact">
+    <main>
 
         <header class="nav-page">
             <nav>
@@ -34,7 +34,8 @@
                     <img src="img/arrow.png" alt="back-arrow">
                     <h3>Home</h3>
                 </a>
-
+                <a href="#" class="en">English</a>
+                <a href="#" class="fr">French</a>
                 <svg class="menu" width="43" height="23" viewBox="0 0 43 23" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <line class="line1" y1="1.5" x2="43" y2="1.5" stroke="white" stroke-width="3" />
@@ -83,17 +84,20 @@
                             </div>
                             <label for="email">Email</label>
                             <input class="input" type="text" id="email" name="email" placeholder="johndoe@gmail.com" />
+                            <div class="subject">
+                                <label for="subject">Subject</label>
+                                <input class="input" type="text" id="subject" name="subject"
+                                    placeholder="I need an attractive landing page" />
+                            </div>
+                            <div class="message">
 
-                            <label for="subject">Subject</label>
-                            <input class="input" type="text" id="subject" name="subject"
-                                placeholder="I need an attractive landing page" />
-
-                            <label for="message">Message</label>
-                            <textarea class="input" id="message" name="message"
-                                placeholder="Explain your project in a few words / Leave a comment.."></textarea>
-                            <p class="hidden">
-                                <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-                            </p>
+                                <label for="message">Message</label>
+                                <textarea class="input" id="message" name="message"
+                                    placeholder="Explain your project in a few words / Leave a comment.."></textarea>
+                                <p class="hidden">
+                                    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                                </p>
+                            </div>
                             <input type="submit" value="Submit" id="submit" />
                         </form>
 
@@ -119,7 +123,9 @@
         <!-- <script src="js/pages/contact.js"></script> -->
 
     </main>
-    <!-- <script src="js/modules/fullpage.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    <script src="js/languages/translate.js"></script>
+
     <script src="https://kit.fontawesome.com/f3e2209c65.js" crossorigin="anonymous"></script>
     <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
@@ -128,6 +134,7 @@
     <!-- <script src="https://unpkg.com/@barba/css"></script> -->
     <!-- <script src="https://unpkg.com/@barba/core"></script> -->
     <script type="module" src="js/pages/contact.js"></script>
+
     <script type="module" src="js/main.js"></script>
 
 </body>

@@ -1,0 +1,27 @@
+{
+  "homeTitle": "Je crée des experiences web.",
+  "homeShowcaseBtn": "Mon Portfolio",
+  "sectionBtn": "Découvrir",
+  "workTitle": "Mon Portfolio",
+  "workSubtitle": "Découvrez mes précédents projets",
+  "workText": "J'ai développé plus de 20 sites & applications en 2020",
+  "aboutTitle": "A Propos",
+  "aboutSubtitle": "Développeur Web & Expert en Marketing Digital",
+  "aboutText": "J'aime designer, développer et promouvoir des sites et des applications sur le web",
+  "experienceTitle": "Mon Parcours",
+  "experienceSubtitle": "Explorer mon parcours profesionnel à travers differente  villes",
+  "experienceText": "J'aime allier voyage & travail",
+  "contactTitle": "Contact",
+  "contactSubtitle": "Une idée ? Un projet?",
+  "contactText": "Je suis à votre dispostion pour en discuter",
+  "contactBtn": "Me contacter",
+
+  "contactHeader1": "Une idée de projet ?",
+  "contactSubHeader2": "N'hésitez pas à me contacter !",
+  "labelFirst": "Prénom",
+  "labelLast": "Nom",
+  "labelSubject": "Sujet",
+  "placeholderSubject": "Création d'un site professionnel",
+  "placeholderMessage": "Expliquez votre projet en quelques lignes..",
+  "formSubmit": "Envoyer"
+}

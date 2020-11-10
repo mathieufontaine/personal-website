@@ -1,0 +1,27 @@
+{
+  "homeTitle": "I build amazing web experiences.",
+  "homeShowcaseBtn": "My Work",
+  "sectionBtn": "See More",
+  "workTitle": "My Work",
+  "workSubtitle": "Discover my previous works & projects",
+  "workText": "I have built around 20 websites & applications in 2020",
+  "aboutTitle": "About me",
+  "aboutSubtitle": "Web developer & Digital Marketer",
+  "aboutText": "I love designing, building & promoting websites and web applications",
+  "experienceTitle": "My Path",
+  "experienceSubtitle": "Explore my professional path through different cities",
+  "experienceText": "I love to travel while working and learning",
+  "contactTitle": "Contact",
+  "contactSubtitle": "Any Project in mind?",
+  "contactText": "I would love to hear from you!",
+  "contactBtn": "Get in touch",
+
+  "contactHeader1": "Any project in mind?",
+  "contactHeader2": "Please don't hesitate to contact me. I would love to hear from you!",
+  "labelFirst": "First Name",
+  "labelLast": "Last Name",
+  "labelSubject": "Subjet",
+  "placeholderSubject": "I need an attractive landing page",
+  "placeholderMessage": "Explain your project in a few words / Leave a comment..",
+  "formSubmit": "Submit"
+}
