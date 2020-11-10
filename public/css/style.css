@@ -387,6 +387,7 @@ nav .logos a {
 
 .nav-open .logos {
   display: none;
+  margin-bottom: 2rem;
 }
 
 .nav-open ul {
