@@ -149,13 +149,13 @@ ul {
   }
 }
 
-.home {
+.home-page {
   color: #1e1d21;
   background: linear-gradient(96deg, #1e1d21 0%, #2b3760 30%, #348cd2 80%, #509cd9 100%);
   overflow-y: hidden;
 }
 
-.home #home-sections {
+.home-page #home-sections {
   width: 95%;
   margin: auto;
   margin-left: 5%;
@@ -206,12 +206,13 @@ ul {
 
 .section .fullpage {
   height: 100vh;
-  width: 95%;
+  width: 90%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1.5fr 2fr;
       grid-template-columns: 1.5fr 2fr;
   grid-gap: 2rem;
+  margin: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -477,14 +478,6 @@ nav .logos a {
 
 .nav-open ul li:hover {
   background: rgba(255, 255, 255, 0.4);
-}
-
-.nav-open ul li:hover a {
-  font-size: x-large;
-}
-
-.nav-open ul li.active:hover {
-  background: none;
 }
 
 .nav-page {
@@ -1596,16 +1589,16 @@ footer span:hover {
     width: 10px !important;
     height: 10px !important;
   }
-  .home #home-sections,
+  .home-page #home-sections,
   .page-sections {
     width: 100%;
     margin-left: 0;
   }
-  .home #home-sections .section svg,
-  .home #home-sections .section#work svg,
-  .home #home-sections .section#about svg,
-  .home #home-sections .section#experience svg,
-  .home #home-sections .section#contact svg,
+  .home-page #home-sections .section svg,
+  .home-page #home-sections .section#work svg,
+  .home-page #home-sections .section#about svg,
+  .home-page #home-sections .section#experience svg,
+  .home-page #home-sections .section#contact svg,
   .page-sections .section svg,
   .page-sections .section#work svg,
   .page-sections .section#about svg,
@@ -1615,7 +1608,7 @@ footer span:hover {
     width: 100% !important;
     height: auto !important;
   }
-  .home #home-sections .fullpage,
+  .home-page #home-sections .fullpage,
   .page-sections .fullpage {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -1625,36 +1618,36 @@ footer span:hover {
     width: 90%;
     margin: auto;
   }
-  .home #home-sections .fullpage .details,
+  .home-page #home-sections .fullpage .details,
   .page-sections .fullpage .details {
     text-align: center;
     padding: 2rem;
   }
-  .home #home-sections .fullpage .details h1 .text,
+  .home-page #home-sections .fullpage .details h1 .text,
   .page-sections .fullpage .details h1 .text {
     font-size: 4rem;
   }
-  .home #home-sections .fullpage .details h2 .text,
+  .home-page #home-sections .fullpage .details h2 .text,
   .page-sections .fullpage .details h2 .text {
     font-size: 2.5rem;
   }
-  .home #home-sections .fullpage .hero,
+  .home-page #home-sections .fullpage .hero,
   .page-sections .fullpage .hero {
     margin: 10% 10% auto 10%;
   }
-  .home #home-sections #showcase,
+  .home-page #home-sections #showcase,
   .page-sections #showcase {
     text-align: center;
   }
-  .home #home-sections #showcase h1,
+  .home-page #home-sections #showcase h1,
   .page-sections #showcase h1 {
     margin-bottom: 0;
   }
-  .home #home-sections #showcase .container .headers-container,
+  .home-page #home-sections #showcase .container .headers-container,
   .page-sections #showcase .container .headers-container {
     height: 50%;
   }
-  .home #home-sections #showcase .container .headers-container .headers,
+  .home-page #home-sections #showcase .container .headers-container .headers,
   .page-sections #showcase .container .headers-container .headers {
     width: 100%;
     -webkit-box-align: start;
@@ -1662,7 +1655,7 @@ footer span:hover {
             align-items: flex-start;
     padding: 20px;
   }
-  .home #home-sections #showcase .container .headers-container .headers .showcase-btn,
+  .home-page #home-sections #showcase .container .headers-container .headers .showcase-btn,
   .page-sections #showcase .container .headers-container .headers .showcase-btn {
     -webkit-box-align: start;
         -ms-flex-align: start;

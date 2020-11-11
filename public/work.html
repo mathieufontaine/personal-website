@@ -25,7 +25,7 @@
     <title>Mathieu Fontaine</title>
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
     <script defer type="module" src="js/languages/translate.js"></script>
-    <script defer src="/node_modules/swup/dist/swup.min.js"></script>
+    <!-- <script defer src="/node_modules/swup/dist/swup.min.js"></script> -->
     <script defer src="js/modules/fullpage.min.js"></script>
     <script defer src="https://kit.fontawesome.com/f3e2209c65.js" crossorigin="anonymous"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
@@ -44,9 +44,9 @@
                 <a href="/public/index.html" class="logo">
                     <img src="img/arrow.png" alt="back-arrow">
                     <h3>Home</h3>
-
                 </a>
-                <!-- <img src="img/hamburger.svg" alt="hamburger"> -->
+                <a href="#" class="en">English </a>
+                <a href="#" class="fr">French</a>
                 <svg class="menu" width="43" height="23" viewBox="0 0 43 23" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <line class="line1" y1="1.5" x2="43" y2="1.5" stroke="white" stroke-width="3" />
@@ -95,13 +95,9 @@
                 </div>
                 <div class="page-description">
                     <div class="container">
-                        <h4> Below you will find some of the projects I have built in 2020, including 5 web
-                            applications
-                            and
-                            6
-                            websites.
-                        </h4>
-                        <h4> You can check the code and explore the web apps & websites as they are all live on the
+                        <h4> Below you will find some of the projects I have built in 2020, including 5 web applications
+                            and 6 websites.</h4>
+                        <h4>You can check the code and explore the web apps & websites as they are all live on the
                             internet.
                         </h4>
                     </div>
@@ -115,7 +111,7 @@
                     <div class="container gallery apps">
                         <h2 class="sm-header">Web Apps</h2>
                         <div class="projects">
-                            <div class="project" data-aos="fade-up" data-aos-duration="custom">
+                            <div class="project" id="weather-app" data-aos="fade-up" data-aos-duration="custom">
                                 <div class="project-text">
                                     <h3>Live Weather & Webcam App</h3>
                                     <p>Web Application built with <span>ReactJS</span>.</p>
@@ -143,7 +139,7 @@
                                     <img src="img/projects/mockup_live-weather.png" alt="live-weather-webcam" />
                                 </a>
                             </div>
-                            <div class="project" data-aos="fade-up" data-aos-duration="custom">
+                            <div class="project" id="games-app" data-aos="fade-up" data-aos-duration="custom">
                                 <div class="project-text">
                                     <h3>Video Games Manager App</h3>
                                     <p>Web Application built with <span>ReactJS </span>.</p>
@@ -166,7 +162,7 @@
                                     <img src="img/projects/mockup_video-games-manager.png" alt="video-games-manager" />
                                 </a>
                             </div>
-                            <div class="project" data-aos="fade-up" data-aos-duration="custom">
+                            <div class="project" id="movie-app" data-aos="fade-up" data-aos-duration="custom">
                                 <div class="project-text">
                                     <h3>Movie Search App</h3>
                                     <p>Web Application built with <span>ReactJS</span>.</p>
@@ -185,7 +181,7 @@
                                     <img src="img/projects/mockup_movie-search.png" alt="movie-search.png" />
                                 </a>
                             </div>
-                            <div class="project" data-aos="fade-up" data-aos-duration="custom">
+                            <div class="project" id="ip-app" data-aos="fade-up" data-aos-duration="custom">
                                 <div class="project-text">
                                     <h3>Ip Address Tracking App</h3>
                                     <p>Web Application built with <span>Vanilla JS</span>.</p>
@@ -206,7 +202,7 @@
                                     <img src="img/projects/mockup_ip-tracker.png" alt="ip-address-tracker" />
                                 </a>
                             </div>
-                            <div class="project" data-aos="fade-up" data-aos-duration="custom">
+                            <div class="project" id="breath-app" data-aos="fade-up" data-aos-duration="custom">
                                 <div class="project-text">
                                     <h3>Breath Control App</h3>
                                     <p>Web Application built with <span>Vanilla JS</span>.</p>
@@ -232,7 +228,7 @@
                     <div class="container gallery websites">
                         <h2 class="sm-header">Websites</h2>
                         <div class="projects">
-                            <div class="project" data-aos="fade-up" data-aos-duration="custom">
+                            <div class="project" id="soundwave" data-aos="fade-up" data-aos-duration="custom">
                                 <div class="project-text">
                                     <h3>Soundwave</h3>
                                     <p>3 pages website built with HTML/CSS/JS</p>
@@ -248,7 +244,7 @@
                                     <img src="img/projects/mockup_soundwave.png" alt="soundwave-img" />
                                 </a>
                             </div>
-                            <div class="project" data-aos="fade-up" data-aos-duration="custom">
+                            <div class="project" id="ziko" data-aos="fade-up" data-aos-duration="custom">
                                 <div class="project-text">
                                     <h3>Ziko Z6</h3>
                                     <p>3 pages website built with HTML/CSS/JS</p>
@@ -263,7 +259,7 @@
                                     <img src="img/projects/mockup_ziko.png" alt="smartphone-img" />
                                 </a>
                             </div>
-                            <div class="project" data-aos="fade-up" data-aos-duration="custom">
+                            <div class="project" id="easybank" data-aos="fade-up" data-aos-duration="custom">
                                 <div class="project-text">
                                     <h3>Easybank Home Page</h3>
                                     <p>Landing Page built with HTML/CSS/Javacript</p>
@@ -279,7 +275,7 @@
                                     <img src="img/projects/mockup_easybank.png" alt="easybank-img" />
                                 </a>
                             </div>
-                            <div class="project" data-aos="fade-up" data-aos-duration="custom">
+                            <div class="project" id="mountain" data-aos="fade-up" data-aos-duration="custom">
                                 <div class="project-text">
                                     <h3>Mountain Park Home Page</h3>
                                     <p>Landing Page built with HTML/CSS/Javacript</p>
@@ -327,11 +323,11 @@
               <img src="img/projects/mockup_soundify.png" alt="soundify-img" />
             </a>
           </div> -->
-                            <div class="project" data-aos="fade-up" data-aos-duration="custom">
+                            <div class="project" id="interface" data-aos="fade-up" data-aos-duration="custom">
                                 <div class="project-text">
                                     <h3>Sport Interface</h3>
-                                    <p>"Windows like" Sport Interface built with HTML/CSS</p>
-                                    <p>Responsive interface with CSS grid</p>
+                                    <p>"Windows like" Sport Interface built with HTML/CSS. Responsive interface with CSS
+                                        grid</p>
                                     <div class="btn-container">
                                         <a class="btn" href="https://github.com/mathieufontaine/sport-interface"
                                             target="_blank">Source Code</a>

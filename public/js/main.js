@@ -7,7 +7,7 @@ import { toggleMenuAnimation, hideNavbar } from "./pages/navbar.js";
 const main = document.querySelector("main");
 
 // * Start plugin
-const swup = new Swup();
+// const swup = new Swup();
 AOS.init();
 // const lightbox = new SimpleLightbox(".project-img");
 

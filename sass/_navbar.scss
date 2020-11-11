@@ -97,14 +97,14 @@ nav {
       }
       &:hover {
         background: rgba($color: white, $alpha: 0.4);
-        a {
-          font-size: x-large;
-        }
+        // a {
+        //   font-size: x-large;
+        // }
       }
 
-      &.active:hover {
-        background: none;
-      }
+      // &.active:hover {
+      //   background: none;
+      // }
     }
 
     // position: absolute;
