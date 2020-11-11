@@ -1,4 +1,4 @@
-import { initMotion } from "../animations/motion.js";
+// import { initMotion } from "../animations/motion.js";
 
 // Home Animations
 
@@ -238,7 +238,7 @@ export const scrollAnimation = () => {
       //   { y: 0, opacity: 1 },
       //   "-=0.5"
       // );
-      document.querySelector("body").classList.add("fp-enabled");
+      // document.querySelector("body").classList.add("fp-enabled");
     }
   });
 };
@@ -247,5 +247,5 @@ export const scrollAnimation = () => {
 
 // startAnimation();
 // slidesAnimation();
-scrollAnimation();
-initMotion();
+// scrollAnimation();
+// initMotion();

@@ -23,14 +23,24 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Mathieu Fontaine</title>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    <script defer type="module" src="js/languages/translate.js"></script>
+    <script defer src="/node_modules/swup/dist/swup.min.js"></script>
+    <script defer src="js/modules/fullpage.min.js"></script>
+    <script defer src="https://kit.fontawesome.com/f3e2209c65.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script defer type="module" src="js/main.js"></script>
 </head>
 
-<body data-barba="wrapper">
-    <main data-barba="container" data-barba-namespace="experience">
+<body>
+    <!-- <div id="swup" class="transition-fade"> -->
+    <main class="experience-page">
 
         <header class="nav-page">
             <nav>
-                <a href="/" class="logo">
+                <a href="/public/index.html" class="logo">
                     <img src="img/arrow.png" alt="back-arrow">
                     <h3>Home</h3>
 
@@ -44,11 +54,11 @@
                 </svg>
                 <div class="nav-open">
                     <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/work">Work</a></li>
-                        <li><a href="/about">About Me</a></li>
-                        <li class="active"><a href="/experience">My Path</a></li>
-                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/public/index.html">Home</a></li>
+                        <li><a href="/public/work.html">Work</a></li>
+                        <li><a href="/public/about.html">About Me</a></li>
+                        <li class="active"><a href="/public/experience.html">My Path</a></li>
+                        <li><a href="/public/contact.html">Contact</a></li>
                     </ul>
                     <div class="logos">
                         <a href="https://www.linkedin.com/in/mathieu-fontaine/" target="_blank"><i
@@ -115,13 +125,16 @@
                             <h3 class="secondary-text">
                                 Master in Marketing of New Technologies
                             </h3>
-                            <p>I am from Paris but at 18 I decided to go to the South of France, in Toulouse, to study
+                            <p>I am from Paris but at 18 I decided to go to the South of France, in Toulouse, to
+                                study
                                 Economics
                                 &
                                 Marketing.</p>
-                            <p> After 2 years at the <a href="https://www.tse-fr.eu/fr" target=_blank>Toulouse School of
+                            <p> After 2 years at the <a href="https://www.tse-fr.eu/fr" target=_blank>Toulouse
+                                    School of
                                     Economics</a> and
-                                3 years at the <a href="https://tsm-education.fr/" target="_blank">Toulouse School of
+                                3 years at the <a href="https://tsm-education.fr/" target="_blank">Toulouse School
+                                    of
                                     Management</a> I
                                 succesfully got a Bachelor and a Master degree in Marketing.</p>
                         </div>
@@ -135,8 +148,9 @@
                             <img src="img/logo/topserve_logo.png" alt="tsm" />
                             <h3>Top Serve</h3>
                             <h3 class="secondary-text">Web Project Manager</h3>
-                            <p>During my gap year in 2015/2016 I went to Singapore and worked for a startup called <a
-                                    href="https://topservesg.com/" target="_blank">TOPSERVE</a> for 9 months. There, I
+                            <p>During my gap year in 2015/2016 I went to Singapore and worked for a startup called
+                                <a href="https://topservesg.com/" target="_blank">TOPSERVE</a> for 9 months. There,
+                                I
                                 was
                                 in
                                 charge of the
@@ -184,11 +198,13 @@
                                 online
                                 media
                                 project manager for 18 months.</p>
-                            <p> I was in charge of some of the biggest European SEA accounts of the company, including
+                            <p> I was in charge of some of the biggest European SEA accounts of the company,
+                                including
                                 UK,
                                 DE,
                                 IT. After
-                                succesfully contributed to improve the online media performance of the company I decided
+                                succesfully contributed to improve the online media performance of the company I
+                                decided
                                 to
                                 leave for a new
                                 challenge.</p>
@@ -203,13 +219,16 @@
                             <img src="img/logo/lewagon_logo.png" alt="lewagon" />
                             <h3>Le Wagon</h3>
                             <h3 class="secondary-text">Fullstack Web Development Bootcamp</h3>
-                            <p>After quitting my position at Club Med I went straight to Lisbon to learn fullstack web
+                            <p>After quitting my position at Club Med I went straight to Lisbon to learn fullstack
+                                web
                                 development.</p>
-                            <p>There, I joined <a href="https://www.lewagon.com/" target="_blank">Le wagon</a> bootcamp
+                            <p>There, I joined <a href="https://www.lewagon.com/" target="_blank">Le wagon</a>
+                                bootcamp
                                 in
                                 September 2019
                                 for a 3 months intensive program</p>
-                            <p>At Le Wagon I gained tremendous knowledges and skills about both backend (Ruby/SQL) and
+                            <p>At Le Wagon I gained tremendous knowledges and skills about both backend (Ruby/SQL)
+                                and
                                 frontend
                                 (HTML/CSS/Javacript/React) development.</p>
                         </div>
@@ -219,24 +238,26 @@
 
         </div>
 
+
+        <footer>
+            <p> Developped By
+                <a href="https://www.linkedin.com/in/mathieu-fontaine/"><span>Mathieu Fontaine</span>
+                </a>
+            </p>
+            <div class="logos">
+                <a href="https://www.linkedin.com/in/mathieu-fontaine/" target="_blank"><i class="fa fa-linkedin"
+                        aria-hidden="true"></i></a>
+                <a href="https://github.com/mathieufontaine" target="_blank"><i class="fa fa-github"
+                        aria-hidden="true"></i></a>
+            </div>
+            <p>® Copyright 2020</p>
+        </footer>
+
+        <a id="scroll-top-btn"></a>
     </main>
 
-    <footer>
-        <p> Developped By
-            <a href="https://www.linkedin.com/in/mathieu-fontaine/"><span>Mathieu Fontaine</span>
-            </a>
-        </p>
-        <div class="logos">
-            <a href="https://www.linkedin.com/in/mathieu-fontaine/" target="_blank"><i class="fa fa-linkedin"
-                    aria-hidden="true"></i></a>
-            <a href="https://github.com/mathieufontaine" target="_blank"><i class="fa fa-github"
-                    aria-hidden="true"></i></a>
-        </div>
-        <p>® Copyright 2020</p>
-    </footer>
 
-    <a id="scroll-top-btn"></a>
-
+    <!-- </div> -->
 
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script> -->
     <!-- <script src="js/scrollTop.js"></script> -->
@@ -244,15 +265,15 @@
 
 
     <!-- <script src="js/modules/fullpage.min.js"></script> -->
-    <script src="https://kit.fontawesome.com/f3e2209c65.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/f3e2209c65.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
-    <script>AOS.init();</script>
+    <script>AOS.init();</script> -->
     <!-- <script src="https://unpkg.com/@barba/css"></script> -->
     <!-- <script src="https://unpkg.com/@barba/core"></script> -->
     <!-- <script type="module" src="js/transitions.js"></script> -->
-    <script type="module" src="js/main.js"></script>
+    <!-- <script type="module" src="js/main.js"></script> -->
 
 </body>
 

@@ -22,50 +22,50 @@ function setLanguage(lang) {
 // * translations selectors
 
 const translate = () => {
-  const body = document.querySelector("body");
-  const page = document.querySelector(".page");
+  const main = document.querySelector("main");
+  // const page = document.querySelector(".page");
 
   // * home
-  if (body.classList.contains("home")) {
-    const home = document.querySelector(".home");
-    home.querySelector(".headers h1").innerText = language.homeTitle;
-    home.querySelector(".showcase-btn .btn").innerText =
+  if (main.classList.contains("home-page")) {
+    // const home = document.querySelector(".home");
+    main.querySelector(".headers h1").innerText = language.homeTitle;
+    main.querySelector(".showcase-btn .btn").innerText =
       language.homeShowcaseBtn;
-    home.querySelector("#work h1 .text").innerText = language.workTitle;
-    home.querySelector("#work h2 .text").innerText = language.workSubtitle;
-    home.querySelector("#work h4 .text").innerText = language.workText;
-    home.querySelector("#work .btn").innerText = language.sectionBtn;
-    home.querySelector("#about h1 .text").innerText = language.aboutTitle;
-    home.querySelector("#about h2 .text").innerText = language.aboutSubtitle;
-    home.querySelector("#about h4 .text").innerText = language.aboutText;
-    home.querySelector("#about .btn").innerText = language.sectionBtn;
-    home.querySelector("#experience h1 .text").innerText =
+    main.querySelector("#work h1 .text").innerText = language.workTitle;
+    main.querySelector("#work h2 .text").innerText = language.workSubtitle;
+    main.querySelector("#work h4 .text").innerText = language.workText;
+    main.querySelector("#work .btn").innerText = language.sectionBtn;
+    main.querySelector("#about h1 .text").innerText = language.aboutTitle;
+    main.querySelector("#about h2 .text").innerText = language.aboutSubtitle;
+    main.querySelector("#about h4 .text").innerText = language.aboutText;
+    main.querySelector("#about .btn").innerText = language.sectionBtn;
+    main.querySelector("#experience h1 .text").innerText =
       language.experienceTitle;
-    home.querySelector("#experience h2 .text").innerText =
+    main.querySelector("#experience h2 .text").innerText =
       language.experienceSubtitle;
-    home.querySelector("#experience h4 .text").innerText =
+    main.querySelector("#experience h4 .text").innerText =
       language.experienceText;
-    home.querySelector("#experience .btn").innerText = language.sectionBtn;
-    home.querySelector("#contact h1 .text").innerText = language.contactTitle;
-    home.querySelector("#contact h2 .text").innerText =
+    main.querySelector("#experience .btn").innerText = language.sectionBtn;
+    main.querySelector("#contact h1 .text").innerText = language.contactTitle;
+    main.querySelector("#contact h2 .text").innerText =
       language.contactSubtitle;
-    home.querySelector("#contact h4 .text").innerText = language.contactText;
-    home.querySelector("#contact .btn").innerText = language.contactBtn;
+    main.querySelector("#contact h4 .text").innerText = language.contactText;
+    main.querySelector("#contact .btn").innerText = language.contactBtn;
   }
 
   // * contact
-  else if (page.classList.contains("contact")) {
-    const contact = document.querySelector(".contact");
-    contact.querySelector(".page-info h2").innerText = language.contactHeader1;
-    contact.querySelector(".page-info h4").innerText = language.contactHeader2;
-    contact.querySelector(".first label").innerText = language.labelFirst;
-    contact.querySelector(".last label").innerText = language.labelLast;
-    contact.querySelector(".subject label").innerText = language.labelSubject;
-    contact.querySelector(".subject input").placeholder =
+  else if (main.classList.contains("contact-page")) {
+    // const contact = document.querySelector(".contact");
+    main.querySelector(".page-info h2").innerText = language.contactHeader1;
+    main.querySelector(".page-info h4").innerText = language.contactHeader2;
+    main.querySelector(".first label").innerText = language.labelFirst;
+    main.querySelector(".last label").innerText = language.labelLast;
+    main.querySelector(".subject label").innerText = language.labelSubject;
+    main.querySelector(".subject input").placeholder =
       language.placeholderSubject;
-    contact.querySelector(".message textarea").placeholder =
+    main.querySelector(".message textarea").placeholder =
       language.placeholderMessage;
-    contact.querySelector("#submit").value = language.formSubmit;
+    main.querySelector("#submit").value = language.formSubmit;
   } else {
     return;
   }

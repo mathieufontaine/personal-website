@@ -1,84 +1,87 @@
-// export const formValidation = () => {
-// Select DOM items
-const submit = document.querySelector("#submit");
-const inputs = document.querySelectorAll(".input");
+export const formValidation = () => {
+  //*  Select DOM items
 
-const validate = event => {
-  //   event.preventDefault();
-
-  const fname = document.getElementById("fname").value;
-  const lname = document.getElementById("lname").value;
-  const subject = document.getElementById("subject").value;
-  const email = document.getElementById("email").value;
-  const message = document.getElementById("message").value;
-
-  const fnameBox = document.getElementById("fname");
-  const lnameBox = document.getElementById("lname");
-  const subjectBox = document.getElementById("subject");
-  const emailBox = document.getElementById("email");
-  const messageBox = document.getElementById("message");
   const submit = document.querySelector("#submit");
+  const inputs = document.querySelectorAll(".input");
 
-  const error_message = document.getElementById("error_message");
+  const validate = event => {
+    //   event.preventDefault();
 
-  const pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+    const fname = document.getElementById("fname").value;
+    const lname = document.getElementById("lname").value;
+    const subject = document.getElementById("subject").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
 
-  error_message.style.display = "block";
+    const fnameBox = document.getElementById("fname");
+    const lnameBox = document.getElementById("lname");
+    const subjectBox = document.getElementById("subject");
+    const emailBox = document.getElementById("email");
+    const messageBox = document.getElementById("message");
+    const submit = document.querySelector("#submit");
 
-  console.log(fname, lname, subject, email, message.length);
+    const error_message = document.getElementById("error_message");
 
-  let text;
-  if (fname.length < 1) {
-    text = "Please enter your first name";
-    error_message.innerHTML = text;
-    fnameBox.classList.add("redShadow");
-    return false;
-  }
-  if (lname.length < 1) {
-    text = "Please enter your last name";
-    error_message.innerHTML = text;
-    lnameBox.classList.add("redShadow");
-    return false;
-  }
-  if (!email.match(pattern)) {
-    console.log("no match");
-    text = "Please enter valid email address";
-    error_message.innerHTML = text;
-    emailBox.classList.add("redShadow");
-    return false;
-  }
-  if (subject.length < 1) {
-    console.log(subject);
-    text = "Please enter a subject";
-    error_message.innerHTML = text;
-    subjectBox.classList.add("redShadow");
-    return false;
-  }
-  if (message.length < 10) {
-    console.log(message.length);
-    text = "Your message should include at least 10 characters";
-    error_message.innerHTML = text;
-    messageBox.classList.add("redShadow");
-    return false;
-  }
+    const pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 
-  error_message.style.display = "none";
-  submit.style.pointerEvents = "initial";
-  return true;
-};
+    error_message.style.display = "block";
 
-// Event Listener
+    console.log(fname, lname, subject, email, message.length);
 
-// submit.addEventListener("click", validate);
-inputs.forEach(input =>
-  input.addEventListener("focus", function() {
+    // * input verification
+
+    let text;
+    if (fname.length < 1) {
+      text = "Please enter your first name";
+      error_message.innerHTML = text;
+      fnameBox.classList.add("redShadow");
+      return false;
+    }
+    if (lname.length < 1) {
+      text = "Please enter your last name";
+      error_message.innerHTML = text;
+      lnameBox.classList.add("redShadow");
+      return false;
+    }
+    if (!email.match(pattern)) {
+      console.log("no match");
+      text = "Please enter valid email address";
+      error_message.innerHTML = text;
+      emailBox.classList.add("redShadow");
+      return false;
+    }
+    if (subject.length < 1) {
+      console.log(subject);
+      text = "Please enter a subject";
+      error_message.innerHTML = text;
+      subjectBox.classList.add("redShadow");
+      return false;
+    }
+    if (message.length < 10) {
+      console.log(message.length);
+      text = "Your message should include at least 10 characters";
+      error_message.innerHTML = text;
+      messageBox.classList.add("redShadow");
+      return false;
+    }
+
     error_message.style.display = "none";
-    input.classList.remove("redShadow");
-  })
-);
+    submit.style.pointerEvents = "initial";
+    return true;
+  };
 
-inputs.forEach(input => input.addEventListener("blur", validate));
-// };
+  // * Event Listener
+
+  // submit.addEventListener("click", validate);
+  inputs.forEach(input =>
+    input.addEventListener("focus", function() {
+      error_message.style.display = "none";
+      input.classList.remove("redShadow");
+    })
+  );
+
+  inputs.forEach(input => input.addEventListener("blur", validate));
+};
 
 // const contactAnimation = () => {
 //   gsap.registerPlugin(ScrollTrigger);
