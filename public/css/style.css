@@ -370,6 +370,33 @@ nav {
   padding: 20px 0;
 }
 
+nav .logo {
+  z-index: 2;
+}
+
+nav .logo h2 {
+  font-size: 2.5rem;
+  color: white;
+}
+
+nav .logos {
+  margin-left: 1rem;
+}
+
+nav .logos a {
+  color: white;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+nav .logos a .fa {
+  margin-left: 10px;
+}
+
+nav .logos a:hover {
+  color: white;
+}
+
 nav .nav-right {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -382,31 +409,50 @@ nav .nav-right {
           justify-content: space-between;
 }
 
-nav .logos {
+nav .languages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin-right: 5rem;
 }
 
-nav .logos a {
-  color: black;
-  margin-right: 1rem;
+nav .languages .en,
+nav .languages .fr {
+  height: 32px;
+  width: 32px;
+  margin: 8px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
-.logo {
-  z-index: 2;
+nav .languages .en img,
+nav .languages .fr img {
+  height: 100%;
+  width: 100%;
 }
 
-.logo h3 {
-  font-size: 2rem;
-  color: white;
-  margin-bottom: 0;
+nav .languages .en:hover,
+nav .languages .fr:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
-.menu {
+nav .languages .en.active,
+nav .languages .fr.active {
+  border: 2px solid white;
+  border-radius: 50%;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+nav .menu {
   z-index: 30;
   cursor: pointer;
 }
 
-.nav-open {
+nav .nav-open {
   width: 100%;
   margin: auto;
   height: 50vh;
@@ -415,16 +461,16 @@ nav .logos a {
   position: absolute;
   top: 0;
   left: 0;
-  -webkit-transform: translateY(-200%);
-          transform: translateY(-200%);
+  -webkit-transform: translateY(-100vh);
+          transform: translateY(-100vh);
 }
 
-.nav-open .logos {
+nav .nav-open .logos {
   display: none;
   margin-bottom: 2rem;
 }
 
-.nav-open ul {
+nav .nav-open ul {
   width: 80%;
   height: 100%;
   margin: auto;
@@ -440,11 +486,10 @@ nav .logos a {
   padding: 20px 0;
 }
 
-.nav-open ul li {
+nav .nav-open ul li {
   background: transparent;
-  width: 15rem;
-  height: 15rem;
-  margin: 2rem;
+  width: 16rem;
+  height: 16rem;
   border-radius: 50%;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -460,23 +505,22 @@ nav .logos a {
   text-align: center;
 }
 
-.nav-open ul li a {
+nav .nav-open ul li a {
   height: 100%;
-  line-height: 100%;
-  padding: 6rem 0;
-  font-size: 2rem;
+  padding: 6rem 2rem;
+  font-size: 2.5rem;
   font-weight: 600;
   color: #fffefe;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
-.nav-open ul li.active a {
+nav .nav-open ul li.active a {
   font-size: x-large;
-  color: #a7d4f5;
+  color: #1e1d21;
 }
 
-.nav-open ul li:hover {
+nav .nav-open ul li:hover {
   background: rgba(255, 255, 255, 0.4);
 }
 
@@ -496,6 +540,10 @@ nav .logos a {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+.nav-page .logo h3 {
+  margin-bottom: 0;
 }
 
 .nav-page .logo img {
@@ -533,16 +581,22 @@ nav .logos a {
   margin: auto;
 }
 
-.page-sections .section .fullpage .hero {
-  margin: 15% 5% 15% auto;
+.page-sections .section .fullpage .hero,
+.page-sections .section .fullpage .details {
+  margin: 15% auto;
 }
 
-.page-sections .section .fullpage .details {
-  margin: 0 auto 15% 5%;
+.page-sections .section .fullpage .hero img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .page-sections .section .fullpage .details h1 .text {
-  font-size: 8rem;
+  font-size: 3rem;
+}
+
+.page-sections .section .fullpage .details h2 .text {
+  font-size: 4rem;
 }
 
 .page-sections .section .fullpage .details .showcase-btn {
@@ -558,6 +612,19 @@ nav .logos a {
 .page-sections.about .section .fullpage {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+}
+
+.page-sections.about .section .fullpage .hero,
+.page-sections.about .section .fullpage .details {
+  margin: 15% auto;
+  width: 80%;
+  height: 80%;
+}
+
+.page-sections.about .section .fullpage .hero img,
+.page-sections.about .section .fullpage .details img {
+  -o-object-fit: unset;
+     object-fit: unset;
 }
 
 .page-title {
@@ -918,7 +985,7 @@ html.is-animating .transition-fade {
 }
 
 .about .page-inner .quote {
-  width: 100%;
+  padding: 0 20%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 2fr 1fr;
@@ -1451,10 +1518,6 @@ footer span {
   transition: 0.5s ease;
 }
 
-footer span:hover {
-  color: #1e1d21;
-}
-
 .logos {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1541,8 +1604,13 @@ footer span:hover {
   p {
     font-size: 1.5rem;
   }
-  nav .nav-right .logos {
+  nav .logos {
     display: none;
+  }
+  nav .languages .en,
+  nav .languages .fr {
+    height: 24px;
+    width: 24px;
   }
   nav .nav-open {
     height: 100vh;
@@ -1569,15 +1637,16 @@ footer span:hover {
   nav .nav-open ul li {
     width: unset;
     height: unset;
+    margin: 2rem;
   }
   nav .nav-open ul li.active, nav .nav-open ul li:hover {
     background: none;
   }
   nav .nav-open ul li.active a, nav .nav-open ul li:hover a {
-    font-size: 4rem;
+    font-size: 5rem;
   }
   nav .nav-open ul li a {
-    font-size: 3rem;
+    font-size: 3.5rem;
     padding: 3rem 0;
   }
   #fp-nav ul li {
@@ -1594,12 +1663,18 @@ footer span:hover {
     width: 100%;
     margin-left: 0;
   }
-  .home-page #home-sections .section svg,
+  .home-page #home-sections .section#showcase svg,
+  .page-sections .section#showcase svg {
+    bottom: 10% !important;
+    left: 15% !important;
+    right: 15% !important;
+    height: auto !important;
+    margin: auto;
+  }
   .home-page #home-sections .section#work svg,
   .home-page #home-sections .section#about svg,
   .home-page #home-sections .section#experience svg,
   .home-page #home-sections .section#contact svg,
-  .page-sections .section svg,
   .page-sections .section#work svg,
   .page-sections .section#about svg,
   .page-sections .section#experience svg,
@@ -1612,8 +1687,6 @@ footer span:hover {
   .page-sections .fullpage {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
     grid-gap: 0;
     width: 90%;
     margin: auto;
@@ -1649,10 +1722,11 @@ footer span:hover {
   }
   .home-page #home-sections #showcase .container .headers-container .headers,
   .page-sections #showcase .container .headers-container .headers {
+    text-align: center;
     width: 100%;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 20px;
   }
   .home-page #home-sections #showcase .container .headers-container .headers .showcase-btn,
@@ -1668,15 +1742,15 @@ footer span:hover {
   .page-sections .section .fullpage {
     -ms-grid-columns: 1fr !important;
         grid-template-columns: 1fr !important;
-    -ms-grid-rows: (1fr)[2];
-        grid-template-rows: repeat(2, 1fr);
   }
   .page-sections .section .fullpage .hero {
-    width: 90%;
-    margin: auto;
+    width: 90% !important;
+    height: 90% !important;
+    margin: 10% auto !important;
+    padding: 2rem;
   }
   .page-sections .section .fullpage .details {
-    margin: auto;
+    margin: auto !important;
   }
   .page-sections .section .fullpage .details .showcase-btn {
     margin-top: 0;
@@ -1736,14 +1810,14 @@ footer span:hover {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
-  .contact .page-inner .page-description h4 {
-    width: 90%;
+  .contact .page-inner .page-info h4 {
+    width: 100%;
   }
   .contact .page-inner .img {
     display: none;
   }
-  .contact .page-inner .page-description {
-    text-align: left;
+  .contact .page-inner .page-info {
+    text-align: center;
   }
   .contact .page-inner > div .form-container form {
     width: 90%;
@@ -1782,9 +1856,6 @@ footer span:hover {
   }
   .about .page-inner .quote h3 {
     font-size: 2rem;
-  }
-  .about .page-inner .quote .photo {
-    width: 50%;
   }
   .about .page-inner .content > .container {
     grid-gap: 6rem;

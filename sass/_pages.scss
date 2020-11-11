@@ -21,13 +21,22 @@
     height: 100%;
     width: 90%;
     margin: auto;
+    .hero,
+    .details {
+      margin: 15% auto;
+    }
     .hero {
-      margin: 15% 5% 15% auto;
+      img {
+        object-fit: cover;
+      }
     }
     .details {
-      margin: 0 auto 15% 5%;
+      // margin: 0 auto 15% 5%;
       h1 .text {
-        font-size: 8rem;
+        font-size: 3rem;
+      }
+      h2 .text {
+        font-size: 4rem;
       }
       .showcase-btn {
         width: 20%;
@@ -39,6 +48,15 @@
   display: flex;
   .fullpage {
     grid-template-columns: 1fr 1fr;
+    .hero,
+    .details {
+      margin: 15% auto;
+      width: 80%;
+      height: 80%;
+      img {
+        object-fit: unset;
+      }
+    }
   }
 }
 

@@ -84,5 +84,7 @@
   "labelSubject": "Subjet",
   "placeholderSubject": "I need an attractive landing page",
   "placeholderMessage": "Explain your project in a few words / Leave a comment..",
-  "formSubmit": "Submit"
+  "formSubmit": "Submit",
+
+  "footerSpan1": "Developed By"
 }

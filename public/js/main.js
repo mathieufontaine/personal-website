@@ -28,7 +28,7 @@ if (main.classList.contains("contact-page")) {
 
 // * Home function
 if (main.classList.contains("home-page")) {
-  // startAnimation();
+  startAnimation();
   initMotion();
   scrollAnimation();
 }

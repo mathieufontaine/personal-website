@@ -6,16 +6,16 @@
   "nav5": "Contact",
 
   "homeTitle": "Je crée des experiences web.",
-  "homeShowcaseBtn": "Mon Portfolio",
+  "homeShowcaseBtn": "Voir Portfolio",
   "sectionBtn": "Découvrir",
-  "workTitle": "Mon Portfolio",
-  "workSubtitle": "Découvrez mes précédents projets",
+  "workTitle": "Portfolio",
+  "workSubtitle": "Découvrez mes derniers projets",
   "workText": "J'ai développé plus de 20 sites & applications en 2020",
   "aboutTitle": "A Propos",
   "aboutSubtitle": "Développeur Web & Expert en Marketing Digital",
   "aboutText": "J'aime designer, développer et promouvoir des sites et des applications sur le web",
-  "experienceTitle": "Mon Parcours",
-  "experienceSubtitle": "Explorer mon parcours profesionnel à travers differente  villes",
+  "experienceTitle": "Parcours",
+  "experienceSubtitle": "Explorer mon parcours profesionnel à travers differentes villes",
   "experienceText": "J'aime allier voyage & travail",
   "contactTitle": "Contact",
   "contactSubtitle": "Une idée ? Un projet?",
@@ -42,7 +42,7 @@
 
   "quoteText": "\"Je m'appelle Mathieu et j’adore développer de beaux sites web et applications web \"",
   "webdevTitle": "Développeur Web",
-  "webdevText": "Je suis développeur web. J’ai appris le développement fullstack chez Le Wagon en 2019 (Ruby/JS/React..). Depuis la fin du Bootcamp, j’ai beaucoup pratiqué en construisant différents sites web. J’ai également acquis de nouvelles compétences sur différentes technologies (recto et verso), en apprenant par moi-même.",
+  "webdevText": "Je suis développeur web. J’ai appris le développement fullstack à l'école Le Wagon en 2019 (Ruby/JS/React..). Depuis la fin du Bootcamp, j’ai beaucoup pratiqué en développant différents sites web et applications. J’ai également acquis de nouvelles compétences sur différentes technologies (recto et verso), en apprenant par moi-même.",
   "frontendTitle": "Passionné par le Front-end",
   "frontendText": "Ce que j’aime le plus dans le développement Web est la possibilité de voir instantanément les résultats de mon travail ainsi que l’interaction avec l’utilisateur. Ainsi, j’ai décidé de me spécialiser dans le développement frontend. Je me concentre sur l’écriture de code HTML accessible, en utilisant des pratiques CSS modernes et du code Javascript efficace. J’utilise aussi les bibliothèques ReactJS & React Native.",
   "uxTitle": "Focus sur le design UI/UX",
@@ -83,5 +83,7 @@
   "labelSubject": "Sujet",
   "placeholderSubject": "Création d'un site professionnel",
   "placeholderMessage": "Expliquez votre projet en quelques lignes..",
-  "formSubmit": "Envoyer"
+  "formSubmit": "Envoyer",
+
+  "footerSpan1": "Développé par "
 }

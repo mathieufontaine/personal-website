@@ -33,6 +33,9 @@ const translate = () => {
   navbar.querySelector("li:nth-child(4) a").innerText = language.nav4;
   navbar.querySelector("li:nth-child(5) a").innerText = language.nav5;
 
+  // * footer
+  document.querySelector("footer .span1").innerText = language.footerSpan1;
+
   // * home
   if (main.classList.contains("home-page")) {
     main.querySelector(".headers h1").innerText = language.homeTitle;
@@ -209,6 +212,7 @@ englishBtns.forEach((btn, index) => {
     setLanguage("en");
     getLanguage();
     translate();
+    showLanguage();
   });
 });
 
@@ -219,11 +223,27 @@ frenchBtns.forEach((btn, index) => {
     setLanguage("fr");
     getLanguage();
     translate();
+    showLanguage();
   });
 });
+
+// * show language
+
+const enFlags = document.querySelectorAll(".en");
+const frFlags = document.querySelectorAll(".fr");
+
+const showLanguage = () => {
+  if (localStorage.getItem("language") == "fr") {
+    frFlags.forEach(flag => flag.classList.add("active"));
+    enFlags.forEach(flag => flag.classList.remove("active"));
+  } else {
+    enFlags.forEach(flag => flag.classList.add("active"));
+    frFlags.forEach(flag => flag.classList.remove("active"));
+  }
+};
 
 // * Apply right language on load
 
 getLanguage();
-console.log(language);
 translate();
+showLanguage();
