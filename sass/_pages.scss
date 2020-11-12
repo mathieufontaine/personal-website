@@ -21,16 +21,21 @@
     height: 100%;
     width: 90%;
     margin: auto;
+
     .hero,
     .details {
       margin: 15% auto;
     }
     .hero {
+      // transform: translateX(100vw);
       img {
         object-fit: cover;
       }
     }
     .details {
+      transform: translateX(-100vw);
+      opacity: 0;
+
       // margin: 0 auto 15% 5%;
       h1 .text {
         font-size: 3rem;

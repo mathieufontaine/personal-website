@@ -55,6 +55,8 @@
       justify-content: flex-start;
 
       .headers {
+        opacity: 0;
+        transform: translateY(100vh);
         // position: absolute;
         // top: 40%;
         // left: 0%;

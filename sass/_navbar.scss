@@ -142,6 +142,13 @@ nav {
   }
 }
 
+.home-page header {
+  transform: translateY(-100vh);
+  nav {
+    opacity: 0;
+  }
+}
+
 .nav-page {
   // background: rgba($color: white, $alpha: 0.4);
   // background-image: $yellow-gradient;

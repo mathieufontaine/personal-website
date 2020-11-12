@@ -1,6 +1,20 @@
 // import { initMotion } from "../animations/motion.js";
 
 // Home Animations
+export const showcaseAnimation = () => {
+  const header = document.querySelector("header");
+  const nav = document.querySelector("nav");
+  const headings = document.querySelector(".headers");
+
+  gsap.to(header, 1, { y: 0, ease: "back.out(1.7)" });
+  gsap.to(headings, 1.5, {
+    delay: 0.5,
+    y: 0,
+    opacity: 1,
+    ease: "power4.out"
+  });
+  gsap.to(nav, 1.5, { delay: 0.5, opacity: 1 });
+};
 
 export const startAnimation = () => {
   const computer = document.querySelector("svg #Computer");

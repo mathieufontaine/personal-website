@@ -171,7 +171,7 @@ ul {
   display: flex;
 }
 
-.section#work svg, .section#about svg, .section#experience svg, .section#contact svg {
+.section svg {
   width: 105% !important;
   height: 100% !important;
   margin-left: auto !important;
@@ -181,7 +181,7 @@ ul {
           transform-origin: bottom right;
 }
 
-.section#work svg circle, .section#about svg circle, .section#experience svg circle, .section#contact svg circle {
+.section svg circle {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
@@ -524,6 +524,15 @@ nav .nav-open ul li:hover {
   background: rgba(255, 255, 255, 0.4);
 }
 
+.home-page header {
+  -webkit-transform: translateY(-100vh);
+          transform: translateY(-100vh);
+}
+
+.home-page header nav {
+  opacity: 0;
+}
+
 .nav-page {
   -webkit-transition: top 0.6s ease-in-out;
   transition: top 0.6s ease-in-out;
@@ -589,6 +598,12 @@ nav .nav-open ul li:hover {
 .page-sections .section .fullpage .hero img {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.page-sections .section .fullpage .details {
+  -webkit-transform: translateX(-100vw);
+          transform: translateX(-100vw);
+  opacity: 0;
 }
 
 .page-sections .section .fullpage .details h1 .text {
@@ -940,6 +955,9 @@ html.is-animating .transition-fade {
 }
 
 #showcase .container .headers-container .headers {
+  opacity: 0;
+  -webkit-transform: translateY(100vh);
+          transform: translateY(100vh);
   width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;

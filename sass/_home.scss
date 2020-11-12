@@ -12,25 +12,25 @@
   }
 }
 .section {
-  &#work,
-  &#about,
-  &#experience,
-  &#contact {
-    svg {
-      // opacity: 0.1 !important;
-      // position: absolute !important;
-      // bottom: 0% !important;
-      // right: 0 !important;
-      width: 105% !important;
-      height: 100% !important;
-      margin-left: auto !important;
-      // z-index: -10 !important;
+  // &#work,
+  // &#about,
+  // &#experience,
+  // &#contact {
+  svg {
+    // opacity: 0.1 !important;
+    // position: absolute !important;
+    // bottom: 0% !important;
+    // right: 0 !important;
+    width: 105% !important;
+    height: 100% !important;
+    margin-left: auto !important;
+    // z-index: -10 !important;
+    transition: all 0.5s ease;
+    transform-origin: bottom right;
+    circle {
       transition: all 0.5s ease;
-      transform-origin: bottom right;
-      circle {
-        transition: all 0.5s ease;
-      }
     }
+    // }
   }
   .svg-container {
     display: flex;
@@ -130,6 +130,7 @@
   ul li {
     width: 40px !important;
     height: 40px !important;
+
     a span {
       background: white;
       opacity: 0.5;
