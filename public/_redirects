@@ -1,7 +1,7 @@
 # Redirects from what the browser requests to what we serve
 
-//public/index.html   /
-//public/about.html  /about
-//public/work.html   /work
-//public/experience.html     /experience
-//public/contact.html     /contact
+/public/index.html   /
+/public/about.html  /about
+/public/work.html   /work
+/public/experience.html     /experience
+/public/contact.html     /contact
