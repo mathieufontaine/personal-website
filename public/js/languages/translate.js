@@ -32,6 +32,7 @@ const translate = () => {
   navbar.querySelector("li:nth-child(3) a").innerText = language.nav3;
   navbar.querySelector("li:nth-child(4) a").innerText = language.nav4;
   navbar.querySelector("li:nth-child(5) a").innerText = language.nav5;
+  navbar.querySelector("li:nth-child(6) a").innerText = language.nav6;
 
   // * footer
   document.querySelector("footer .span1").innerText = language.footerSpan1;
@@ -183,6 +184,14 @@ const translate = () => {
     main.querySelector("#lisbon .card .p2 .span2").innerText =
       language.lisbonText2span2;
     main.querySelector("#lisbon .card .p3").innerText = language.lisbonText3;
+  }
+
+  // * services
+  else if (main.classList.contains("services-page")) {
+    main.querySelector(".details h1 .text").innerText = language.servicesTitle;
+    main.querySelector(".details h2 .text").innerText =
+      language.servicesSubtitle;
+    main.querySelector(".details h4 .text").innerText = language.servicesText;
   }
 
   // * contact
