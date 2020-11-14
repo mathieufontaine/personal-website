@@ -90,3 +90,147 @@
     }
   }
 }
+
+/* packages */
+
+.packages {
+  color: white;
+
+  .title {
+    margin: 2rem 0;
+    h2 {
+      color: white !important;
+    }
+  }
+
+  .packages-dev {
+    .dev-intro {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-gap: 2rem;
+      align-items: center;
+      margin: 2rem 0;
+      .arrow {
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          height: 100%;
+        }
+      }
+      .content {
+        // color: white;
+      }
+    }
+  }
+
+  .package-cards {
+    display: flex;
+    justify-content: center;
+  }
+  .package-card {
+    width: 25%;
+    // margin: 0 5rem;
+    padding: 0 2rem;
+    h3 {
+      height: 50px;
+      padding: 1rem 2rem;
+      color: black;
+      border-radius: 20px;
+      text-align: center;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      // align-items: flex-start;
+      text-align: center;
+      justify-content: center;
+      border-radius: 10px;
+      li {
+        height: 50px;
+        padding: 1rem 3rem;
+        color: white;
+        width: 100%;
+      }
+    }
+    &.headers {
+      justify-self: flex-start;
+      margin: 0;
+      width: 25%;
+      flex-grow: 1;
+      ul {
+        text-align: left;
+      }
+    }
+    &.basic {
+      h3 {
+        background: white;
+      }
+      ul {
+        border: 4px solid white;
+        li {
+          background: rgba($color: white, $alpha: 0.3);
+        }
+        li.fill {
+          background: rgba($color: white, $alpha: 1);
+          color: black;
+        }
+      }
+    }
+    &.standard {
+      h3 {
+        background: black;
+        color: white;
+      }
+      ul {
+        border: 4px solid black;
+        li {
+          background: rgba($color: black, $alpha: 0.3);
+        }
+        li.fill {
+          background: rgba($color: black, $alpha: 1);
+        }
+      }
+    }
+    &.premium {
+      h3 {
+        background: $yellow-gradient;
+        color: white;
+      }
+      ul {
+        border: 4px solid $secondary-color;
+        background: $yellow-gradient;
+        li {
+          background: rgba($color: $secondary-color, $alpha: 0.5);
+        }
+        li.fill {
+          background: none;
+        }
+      }
+    }
+  }
+  /* table */
+
+  .table {
+    width: 100%;
+    margin-top: 2rem;
+    border-collapse: collapse;
+    border-spacing: 0;
+    thead th {
+      text-transform: uppercase;
+      padding: 1rem 0.6rem;
+    }
+    tbody tr td {
+      color: white;
+      padding: 1rem 0.6rem;
+      text-align: center;
+      &:first-child {
+        text-align: left;
+      }
+    }
+    tbody tr:nth-child(2) {
+      opacity: 0.3;
+    }
+  }
+}
