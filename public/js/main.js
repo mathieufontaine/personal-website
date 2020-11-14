@@ -4,7 +4,7 @@ import { initMotion } from "./animations/motion.js";
 import { pageAnimation } from "./animations/page.js";
 import { showcaseAnimation } from "./pages/home.js";
 import { toggleMenuAnimation, hideNavbar } from "./pages/navbar.js";
-import { enableTabs } from "./pages/services.js";
+import { enableTabs, scaleStandardCard } from "./pages/services.js";
 // import { pageTransition } from "./transitions.js";
 
 const main = document.querySelector("main");
@@ -30,6 +30,7 @@ if (!main.classList.contains("home-page")) {
 // * Services function
 if (main.classList.contains("services-page")) {
   enableTabs();
+  scaleStandardCard();
 }
 
 // * Contact function

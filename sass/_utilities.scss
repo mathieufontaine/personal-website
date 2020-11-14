@@ -59,8 +59,8 @@ $secondary-gradient-vertical: linear-gradient(
 );
 $white-gradient: linear-gradient(
   to right,
-  rgb(225, 236, 245) 0%,
-  rgb(207, 228, 245) 100%
+  rgb(225, 236, 245) 50%,
+  rgb(191, 235, 253) 100%
 );
 html {
   scroll-behavior: smooth;
