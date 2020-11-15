@@ -50,7 +50,7 @@ h1 {
 
 h2 {
   color: #1e1d21;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: 500;
 }
 
@@ -1334,6 +1334,10 @@ html.is-animating .transition-fade {
 }
 
 /* tabs */
+.services-page {
+  overflow-x: hidden;
+}
+
 .services-page .page-description .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1367,12 +1371,31 @@ html.is-animating .transition-fade {
 }
 
 .services-page .title {
-  padding: 3rem;
+  width: 100%;
+}
+
+.services-page .title h2 {
+  padding: 3rem 6rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.services-page .container {
+  max-width: 1200px;
+  margin: auto;
 }
 
 .services-page .tabs {
-  background: #fffefe;
+  background: #f8f8ff;
   /* tab content */
+}
+
+.services-page .tabs .title {
+  padding: 3rem 0;
+}
+
+.services-page .tabs .title h2 {
+  padding: 0;
 }
 
 .services-page .tabs .tabs-nav {
@@ -1411,6 +1434,7 @@ html.is-animating .transition-fade {
 
 .services-page .tabs .tab-content {
   padding: 3rem 0;
+  margin-bottom: 3rem;
   background: rgba(80, 156, 217, 0.1);
 }
 
@@ -1458,33 +1482,48 @@ html.is-animating .transition-fade {
 }
 
 /* packages */
-.packages {
-  color: white;
-  /* table */
-}
-
 .packages .title {
-  margin: 2rem 0;
+  background: linear-gradient(109.6deg, #ea2967 11.2%, #509cd9 91.1%);
 }
 
 .packages .title h2 {
-  color: white !important;
+  color: white;
+}
+
+.packages .btn {
+  display: block;
+  width: 40%;
+  margin: 4rem auto;
+  text-align: center;
+}
+
+.packages .packages-dev .paragraph {
+  margin: 2rem 0;
+}
+
+.packages .packages-dev .paragraph p {
+  margin: 2rem 0;
+}
+
+.packages .packages-dev .paragraph p span {
+  font-weight: bold;
 }
 
 .packages .packages-dev .dev-intro {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 2fr;
-      grid-template-columns: 1fr 2fr;
-  grid-gap: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   margin: 2rem 0;
 }
 
 .packages .packages-dev .dev-intro .arrow {
-  height: 200px;
+  height: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1494,10 +1533,37 @@ html.is-animating .transition-fade {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-right: 2rem;
 }
 
 .packages .packages-dev .dev-intro .arrow img {
   height: 100%;
+}
+
+.packages .packages-dev .dev-intro .header {
+  width: 100%;
+  position: relative;
+}
+
+.packages .packages-dev .dev-intro .header h3 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.packages .packages-dev .dev-intro .header .line {
+  position: absolute;
+  right: -100vh;
+  bottom: 0;
+  left: 15%;
+  border-bottom: 4px solid #ea2967;
+}
+
+.packages .packages-dev .dev-explanations {
+  margin: 5rem 0;
+}
+
+.packages .package-container {
+  margin: 15rem 0 10rem 0;
 }
 
 .packages .package-cards {
@@ -1510,6 +1576,7 @@ html.is-animating .transition-fade {
 }
 
 .packages .package-card {
+  width: 30%;
   overflow: hidden;
   margin: 0 2rem;
   border-radius: 20px;
@@ -1517,6 +1584,14 @@ html.is-animating .transition-fade {
   transition: -webkit-transform 0.5s ease;
   transition: transform 0.5s ease;
   transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
 }
 
 .packages .package-card:hover {
@@ -1530,62 +1605,44 @@ html.is-animating .transition-fade {
   color: black;
   text-align: center;
   margin-bottom: 0;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .packages .package-card .price {
   text-align: center;
   padding: 1rem;
   font-size: 2.5rem;
+  background: black;
+  color: white;
 }
 
 .packages .package-card ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .packages .package-card ul li {
-  background: #cae4f5;
-  height: 50px;
-  padding: 1rem 3rem;
-  color: white;
+  font-size: 1.5rem;
+  color: black;
+  border: none;
+  padding: 1.5rem 3rem;
   width: 100%;
 }
 
+.packages .package-card.basic {
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #e1ecf5), to(#bfebfd));
+  background: linear-gradient(to right, #e1ecf5 50%, #bfebfd 100%);
+}
+
 .packages .package-card.basic h3 {
-  background: white;
   color: black;
 }
 
 .packages .package-card.basic .price {
-  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #e1ecf5), to(#bfebfd));
-  background: linear-gradient(to right, #e1ecf5 50%, #bfebfd 100%);
-  color: black;
+  color: white;
 }
 
 .packages .package-card.basic ul li {
-  background: white;
-  border-bottom: 1px solid #d7e3fc;
   color: black;
-}
-
-.packages .package-card.basic ul li.fill {
-  border-bottom: 1px solid white;
-  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #e1ecf5), to(#bfebfd));
-  background: linear-gradient(to right, #e1ecf5 50%, #bfebfd 100%);
-}
-
-.packages .package-card.basic ul li.fill:last-child {
-  border: none;
 }
 
 .packages .package-card.standard {
@@ -1595,76 +1652,94 @@ html.is-animating .transition-fade {
   transition: -webkit-transform 0.5s ease;
   transition: transform 0.5s ease;
   transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  background: linear-gradient(96deg, #2b3760 30%, #509cd9 100%);
 }
 
 .packages .package-card.standard h3 {
-  background: #193758;
   color: white;
 }
 
 .packages .package-card.standard .price {
-  background: linear-gradient(96deg, #2b3760 30%, #509cd9 100%);
+  color: white;
 }
 
 .packages .package-card.standard ul li {
-  background: rgba(0, 0, 0, 0.5);
-  border-bottom: 1px solid #193758;
-}
-
-.packages .package-card.standard ul li:last-child {
-  border: none;
-}
-
-.packages .package-card.standard ul li.fill {
-  background: linear-gradient(96deg, #2b3760 30%, #509cd9 100%);
+  color: white;
 }
 
 .packages .package-card.premium {
-  background: linear-gradient(109.6deg, #ea2967 11.2%, #509cd9 91.1%);
+  background: linear-gradient(109.6deg, #ea2967 11.2%, #9f4997 91.1%);
 }
 
 .packages .package-card.premium h3 {
-  background: #6673ba;
   color: white;
 }
 
 .packages .package-card.premium ul li {
-  background: rgba(80, 156, 217, 0.5);
-  border-bottom: 1px solid #6673ba;
-}
-
-.packages .package-card.premium ul li:last-child {
-  border: none;
-}
-
-.packages .package-card.premium ul li.fill {
-  background: none;
-}
-
-.packages .table {
-  width: 100%;
-  margin-top: 2rem;
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-.packages .table thead th {
-  text-transform: uppercase;
-  padding: 1rem 0.6rem;
-}
-
-.packages .table tbody tr td {
   color: white;
-  padding: 1rem 0.6rem;
+}
+
+.alacarte {
+  color: black;
+  background: white;
+}
+
+.alacarte .container {
+  background: #f8f8ff;
+}
+
+.alacarte .title {
+  background: linear-gradient(109.6deg, #ea2967 11.2%, #509cd9 91.1%);
+}
+
+.alacarte .title h2 {
+  color: white;
+}
+
+.alacarte .btn {
+  display: block;
+  width: 40%;
+  margin: 4rem auto;
   text-align: center;
 }
 
-.packages .table tbody tr td:first-child {
-  text-align: left;
+.alacarte-intro {
+  margin: 2rem 0;
 }
 
-.packages .table tbody tr:nth-child(2) {
-  opacity: 0.3;
+.alacarte-table {
+  max-width: 900px;
+  width: 100%;
+  height: 100%;
+  margin: 2rem auto;
+}
+
+.alacarte-table li {
+  margin: 1rem 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.alacarte-table li h3 {
+  margin: 1rem 0;
+  font-weight: bold;
+}
+
+.alacarte-table li h3.design-title {
+  color: #a7d4f5;
+}
+
+.alacarte-table li h3.dev-title {
+  color: #ea2967;
+}
+
+.alacarte-table li h3.marketing-title {
+  color: rgba(87, 183, 147, 0.75);
 }
 
 .contact {
