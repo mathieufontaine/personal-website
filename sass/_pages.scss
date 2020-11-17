@@ -49,18 +49,32 @@
     }
   }
 }
-.page-sections.about .section {
-  display: flex;
-  .fullpage {
-    grid-template-columns: 1fr 1fr;
+.page-sections.about {
+  h3:first-child {
+    text-align: center;
+    padding: 3rem 0 2rem 0;
+    color: white;
+  }
+
+  .section {
+    // display: flex;
+
+    .fullpage {
+      grid-template-columns: 1fr 1fr;
+      .hero,
+      .details {
+        margin: 15% auto;
+        height: 80%;
+        img {
+          object-fit: unset;
+        }
+      }
+    }
+  }
+  .section:first-child .fullpage {
     .hero,
     .details {
-      margin: 15% auto;
       width: 80%;
-      height: 80%;
-      img {
-        object-fit: unset;
-      }
     }
   }
 }

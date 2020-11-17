@@ -32,13 +32,14 @@ const translate = () => {
   navbar.querySelector("li:nth-child(3) a").innerText = language.nav3;
   navbar.querySelector("li:nth-child(4) a").innerText = language.nav4;
   navbar.querySelector("li:nth-child(5) a").innerText = language.nav5;
-  navbar.querySelector("li:nth-child(6) a").innerText = language.nav6;
+  // navbar.querySelector("li:nth-child(6) a").innerText = language.nav6;
 
   // * footer
   document.querySelector("footer .span1").innerText = language.footerSpan1;
 
   // * home
   if (main.classList.contains("home-page")) {
+    document.querySelector("header .logo h4").innerText = language.navJob;
     main.querySelector(".headers h1").innerText = language.homeTitle;
     main.querySelector(".showcase-btn .btn").innerText =
       language.homeShowcaseBtn;
@@ -50,13 +51,11 @@ const translate = () => {
     main.querySelector("#about h2 .text").innerText = language.aboutSubtitle;
     main.querySelector("#about h4 .text").innerText = language.aboutText;
     main.querySelector("#about .btn").innerText = language.sectionBtn;
-    main.querySelector("#experience h1 .text").innerText =
-      language.experienceTitle;
-    main.querySelector("#experience h2 .text").innerText =
-      language.experienceSubtitle;
-    main.querySelector("#experience h4 .text").innerText =
-      language.experienceText;
-    main.querySelector("#experience .btn").innerText = language.sectionBtn;
+    main.querySelector("#services h1 .text").innerText = language.servicesTitle;
+    main.querySelector("#services h2 .text").innerText =
+      language.servicesSubtitle;
+    main.querySelector("#services h4 .text").innerText = language.servicesText;
+    main.querySelector("#services .btn").innerText = language.sectionBtn;
     main.querySelector("#contact h1 .text").innerText = language.contactTitle;
     main.querySelector("#contact h2 .text").innerText =
       language.contactSubtitle;
@@ -136,6 +135,15 @@ const translate = () => {
     main.querySelector(".cta h2").innerText = language.ctaTitle;
     main.querySelector(".cta h4").innerText = language.ctaText;
     main.querySelector(".cta .btn").innerText = language.ctaBtn;
+    main.querySelector("#experience h3").innerText =
+      language.experienceBeforeTitle;
+    main.querySelector("#experience h1 .text").innerText =
+      language.experienceTitle;
+    main.querySelector("#experience h2 .text").innerText =
+      language.experienceSubtitle;
+    main.querySelector("#experience h4 .text").innerText =
+      language.experienceText;
+    main.querySelector("#experience .btn").innerText = language.sectionBtn;
   }
 
   // * experience
