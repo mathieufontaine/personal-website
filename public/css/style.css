@@ -1338,9 +1338,10 @@ html.is-animating .transition-fade {
   border-radius: 10px;
 }
 
-/* tabs */
 .services-page {
   overflow-x: hidden;
+  /* tabs */
+  /* services */
 }
 
 .services-page .page-description .wrapper {
@@ -1391,7 +1392,6 @@ html.is-animating .transition-fade {
 }
 
 .services-page .tabs {
-  background: #f8f8ff;
   /* tab content */
 }
 
@@ -1460,13 +1460,30 @@ html.is-animating .transition-fade {
 .services-page .tabs .tab-content {
   padding: 2rem 0;
   margin-bottom: 3rem;
-  background: rgba(80, 156, 217, 0.1);
+  background: #f8f8ff;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  text-align: center;
 }
 
 .services-page .tabs .tab-content .show {
   display: block !important;
+}
+
+.services-page .tabs .tab-content .showcase-btn {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services-page .tabs .tab-content .showcase-btn p {
+  font-weight: 500;
+  color: black;
+}
+
+.services-page .tabs .tab-content .showcase-btn .scroll-down-btn {
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
 }
 
 .services-page .tabs .tab-content #tab-1-content,
@@ -1477,7 +1494,6 @@ html.is-animating .transition-fade {
 }
 
 .services-page .tabs .tab-content .problem {
-  color: #509cd8;
   padding: 0;
   font-style: italic;
   font-size: 2rem;
@@ -1488,7 +1504,44 @@ html.is-animating .transition-fade {
   padding-bottom: 2rem;
 }
 
-.services-page .tabs .tab-content .tab-content-item .tab-content-inner {
+.services-page .tabs .tab-content img {
+  height: 300px;
+  margin: 4rem 0;
+}
+
+.services-page .services .service {
+  margin: 6rem 0;
+}
+
+.services-page .services .container {
+  padding-top: 0s;
+}
+
+.services-page .services .btn {
+  display: block;
+  width: 40%;
+  margin: 4rem auto;
+  text-align: center;
+}
+
+.services-page .services .intro {
+  text-align: center;
+  background: #f8f8ff;
+}
+
+.services-page .services .intro .problem {
+  color: #424547;
+  padding: 0;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 2.5rem;
+}
+
+.services-page .services .intro .solution {
+  font-weight: bold;
+}
+
+.services-page .services .explanations {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 2fr 1fr;
@@ -1501,14 +1554,10 @@ html.is-animating .transition-fade {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
+  margin: 5rem 0;
 }
 
-.services-page .tabs .tab-content .tab-content-item .tab-content-inner .ps {
-  margin-top: 1rem;
-  font-style: italic;
-}
-
-.services-page .tabs .tab-content .tab-content-item .tab-content-inner .content-img {
+.services-page .services .explanations .content-img {
   height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1521,13 +1570,13 @@ html.is-animating .transition-fade {
           justify-content: center;
 }
 
-.services-page .tabs .tab-content .tab-content-item .tab-content-inner .content-img img {
+.services-page .services .explanations .content-img img {
   margin-right: 2rem;
   margin-bottom: 2rem;
   height: 90%;
 }
 
-.services-page .tabs .tab-content .tab-content-item .tab-content-inner .flex-col {
+.services-page .services .explanations .flex-col {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1535,7 +1584,87 @@ html.is-animating .transition-fade {
   height: 70px;
 }
 
-/* packages */
+.services-page .services .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 2rem 0;
+}
+
+.services-page .services .header .arrow {
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 2rem;
+}
+
+.services-page .services .header .arrow img {
+  height: 100%;
+}
+
+.services-page .services .header .text {
+  width: 100%;
+  position: relative;
+}
+
+.services-page .services .header .text h3 {
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+
+.services-page .services .header .text .line {
+  position: absolute;
+  right: -100vh;
+  bottom: 0;
+  left: 10%;
+  border-bottom: 3px solid #ea2967;
+}
+
+.services-page #web-integration span {
+  color: #ea2967;
+}
+
+.services-page #web-integration .header .text .line {
+  border-bottom: 3px solid #ea2967;
+}
+
+.services-page #web-design span {
+  color: #509cd9;
+}
+
+.services-page #web-design .header .text .line {
+  border-bottom: 3px solid #509cd9;
+}
+
+.services-page #web-dev span {
+  color: #19cc9f;
+}
+
+.services-page #web-dev .header .text .line {
+  border-bottom: 3px solid #19cc9f;
+}
+
+.services-page #marketing span {
+  color: #131d49;
+}
+
+.services-page #marketing .header .text .line {
+  border-bottom: 3px solid #131d49;
+}
+
 .packages .title {
   background: linear-gradient(109.6deg, #ea2967 11.2%, #509cd9 91.1%);
 }
@@ -1544,11 +1673,17 @@ html.is-animating .transition-fade {
   color: white;
 }
 
-.packages .btn {
-  display: block;
-  width: 40%;
-  margin: 4rem auto;
-  text-align: center;
+.packages .package-container {
+  margin: 15rem 0 10rem 0;
+}
+
+.packages .package-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .packages .packages-dev .paragraph,
@@ -1564,79 +1699,6 @@ html.is-animating .transition-fade {
 .packages .packages-dev .paragraph p span,
 .packages .packages-marketing .paragraph p span {
   font-weight: bold;
-}
-
-.packages .packages-dev .intro,
-.packages .packages-marketing .intro {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  margin: 2rem 0;
-}
-
-.packages .packages-dev .intro .arrow,
-.packages .packages-marketing .intro .arrow {
-  height: 80px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-right: 2rem;
-}
-
-.packages .packages-dev .intro .arrow img,
-.packages .packages-marketing .intro .arrow img {
-  height: 100%;
-}
-
-.packages .packages-dev .intro .header,
-.packages .packages-marketing .intro .header {
-  width: 100%;
-  position: relative;
-}
-
-.packages .packages-dev .intro .header h3,
-.packages .packages-marketing .intro .header h3 {
-  font-size: 3rem;
-  font-weight: bold;
-}
-
-.packages .packages-dev .intro .header .line,
-.packages .packages-marketing .intro .header .line {
-  position: absolute;
-  right: -100vh;
-  bottom: 0;
-  left: 15%;
-  border-bottom: 4px solid #ea2967;
-}
-
-.packages .packages-dev .explanations,
-.packages .packages-marketing .explanations {
-  margin: 5rem 0;
-}
-
-.packages .package-container {
-  margin: 15rem 0 10rem 0;
-}
-
-.packages .package-cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .packages .package-card {
@@ -1715,20 +1777,8 @@ html.is-animating .transition-fade {
   background: linear-gradient(96deg, #2b3760 30%, #509cd9 100%);
 }
 
-.packages .package-card.standard h3 {
-  color: white;
-}
-
-.packages .package-card.standard .price {
-  color: white;
-}
-
 .packages .package-card.premium {
   background: linear-gradient(109.6deg, #ea2967 11.2%, #9f4997 91.1%);
-}
-
-.packages .package-card.premium h3 {
-  color: white;
 }
 
 .packages .packages-marketing .intro .header .line {
@@ -1739,42 +1789,42 @@ html.is-animating .transition-fade {
   background: linear-gradient(109.6deg, #3e92ca, #57b793 40%);
 }
 
-.alacarte {
+.packages .alacarte {
   color: black;
   background: white;
 }
 
-.alacarte .container {
+.packages .alacarte .container {
   background: #f8f8ff;
 }
 
-.alacarte .title {
+.packages .alacarte .title {
   background: linear-gradient(109.6deg, #ea2967 11.2%, #509cd9 91.1%);
 }
 
-.alacarte .title h2 {
+.packages .alacarte .title h2 {
   color: white;
 }
 
-.alacarte .btn {
+.packages .alacarte .btn {
   display: block;
   width: 40%;
   margin: 4rem auto;
   text-align: center;
 }
 
-.alacarte-intro {
+.packages .alacarte-intro {
   margin: 2rem 0;
 }
 
-.alacarte-table {
+.packages .alacarte-table {
   max-width: 900px;
   width: 100%;
   height: 100%;
   margin: 2rem auto;
 }
 
-.alacarte-table li {
+.packages .alacarte-table li {
   margin: 1rem 0;
   width: 100%;
   display: -webkit-box;
@@ -1785,20 +1835,20 @@ html.is-animating .transition-fade {
           justify-content: space-between;
 }
 
-.alacarte-table li h3 {
+.packages .alacarte-table li h3 {
   margin: 1rem 0;
   font-weight: bold;
 }
 
-.alacarte-table li h3.design-title {
+.packages .alacarte-table li h3.design-title {
   color: #a7d4f5;
 }
 
-.alacarte-table li h3.dev-title {
+.packages .alacarte-table li h3.dev-title {
   color: #ea2967;
 }
 
-.alacarte-table li h3.marketing-title {
+.packages .alacarte-table li h3.marketing-title {
   color: rgba(87, 183, 147, 0.75);
 }
 
@@ -2398,6 +2448,42 @@ footer span {
   .portfolio .gallery .projects .project .project-text .btn-container .btn {
     width: 50%;
     margin: 1rem;
+  }
+  .services-page .tabs > .container {
+    padding: 4rem 2rem;
+  }
+  .services-page .tabs > .container .tabs-nav {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .services-page .tabs > .container .tabs-nav .tab-item {
+    width: 100%;
+  }
+  .services-page .tabs > .container .tab-content {
+    background: rgba(80, 156, 217, 0.1);
+  }
+  .services-page .tabs > .container .tab-content img {
+    height: 200px;
+    margin: 4rem 0;
+  }
+  .services-page .services .explanations {
+    display: block;
+  }
+  .services-page .services .explanations .content-img {
+    margin-top: 5rem;
+  }
+  .services-page .services .explanations .content-img img {
+    height: 60px;
+  }
+  .services-page .services .explanations .flex-col {
+    height: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .services-page .services .explanations .flex-col img {
+    height: 50px;
   }
   footer {
     height: 14vh;

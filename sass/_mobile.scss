@@ -373,6 +373,42 @@
       }
     }
   }
+  .services-page {
+    .tabs > .container {
+      padding: 4rem 2rem;
+      .tabs-nav {
+        grid-template-columns: 1fr;
+        .tab-item {
+          width: 100%;
+        }
+      }
+      .tab-content {
+        background: rgba($color: $secondary-color, $alpha: 0.1);
+        img {
+          height: 200px;
+          margin: 4rem 0;
+        }
+      }
+    }
+    .services {
+      .explanations {
+        display: block;
+        .content-img {
+          margin-top: 5rem;
+          img {
+            height: 60px;
+          }
+        }
+        .flex-col {
+          height: auto;
+          flex-direction: row;
+          img {
+            height: 50px;
+          }
+        }
+      }
+    }
+  }
 
   footer {
     // margin-bottom: 10vh;
