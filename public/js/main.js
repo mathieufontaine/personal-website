@@ -5,6 +5,7 @@ import { pageAnimation } from "./animations/page.js";
 import { showcaseAnimation } from "./pages/home.js";
 import { toggleMenuAnimation, hideNavbar } from "./pages/navbar.js";
 import { enableTabs, scaleStandardCard } from "./pages/services.js";
+import { initTextTyper } from "./animations/textTyper.js";
 // import { pageTransition } from "./transitions.js";
 
 const main = document.querySelector("main");
@@ -42,6 +43,7 @@ if (main.classList.contains("contact-page")) {
 if (main.classList.contains("home-page")) {
   showcaseAnimation();
   startAnimation();
+  initTextTyper();
   initMotion();
   scrollAnimation();
 }

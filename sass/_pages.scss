@@ -27,6 +27,8 @@
       margin: 15% auto;
     }
     .hero {
+      transform: translateX(100vw);
+
       // transform: translateX(100vw);
       img {
         object-fit: cover;
@@ -53,7 +55,7 @@
   h3:first-child {
     text-align: center;
     padding: 3rem 0 2rem 0;
-    color: white;
+    // color: white;
   }
 
   .section {
@@ -125,7 +127,7 @@
     align-items: center;
     justify-content: space-around;
     img {
-      height: 90%;
+      height: 70%;
       margin: auto;
     }
     h4:before {

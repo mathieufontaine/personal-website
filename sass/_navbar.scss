@@ -29,7 +29,7 @@ nav {
     margin-left: 1rem;
     a {
       color: white;
-
+      margin-right: 1rem;
       transition: all 0.5s ease;
       .fa {
         margin-left: 10px;
@@ -125,7 +125,7 @@ nav {
         }
         &.active a {
           font-size: x-large;
-          color: $primary-color;
+          // color: $primary-color;
           // border-bottom: 2px solid white;
         }
         &:hover {
