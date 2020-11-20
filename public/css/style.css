@@ -318,6 +318,105 @@ ul {
   margin-left: 5%;
 }
 
+.home-page #home-sections #showcase {
+  height: 90vh !important;
+}
+
+.home-page #home-sections #showcase .fp-tableCell {
+  height: auto !important;
+}
+
+.home-page .arrows-btn {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: 5vh;
+  left: 2vh;
+}
+
+.home-page .arrows-btn p {
+  color: white;
+  -webkit-writing-mode: tb-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: tb-rl;
+  -webkit-transform: rotate(180deg);
+  margin-top: -50px;
+}
+
+.home-page .arrows-btn #scroll-down-btn div {
+  padding-top: 40px;
+}
+
+.home-page .arrows-btn #scroll-down-btn div span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 4px solid white;
+  border-bottom: 4px solid white;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb07 2s infinite;
+  animation: sdb07 2s infinite;
+  opacity: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.home-page .arrows-btn #scroll-down-btn div span:nth-of-type(1) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.home-page .arrows-btn #scroll-down-btn div span:nth-of-type(2) {
+  top: 16px;
+  -webkit-animation-delay: 0.15s;
+  animation-delay: 0.15s;
+}
+
+.home-page .arrows-btn #scroll-down-btn div span:nth-of-type(3) {
+  top: 32px;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.home-page .arrows-btn #scroll-down-btn div span p {
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+@-webkit-keyframes sdb07 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes sdb07 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.home-page .arrows-btn.mobile {
+  display: none;
+}
+
 .section {
   position: relative;
   min-height: 90vh;
@@ -955,12 +1054,11 @@ html.is-animating .transition-fade {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 90%;
+  width: 100%;
   margin: auto;
 }
 
 #showcase .container h1 {
-  margin-bottom: 30px;
   color: #1e1d21;
 }
 
@@ -1004,6 +1102,15 @@ html.is-animating .transition-fade {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+#showcase .container .headers-container .headers .title {
+  padding: 2rem 0;
+}
+
+#showcase .container .headers-container .headers .subtitle {
+  color: #4a8cd4;
+  font-size: 3.3rem;
 }
 
 .showcase-btn {
@@ -2178,7 +2285,8 @@ footer span {
   html {
     font-size: 50%;
   }
-  h2 {
+  h2,
+  h1 {
     text-align: center;
   }
   p {
@@ -2238,16 +2346,30 @@ footer span {
     width: 10px !important;
     height: 10px !important;
   }
+  .home-page .arrows-btn {
+    display: none;
+  }
+  .home-page .arrows-btn.mobile {
+    display: block;
+    left: 0;
+    top: 85%;
+    right: 0;
+  }
+  .home-page .arrows-btn.mobile #scroll-down-btn div span {
+    position: absolute;
+    border-left: 3px solid #509cd9;
+    border-bottom: 3px solid #509cd9;
+  }
   .home-page #home-sections,
-  .page-sections {
+  .home-page .page-sections {
     width: 100%;
     margin-left: 0;
   }
   .home-page #home-sections .section#showcase svg,
-  .page-sections .section#showcase svg {
-    bottom: 10% !important;
+  .home-page .page-sections .section#showcase svg {
+    bottom: 15% !important;
     left: 15% !important;
-    right: 15% !important;
+    width: 100% !important;
     height: auto !important;
     margin: auto;
   }
@@ -2255,16 +2377,16 @@ footer span {
   .home-page #home-sections .section#about svg,
   .home-page #home-sections .section#experience svg,
   .home-page #home-sections .section#contact svg,
-  .page-sections .section#work svg,
-  .page-sections .section#about svg,
-  .page-sections .section#experience svg,
-  .page-sections .section#contact svg {
+  .home-page .page-sections .section#work svg,
+  .home-page .page-sections .section#about svg,
+  .home-page .page-sections .section#experience svg,
+  .home-page .page-sections .section#contact svg {
     bottom: 10% !important;
     width: 100% !important;
     height: auto !important;
   }
   .home-page #home-sections .fullpage,
-  .page-sections .fullpage {
+  .home-page .page-sections .fullpage {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     grid-gap: 0;
@@ -2272,36 +2394,32 @@ footer span {
     margin: auto;
   }
   .home-page #home-sections .fullpage .details,
-  .page-sections .fullpage .details {
+  .home-page .page-sections .fullpage .details {
     text-align: center;
     padding: 2rem;
   }
   .home-page #home-sections .fullpage .details h1 .text,
-  .page-sections .fullpage .details h1 .text {
+  .home-page .page-sections .fullpage .details h1 .text {
     font-size: 4rem;
   }
   .home-page #home-sections .fullpage .details h2 .text,
-  .page-sections .fullpage .details h2 .text {
+  .home-page .page-sections .fullpage .details h2 .text {
     font-size: 2.5rem;
   }
   .home-page #home-sections .fullpage .hero,
-  .page-sections .fullpage .hero {
+  .home-page .page-sections .fullpage .hero {
     margin: 10% 10% auto 10%;
   }
   .home-page #home-sections #showcase,
-  .page-sections #showcase {
+  .home-page .page-sections #showcase {
     text-align: center;
   }
-  .home-page #home-sections #showcase h1,
-  .page-sections #showcase h1 {
-    margin-bottom: 0;
-  }
   .home-page #home-sections #showcase .container .headers-container,
-  .page-sections #showcase .container .headers-container {
+  .home-page .page-sections #showcase .container .headers-container {
     height: 50%;
   }
   .home-page #home-sections #showcase .container .headers-container .headers,
-  .page-sections #showcase .container .headers-container .headers {
+  .home-page .page-sections #showcase .container .headers-container .headers {
     text-align: center;
     width: 100%;
     -webkit-box-align: center;
@@ -2310,7 +2428,7 @@ footer span {
     padding: 20px;
   }
   .home-page #home-sections #showcase .container .headers-container .headers .showcase-btn,
-  .page-sections #showcase .container .headers-container .headers .showcase-btn {
+  .home-page .page-sections #showcase .container .headers-container .headers .showcase-btn {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;

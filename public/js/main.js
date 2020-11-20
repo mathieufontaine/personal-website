@@ -1,4 +1,4 @@
-import { startAnimation, scrollAnimation } from "./pages/home.js";
+import { startAnimation, scrollAnimation, scrollDown } from "./pages/home.js";
 import { formValidation } from "./pages/contact.js";
 import { initMotion } from "./animations/motion.js";
 import { pageAnimation } from "./animations/page.js";
@@ -46,4 +46,5 @@ if (main.classList.contains("home-page")) {
   initTextTyper();
   initMotion();
   scrollAnimation();
+  scrollDown();
 }

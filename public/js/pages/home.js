@@ -257,6 +257,12 @@ export const scrollAnimation = () => {
   });
 };
 
+export const scrollDown = () => {
+  document.querySelector(".test").addEventListener("click", () => {
+    window.scrollTo(0, 1000);
+    // console.log("object");
+  });
+};
 // Call Functions
 
 // startAnimation();

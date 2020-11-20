@@ -1,8 +1,10 @@
+import { initTextTyper } from "../animations/textTyper.js";
+
 // * get language functions
 
 let language;
 function getLanguage() {
-  localStorage.getItem("language") == null ? setLanguage("en") : false;
+  localStorage.getItem("language") == null ? setLanguage("fr") : false;
   $.ajax({
     url: "js/languages/" + localStorage.getItem("language") + ".json",
     dataType: "json",
@@ -39,10 +41,10 @@ const translate = () => {
 
   // * home
   if (main.classList.contains("home-page")) {
-    document.querySelector("header .logo h4").innerText = language.navJob;
-    main.querySelector(".headers h1").innerText = language.homeTitle;
-    main.querySelector(".showcase-btn .btn").innerText =
-      language.homeShowcaseBtn;
+    document.querySelector(".headers .title").innerText = language.navJob;
+    // main.querySelector(".headers h1").innerText = language.homeTitle;
+    // main.querySelector(".showcase-btn .btn").innerText =
+    //   language.homeShowcaseBtn;
     main.querySelector("#work h1 .text").innerText = language.workTitle;
     main.querySelector("#work h2 .text").innerText = language.workSubtitle;
     main.querySelector("#work h4 .text").innerText = language.workText;
@@ -230,6 +232,7 @@ englishBtns.forEach((btn, index) => {
     getLanguage();
     translate();
     showLanguage();
+    initTextTyper();
   });
 });
 
@@ -241,6 +244,7 @@ frenchBtns.forEach((btn, index) => {
     getLanguage();
     translate();
     showLanguage();
+    initTextTyper();
   });
 });
 

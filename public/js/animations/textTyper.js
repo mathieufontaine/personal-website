@@ -1,23 +1,50 @@
-export const initTextTyper = () => {
-  // List of sentences
-  const SENTENCES = [
-    "I build beatiful Websites.",
-    "I build useful Applications.",
-    "I build amazing Web Experiences."
-  ];
+// export const initTextTyper = () => {
+// List of sentences
 
+// Holds the handle returned from setInterval
+let interval;
+let timeoutType;
+let timeoutDelete;
+
+export const initTextTyper = () => {
   // Current sentence being processed
   let counter = 0;
 
   // Character number of the current sentence being processed
   let counterIndex = 0;
 
-  // Holds the handle returned from setInterval
-  let interval;
-
   // Element that holds the text
-  const header = document.querySelector("#home-sections #showcase .headers h1");
-  console.log(header);
+  const header = document.querySelector("#home-sections #showcase .headers h2");
+
+  const english = [
+    "I build beatiful Websites.",
+    "I develop useful Web Interfaces.",
+    "I create Web Experiences."
+  ];
+
+  const french = [
+    "Je crée des Sites web.",
+    "Je développe des Applications Web.",
+    "Je crée des Expériences Web."
+  ];
+
+  let SENTENCES = english;
+
+  if (localStorage.getItem("language") == "fr") {
+    clearInterval(interval);
+    clearTimeout(timeoutType);
+    clearTimeout(timeoutDelete);
+    SENTENCES = french;
+  } else if (localStorage.getItem("language") == "en") {
+    clearInterval(interval);
+    clearTimeout(timeoutType);
+    clearTimeout(timeoutDelete);
+    SENTENCES = english;
+  }
+
+  console.log(localStorage.getItem("language"));
+
+  console.log(SENTENCES);
 
   // Implements typing effect
   function Type() {
@@ -29,8 +56,8 @@ export const initTextTyper = () => {
     if (text === SENTENCES[counter]) {
       clearInterval(interval);
       if (counter !== 2) {
-        setTimeout(function() {
-          interval = setInterval(Delete, 50);
+        timeoutType = setTimeout(function() {
+          interval = setInterval(Delete, 20);
         }, 1000);
       }
     }
@@ -54,8 +81,8 @@ export const initTextTyper = () => {
       counterIndex = 0;
 
       // Start to display the next sentence after some time
-      setTimeout(function() {
-        interval = setInterval(Type, 100);
+      timeoutDelete = setTimeout(function() {
+        interval = setInterval(Type, 80);
       }, 200);
     }
   }
