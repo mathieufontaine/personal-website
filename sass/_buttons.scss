@@ -9,7 +9,7 @@
   font-weight: bold;
   font-size: 1.5rem;
   margin-top: 10px;
-  background-image: $red-gradient;
+  background-image: $gradient;
   background-size: 200% auto;
   transition: 1s ease;
   cursor: pointer;
@@ -17,7 +17,7 @@
 
 .btn:hover {
   background-position: right center;
-  transform: scale(1.1);
+  transform: scale(1.1) !important;
   // background: $primary-color;
 }
 

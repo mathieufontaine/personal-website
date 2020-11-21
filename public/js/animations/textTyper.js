@@ -19,13 +19,13 @@ export const initTextTyper = () => {
   const english = [
     "I build beatiful Websites.",
     "I develop useful Web Interfaces.",
-    "I create Web Experiences."
+    "I help businesses achieve their goals on the web."
   ];
 
   const french = [
     "Je crée des Sites web.",
     "Je développe des Applications Web.",
-    "Je crée des Expériences Web."
+    "J’aide les entreprises à atteindre leurs objectifs sur le web."
   ];
 
   let SENTENCES = english;
@@ -41,10 +41,6 @@ export const initTextTyper = () => {
     clearTimeout(timeoutDelete);
     SENTENCES = english;
   }
-
-  console.log(localStorage.getItem("language"));
-
-  console.log(SENTENCES);
 
   // Implements typing effect
   function Type() {

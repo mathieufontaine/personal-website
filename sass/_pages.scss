@@ -60,15 +60,22 @@
 
   .section {
     // display: flex;
-
     .fullpage {
       grid-template-columns: 1fr 1fr;
-      .hero,
       .details {
         margin: 15% auto;
-        height: 80%;
+      }
+      .hero {
+        margin: 15% auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // height: 80%;
+
         img {
           object-fit: unset;
+          // width: 80%;
+          margin: auto;
         }
       }
     }
@@ -76,7 +83,7 @@
   .section:first-child .fullpage {
     .hero,
     .details {
-      width: 80%;
+      // width: 80%;
     }
   }
 }
@@ -126,6 +133,8 @@
     grid-gap: 2rem;
     align-items: center;
     justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
     img {
       height: 70%;
       margin: auto;

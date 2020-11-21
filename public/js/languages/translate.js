@@ -42,26 +42,27 @@ const translate = () => {
   // * home
   if (main.classList.contains("home-page")) {
     document.querySelector(".headers .title").innerText = language.navJob;
+    document.querySelector(".headers .btn").innerText = language.navBtn;
     // main.querySelector(".headers h1").innerText = language.homeTitle;
     // main.querySelector(".showcase-btn .btn").innerText =
     //   language.homeShowcaseBtn;
     main.querySelector("#work h1 .text").innerText = language.workTitle;
     main.querySelector("#work h2 .text").innerText = language.workSubtitle;
-    main.querySelector("#work h4 .text").innerText = language.workText;
+    // main.querySelector("#work h4 .text").innerText = language.workText;
     main.querySelector("#work .btn").innerText = language.sectionBtn;
     main.querySelector("#about h1 .text").innerText = language.aboutTitle;
     main.querySelector("#about h2 .text").innerText = language.aboutSubtitle;
-    main.querySelector("#about h4 .text").innerText = language.aboutText;
+    // main.querySelector("#about h4 .text").innerText = language.aboutText;
     main.querySelector("#about .btn").innerText = language.sectionBtn;
     main.querySelector("#services h1 .text").innerText = language.servicesTitle;
     main.querySelector("#services h2 .text").innerText =
       language.servicesSubtitle;
-    main.querySelector("#services h4 .text").innerText = language.servicesText;
+    // main.querySelector("#services h4 .text").innerText = language.servicesText;
     main.querySelector("#services .btn").innerText = language.sectionBtn;
-    main.querySelector("#contact h1 .text").innerText = language.contactTitle;
+    // main.querySelector("#contact h1 .text").innerText = language.contactTitle;
     main.querySelector("#contact h2 .text").innerText =
       language.contactSubtitle;
-    main.querySelector("#contact h4 .text").innerText = language.contactText;
+    // main.querySelector("#contact h4 .text").innerText = language.contactText;
     main.querySelector("#contact .btn").innerText = language.contactBtn;
   }
 

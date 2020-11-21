@@ -11,8 +11,8 @@ $light-blue: rgb(167, 212, 245);
 $easing: cubic-bezier(0.5, 0.7, 0.4, 1);
 $main-gradient: linear-gradient(
   96deg,
-  rgba(30, 29, 33, 1) 0%,
-  rgba(43, 55, 96, 1) 30%,
+  #1e1d20 0%,
+  #2b3760 30%,
   #348cd2 80%,
   rgba($secondary-color, 1) 100%
 );
@@ -26,6 +26,7 @@ $blue-gradient: linear-gradient(
   rgba(43, 55, 96, 1) 30%,
   rgba(80, 156, 217, 1) 100%
 );
+$green-gradient: linear-gradient(96deg, #19cc9f 30%, rgba(43, 55, 96, 1) 100%);
 $white-gradient: linear-gradient(
   to right,
   rgb(225, 236, 245) 50%,
@@ -141,6 +142,8 @@ ul {
   padding: 4rem 6rem;
   position: relative;
   height: 100%;
+  // max-width: 1300px;
+  // margin: auto;
 }
 
 .flex {

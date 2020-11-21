@@ -136,7 +136,7 @@
       margin-left: 0;
       .section {
         &#showcase svg {
-          bottom: 15% !important;
+          bottom: 0% !important;
           left: 15% !important;
           // right: 15% !important;
           width: 100% !important;
@@ -161,13 +161,13 @@
         margin: auto;
         .details {
           text-align: center;
-          padding: 2rem;
+          padding: 2rem 4rem;
           // margin-bottom: 0;
           h1 .text {
-            font-size: 4rem;
+            // font-size: 4rem;
           }
           h2 .text {
-            font-size: 2.5rem;
+            // font-size: 2.5rem;
           }
         }
         .hero {
@@ -220,6 +220,8 @@
         }
         .details {
           margin: auto !important;
+          padding: 4rem 6rem;
+          text-align: center;
           .showcase-btn {
             margin-top: 0;
             width: 100%;
@@ -229,6 +231,17 @@
             }
           }
         }
+      }
+    }
+    .page-description .container {
+      display: grid;
+      grid-template-columns: 1fr;
+      flex-direction: column;
+      justify-content: center;
+      img {
+        width: 40%;
+        height: auto;
+        order: 1;
       }
     }
   }
@@ -313,7 +326,10 @@
     padding: 0;
   }
   #scroll-top-btn {
-    bottom: 11vh;
+    bottom: 10vh;
+  }
+  .home-page #home-sections .section#showcase svg {
+    bottom: 5% !important;
   }
   .showcase {
     height: 90vh;
@@ -323,14 +339,14 @@
   }
   .about {
     .page-inner {
-      .quote {
+      .quote .container {
         display: flex;
         flex-direction: column;
         h3 {
           font-size: 2rem;
         }
         .photo {
-          // width: 50%;
+          width: 50%;
         }
       }
       .content {
@@ -403,7 +419,7 @@
       }
       .tab-content {
         background: rgba($color: $secondary-color, $alpha: 0.1);
-        img {
+        .tab-content-item > img {
           height: 200px;
           margin: 4rem 0;
         }

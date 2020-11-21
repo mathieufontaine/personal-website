@@ -1,7 +1,7 @@
 .home-page {
   color: $primary-color;
   // background: $grey-color;
-  background: $main-gradient;
+  background: $grey-color;
   // background: radial-gradient(#2b3760, #0b1023);
   overflow-y: hidden;
   // height: 100vh;
@@ -16,6 +16,22 @@
         height: auto !important;
       }
     }
+    .section {
+      .svg-container {
+        opacity: 0.6;
+      }
+      .fullpage .details {
+        h1 .text {
+          color: $primary-color;
+        }
+        h2 .text {
+          color: $secondary-color;
+        }
+        h4 .text {
+          display: none;
+        }
+      }
+    }
   }
   .arrows-btn {
     align-items: center;
@@ -24,7 +40,9 @@
     left: 2vh;
     // right: 0;
     p {
-      color: white;
+      color: black;
+      font-size: 1.8rem;
+      font-weight: bold;
       writing-mode: tb-rl;
       -webkit-transform: rotate(180deg);
       margin-top: -50px;
@@ -39,8 +57,8 @@
           width: 24px;
           height: 24px;
           margin-left: -12px;
-          border-left: 4px solid white;
-          border-bottom: 4px solid white;
+          border-left: 3px solid black;
+          border-bottom: 3px solid black;
           -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
           -webkit-animation: sdb07 2s infinite;
@@ -196,11 +214,11 @@
       }
       h2 .text {
         font-size: 3rem;
-        color: $light-color !important;
+        color: $light-color;
       }
       h4 .text {
         padding: 20px 0;
-        color: $light-color !important;
+        color: $light-color;
       }
     }
   }
@@ -218,7 +236,7 @@
     height: 40px !important;
 
     a span {
-      background: white;
+      background: $primary-color;
       opacity: 0.5;
       width: 20px !important;
       height: 20px !important;
@@ -239,7 +257,7 @@
 }
 
 #contact img {
-  filter: grayscale(100%);
+  // filter: grayscale(100%);
 }
 // .pages {
 //   position: absolute;
