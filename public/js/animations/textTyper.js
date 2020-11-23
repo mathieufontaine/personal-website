@@ -19,13 +19,13 @@ export const initTextTyper = () => {
   const english = [
     "I build beatiful Websites.",
     "I develop useful Web Interfaces.",
-    "I help businesses achieve their goals on the web."
+    "I help businesses achieve their web projects."
   ];
 
   const french = [
-    "Je crée des Sites web.",
-    "Je développe des Applications Web.",
-    "J’aide les entreprises à atteindre leurs objectifs sur le web."
+    "Je crée des Sites Web.",
+    "Je développe des Interfaces Web.",
+    "J’aide les Professionnels à réaliser leurs Projets Web."
   ];
 
   let SENTENCES = english;

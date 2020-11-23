@@ -1,4 +1,4 @@
-.contact {
+.contact-page {
   background: $grey-color;
   overflow: hidden;
   min-height: unset;
@@ -6,7 +6,7 @@
     background: $secondary-color;
     color: $light-color;
   }
-  .page-inner {
+  .page-content {
     display: grid;
     grid-template-columns: 1fr 2.5fr;
     align-items: center;

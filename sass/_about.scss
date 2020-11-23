@@ -1,8 +1,38 @@
 /* Section about */
 
-.about {
+.about-page {
   overflow: hidden;
-  .page-inner {
+
+  h3:first-child {
+    text-align: center;
+    padding: 3rem 0 2rem 0;
+    // color: white;
+  }
+
+  .hero-section {
+    // display: flex;
+    .fullpage {
+      grid-template-columns: 1fr 1fr;
+      .details {
+        margin: 15% auto;
+      }
+      .hero {
+        margin: 15% auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // height: 80%;
+
+        img {
+          object-fit: unset;
+          width: 90%;
+          margin: auto;
+        }
+      }
+    }
+  }
+
+  .page-content {
     .container {
       max-width: 1200px;
       margin: auto;
