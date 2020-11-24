@@ -60,17 +60,17 @@
       color: black;
       .container {
         display: grid;
-        grid-template-columns: 1fr 3fr;
-        grid-gap: 2rem;
+        grid-template-columns: 1fr 5fr;
+        grid-gap: 3rem;
         align-items: center;
         justify-content: space-around;
         max-width: 1200px;
         margin: auto;
         img {
-          height: 70%;
+          height: 60%;
           margin: auto;
         }
-        h4:before {
+        p:before {
           content: "\f00c";
           font-family: "Font Awesome 5 Free";
           display: inline-block;
