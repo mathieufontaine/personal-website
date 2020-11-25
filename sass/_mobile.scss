@@ -283,6 +283,24 @@
       }
     }
   }
+  .services-page {
+    .services {
+      .explanations {
+        display: block !important;
+        .content {
+          padding: 2rem 0;
+          .content-img img {
+            width: 80px !important;
+            height: auto !important;
+          }
+        }
+      }
+
+      #web-integration .explanations .content > div .content-img img {
+        width: 130px !important;
+      }
+    }
+  }
   .contact-page .page-content {
     .page-info h4 {
       width: 100%;
@@ -394,6 +412,9 @@
     }
   }
   .services-page {
+    .header .arrow img {
+      height: 60%;
+    }
     .tabs > .container {
       padding: 4rem 2rem;
       .tabs-nav {
@@ -412,11 +433,28 @@
     }
     .services {
       .explanations {
-        display: block;
+        display: block !important;
+        .content {
+          padding: 2rem 0;
+          & > div,
+          .container,
+          .container div {
+            grid-template-columns: 1fr !important;
+            .text ul p span {
+              font-size: 2rem !important;
+              margin-right: 0 !important;
+            }
+          }
+        }
         .content-img {
-          margin-top: 5rem;
+          margin-bottom: 2rem;
+          justify-content: center !important;
+          flex-direction: row !important;
+          order: 1 !important;
           img {
-            height: 60px;
+            height: 60px !important;
+            width: auto !important;
+            // margin-bottom: 1rem !important;
           }
         }
         .flex-col {
@@ -426,6 +464,26 @@
             height: 50px;
           }
         }
+      }
+      #website-dev .explanations {
+        .content.process .container .content-img {
+          display: none;
+        }
+        .content.tools .container .content-img {
+          display: block;
+          width: auto;
+          height: auto;
+          box-shadow: unset;
+          background: none;
+        }
+        .content:first-child .container img {
+          order: 1;
+          height: 120px;
+        }
+      }
+      #web-integration .explanations .content > div .content-img img {
+        order: 1;
+        margin: 2rem 0 3rem 0;
       }
     }
   }

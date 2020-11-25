@@ -3,10 +3,10 @@ export const enableTabs = () => {
   const introTabContentItems = document.querySelectorAll(
     ".tabs .container .tab-content-item"
   );
-  const websiteTabItems = document.querySelectorAll("#website-dev .tab-item");
-  const websiteTabContentItems = document.querySelectorAll(
-    "#website-dev .process"
-  );
+  // const websiteTabItems = document.querySelectorAll("#website-dev .tab-item");
+  // const websiteTabContentItems = document.querySelectorAll(
+  //   "#website-dev .process"
+  // );
 
   const selectIntroItem = event => {
     introTabItems.forEach(item => item.classList.remove("active"));
@@ -17,23 +17,30 @@ export const enableTabs = () => {
       .classList.add("show");
   };
 
-  const selectWebsiteItem = event => {
-    websiteTabItems.forEach(item => item.classList.remove("active"));
-    websiteTabContentItems.forEach(item => item.classList.remove("show"));
-    event.currentTarget.classList.add("active");
-    document
-      .querySelector(`#${event.currentTarget.id}-content`)
-      .classList.add("show");
-  };
+  // const selectWebsiteItem = event => {
+  //   websiteTabItems.forEach(item => item.classList.remove("active"));
+  //   websiteTabContentItems.forEach(item => item.classList.remove("show"));
+  //   event.currentTarget.classList.add("active");
+  //   document
+  //     .querySelector(`#${event.currentTarget.id}-content`)
+  //     .classList.add("show");
+  // };
 
-  // Listen for tab click
+  //* Listen for tab click
   introTabItems.forEach(item =>
     item.addEventListener("click", selectIntroItem)
   );
-  websiteTabItems.forEach(item =>
-    item.addEventListener("click", selectWebsiteItem)
-  );
+  // websiteTabItems.forEach(item =>
+  //   item.addEventListener("click", selectWebsiteItem)
+  // );
 };
+
+$(".box .question").click(function() {
+  $(this)
+    .toggleClass("open")
+    .next()
+    .slideToggle("fast");
+});
 
 // export const scaleStandardCard = () => {
 //   const premium = document.querySelector(".premium");

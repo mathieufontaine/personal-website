@@ -1144,12 +1144,6 @@ nav .nav-open ul li:hover {
   padding: 4rem 6rem;
 }
 
-.experience-page .page-content .container p {
-  color: #fffefe;
-  margin-bottom: 20px;
-  margin-top: 0;
-}
-
 .experience-page .page-content .city {
   position: -webkit-sticky;
   position: sticky;
@@ -1377,7 +1371,7 @@ nav .nav-open ul li:hover {
 }
 
 .services-page .title h2 {
-  padding: 3rem 6rem;
+  padding: 3rem 0;
   max-width: 1200px;
   margin: auto;
 }
@@ -1437,6 +1431,9 @@ nav .nav-open ul li:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  opacity: 0.6;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .services-page .tabs .tabs-nav .tab-item h4 {
@@ -1450,7 +1447,23 @@ nav .nav-open ul li:hover {
 }
 
 .services-page .tabs .tabs-nav .tab-item.active {
-  background: linear-gradient(109.6deg, #ea2967 11.2%, #9f4997 91.1%);
+  opacity: 1;
+}
+
+.services-page .tabs .tabs-nav .tab-item#tab-1.active {
+  background: #509cd9;
+}
+
+.services-page .tabs .tabs-nav .tab-item#tab-2.active {
+  background: #ea2967;
+}
+
+.services-page .tabs .tabs-nav .tab-item#tab-3.active {
+  background: #19cc9f;
+}
+
+.services-page .tabs .tabs-nav .tab-item#tab-4.active {
+  background: #2b3760;
 }
 
 .services-page .tabs .tab-content {
@@ -1476,13 +1489,6 @@ nav .nav-open ul li:hover {
 .services-page .tabs .tab-content .showcase-btn .scroll-down-btn {
   border-bottom: 2px solid black;
   border-left: 2px solid black;
-}
-
-.services-page .tabs .tab-content #tab-1-content,
-.services-page .tabs .tab-content #tab-2-content,
-.services-page .tabs .tab-content #tab-3-content,
-.services-page .tabs .tab-content #tab-4-content {
-  display: none;
 }
 
 .services-page .tabs .tab-content .problem {
@@ -1519,6 +1525,25 @@ nav .nav-open ul li:hover {
 .services-page .tabs .tab-content img {
   height: 300px;
   margin: 4rem 0;
+}
+
+.services-page .tabs #tab-1-content,
+.services-page .tabs #tab-2-content,
+.services-page .tabs #tab-3-content,
+.services-page .tabs #tab-4-content {
+  display: none;
+}
+
+.services-page .tabs #tab-2-content .solution {
+  color: #df6c81;
+}
+
+.services-page .tabs #tab-3-content .solution {
+  color: #19cc9f;
+}
+
+.services-page .tabs #tab-4-content .solution {
+  color: #2b3760;
 }
 
 .services-page .header {
@@ -1571,17 +1596,21 @@ nav .nav-open ul li:hover {
 }
 
 .services-page .services .service {
-  margin: 6rem 0 0 0;
+  margin: 0;
+  padding-left: 5%;
   position: relative;
-  padding-bottom: 100px;
 }
 
 .services-page .services .service::after {
   content: "";
   position: absolute;
-  width: 100%;
-  height: 100px;
-  background: linear-gradient(87deg, #348cd2 0%, #5cc9f7 100%);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 5%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #f8f8ff), color-stop(60%, #5cc9f7));
+  background: linear-gradient(to bottom, #f8f8ff 10%, #5cc9f7 60%);
 }
 
 .services-page .services .service:first-child {
@@ -1590,10 +1619,6 @@ nav .nav-open ul li:hover {
 
 .services-page .services .service:last-child {
   padding-bottom: 0;
-}
-
-.services-page .services .service:last-child::after {
-  height: 0;
 }
 
 .services-page .services .btn {
@@ -1612,6 +1637,7 @@ nav .nav-open ul li:hover {
 
 .services-page .services .intro .solution {
   font-weight: bold;
+  margin-bottom: 0;
 }
 
 .services-page .services .explanations .content {
@@ -1639,31 +1665,35 @@ nav .nav-open ul li:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.services-page .services .cta-section .container {
+.services-page .services .explanations img {
+  width: 100px;
+}
+
+.services-page .services .cta-section .container,
+.services-page .services .cta {
   text-align: center;
-  margin: 3rem auto;
+  margin-bottom: 0;
 }
 
-.services-page .services .cta-section .container .cta {
+.services-page .services .cta-section .container .cta,
+.services-page .services .cta .cta {
   margin: 2rem;
 }
 
-.services-page .services .cta-section .container .cta-faq {
+.services-page .services .cta-section .container .cta-faq,
+.services-page .services .cta .cta-faq {
   margin: 0rem;
   font-style: italic;
   font-weight: bold;
 }
 
-.services-page .services .cta-section .container .cta-faq a {
+.services-page .services .cta-section .container .cta-faq a,
+.services-page .services .cta .cta-faq a {
   color: #509cd9;
 }
 
@@ -1743,6 +1773,7 @@ nav .nav-open ul li:hover {
 
 .services-page #website-dev .explanations .content:first-child .container img {
   height: 180px;
+  width: auto;
   margin: auto;
 }
 
@@ -1796,12 +1827,7 @@ nav .nav-open ul li:hover {
 
 .services-page #website-dev .explanations .content.tools {
   margin: 0;
-  background: linear-gradient(87deg, #348cd2 0%, #5cc9f7 100%);
-  color: white !important;
-}
-
-.services-page #website-dev .explanations .content.tools .container h3 {
-  color: white;
+  background: #f8f8ff;
 }
 
 .services-page #website-dev .explanations .content.tools .container > div {
@@ -1829,7 +1855,7 @@ nav .nav-open ul li:hover {
   background: white;
   border-radius: 20px;
   width: 70%;
-  height: 90%;
+  height: 95%;
   margin: auto;
   padding: 1rem;
   -webkit-box-shadow: 5px 5px 5px black;
@@ -1846,8 +1872,8 @@ nav .nav-open ul li:hover {
 }
 
 .services-page #website-dev .explanations .content.tools .container .content-img img {
-  margin-bottom: 2rem;
-  height: 80px;
+  margin-bottom: 1rem;
+  height: 70px;
   width: auto;
 }
 
@@ -1864,7 +1890,8 @@ nav .nav-open ul li:hover {
 }
 
 .services-page #web-integration::after {
-  background: linear-gradient(109.6deg, #ea2967 11.2%, #509cd9 91.1%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#5cc9f7), color-stop(70%, #ea2967));
+  background: linear-gradient(to bottom, #5cc9f7 0%, #ea2967 70%);
 }
 
 .services-page #web-integration .explanations .content h3 {
@@ -1899,6 +1926,13 @@ nav .nav-open ul li:hover {
 
 .services-page #web-integration .explanations .content > div .content-img {
   padding: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .services-page #web-integration .explanations .content > div .content-img img {
@@ -1908,6 +1942,29 @@ nav .nav-open ul li:hover {
 .services-page #web-integration .explanations .content.how-integration > div {
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
+}
+
+.services-page #app-dev .explanations,
+.services-page #marketing .explanations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.services-page #app-dev .explanations .content p,
+.services-page #marketing .explanations .content p {
+  margin-bottom: 2rem;
+}
+
+.services-page #app-dev .explanations .content-img img,
+.services-page #marketing .explanations .content-img img {
+  height: 100px;
+  width: auto;
+}
+
+.services-page #app-dev .btn,
+.services-page #marketing .btn {
+  background: linear-gradient(96deg, #19cc9f 30%, #2b3760 100%);
 }
 
 .services-page #app-dev span {
@@ -1923,7 +1980,12 @@ nav .nav-open ul li:hover {
 }
 
 .services-page #app-dev::after {
-  background: linear-gradient(96deg, #19cc9f 30%, #2b3760 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #19cc9f), to(#2b3760));
+  background: linear-gradient(to bottom, #19cc9f 30%, #2b3760 100%);
+}
+
+.services-page #marketing img {
+  margin-right: 1rem;
 }
 
 .services-page #marketing span {
@@ -1939,11 +2001,62 @@ nav .nav-open ul li:hover {
 }
 
 .services-page #marketing::after {
-  background: linear-gradient(96deg, #2b3760 30%, #509cd9 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #2b3760), to(#509cd9));
+  background: linear-gradient(to bottom, #2b3760 30%, #509cd9 100%);
 }
 
 .show {
   display: block !important;
+}
+
+#faq {
+  background: #f8f8ff;
+}
+
+#faq .box {
+  margin: 4rem auto;
+  border-radius: 20px;
+}
+
+#faq .box .question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+  border-bottom: 2px solid white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#faq .box .question img {
+  height: 20px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#faq .box .question.open img {
+  -webkit-transform: rotateZ(90deg);
+          transform: rotateZ(90deg);
+}
+
+#faq .box .answer {
+  display: none;
+  padding: 20px;
+  color: #1e1d21;
+}
+
+#faq .btn {
+  width: 40%;
+  margin: 2rem auto;
+  background: linear-gradient(109.6deg, #ea2967 11.2%, #509cd9 91.1%);
+  text-align: center;
+  display: block;
 }
 
 .contact-page {
@@ -2447,6 +2560,19 @@ footer span {
   .work-page .gallery .projects .project .project-text p {
     width: 100%;
   }
+  .services-page .services .explanations {
+    display: block !important;
+  }
+  .services-page .services .explanations .content {
+    padding: 2rem 0;
+  }
+  .services-page .services .explanations .content .content-img img {
+    width: 80px !important;
+    height: auto !important;
+  }
+  .services-page .services #web-integration .explanations .content > div .content-img img {
+    width: 130px !important;
+  }
   .contact-page .page-content {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -2556,6 +2682,9 @@ footer span {
     width: 50%;
     margin: 1rem;
   }
+  .services-page .header .arrow img {
+    height: 60%;
+  }
   .services-page .tabs > .container {
     padding: 4rem 2rem;
   }
@@ -2574,13 +2703,39 @@ footer span {
     margin: 4rem 0;
   }
   .services-page .services .explanations {
-    display: block;
+    display: block !important;
+  }
+  .services-page .services .explanations .content {
+    padding: 2rem 0;
+  }
+  .services-page .services .explanations .content > div,
+  .services-page .services .explanations .content .container,
+  .services-page .services .explanations .content .container div {
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+  }
+  .services-page .services .explanations .content > div .text ul p span,
+  .services-page .services .explanations .content .container .text ul p span,
+  .services-page .services .explanations .content .container div .text ul p span {
+    font-size: 2rem !important;
+    margin-right: 0 !important;
   }
   .services-page .services .explanations .content-img {
-    margin-top: 5rem;
+    margin-bottom: 2rem;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    -webkit-box-ordinal-group: 2 !important;
+        -ms-flex-order: 1 !important;
+            order: 1 !important;
   }
   .services-page .services .explanations .content-img img {
-    height: 60px;
+    height: 60px !important;
+    width: auto !important;
   }
   .services-page .services .explanations .flex-col {
     height: auto;
@@ -2591,6 +2746,29 @@ footer span {
   }
   .services-page .services .explanations .flex-col img {
     height: 50px;
+  }
+  .services-page .services #website-dev .explanations .content.process .container .content-img {
+    display: none;
+  }
+  .services-page .services #website-dev .explanations .content.tools .container .content-img {
+    display: block;
+    width: auto;
+    height: auto;
+    -webkit-box-shadow: unset;
+            box-shadow: unset;
+    background: none;
+  }
+  .services-page .services #website-dev .explanations .content:first-child .container img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    height: 120px;
+  }
+  .services-page .services #web-integration .explanations .content > div .content-img img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin: 2rem 0 3rem 0;
   }
   footer {
     height: 14vh;
