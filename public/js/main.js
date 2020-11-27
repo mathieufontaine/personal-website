@@ -28,6 +28,11 @@ if (!main.classList.contains("home-page")) {
   hideNavbar();
 }
 
+// * About function
+if (main.classList.contains("about-page")) {
+  initTextTyper();
+}
+
 // * Services function
 if (main.classList.contains("services-page")) {
   enableTabs();
@@ -43,7 +48,7 @@ if (main.classList.contains("contact-page")) {
 if (main.classList.contains("home-page")) {
   showcaseAnimation();
   startAnimation();
-  initTextTyper();
+  // initTextTyper();
   initMotion();
   scrollAnimation();
   scrollDown();

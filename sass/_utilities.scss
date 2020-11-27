@@ -6,6 +6,7 @@ $secondary-color: #509cd9;
 $third-color: #2b3760;
 $text-color: #0f0f10;
 $grey-color: #f8f8ff;
+$green-color: #19cc9f;
 $light-color: #fffefe;
 $light-blue: rgb(167, 212, 245);
 $easing: cubic-bezier(0.5, 0.7, 0.4, 1);
@@ -26,11 +27,6 @@ $gradient-vertical: linear-gradient(
   rgb(52, 140, 210) 0%,
   rgb(92, 201, 247) 100%
 );
-$red-gradient-vertical: linear-gradient(
-  to bottom,
-  rgb(92, 201, 247) 0%,
-  #ea2967 70%
-);
 $red-gradient: linear-gradient(
   109.6deg,
   #ea2967 11.2%,
@@ -41,17 +37,9 @@ $blue-gradient: linear-gradient(
   rgba(43, 55, 96, 1) 30%,
   rgba(80, 156, 217, 1) 100%
 );
-$blue-gradient-vertical: linear-gradient(
-  to bottom,
-  rgba(43, 55, 96, 1) 30%,
-  rgba(80, 156, 217, 1) 100%
-);
 $green-gradient: linear-gradient(96deg, #19cc9f 30%, rgba(43, 55, 96, 1) 100%);
-$green-gradient-vertical: linear-gradient(
-  to bottom,
-  #19cc9f 30%,
-  rgba(43, 55, 96, 1) 100%
-);
+$purple-gradient: linear-gradient(96deg, #551467 30%, rgba(43, 55, 96, 1) 100%);
+
 $white-gradient: linear-gradient(
   to right,
   rgb(225, 236, 245) 50%,

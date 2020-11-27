@@ -21,9 +21,9 @@ function setLanguage(lang) {
 }
 
 // * translations selectors
+const main = document.querySelector("main");
 
 const translate = () => {
-  const main = document.querySelector("main");
   const navbar = document.querySelector("nav .nav-open ul");
   // const page = document.querySelector(".page");
 
@@ -41,18 +41,19 @@ const translate = () => {
 
   // * home
   if (main.classList.contains("home-page")) {
-    document.querySelector(".headers .title").innerText = language.navJob;
+    document.querySelector(".headers .title").innerHTML = language.homeTitle;
+    document.querySelector(".headers .subtitle").innerHTML = language.homeJob;
     document.querySelector(".headers .btn").innerText = language.navBtn;
     // main.querySelector(".headers h1").innerText = language.homeTitle;
     // main.querySelector(".showcase-btn .btn").innerText =
     //   language.homeShowcaseBtn;
     main.querySelector("#work h1 .text").innerText = language.workTitle;
     main.querySelector("#work h2 .text").innerText = language.workSubtitle;
-    // main.querySelector("#work h4 .text").innerText = language.workText;
+    main.querySelector("#work h4 .text").innerText = language.workText;
     main.querySelector("#work .btn").innerText = language.sectionBtn;
     main.querySelector("#about h1 .text").innerText = language.aboutTitle;
     main.querySelector("#about h2 .text").innerText = language.aboutSubtitle;
-    // main.querySelector("#about h4 .text").innerText = language.aboutText;
+    main.querySelector("#about h4 .text").innerText = language.aboutText;
     main.querySelector("#about .btn").innerText = language.sectionBtn;
     main.querySelector("#services h1 .text").innerText = language.servicesTitle;
     main.querySelector("#services h2 .text").innerText =
@@ -62,7 +63,7 @@ const translate = () => {
     // main.querySelector("#contact h1 .text").innerText = language.contactTitle;
     main.querySelector("#contact h2 .text").innerText =
       language.contactSubtitle;
-    // main.querySelector("#contact h4 .text").innerText = language.contactText;
+    main.querySelector("#contact h4 .text").innerText = language.contactText;
     main.querySelector("#contact .btn").innerText = language.contactBtn;
   }
 
@@ -203,6 +204,130 @@ const translate = () => {
     main.querySelector(".details h2 .text").innerText =
       language.servicesSubtitle;
     main.querySelector(".details h4 .text").innerText = language.servicesText;
+    main.querySelector(".page-description .container div").innerHTML =
+      language.servicesDesccription;
+    // main.querySelector(".tabs .title h2").innerText = language.servicesTitle;
+    main.querySelector(".tabs #tab-1 h4").innerText = language.servicesTab1;
+    main.querySelector(".tabs #tab-2 h4").innerText = language.servicesTab2;
+    main.querySelector(".tabs #tab-3 h4").innerText = language.servicesTab3;
+    main.querySelector(".tabs #tab-4 h4").innerText = language.servicesTab4;
+    main.querySelector(".tabs #tab-1-content .problem").innerHTML =
+      language.servicesTab1Problem;
+    main.querySelector(".tabs #tab-2-content .problem").innerHTML =
+      language.servicesTab2Problem;
+    main.querySelector(".tabs #tab-3-content .problem").innerHTML =
+      language.servicesTab3Problem;
+    main.querySelector(".tabs #tab-4-content .problem").innerHTML =
+      language.servicesTab4Problem;
+    main.querySelector(".tabs #tab-1-content .solution").innerHTML =
+      language.servicesTab1Solution;
+    main.querySelector(".tabs #tab-2-content .solution").innerHTML =
+      language.servicesTab2Solution;
+    main.querySelector(".tabs #tab-3-content .solution").innerHTML =
+      language.servicesTab3Solution;
+    main.querySelector(".tabs #tab-4-content .solution").innerHTML =
+      language.servicesTab4Solution;
+    main.querySelector(".tabs #tab-1-content .showcase-btn p").innerText =
+      language.servicesTabBtn;
+    main.querySelector(".tabs #tab-2-content .showcase-btn p").innerText =
+      language.servicesTabBtn;
+    main.querySelector(".tabs #tab-3-content .showcase-btn p").innerText =
+      language.servicesTabBtn;
+    main.querySelector(".tabs #tab-4-content .showcase-btn p").innerText =
+      language.servicesTabBtn;
+    main.querySelector(".tabs .btn a").innerText = language.ctaBtn;
+    main.querySelector("#website-dev .header .text h3").innerHTML =
+      language.servicesTab1;
+    main.querySelector("#website-dev .solution").innerHTML =
+      language.servicesTab1Solution;
+    main.querySelector("#website-dev .explanations .intro .text").innerHTML =
+      language.servicesWebsiteIntro;
+    // main.querySelector(
+    //   "#website-dev .explanations #content-creation h3"
+    // ).innerHTML = language.servicesWebsiteCreationTitle;
+    // main.querySelector(
+    //   "#website-dev .explanations #content-creation .content-intro"
+    // ).innerHTML = language.servicesWebsiteCreationIntro;
+    // main.querySelector(
+    //   "#website-dev .explanations #content-creation .text"
+    // ).innerHTML = language.servicesWebsiteCreationList;
+
+    main.querySelector("#website-dev .explanations .tools h3").innerHTML =
+      language.servicesWebsiteToolsTitle;
+    main.querySelector("#website-dev .explanations .tools .text").innerHTML =
+      language.servicesWebsiteToolsText;
+    main.querySelector("#website-dev .cta").innerText =
+      language.servicesCtaText;
+    main.querySelector("#website-dev .btn a").innerText = language.ctaBtn;
+    main.querySelector("#website-dev .cta-faq").innerHTML =
+      language.servicesCtaFaq;
+    main.querySelector("#web-integration .header .text h3").innerHTML =
+      language.servicesTab2;
+    main.querySelector("#web-integration .solution").innerHTML =
+      language.servicesTab2Solution;
+    main.querySelector("#web-integration .explanations .intro").innerHTML =
+      language.servicesIntegrationIntro;
+    main.querySelector(
+      "#web-integration .explanations .integration-process h3"
+    ).innerHTML = language.servicesIntegrationProcessTitle;
+    main.querySelector(
+      "#web-integration .explanations .integration-process .text"
+    ).innerHTML = language.servicesIntegrationProcessList;
+    main.querySelector(
+      "#web-integration .explanations .integration-how h3"
+    ).innerHTML = language.servicesIntegrationHowTitle;
+    main.querySelector(
+      "#web-integration .explanations .integration-how .text"
+    ).innerHTML = language.servicesIntegrationHowList;
+    main.querySelector("#web-integration .cta").innerText =
+      language.servicesCtaText;
+    main.querySelector("#web-integration .btn a").innerText = language.ctaBtn;
+    main.querySelector("#app-dev .header .text h3").innerHTML =
+      language.servicesTab3;
+    main.querySelector("#app-dev .solution").innerHTML =
+      language.servicesTab3Solution;
+    main.querySelector("#app-dev .explanations .content").innerHTML =
+      language.servicesAppContent;
+    main.querySelector("#app-dev .cta").innerText = language.servicesCtaText;
+    main.querySelector("#app-dev .btn a").innerText = language.ctaBtn;
+    main.querySelector("#marketing .header .text h3").innerHTML =
+      language.servicesTab4;
+    main.querySelector("#marketing .solution").innerHTML =
+      language.servicesTab4Solution;
+    main.querySelector("#marketing .explanations .content").innerHTML =
+      language.servicesMarketingContent;
+    main.querySelector("#marketing .cta").innerText = language.servicesCtaText;
+    main.querySelector("#marketing .btn a").innerText = language.ctaBtn;
+    main.querySelector("#faq .title p").innerText = language.servicesFAQIntro;
+    main.querySelector("#faq #q1 p").innerText = language.servicesFAQq1;
+    main.querySelector("#faq #a1").innerHTML = language.servicesFAQa1;
+    main.querySelector("#faq #q2 p").innerText = language.servicesFAQq2;
+    main.querySelector("#faq #a2").innerHTML = language.servicesFAQa2;
+    main.querySelector("#faq #q3 p").innerText = language.servicesFAQq3;
+    main.querySelector("#faq #a3").innerHTML = language.servicesFAQa3;
+    main.querySelector("#faq #q4 p").innerText = language.servicesFAQq4;
+    main.querySelector("#faq #a4").innerHTML = language.servicesFAQa4;
+    main.querySelector("#faq #q5 p").innerText = language.servicesFAQq5;
+    main.querySelector("#faq #a5").innerHTML = language.servicesFAQa5;
+    main.querySelector("#faq #q6 p").innerText = language.servicesFAQq6;
+    main.querySelector("#faq #a6").innerHTML = language.servicesFAQa6;
+    main.querySelector("#faq #q7 p").innerText = language.servicesFAQq7;
+    main.querySelector("#faq #a7").innerHTML = language.servicesFAQa7;
+    main.querySelector("#faq #q8 p").innerText = language.servicesFAQq8;
+    main.querySelector("#faq #a8").innerHTML = language.servicesFAQa8;
+    main.querySelector("#faq #q9 p").innerText = language.servicesFAQq9;
+    main.querySelector("#faq #a9").innerHTML = language.servicesFAQa9;
+    main.querySelector("#faq #q10 p").innerText = language.servicesFAQq10;
+    main.querySelector("#faq #a10").innerHTML = language.servicesFAQa10;
+    main.querySelector("#faq #q11 p").innerText = language.servicesFAQq11;
+    main.querySelector("#faq #a11").innerHTML = language.servicesFAQa11;
+    main.querySelector("#faq #q12 p").innerText = language.servicesFAQq12;
+    main.querySelector("#faq #a12").innerHTML = language.servicesFAQa12;
+    main.querySelector("#faq #q13 p").innerText = language.servicesFAQq13;
+    main.querySelector("#faq #a13").innerHTML = language.servicesFAQa13;
+    main.querySelector("#faq #q14 p").innerText = language.servicesFAQq14;
+    main.querySelector("#faq #a14").innerHTML = language.servicesFAQa14;
+    main.querySelector("#faq .btn a").innerText = language.ctaBtn;
   }
 
   // * contact
@@ -233,7 +358,9 @@ englishBtns.forEach((btn, index) => {
     getLanguage();
     translate();
     showLanguage();
-    initTextTyper();
+    if (main.classList.contains("about-page")) {
+      initTextTyper();
+    }
   });
 });
 
@@ -245,7 +372,9 @@ frenchBtns.forEach((btn, index) => {
     getLanguage();
     translate();
     showLanguage();
-    initTextTyper();
+    if (main.classList.contains("about-page")) {
+      initTextTyper();
+    }
   });
 });
 

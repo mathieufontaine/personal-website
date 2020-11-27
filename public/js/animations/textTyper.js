@@ -14,18 +14,18 @@ export const initTextTyper = () => {
   let counterIndex = 0;
 
   // Element that holds the text
-  const header = document.querySelector("#home-sections #showcase .headers h2");
+  const header = document.querySelector(".about-page #textTyper");
 
   const english = [
-    "I build beatiful Websites.",
-    "I develop useful Web Interfaces.",
-    "I help businesses achieve their web projects."
+    ' building beatiful Websites."',
+    ' developing useful Web Apps."',
+    ' helping profesionnals achieve their web projects."'
   ];
 
   const french = [
-    "Je crée des Sites Web.",
-    "Je développe des Interfaces Web.",
-    "J’aide les Professionnels à réaliser leurs Projets Web."
+    'créer des Sites Web."',
+    'développer des Applications Web."',
+    'aider les Professionnels à réaliser leurs Projets Web."'
   ];
 
   let SENTENCES = english;
@@ -53,8 +53,8 @@ export const initTextTyper = () => {
       clearInterval(interval);
       if (counter !== 2) {
         timeoutType = setTimeout(function() {
-          interval = setInterval(Delete, 20);
-        }, 1000);
+          interval = setInterval(Delete, 30);
+        }, 1500);
       }
     }
   }
@@ -78,8 +78,8 @@ export const initTextTyper = () => {
 
       // Start to display the next sentence after some time
       timeoutDelete = setTimeout(function() {
-        interval = setInterval(Type, 80);
-      }, 200);
+        interval = setInterval(Type, 100);
+      }, 500);
     }
   }
 

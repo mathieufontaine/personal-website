@@ -606,7 +606,7 @@ nav .nav-open ul li:hover {
   position: absolute !important;
   bottom: 0% !important;
   right: 0 !important;
-  width: 65% !important;
+  width: 60% !important;
   height: 100% !important;
   z-index: 0 !important;
 }
@@ -631,11 +631,14 @@ nav .nav-open ul li:hover {
 
 #showcase .container h1 {
   color: #1e1d21;
+  font-size: 4rem;
 }
 
 #showcase .container h2 {
   color: #1e1d21;
   font-weight: 500;
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
 }
 
 #showcase .container h3 {
@@ -661,7 +664,7 @@ nav .nav-open ul li:hover {
   opacity: 0;
   -webkit-transform: translateY(100vh);
           transform: translateY(100vh);
-  width: 40%;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -806,7 +809,7 @@ nav .nav-open ul li:hover {
 
 .home-page #home-sections #showcase {
   height: 90vh !important;
-  width: 90%;
+  width: 100%;
 }
 
 .home-page #home-sections #showcase .fp-tableCell {
@@ -827,6 +830,19 @@ nav .nav-open ul li:hover {
 
 .home-page #home-sections .hero-section .fullpage .details h4 .text {
   display: none;
+  color: #1e1d21;
+}
+
+.home-page #home-sections .hero-section#work .fullpage .details h4 .text, .home-page #home-sections .hero-section#about .fullpage .details h4 .text, .home-page #home-sections .hero-section#contact .fullpage .details h4 .text {
+  display: block;
+}
+
+.home-page #home-sections .hero-section#about .hero {
+  margin-bottom: 10vh;
+}
+
+.home-page #home-sections .hero-section#about .hero img {
+  width: 115%;
 }
 
 .home-page .arrows-btn {
@@ -1001,7 +1017,7 @@ nav .nav-open ul li:hover {
 }
 
 .about-page .hero-section .fullpage .hero {
-  margin: 15% auto;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1016,7 +1032,7 @@ nav .nav-open ul li:hover {
 .about-page .hero-section .fullpage .hero img {
   -o-object-fit: unset;
      object-fit: unset;
-  width: 90%;
+  height: auto;
   margin: auto;
 }
 
@@ -1030,27 +1046,29 @@ nav .nav-open ul li:hover {
 }
 
 .about-page .page-content .quote .container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 2fr 1fr;
-      grid-template-columns: 2fr 1fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding-top: 0;
   padding-bottom: 0;
 }
 
 .about-page .page-content .quote .container h3 {
-  font-size: 2.5rem;
-  padding: 3rem;
+  margin: 0;
+  padding: 4rem 3px;
   font-style: italic;
-  margin: auto;
   font-weight: 400;
-  text-align: center;
+  text-align: left;
+}
+
+.about-page .page-content .quote .container #textTyper {
+  font-weight: 600;
 }
 
 .about-page .page-content .quote .container .photo {
@@ -1494,12 +1512,15 @@ nav .nav-open ul li:hover {
 .services-page .tabs .tab-content .problem {
   text-align: left;
   margin-bottom: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+
+.services-page .tabs .tab-content .problem p:before {
+  content: "\f054";
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  padding-right: 1rem;
+  vertical-align: middle;
+  font-weight: 900;
 }
 
 .services-page .tabs .tab-content .problem img {
@@ -1609,8 +1630,8 @@ nav .nav-open ul li:hover {
   left: 0;
   width: 5%;
   height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #f8f8ff), color-stop(60%, #5cc9f7));
-  background: linear-gradient(to bottom, #f8f8ff 10%, #5cc9f7 60%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, white), color-stop(10%, #f8f8ff), color-stop(50%, #5cc9f7), color-stop(90%, #2b3760));
+  background: linear-gradient(to bottom, white 0, #f8f8ff 10%, #5cc9f7 50%, #2b3760 90%);
 }
 
 .services-page .services .service:first-child {
@@ -1629,13 +1650,13 @@ nav .nav-open ul li:hover {
   background: linear-gradient(87deg, #348cd2 0%, #5cc9f7 100%);
 }
 
-.services-page .services .intro {
+.services-page .services .solution-box {
   text-align: center;
   background: #f8f8ff;
   margin: 4rem 0 2rem 0;
 }
 
-.services-page .services .intro .solution {
+.services-page .services .solution-box .solution {
   font-weight: bold;
   margin-bottom: 0;
 }
@@ -1705,19 +1726,9 @@ nav .nav-open ul li:hover {
   border-bottom: 3px solid #509cd9;
 }
 
-.services-page #website-dev .explanations .tabs-nav {
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-}
-
-.services-page #website-dev .explanations .tabs-nav .tab-item {
-  background: rgba(80, 156, 217, 0.5);
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-.services-page #website-dev .explanations .tabs-nav .tab-item.active {
-  background: #509cd9;
+.services-page #website-dev .explanations .content {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .services-page #website-dev .explanations .content h3 {
@@ -1754,10 +1765,11 @@ nav .nav-open ul li:hover {
   width: 100px;
 }
 
-.services-page #website-dev .explanations .content:first-child .container {
-  padding-top: 0;
-  padding-bottom: 0;
+.services-page #website-dev .explanations .content.intro {
   margin: 0rem auto;
+}
+
+.services-page #website-dev .explanations .content.intro .container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 3fr;
@@ -1771,62 +1783,127 @@ nav .nav-open ul li:hover {
           justify-content: center;
 }
 
-.services-page #website-dev .explanations .content:first-child .container img {
+.services-page #website-dev .explanations .content.intro .container img {
   height: 180px;
   width: auto;
   margin: auto;
 }
 
-.services-page #website-dev .explanations .content.process {
-  margin: 0;
-  padding: 0;
+.services-page #website-dev .explanations .content.process .content-intro {
+  display: block;
 }
 
-.services-page #website-dev .explanations .content.process .tab-content .container > div:nth-of-type(2) {
-  padding: 1rem 0;
+.services-page #website-dev .explanations .content.process .steps .container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.services-page #website-dev .explanations .content.process .steps .container .row1,
+.services-page #website-dev .explanations .content.process .steps .container .row2,
+.services-page #website-dev .explanations .content.process .steps .container .row3,
+.services-page #website-dev .explanations .content.process .steps .container .row4 {
+  margin: 2rem 1rem;
+  background-color: #f8f8ff;
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 3fr 1fr;
+      grid-template-columns: 1fr 3fr 1fr;
   border-radius: 10px;
-  -ms-grid-columns: 2fr 1fr;
-      grid-template-columns: 2fr 1fr;
-  grid-gap: 2rem;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
-.services-page #website-dev .explanations .content.process .tab-content .container > div:nth-of-type(2) .text {
+.services-page #website-dev .explanations .content.process .steps .container .row1:hover,
+.services-page #website-dev .explanations .content.process .steps .container .row2:hover,
+.services-page #website-dev .explanations .content.process .steps .container .row3:hover,
+.services-page #website-dev .explanations .content.process .steps .container .row4:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background-color: #509cd9;
+  color: white !important;
+}
+
+.services-page #website-dev .explanations .content.process .steps .container .row1:hover .field h4,
+.services-page #website-dev .explanations .content.process .steps .container .row2:hover .field h4,
+.services-page #website-dev .explanations .content.process .steps .container .row3:hover .field h4,
+.services-page #website-dev .explanations .content.process .steps .container .row4:hover .field h4 {
+  color: white !important;
+}
+
+.services-page #website-dev .explanations .content.process .steps .container .row1:hover .text ul p span,
+.services-page #website-dev .explanations .content.process .steps .container .row2:hover .text ul p span,
+.services-page #website-dev .explanations .content.process .steps .container .row3:hover .text ul p span,
+.services-page #website-dev .explanations .content.process .steps .container .row4:hover .text ul p span {
+  color: white !important;
+}
+
+.services-page #website-dev .explanations .content.process .steps .container .row1,
+.services-page #website-dev .explanations .content.process .steps .container .row3 {
+  background-color: rgba(80, 156, 217, 0.1);
+}
+
+.services-page #website-dev .explanations .content.process .steps .container .field {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 1rem;
+}
+
+.services-page #website-dev .explanations .content.process .steps .container .field h4 {
+  font-weight: 600;
+  color: #509cd9;
+  margin-bottom: 0;
+}
+
+.services-page #website-dev .explanations .content.process .steps .container .text {
+  height: 100%;
   padding: 2rem;
   padding-top: 2rem;
 }
 
-.services-page #website-dev .explanations .content.process .tab-content .container > div:nth-of-type(2) .text ul {
+.services-page #website-dev .explanations .content.process .steps .container .text ul {
   height: 100%;
   font-size: larger;
   line-height: 4rem;
 }
 
-.services-page #website-dev .explanations .content.process .tab-content .container > div:nth-of-type(2) .text ul p {
+.services-page #website-dev .explanations .content.process .steps .container .text ul p {
   margin-bottom: 0rem;
 }
 
-.services-page #website-dev .explanations .content.process .tab-content .container > div:nth-of-type(2) .text ul p span {
-  font-size: x-large;
+.services-page #website-dev .explanations .content.process .steps .container .text ul p span {
+  font-size: larger;
   margin-right: 2rem;
 }
 
-.services-page #website-dev .explanations .content.process .tab-content .content-end {
+.services-page #website-dev .explanations .content.process .steps .container .img-box {
   width: 100%;
-  margin: auto;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.services-page #website-dev .explanations .content.process .tab-content .content-end img {
-  height: 50px;
-  margin-right: 2rem;
+.services-page #website-dev .explanations .content.process .steps .container .img-box img {
+  margin: auto;
+  width: 80px;
+}
+
+.services-page #website-dev .explanations .content.process .update {
+  padding: 3rem 0;
 }
 
 .services-page #website-dev .explanations .content.tools {
   margin: 0;
+  padding: 4rem 6rem;
   background: #f8f8ff;
 }
 
@@ -1838,28 +1915,33 @@ nav .nav-open ul li:hover {
   grid-gap: 2rem;
 }
 
-.services-page #website-dev .explanations .content.tools .container > div .text > div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 2rem;
+.services-page #website-dev .explanations .content.tools .container > div .text {
+  margin-left: 4rem;
 }
 
-.services-page #website-dev .explanations .content.tools .container > div .text > div i {
-  margin-right: 2rem;
+.services-page #website-dev .explanations .content.tools .container > div .text p {
+  margin-bottom: 3rem;
+}
+
+.services-page #website-dev .explanations .content.tools .container > div .text p:before {
+  content: "\f0ad";
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  padding-right: 2rem;
+  vertical-align: middle;
+  font-weight: 900;
   padding-top: 0.5rem;
   font-size: 2rem;
+  line-height: 100%;
+  position: absolute;
+  left: 6rem;
 }
 
-.services-page #website-dev .explanations .content.tools .container .content-img {
-  background: white;
-  border-radius: 20px;
+.services-page #website-dev .explanations .content.tools .container > div .content-img {
   width: 70%;
-  height: 95%;
+  height: 100%;
   margin: auto;
   padding: 1rem;
-  -webkit-box-shadow: 5px 5px 5px black;
-          box-shadow: 5px 5px 5px black;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1871,9 +1953,9 @@ nav .nav-open ul li:hover {
           align-items: center;
 }
 
-.services-page #website-dev .explanations .content.tools .container .content-img img {
-  margin-bottom: 1rem;
-  height: 70px;
+.services-page #website-dev .explanations .content.tools .container > div .content-img img {
+  margin-bottom: 2rem;
+  height: 60px;
   width: auto;
 }
 
@@ -1890,8 +1972,8 @@ nav .nav-open ul li:hover {
 }
 
 .services-page #web-integration::after {
-  background: -webkit-gradient(linear, left top, left bottom, from(#5cc9f7), color-stop(70%, #ea2967));
-  background: linear-gradient(to bottom, #5cc9f7 0%, #ea2967 70%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#2b3760), color-stop(70%, #ea2967));
+  background: linear-gradient(to bottom, #2b3760 0% 0%, #ea2967 70%);
 }
 
 .services-page #web-integration .explanations .content h3 {
@@ -1913,6 +1995,7 @@ nav .nav-open ul li:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  grid-gap: 2rem;
 }
 
 .services-page #web-integration .explanations .content > div .text > p {
@@ -1936,12 +2019,17 @@ nav .nav-open ul li:hover {
 }
 
 .services-page #web-integration .explanations .content > div .content-img img {
-  width: 200px;
+  width: 150px;
 }
 
-.services-page #web-integration .explanations .content.how-integration > div {
+.services-page #web-integration .explanations .content.integration-how > div {
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0;
+}
+
+.services-page #web-integration .explanations .content.integration-how > div .content-img img {
+  width: 200px;
 }
 
 .services-page #app-dev .explanations,
@@ -1980,8 +2068,8 @@ nav .nav-open ul li:hover {
 }
 
 .services-page #app-dev::after {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #19cc9f), to(#2b3760));
-  background: linear-gradient(to bottom, #19cc9f 30%, #2b3760 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ea2967), color-stop(50%, #19cc9f));
+  background: linear-gradient(to bottom, #ea2967 0%, #19cc9f 50%);
 }
 
 .services-page #marketing img {
@@ -2001,8 +2089,8 @@ nav .nav-open ul li:hover {
 }
 
 .services-page #marketing::after {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #2b3760), to(#509cd9));
-  background: linear-gradient(to bottom, #2b3760 30%, #509cd9 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#19cc9f), color-stop(50%, #2b3760), to(#509cd9));
+  background: linear-gradient(to bottom, #19cc9f 0%, #2b3760 50%, #509cd9 100%);
 }
 
 .show {
@@ -2049,6 +2137,7 @@ nav .nav-open ul li:hover {
   display: none;
   padding: 20px;
   color: #1e1d21;
+  background: white;
 }
 
 #faq .btn {
@@ -2085,7 +2174,7 @@ nav .nav-open ul li:hover {
 
 .contact-page .page-content img {
   width: 100%;
-  height: 110%;
+  height: 100%;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   -o-object-fit: cover;
@@ -2415,10 +2504,6 @@ footer span {
     border-left: 3px solid #509cd9;
     border-bottom: 3px solid #509cd9;
   }
-  .home-page #home-sections {
-    width: 100%;
-    margin-left: 0;
-  }
   .home-page #home-sections #showcase .container {
     padding: 2rem 4rem;
   }
@@ -2457,6 +2542,8 @@ footer span {
   .home-page #home-sections .hero-section .fullpage {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    -ms-grid-rows: 1.2fr 1fr;
+        grid-template-rows: 1.2fr 1fr;
     grid-gap: 0;
     width: 90%;
     margin: auto;
@@ -2467,6 +2554,13 @@ footer span {
   }
   .home-page #home-sections .hero-section .fullpage .hero {
     margin: 10% 10% auto 10%;
+  }
+  .home-page #home-sections .hero-section#about .fullpage .hero {
+    width: 100% !important;
+    margin: 0 0 12vh 0 !important;
+  }
+  .home-page #home-sections .hero-section#about .fullpage .hero img {
+    width: 100%;
   }
   .page-sections .hero-section {
     display: block;
@@ -2513,6 +2607,11 @@ footer span {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+  }
+  .about-page .hero-section .fullpage .hero {
+    padding: 0;
+    margin: 0 auto !important;
+    height: auto !important;
   }
   .about-page .page-content .container .content {
     display: -webkit-box;
@@ -2613,19 +2712,14 @@ footer span {
     width: 100%;
   }
   .about-page .page-content .quote .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding: 4rem 6rem;
   }
   .about-page .page-content .quote .container h3 {
-    font-size: 2rem;
-  }
-  .about-page .page-content .quote .container .photo {
-    width: 50%;
+    padding: 0;
   }
   .about-page .page-content .content > .container {
     grid-gap: 6rem;

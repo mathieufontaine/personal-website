@@ -10,7 +10,7 @@
     position: absolute !important;
     bottom: 0% !important;
     right: 0 !important;
-    width: 65% !important;
+    width: 60% !important;
     height: 100% !important;
     z-index: 0 !important;
     // opacity: 0.8 !important;
@@ -31,11 +31,14 @@
     h1 {
       // margin-bottom: 30px;
       color: $primary-color;
+      font-size: 4rem;
     }
     h2 {
       color: $primary-color;
       font-weight: 500;
-      // margin-bottom: 0;
+      font-size: 2.8rem;
+
+      margin-bottom: 2rem;
     }
     h3 {
       color: $secondary-color;
@@ -60,7 +63,7 @@
         // position: absolute;
         // top: 40%;
         // left: 0%;
-        width: 40%;
+        width: 50%;
         // height: 100%;
         display: flex;
         flex-direction: column;

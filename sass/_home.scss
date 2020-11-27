@@ -12,7 +12,7 @@
 
     #showcase {
       height: 90vh !important;
-      width: 90%;
+      width: 100%;
       .fp-tableCell {
         height: auto !important;
       }
@@ -30,6 +30,20 @@
         }
         h4 .text {
           display: none;
+          color: $primary-color;
+        }
+      }
+      &#work,
+      &#about,
+      &#contact {
+        .fullpage .details h4 .text {
+          display: block;
+        }
+      }
+      &#about .hero {
+        margin-bottom: 10vh;
+        img {
+          width: 115%;
         }
       }
     }
