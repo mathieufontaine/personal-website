@@ -1,12 +1,10 @@
 /* Section about */
 
 .about-page {
-  overflow: hidden;
-
   h3:first-child {
     text-align: center;
     padding: 3rem 0 2rem 0;
-    // color: white;
+    color: white;
   }
 
   .hero-section {
@@ -15,6 +13,9 @@
       grid-template-columns: 1fr 1fr;
       .details {
         margin: 15% auto;
+        h3 {
+          color: white;
+        }
       }
       .hero {
         margin: 0 auto;
@@ -40,32 +41,22 @@
     }
 
     .quote {
-      background: $grey-color;
+      background: $primary-color;
+      color: white;
       .container {
         display: flex;
         justify-content: center;
         align-items: flex-start;
-        padding-top: 0;
-        padding-bottom: 0;
-        h3 {
+        div {
           margin: 0;
-
-          // font-size: 2rem;
-          // color: $light-color;
-          padding: 4rem 3px;
-          // left: 150px;
+          font-size: 2.3rem;
           font-style: italic;
           font-weight: 400;
           text-align: left;
         }
-        #textTyper {
-          font-weight: 600;
-        }
-        .photo {
-          width: 70%;
-          margin: auto;
-          z-index: 0;
-        }
+        // #textTyper {
+        //   font-weight: 600;
+        // }
       }
     }
     .content {

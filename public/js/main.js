@@ -8,14 +8,14 @@ import { enableTabs } from "./pages/services.js";
 import { initTextTyper } from "./animations/textTyper.js";
 // import { pageTransition } from "./transitions.js";
 
-const main = document.querySelector("main");
-
 // * Start plugin
 // const swup = new Swup();
 AOS.init();
 // const lightbox = new SimpleLightbox(".project-img");
 
 // * Global functions
+
+const main = document.querySelector("main");
 
 // * Pages functions
 if (!main.classList.contains("home-page" || "contact-page")) {

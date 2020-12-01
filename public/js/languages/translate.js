@@ -43,7 +43,7 @@ const translate = () => {
   if (main.classList.contains("home-page")) {
     document.querySelector(".headers .title").innerHTML = language.homeTitle;
     document.querySelector(".headers .subtitle").innerHTML = language.homeJob;
-    document.querySelector(".headers .btn").innerText = language.navBtn;
+    document.querySelector(".headers .btn").innerText = language.ctaBtn;
     // main.querySelector(".headers h1").innerText = language.homeTitle;
     // main.querySelector(".showcase-btn .btn").innerText =
     //   language.homeShowcaseBtn;
@@ -53,7 +53,7 @@ const translate = () => {
     main.querySelector("#work .btn").innerText = language.sectionBtn;
     main.querySelector("#about h1 .text").innerText = language.aboutTitle;
     main.querySelector("#about h2 .text").innerText = language.aboutSubtitle;
-    main.querySelector("#about h4 .text").innerText = language.aboutText;
+    // main.querySelector("#about h4 .text").innerText = language.aboutText;
     main.querySelector("#about .btn").innerText = language.sectionBtn;
     main.querySelector("#services h1 .text").innerText = language.servicesTitle;
     main.querySelector("#services h2 .text").innerText =
@@ -72,10 +72,32 @@ const translate = () => {
     main.querySelector(".details h1 .text").innerText = language.workTitle;
     main.querySelector(".details h2 .text").innerText = language.workSubtitle;
     main.querySelector(".details h4 .text").innerText = language.workText;
-    main.querySelector(".page-description h4:nth-child(1)").innerText =
+    main.querySelector(".page-description p:nth-child(1)").innerText =
       language.workDescription1;
-    main.querySelector(".page-description h4:nth-child(2)").innerText =
+    main.querySelector(".page-description p:nth-child(2)").innerText =
       language.workDescription2;
+    main.querySelector(".clients-projects-section .title h3").innerText =
+      language.workProjectSection1Title;
+    main.querySelector(".personal-projects-section .title h3").innerText =
+      language.workProjectSection2Title;
+    main.querySelector(
+      ".personal-projects-section .websites .sm-header"
+    ).innerText = language.workWebsitesTitle;
+    main.querySelector(
+      ".personal-projects-section .apps .sm-header"
+    ).innerText = language.workAppsTitle;
+    main.querySelector("#la-ruee .project-type").innerText =
+      language.larueeType;
+    main.querySelector("#la-ruee .project-text p:nth-of-type(2)").innerText =
+      language.larueeText1;
+    main.querySelector("#la-ruee .project-text p:nth-of-type(3)").innerText =
+      language.larueeText2;
+    main.querySelector("#cabinet .project-type").innerText =
+      language.cabinetType;
+    main.querySelector("#cabinet .project-text p:nth-of-type(2)").innerText =
+      language.cabinetText1;
+    main.querySelector("#cabinet .project-text p:nth-of-type(3)").innerText =
+      language.cabinetText2;
     main.querySelector("#weather-app .project-text p:nth-child(2)").innerText =
       language.appText1;
     main.querySelector("#weather-app .project-text p:nth-child(3)").innerText =
@@ -102,39 +124,40 @@ const translate = () => {
       language.appBreathText2;
     main.querySelector("#breath-app .project-text p:nth-child(4)").innerText =
       language.appBreathText3;
+    main.querySelector(
+      "#portfolio_examples .project-text p:nth-child(2)"
+    ).innerText = language.sitePortfoliosText;
     main.querySelector("#soundwave .project-text p:nth-child(2)").innerText =
-      language.siteText1;
-    main.querySelector("#soundwave .project-text p:nth-child(3)").innerText =
-      language.siteSoundwaveText2;
+      language.siteSoundwaveText;
     main.querySelector("#ziko .project-text p:nth-child(2)").innerText =
-      language.siteText1;
-    main.querySelector("#ziko .project-text p:nth-child(3)").innerText =
-      language.siteZikoText2;
+      language.siteZikoText;
     main.querySelector("#easybank .project-text p:nth-child(2)").innerText =
-      language.siteText2;
-    main.querySelector("#easybank .project-text p:nth-child(3)").innerText =
-      language.siteZikoText2;
+      language.siteEasybankText;
     main.querySelector("#mountain .project-text p:nth-child(2)").innerText =
-      language.siteText2;
-    main.querySelector("#mountain .project-text p:nth-child(3)").innerText =
-      language.siteZikoText2;
+      language.siteMountainText;
     main.querySelector("#interface .project-text p:nth-child(2)").innerText =
-      language.siteInterfaceText1;
+      language.siteInterfaceText;
+    main.querySelector(".cta-section .cta").innerText =
+      language.servicesCtaText;
+    main.querySelector(".cta-section .btn").innerText = language.ctaBtn;
   }
 
   // * about
   else if (main.classList.contains("about-page")) {
     main.querySelector(".details h1 .text").innerText = language.aboutTitle;
-    main.querySelector(".details h2 .text").innerText = language.aboutSubtitle;
-    main.querySelector(".details h4 .text").innerText = language.aboutText;
-    main.querySelector(".quote h3").innerText = language.quoteText;
+    // main.querySelector(".details h2 .text").innerText = language.aboutJob;
+    main.querySelector(".details h3 .text").innerText = language.aboutJob;
+    main.querySelector(".quote .container div span").innerText =
+      language.quoteText;
     main.querySelector("#web-dev h2").innerText = language.webdevTitle;
     main.querySelector("#frontend h2").innerText = language.frontendTitle;
     main.querySelector("#ux h2").innerText = language.uxTitle;
+    main.querySelector("#marketing h2").innerText = language.marketingTitle;
     main.querySelector("#remote h2").innerText = language.remoteTitle;
     main.querySelector("#web-dev p").innerText = language.webdevText;
     main.querySelector("#frontend p").innerText = language.frontendText;
     main.querySelector("#ux p").innerText = language.uxText;
+    main.querySelector("#marketing p").innerText = language.marketingText;
     main.querySelector("#remote p").innerText = language.remoteText;
     main.querySelector(".cta h2").innerText = language.ctaTitle;
     main.querySelector(".cta h4").innerText = language.ctaText;
@@ -157,9 +180,9 @@ const translate = () => {
     main.querySelector(".details h2 .text").innerText =
       language.experienceSubtitle;
     main.querySelector(".details h4 .text").innerText = language.experienceText;
-    main.querySelector(".page-description h4:nth-child(1)").innerText =
+    main.querySelector(".page-description p:nth-child(1)").innerText =
       language.experienceDescription1;
-    main.querySelector(".page-description h4:nth-child(2)").innerText =
+    main.querySelector(".page-description p:nth-child(2)").innerText =
       language.experienceDescription2;
     main.querySelector("#toulouse .card .secondary-text").innerText =
       language.toulouseTitle;
@@ -196,6 +219,9 @@ const translate = () => {
     main.querySelector("#lisbon .card .p2 .span2").innerText =
       language.lisbonText2span2;
     main.querySelector("#lisbon .card .p3").innerText = language.lisbonText3;
+    main.querySelector(".cta-section .cta").innerText =
+      language.servicesCtaText;
+    main.querySelector(".cta-section .btn").innerText = language.ctaBtn;
   }
 
   // * services
@@ -235,27 +261,67 @@ const translate = () => {
       language.servicesTabBtn;
     main.querySelector(".tabs #tab-4-content .showcase-btn p").innerText =
       language.servicesTabBtn;
-    main.querySelector(".tabs .btn a").innerText = language.ctaBtn;
+    main.querySelector(".tabs .btn").innerText = language.ctaBtn;
     main.querySelector("#website-dev .header .text h3").innerHTML =
       language.servicesTab1;
     main.querySelector("#website-dev .solution").innerHTML =
       language.servicesTab1Solution;
     main.querySelector("#website-dev .explanations .intro .text").innerHTML =
       language.servicesWebsiteIntro;
-    // main.querySelector(
-    //   "#website-dev .explanations #content-creation h3"
-    // ).innerHTML = language.servicesWebsiteCreationTitle;
-    // main.querySelector(
-    //   "#website-dev .explanations #content-creation .content-intro"
-    // ).innerHTML = language.servicesWebsiteCreationIntro;
-    // main.querySelector(
-    //   "#website-dev .explanations #content-creation .text"
-    // ).innerHTML = language.servicesWebsiteCreationList;
-
+    main.querySelector(
+      "#website-dev .explanations .intro .offer h4"
+    ).innerHTML = language.servicesWebsiteOffer;
+    main.querySelector(
+      "#website-dev .explanations .content-intro h3"
+    ).innerHTML = language.servicesWebsiteProcessTitle;
+    main.querySelector(
+      "#website-dev .explanations .content-intro .container div"
+    ).innerHTML = language.servicesWebsiteProcessIntro;
+    main.querySelector(
+      "#website-dev .explanations .steps .row1 .field h4"
+    ).innerText = language.servicesWebsiteStep1Title;
+    main.querySelector(
+      "#website-dev .explanations .steps .row2 .field h4"
+    ).innerText = language.servicesWebsiteStep2Title;
+    main.querySelector(
+      "#website-dev .explanations .steps .row3 .field h4"
+    ).innerText = language.servicesWebsiteStep3Title;
+    main.querySelector(
+      "#website-dev .explanations .steps .row4 .field h4"
+    ).innerText = language.servicesWebsiteStep4Title;
+    main.querySelector(
+      "#website-dev .explanations .steps .row1 .text"
+    ).innerHTML = language.servicesWebsiteStep1Text;
+    main.querySelector(
+      "#website-dev .explanations .steps .row2 .text"
+    ).innerHTML = language.servicesWebsiteStep2Text;
+    main.querySelector(
+      "#website-dev .explanations .steps .row3 .text"
+    ).innerHTML = language.servicesWebsiteStep3Text;
+    main.querySelector(
+      "#website-dev .explanations .steps .row4 .text"
+    ).innerHTML = language.servicesWebsiteStep4Text;
+    main.querySelector("#website-dev .explanations .update h4").innerHTML =
+      language.servicesWebsiteUpdateTitle;
+    main.querySelector(
+      "#website-dev .explanations .update .container div"
+    ).innerHTML = language.servicesWebsiteUpdateText;
     main.querySelector("#website-dev .explanations .tools h3").innerHTML =
       language.servicesWebsiteToolsTitle;
-    main.querySelector("#website-dev .explanations .tools .text").innerHTML =
-      language.servicesWebsiteToolsText;
+    main.querySelector("#website-dev .explanations .tools .tool1 p").innerHTML =
+      language.servicesWebsiteTool1Text;
+    main.querySelector("#website-dev .explanations .tools .tool2 p").innerHTML =
+      language.servicesWebsiteTool2Text;
+    main.querySelector("#website-dev .explanations .tools .tool3 p").innerHTML =
+      language.servicesWebsiteTool3Text;
+    main.querySelector("#website-dev .explanations .tools .tool4 p").innerHTML =
+      language.servicesWebsiteTool4Text;
+    main.querySelector("#website-dev .explanations .tools .tool5 p").innerHTML =
+      language.servicesWebsiteTool5Text;
+    main.querySelector("#website-dev .explanations .tools .tool6 p").innerHTML =
+      language.servicesWebsiteTool6Text;
+    // main.querySelector("#website-dev .explanations .tools .text").innerHTML =
+    //   language.servicesWebsiteToolsText;
     main.querySelector("#website-dev .cta").innerText =
       language.servicesCtaText;
     main.querySelector("#website-dev .btn a").innerText = language.ctaBtn;
@@ -327,6 +393,10 @@ const translate = () => {
     main.querySelector("#faq #a13").innerHTML = language.servicesFAQa13;
     main.querySelector("#faq #q14 p").innerText = language.servicesFAQq14;
     main.querySelector("#faq #a14").innerHTML = language.servicesFAQa14;
+    main.querySelector("#faq #q15 p").innerText = language.servicesFAQq15;
+    main.querySelector("#faq #a15").innerHTML = language.servicesFAQa15;
+    main.querySelector("#faq #q16 p").innerText = language.servicesFAQq16;
+    main.querySelector("#faq #a16").innerHTML = language.servicesFAQa16;
     main.querySelector("#faq .btn a").innerText = language.ctaBtn;
   }
 
@@ -334,6 +404,7 @@ const translate = () => {
   else if (main.classList.contains("contact-page")) {
     main.querySelector(".page-info h2").innerText = language.contactHeader1;
     main.querySelector(".page-info h4").innerText = language.contactHeader2;
+    main.querySelector(".page-info p").innerText = language.contactHeader3;
     main.querySelector(".first label").innerText = language.labelFirst;
     main.querySelector(".last label").innerText = language.labelLast;
     main.querySelector(".subject label").innerText = language.labelSubject;

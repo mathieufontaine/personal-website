@@ -18,20 +18,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="css/simple-lightbox.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Mathieu Fontaine</title>
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
     <script defer type="module" src="js/languages/translate.js"></script>
     <!-- <script defer src="/node_modules/swup/dist/swup.min.js"></script> -->
-    <script defer src="js/modules/fullpage.min.js"></script>
+    <!-- <script defer src="js/modules/fullpage.min.js"></script> -->
     <script defer src="https://kit.fontawesome.com/f3e2209c65.js" crossorigin="anonymous"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
     <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- <script defer type="module" src="js/components/header.js"></script>/ -->
     <script defer type="module" src="js/main.js"></script>
+    <script defer src="js/modules/scrollTop.js"></script>
+
 </head>
 
 <body>
@@ -175,13 +176,15 @@
                         </div>
                     </div>
                 </div>
-                <section class="tabs" data-aos="fade-left" data-aos-duration="1500">
+                <div class="title">
                     <div class="container">
-                        <div class="title">
-                            <h2>
-                                Services
-                            </h2>
-                        </div>
+                        <h2>
+                            Services
+                        </h2>
+                    </div>
+                </div>
+                <section class="tabs">
+                    <div class="container">
                         <div class="tabs-nav">
                             <div id="tab-1" class="tab-item active">
                                 <h4 class="hide-sm">Website Development</h4>
@@ -279,13 +282,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="btn"><a href="/public/contact.html">Contact Me</a></div>
+                        <a class="btn" href="/public/contact.html">Contact Me</a>
                 </section>
                 <section class="services">
                     <div class="service" id="website-dev">
 
                         <div class="container">
-                            <div class="header" data-aos="fade-left" data-aos-duration="1500">
+                            <div class="header">
                                 <div class="arrow">
                                     <img src="img/right-arrow-blue.svg" alt="right-arrow">
                                 </div>
@@ -303,58 +306,69 @@
                             </div>
                         </div>
                         <div class="explanations">
-                            <div class="content intro" data-aos="fade-right" data-aos-duration="1500">
+                            <div class="content intro">
                                 <div class="container">
-                                    <img src="img/problem.svg" alt="problem">
-                                    <div class="text">
-                                        <p>Creating a website <strong>can
-                                                feel
-                                                overwhelming</strong> for small businesses or independent
-                                            professionals.</p>
-                                        <p>When facing the <strong>complexity of design, web development and
-                                                marketing</strong> to create an efficient
-                                            website, they
-                                            may not know
-                                            where to start. </p>
-                                        <p>That is why I decided to provide a <strong>turnkey solution for businesses
+                                    <div>
+                                        <img src="img/problem.svg" alt="problem">
+                                        <div class="text">
+                                            <p>Creating a website <strong>can
+                                                    feel
+                                                    overwhelming</strong> for small businesses or independent
+                                                professionals.</p>
+                                            <p>When facing the <strong>complexity of design, web development and
+                                                    marketing</strong> to create an efficient
+                                                website, they
+                                                may not know
+                                                where to start. </p>
+                                        </div>
+                                    </div>
+                                    <div class="offer" data-aos="zoom-in" data-aos-duration="1500">
+                                        <i class="fas fa-arrow-right"></i>
+                                        <h4>That is why I decided to provide a
+                                            <strong>turnkey solution for businesses
                                                 and
-                                                professionals</strong> looking for converting website and web pages to
+                                                professionals</strong> looking for a converting website
+                                            to
                                             grow their
                                             business.
-                                        </p>
+                                        </h4>
                                     </div>
                                 </div>
                             </div>
-                            <div class="content process" data-aos="fade-left" data-aos-duration="1500">
+                            <div class="content process">
                                 <div class="content-intro">
                                     <div class="container">
                                         <h3>Process</h3>
                                         <!-- <img src="img/right-arrow-blue.svg" alt="right-arrow-blue"> -->
-                                        <p>Whether you need a website to introduce your business or a full
-                                            e-commerce
-                                            website to start selling online, I will create a
-                                            beautiful
-                                            responsive
-                                            website to engage new customers and establish your business
-                                            online.
-                                        </p>
-                                        <p>Below is the process I follow in order to develop clear & efficient
-                                            websites</p>
+                                        <div>
+                                            <p>Whether you need a website to introduce your business or a full
+                                                e-commerce
+                                                website to start selling online, I will create a
+                                                beautiful
+                                                responsive
+                                                website to engage new customers and establish your business
+                                                online.
+                                            </p>
+                                            <p>Below is <strong>11 steps website development process</strong> I follow
+                                                in order to develop clear
+                                                & efficient
+                                                websites:</p>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="steps" data-aos="fade-right" data-aos-duration="1500">
+                                <div class="steps">
                                     <div class="container">
                                         <!-- <div> -->
-                                        <div class="row1">
+                                        <div class="row1" data-aos="fade-up" data-aos-duration="1500">
                                             <div class="field">
-                                                <h4>Analyze & Set Up</h4>
+                                                <h4>Set Up</h4>
                                             </div>
                                             <div class="text">
                                                 <ul>
                                                     <li>
                                                         <p>
-                                                            <span>1.</span> Determine the <strong>main
-                                                                purpose & objectives</strong>
+                                                            <span>1.</span> <strong>Determine</strong> the main
+                                                            purpose & objectives
                                                             of
                                                             your
                                                             website
@@ -362,16 +376,17 @@
                                                     </li>
                                                     <li>
                                                         <p>
-                                                            <span>2.</span> Evaluate options & choose the most
+                                                            <span>2.</span> <strong>Evaluate</strong> options & choose
+                                                            the most
                                                             efficient
-                                                            <strong>website
-                                                                structure</strong>
+                                                            website
+                                                            structure
                                                         </p>
                                                     </li>
                                                     <li>
                                                         <p>
-                                                            <span>3.</span> Choose a <strong>domain name</strong> &
-                                                            <strong>web host</strong>
+                                                            <span>3.</span> <strong>Choose</strong> a domain name &
+                                                            web host
                                                         </p>
                                                     </li>
                                                 </ul>
@@ -380,7 +395,7 @@
                                                 <img src="img/engineering.svg" alt="engineering">
                                             </div>
                                         </div>
-                                        <div class="row2">
+                                        <div class="row2" data-aos="fade-up" data-aos-duration="1500">
                                             <div class="field">
                                                 <h4>Design</h3>
                                             </div>
@@ -388,13 +403,13 @@
                                                 <ul>
                                                     <li>
                                                         <p>
-                                                            <span>4.</span>Define <strong>visual
-                                                                identity </strong> (colors, typography, images..)
+                                                            <span>4.</span> <strong>Define</strong> visual
+                                                            identity (colors, typography, images..)
                                                         </p>
                                                     </li>
                                                     <li>
                                                         <p>
-                                                            <span>5.</span><strong>Design</strong> each web page
+                                                            <span>5.</span> <strong>Design</strong> each web page
                                                         </p>
                                                     </li>
                                                 </ul>
@@ -403,7 +418,7 @@
                                                 <img src="img/website-design.svg" alt="website-design">
                                             </div>
                                         </div>
-                                        <div class="row3">
+                                        <div class="row3" data-aos="fade-up" data-aos-duration="1500">
                                             <div class="field">
                                                 <h4>Development</h4>
                                             </div>
@@ -420,27 +435,28 @@
                                                     </li>
                                                     <li>
                                                         <p>
-                                                            <span>7.</span> Make it compatibles on <strong>all
-                                                                Devices
-                                                                and
-                                                                Browsers</strong>
-                                                        </p>
-                                                    </li>
-                                                    <li>
-                                                        <p>
-                                                            <span>8.</span> Set up the <strong>e-commerce
-                                                                system</strong>
+                                                            <span>7.</span><strong>Set up </strong> the e-commerce
+                                                            system
                                                             (if
                                                             applicable)
                                                         </p>
                                                     </li>
+                                                    <li>
+                                                        <p>
+                                                            <span>8.</span> <strong>Make it compatible </strong>on all
+                                                            Devices
+                                                            and
+                                                            Browsers
+                                                        </p>
+                                                    </li>
+
                                                 </ul>
                                             </div>
                                             <div class="img-box">
                                                 <img src="img/website-code.svg" alt="website-code">
                                             </div>
                                         </div>
-                                        <div class="row4">
+                                        <div class="row4" data-aos="fade-up" data-aos-duration="1500">
                                             <div class="field">
                                                 <h4>Publish and Optimize</h4>
                                             </div>
@@ -467,7 +483,6 @@
                                                         </p>
                                                     </li>
                                                 </ul>
-
                                             </div>
                                             <div class="img-box">
                                                 <img src="img/speed-test.svg" alt="speed-test">
@@ -475,81 +490,99 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="update" data-aos="fade-left" data-aos-duration="1500">
+                                <div class="update">
                                     <div class="container">
-                                        <!-- <img src="img/right-arrow-blue.svg" alt="right-arrow-blue"> -->
+                                        <!-- <img src="img/up-arrow-blue.svg" alt="right-arrow-blue"> -->
                                         <h4>Already have a website?</h4>
-                                        <p>No, problem, I can work on your website as
-                                            well.<br>
-                                            Whether you need to totally <strong>redesign</strong> your website,
-                                            add an <strong>e-commerce system</strong> to start selling online, or
-                                            just <strong>updating
-                                                somes
-                                                pages or content</strong>,
-                                            I will hep you reach your objectives.
-                                        </p>
-                                        <p>Together, we will analyse the current issues you <strong>website
-                                                is facing</strong> and define the <strong>main
-                                                improvements</strong>
-                                            I can bring to your website.</p>
+                                        <div>
+                                            <p>No, problem, I can work on your website as
+                                                well.<br>
+                                                Whether you need to totally <strong>redesign</strong> your website,
+                                                add an <strong>e-commerce system</strong> to start selling online, or
+                                                just <strong>update
+                                                    some
+                                                    pages or content</strong>,
+                                                I will hep you reach your objectives.
+                                            </p>
+                                            <p>Together, we will analyse the current issues you <strong>website
+                                                    is facing</strong> and define the <strong>main
+                                                    improvements</strong>
+                                                I can bring to your website.</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="content tools" data-aos="fade-right" data-aos-duration="1500">
+                            <div class="content tools">
                                 <div class="container">
-                                    <h3>My Tools</h3>
-                                    <div>
-                                        <div class="text">
-                                            <p>I use tools like <strong>Figma</strong> to
-                                                quickly <strong>create & test
-                                                    different web designs & mockups.</strong></p>
-                                            <p>I use frontend development languages such as
-                                                <strong>HTML, CSS and
-                                                    Javascript</strong> to make a fast loading and <strong>fully
-                                                    customizable static web pages.</strong></p>
-                                            <p>I use <strong>Wordpress to build
-                                                    flexibles websites</strong> (if the
-                                                content needs to be managed and updated on a regular basis for
-                                                example).
-                                                I also use Wordpress to build production-ready e-commerce websites.
-                                                I will also
-                                                add
-                                                customized PHP code if necessary.</p>
-                                            <p>Within Wordpress, I use tools like <strong>Divi builder</strong> to
-                                                create
-                                                visual static or dynamic web pages.</p>
-                                            <p>For website creation, I also take care of the <strong>publication
-                                                    and
-                                                    the hosting of your site on
-                                                    servers</strong>, such as OVH, namecheap, netifly.. (depending
-                                                on
-                                                your
-                                                needs).</p>
+                                    <h3>Design & Development Tools</h3>
+                                    <div class="tool1" data-aos="fade-right" data-aos-duration="1500">
+                                        <p>I use tools like <strong>Figma</strong> to
+                                            quickly <strong>create & test
+                                                different web designs & mockups.</strong></p>
+                                        <div class="img-box"><img src="img/logo/figma.png" alt="figma"></div>
+                                    </div>
+                                    <div class="tool2" data-aos="fade-right" data-aos-duration="1500">
+                                        <p>I use <strong>Wordpress to build efficient and
+                                                flexible websites</strong>. I will include the necessary theme,
+                                            shortcodes, widgets and plugins to allow you to update and manage your
+                                            content by
+                                            yourself.
+                                        </p>
+                                        <div class="img-box">
+                                            <img src="img/logo/wordpress.png" alt="wordpress.png">
                                         </div>
-                                        <div class=" content-img">
-                                            <img src="img/logo/figma.png" alt="figma">
-                                            <img src="img/logo/html_css_js.png" alt="html_css_js">
-                                            <div style="display: flex;">
-                                                <img src="img/logo/wordpress.png" alt="wordpress.png">
-                                                <img src="img/logo/divi.png" alt="divi.png">
-                                            </div>
-                                            <div style="display: flex;">
-                                                <img src="img/logo/1280px-Logo-OVH.svg.png" alt="ovh">
-                                                <img src="img/logo/netlify.png" alt="netifly">
-                                            </div>
-                                            <!-- <img src="img/logo/namecheap.png" alt="namecheap.png"> -->
+                                    </div>
+                                    <div class="tool3" data-aos="fade-right" data-aos-duration="1500">
+                                        <p>Within Wordpress, I use tools like <strong>Divi builder</strong> to
+                                            visualy create & edit beautiful web elements with efficiency.</p>
+                                        <div class="img-box">
+                                            <img src="img/logo/divi.png" alt="divi.png">
+                                        </div>
+                                    </div>
+                                    <div class="tool4" data-aos="fade-right" data-aos-duration="1500">
+                                        <p>
+                                            I create <strong>e-commerce websites using WooCommerce</strong> to import
+                                            your products, set-up payment & delivery methods, and fully customize your
+                                            online store.
+                                        </p>
+                                        <div class="img-box">
+                                            <img src="img/logo/woocommerce-logo.png" alt="woocommerce-logo">
+                                        </div>
+                                    </div>
+                                    <div class="tool5" data-aos="fade-right" data-aos-duration="1500">
+                                        <p>I use frontend development languages such as
+                                            <strong>HTML, CSS and
+                                                Javascript</strong> to make a fast loading and <strong>fully
+                                                customizable web pages.</strong><br> I will also
+                                            add
+                                            customized HTML/CSS/JS/PHP code to wordpress websites to <strong>develop
+                                                specific
+                                                features.</strong></p>
+                                        <div class="img-box"><img src="img/logo/html_css_js.png" alt="html_css_js">
+                                        </div>
+                                    </div>
+                                    <div class="tool6" data-aos="fade-right" data-aos-duration="1500">
+                                        <p>If needed, I also take care of the <strong>publication
+                                                and
+                                                the hosting of your site on
+                                                servers</strong>, such as OVH, namecheap, netifly.. (depending
+                                            on
+                                            your
+                                            needs).</p>
+                                        <div class="img-box">
+                                            <img src="img/logo/1280px-Logo-OVH.svg.png" alt="ovh">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="cta-section" data-aos="fade-left" data-aos-duration="1500">
+                        <div class="cta-section">
                             <div class="container">
                                 <p class="cta">Any project in mind? Don't hesitate to contact me, I will be happy
                                     to
                                     discuss it
                                     with you!</p>
-                                <div class="btn"><a href="/public/contact.html">Contact Me</a></div>
+                                <a class="btn" href="/public/contact.html">Contact Me</a>
                                 <p class="cta-faq">Not sure yet? Check out the <a href="#faq">FAQ
                                         section</a></p>
                             </div>
@@ -557,7 +590,7 @@
                     </div>
                     <div class="service" id="web-integration">
                         <div class="container">
-                            <div class="header" data-aos="fade-left" data-aos-duration="1500">
+                            <div class="header">
                                 <div class="arrow">
                                     <img src="img/right-arrow.svg" alt="right-arrow">
                                 </div>
@@ -566,7 +599,7 @@
                                     <div class="line"></div>
                                 </div>
                             </div>
-                            <div class="solution-box" data-aos="fade-right" data-aos-duration="1500">
+                            <div class="solution-box">
                                 <div class="container">
                                     <h4 class="solution">I will <span>integrate</span> your design in HTML CSS & JS
                                         code
@@ -574,7 +607,7 @@
                                 </div>
                             </div>
                             <div class="explanations">
-                                <div class="content intro" data-aos="fade-left" data-aos-duration="1500">
+                                <div class="content intro">
                                     <p>A web integration is a phase that allows the final mock-up of a website or web
                                         application to be made into a web page.</p>
                                     <p>If you are a designer you may need to convert your design into actual code. As a
@@ -654,13 +687,17 @@
                                     </div>
                                 </div>
                             </div>
-                            <p class="cta">Any design to convert? Don't hesitate to contact me!</p>
-                            <div class="btn"><a href="/public/contact.html">Contact Me</a></div>
+                        </div>
+                        <div class="cta-section">
+                            <div class="container">
+                                <p class="cta">Any design to convert? Don't hesitate to contact me!</p>
+                                <a class="btn" href="/public/contact.html">Contact Me</a>
+                            </div>
                         </div>
                     </div>
                     <div class="service" id="app-dev">
 
-                        <div class="container" data-aos="fade-right" data-aos-duration="1500">
+                        <div class="container">
                             <div class="header">
                                 <div class="arrow">
                                     <img src="img/right-arrow-green.svg" alt="right-arrow">
@@ -677,17 +714,20 @@
                                     </h4>
                                 </div>
                             </div>
-                            <div class="explanations">
+                            <div class="explanations" data-aos="fade-right" data-aos-duration="1500">
                                 <div class="content">
                                     <p>A web application is a <strong>program that is used directly online</strong>,
                                         through a browser
-                                        interface, to perform various tasks. They run on multiple platforms regardless
+                                        interface, to perform various tasks. They run on multiple platforms
+                                        regardless
                                         of OS or device and don't require any installation.</p>
                                     <p>As a frontend developer I will design and implements user-facing features for
-                                        websites and applications using <strong>vanilla Javascipt or ReactJS.</strong> I
+                                        websites and applications using <strong>vanilla Javascipt or
+                                            ReactJS.</strong> I
                                         also have
                                         experience using React Native and Redux.</p>
-                                    <p> Whether you need to develop <strong>small feature or large website</strong> I
+                                    <p> Whether you need to develop <strong>small feature or large website</strong>
+                                        I
                                         will
                                         turn your project into a real application.</p>
                                 </div>
@@ -696,13 +736,16 @@
                                     <img src="img/logo/react-js.png" alt="react">
                                 </div>
                             </div>
-                            <p class="cta">Any project in mind? Let's discuss it and see how I can assist!</p>
-                            <div class="btn"><a href="/public/contact.html">Contact Me</a></div>
+                        </div>
+                        <div class="cta-section">
+                            <div class="container">
+                                <p class="cta">Any project in mind? Let's discuss it and see how I can assist!</p>
+                                <a class="btn" href="/public/contact.html">Contact Me</a>
+                            </div>
                         </div>
                     </div>
                     <div class="service" id="marketing">
-
-                        <div class="container" data-aos="fade-left" data-aos-duration="1500">
+                        <div class="container">
                             <div class="header">
                                 <div class="arrow">
                                     <img src="img/right-arrow-dark-blue.svg" alt="right-arrow">
@@ -719,7 +762,7 @@
                                     </h4>
                                 </div>
                             </div>
-                            <div class="explanations">
+                            <div class="explanations" data-aos="fade-right" data-aos-duration="1500">
                                 <div class="content">
                                     <p>It is crucial to have a nice and efficient website to reach your
                                         business
@@ -728,10 +771,12 @@
                                         <strong>find you online.</strong></p>
                                     <p>To be make your online business a success you may want to gain
                                         <strong>online
-                                            visibility and web authority</strong> on search engines as well targeting
+                                            visibility and web authority</strong> on search engines as well
+                                        targeting
                                         your
                                         audience through the <strong>right keywords.</strong></p>
-                                    <p>As a <strong>former SEA executive</strong> (Search Engine Advertisement) I know
+                                    <p>As a <strong>former SEA executive</strong> (Search Engine Advertisement) I
+                                        know
                                         how
                                         Search Enngines like Google work and I will help you reach <strong>qualified
                                             prospects.</strong></p>
@@ -743,8 +788,12 @@
                                     <img src="img/logo/analytics.png" alt="analytics">
                                 </div>
                             </div>
-                            <p class="cta">Any campaigns to create or optimize? Let's discuss it!</p>
-                            <div class="btn"><a href="/public/contact.html">Contact Me</a></div>
+                        </div>
+                        <div class="cta-section">
+                            <div class="container">
+                                <p class="cta">Any campaigns to create or optimize? Let's discuss it!</p>
+                                <a class="btn" href="/public/contact.html">Contact Me</a>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -754,9 +803,9 @@
                             <h2>
                                 FAQ
                             </h2>
-                            <p>It is very common that people ask me some of these questions before starting a project
+                            <p>It is common that people ask me some of these questions before starting a project
                                 with
-                                me (mainly focused on website development):</p>
+                                me:</p>
                         </div>
                         <div class="box">
                             <div class="question" id="q1">
@@ -813,6 +862,15 @@
                                     For app development it depends on the complexity and the necessary time of research
                                     it requires.
                                 </p>
+                            </div>
+                            <div class="question" id="q15">
+                                <p>Should I expect other costs?</p>
+                                <img src="img/small-right-arrow.svg" alt="small-right-arrow">
+                            </div>
+                            <div class="answer" id="a15">
+                                <p>If it is a new website, <strong>you will have to buy a domain name and a host
+                                        plan.</strong> It should cost you around 50$ per year.</p>
+                                <p>You don't have to worry about the set up. I will take care of it.</p>
                             </div>
                             <div class="question" id="q5">
                                 <p>Will you use a Content Management System such as Wordpress?</p>
@@ -943,8 +1001,19 @@
                                     linked to your website. You will be able to monitor metrics related to your traffic,
                                     demographics, conversions on a daily, weekly and monthly basis for example.</p>
                             </div>
+                            <div class="question" id="q16">
+                                <p>When can you get started?</p>
+                                <img src="img/small-right-arrow.svg" alt="small-right-arrow">
+                            </div>
+                            <div class="answer" id="a16">
+                                <p><strong>It can be really soon.</strong></p>
+                                <p>For web integration I will need you to send me the design files to get started.</p>
+                                <p>For website or web app development I will need to ask you a few questions about your
+                                    project and business before I can get started.</p>
+                                <p> Contact me to start talking about your project!</p>
+                            </div>
                         </div>
-                        <div class="btn"><a href="/public/contact.html">Contact Me</a></div>
+                        <a class="btn" href="/public/contact.html">Contact Me</a>
                     </div>
                 </section>
 
@@ -1220,8 +1289,6 @@
             </section> -->
             </section>
         </div>
-
-
 
         <footer>
             <p><span class="span1">Developed By </span>

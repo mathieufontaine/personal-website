@@ -23,8 +23,8 @@ export const initTextTyper = () => {
   ];
 
   const french = [
-    'créer des Sites Web."',
-    'développer des Applications Web."',
+    'créer de beaux Sites Web."',
+    'développer des Applications Web utiles."',
     'aider les Professionnels à réaliser leurs Projets Web."'
   ];
 
@@ -51,11 +51,11 @@ export const initTextTyper = () => {
     // If full sentence has been displayed then start to delete the sentence after some time
     if (text === SENTENCES[counter]) {
       clearInterval(interval);
-      if (counter !== 2) {
-        timeoutType = setTimeout(function() {
-          interval = setInterval(Delete, 30);
-        }, 1500);
-      }
+      // if (counter !== 2) {
+      timeoutType = setTimeout(function() {
+        interval = setInterval(Delete, 30);
+      }, 1500);
+      // }
     }
   }
 
@@ -71,9 +71,8 @@ export const initTextTyper = () => {
 
       // If last sentence then display the first one, else move to the next
 
-      // if (counter == SENTENCES.length - 1) counter = 0;
-      // else
-      counter++;
+      if (counter == SENTENCES.length - 1) counter = 0;
+      else counter++;
       counterIndex = 0;
 
       // Start to display the next sentence after some time

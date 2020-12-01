@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;800&display=swap");
 $primary-color: #1e1d21;
 // $secondary-color: #2f6ef5;
 $secondary-color: #509cd9;
@@ -58,7 +57,7 @@ html {
 }
 
 body {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Montserrat", sans-serif;
   background: $main-gradient;
   color: $text-color;
   font-size: 1.5rem;
@@ -117,7 +116,9 @@ a {
   text-decoration: none;
   color: #fff;
 }
-
+strong {
+  font-weight: 500;
+}
 ul {
   list-style: none;
 }
@@ -161,6 +162,11 @@ ul {
   // grid-gap: 2rem;
   align-items: center;
   justify-content: center;
+}
+
+.cta-section {
+  background: $primary-color;
+  color: white;
 }
 
 @keyframes scale {

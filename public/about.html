@@ -19,19 +19,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="css/simple-lightbox.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Mathieu Fontaine</title>
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
     <script defer type="module" src="js/languages/translate.js"></script>
     <!-- <script defer src="/node_modules/swup/dist/swup.min.js"></script> -->
-    <script defer src="js/modules/fullpage.min.js"></script>
+    <!-- <script defer src="js/modules/fullpage.min.js"></script> -->
     <script defer src="https://kit.fontawesome.com/f3e2209c65.js" crossorigin="anonymous"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
     <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script defer type="module" src="js/main.js"></script>
+    <script defer src="js/modules/scrollTop.js"></script>
+
 </head>
 
 <body>
@@ -86,11 +87,11 @@
                             <span class="text">About Me</span>
                         </h1>
                         <h2 class="hide">
-                            <span class="text">Web developer & UI Designer</span>
+                            <span class="text">Mathieu Fontaine</span>
                         </h2>
-                        <h4 class="hide">
+                        <h3 class="hide">
                             <span class="text"></span>
-                        </h4>
+                        </h3>
                         <div class="showcase-btn">
                             <a href="#about-content" class="scroll-down-btn"></a>
                         </div>
@@ -150,10 +151,10 @@
             <section class="page-content" id="about-content">
                 <div class="quote">
                     <div class="container">
-                        <h3>
-                            "I am Mathieu and I love
-                        </h3>
-                        <h3 id="textTyper"></h3>
+                        <div>
+                            <span>"I am Mathieu and I love </span><strong id="textTyper"></strong>
+                        </div>
+
                         <!-- <img src="img/mathieu_fontaine.png" alt="mathieu_fontaine" class="photo" data-aos="fade-down"
                             data-aos-easing="linear" data-aos-duration="500" /> -->
                     </div>
@@ -182,12 +183,12 @@
                                 <div class="text">
                                     <h2>Passionate about Frontend</h2>
                                     <p>
-                                        What I enjoy the most about coding is the ability to instantly
-                                        see the results of my work as well as creating interaction with the user.
-                                        Thus, I
-                                        decided
-                                        to
-                                        specialize in frontend development. I focus on writing
+                                        What I enjoy the most about frontend developement is the interaction I create
+                                        with
+                                        the user, through a computer.
+                                        I like to transform code into a smooth web experience that will allow owner and
+                                        customers to achieve their objectives.
+                                        I focus on writing
                                         accessible HTML, using modern CSS practices and clean
                                         Javascript code. I also use ReactJS & React Native libraries.
                                     </p>
@@ -217,7 +218,28 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="card" id="remote" data-aos="fade-right" data-aos-duration="1500">
+                            <div class="card" id="marketing" data-aos="fade-right" data-aos-duration="1500">
+                                <div class="text">
+                                    <h2>Experienced in Marketing</h2>
+                                    <p>
+                                        Digital Marketing is a field I have graduated from in 2016 (master degree).
+                                        I have worked as Online Media Executive, focusing on improving the performance
+                                        of SEA campaigns for the Club Med company for almost 2 years.
+                                        I have also worked for a startup in Singapore as Online Project Manager, I
+                                        redesigned their
+                                        website and improved the visibility and conversion rate of their website.
+                                    </p>
+                                </div>
+                                <div class="draw">
+                                    <!-- <i class="fas fa-laptop-house"></i> -->
+                                    <img class="icon" src="img/undraw_predictive_analytics_kf9n.svg" alt="marketing">
+                                </div>
+                            </div>
+                            <div class="card" id="remote" data-aos="fade-left" data-aos-duration="1500">
+                                <div class="draw">
+                                    <!-- <i class="fas fa-laptop-house"></i> -->
+                                    <img class="icon" src="img/undraw_Freelancer_re_irh4.svg" alt="remote">
+                                </div>
                                 <div class="text">
                                     <h2>Working Remotely</h2>
                                     <p>
@@ -227,10 +249,7 @@
                                         exporing new places by foot or with my bike.
                                     </p>
                                 </div>
-                                <div class="draw">
-                                    <!-- <i class="fas fa-laptop-house"></i> -->
-                                    <img class="icon" src="img/undraw_Freelancer_re_irh4.svg" alt="remote">
-                                </div>
+
                             </div>
                         </div>
                     </div>

@@ -52,6 +52,8 @@ export const hideNavbar = () => {
     const currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
       navbar.style.top = "0";
+      // navbar.style.position = "sticky";
+      // navbar.style.width = "100%";
     } else {
       navbar.style.top = "-100%";
     }

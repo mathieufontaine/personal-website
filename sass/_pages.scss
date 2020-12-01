@@ -1,6 +1,8 @@
 // pages
 
 .page-sections {
+  overflow-x: hidden;
+
   .hero-section {
     min-height: unset;
     display: block;
@@ -67,7 +69,7 @@
         max-width: 1200px;
         margin: auto;
         img {
-          height: 60%;
+          height: 100px;
           margin: auto;
         }
         p:before {

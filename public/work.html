@@ -8,7 +8,6 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-148JXT5QGH');
     </script>
     <meta property="og:title" content="Mathieu Fontaine - Frontend Web Developer" />
@@ -19,19 +18,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="css/simple-lightbox.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Mathieu Fontaine</title>
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
     <script defer type="module" src="js/languages/translate.js"></script>
     <!-- <script defer src="/node_modules/swup/dist/swup.min.js"></script> -->
-    <script defer src="js/modules/fullpage.min.js"></script>
+    <!-- <script defer src="js/modules/fullpage.min.js"></script> -->
     <script defer src="https://kit.fontawesome.com/f3e2209c65.js" crossorigin="anonymous"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
     <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script defer type="module" src="js/main.js"></script>
+    <script defer src="js/modules/scrollTop.js"></script>
 
 </head>
 
@@ -143,24 +142,241 @@
 
             <!-- Portfolio -->
 
-            <section class="page-content" id="work-content">
+            <div class="page-content" id="work-content">
                 <div class="page-description">
                     <div class="container">
                         <img src="img/code.svg" alt="code">
                         <div>
-                            <p> Below you will find some of the projects I have built in 2020, including 5 web
-                                applications
-                                and 5 websites.</p>
+                            <p> Below you will find some of the projects I have built in 2020, including 6 websites 5
+                                and web
+                                applications.</p>
                             <p>You can check the code and explore the web apps & websites as they are all live on the
                                 internet.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="page-inner">
+                <section class="clients-projects-section">
+                    <div class="title">
+                        <div class="container">
+                            <h3>Clients Projects</h3>
+                        </div>
+                    </div>
+                    <div class="container clients-projects">
+                        <div class="project" id="la-ruee" data-aos="fade-up" data-aos-duration="custom">
+                            <a href="https://laruee.000webhostapp.com/" class="project-img" target="_blank">
+                                <img src="img/projects/mockup_laruee.png" alt="la ruee" />
+                            </a>
+                            <div class="project-text">
+                                <h3>La Ruée</h3>
+                                <p class="project-type">Web Integration</p>
+                                <p>Landing page website whose goal is to introduce a monthly newsletter and to
+                                    allow people
+                                    to subscribe through a form.</p>
+                                <p>I developed 2 versions of this web integration: a wordpress and a HTML website.
+                                </p>
+                                <div class="btn-container">
+                                    <a class="btn btn-code" href="https://github.com/mathieufontaine/la_ruee"
+                                        target="_blank">Source Code</a>
+                                    <a class="btn btn-visit" href="https://la-ruee.vercel.app/" target="_blank">HTML
+                                        Website</a>
+                                    <a class="btn btn-visit" href="https://laruee.000webhostapp.com/"
+                                        target="_blank">Wordpress
+                                        Website</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project" id="cabinet" data-aos="fade-up" data-aos-duration="custom">
+                            <a href="https://cabinetisabellefontaine.com/" class="project-img" target="_blank">
+                                <img src="img/projects/mockup_cabinetIF.png" alt="mockup cabinet isabelle fontaine" />
+                            </a>
+                            <div class="project-text">
+                                <h3>Cabinet Psychologue</h3>
+                                <p class="project-type">Website Design & Developpment</p>
+                                <p>Blog & E-commerce website whose goal is to introduce and sell the services of a
+                                    professionnal
+                                    Psychologue.</p>
+                                <p>Website built with Wordpress. I used WooCommerce for the online store and Stripe
+                                    for the online payment.
+                                </p>
+                                <div class="btn-container">
+                                    <a class="btn btn-visit" href="https://cabinetisabellefontaine.com/"
+                                        target="_blank">Visit
+                                        Website
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="personal-projects-section">
+                    <div class="title">
+                        <div class="container">
+                            <h3>Personal Projects</h3>
+                        </div>
+                    </div>
+                    <div class="container gallery websites">
+                        <h2 class="sm-header">Websites</h2>
+                        <div class="projects">
+                            <div class="project" id="portfolio_examples" data-aos="fade-up" data-aos-duration="custom">
+                                <div class="project-text">
+                                    <h3>Portfolios Examples</h3>
+                                    <p>4 Pages portfolio responsive website introducing a photograph, a cook and a
+                                        hairstyler's works. It was built using HTML/CSS/Javacript.</p>
+                                    <div class="btn-container">
+                                        <a class="btn" href="https://github.com/mathieufontaine/portfolio-examples"
+                                            target="_blank">Source Code</a>
+                                        <a class="btn" href="https://jobs-portfolio-examples.netlify.app/"
+                                            target="_blank">Website</a>
+                                    </div>
+                                </div>
+                                <a href="https://jobs-portfolio-examples.netlify.app/" class="project-img"
+                                    target="_blank">
+                                    <img src="img/projects/mockup_jobs_portfolio.png" alt="portfolios-img" />
+                                </a>
+                            </div>
+                            <div class="project" id="soundwave" data-aos="fade-up" data-aos-duration="custom">
+                                <div class="project-text">
+                                    <h3>Soundwave</h3>
+                                    <p>3 pages responsive website introducing music streaming services. It was built
+                                        with HTML/CSS/Javacript and it includes sign up form,
+                                        animations and pages transitions.</p>
+                                    <div class="btn-container">
+                                        <a class="btn" href="https://github.com/mathieufontaine/soundwave-website"
+                                            target="_blank">Source Code</a>
+                                        <a class="btn" href="https://soundwave-website.vercel.app/"
+                                            target="_blank">Website</a>
+                                    </div>
+                                </div>
+                                <a href="https://soundwave-website.vercel.app/" class="project-img" target="_blank">
+                                    <img src="img/projects/mockup_soundwave.png" alt="soundwave-img" />
+                                </a>
+                            </div>
+                            <div class="project" id="easybank" data-aos="fade-up" data-aos-duration="custom">
+                                <div class="project-text">
+                                    <h3>Easybank Home Page</h3>
+                                    <p>Responsive landing page introducing a mobile bank services. It was built with
+                                        HTML/CSS/Javacript and it includes gradient colors and animations</p>
+                                    <div class="btn-container">
+                                        <a class="btn" href="https://github.com/mathieufontaine/easybank-lp"
+                                            target="_blank">Source Code</a>
+                                        <a class="btn" href="https://easybank-lp.vercel.app/"
+                                            target="_blank">Website</a>
+                                    </div>
+                                </div>
+                                <a href="https://easybank-lp.vercel.app/" class="project-img" target="_blank">
+                                    <img src="img/projects/mockup_easybank.png" alt="easybank-img" />
+                                </a>
+                            </div>
+                            <div class="project" id="mountain" data-aos="fade-up" data-aos-duration="custom">
+                                <div class="project-text">
+                                    <h3>Mountain Park Home Page</h3>
+                                    <p>Responsive Landing Page that giving information about a national park. It was
+                                        built with HTML/CSS/Javacript and it includes video background, parallax design
+                                        and animated
+                                        menu.</p>
+                                    <div class="btn-container">
+                                        <a class="btn" href="https://github.com/mathieufontaine/mountain-park-lp"
+                                            target="_blank">Source Code</a>
+                                        <a class="btn" href="https://mountain-park.vercel.app/"
+                                            target="_blank">Website</a>
+                                    </div>
+                                </div>
+                                <a href="https://mountain-park.vercel.app/" class="project-img" target="_blank">
+                                    <img src="img/projects/mockup_mountain-park.png" alt="mountain-park-img" />
+                                </a>
+                            </div>
+                            <div class="project" id="ziko" data-aos="fade-up" data-aos-duration="custom">
+                                <div class="project-text">
+                                    <h3>Ziko Z6</h3>
+                                    <p>3 pages responsive website introducing a new smatphone. It was built with
+                                        HTML/CSS/JS.</p>
+                                    <div class="btn-container">
+                                        <a class="btn" href="https://github.com/mathieufontaine/smartphone-website"
+                                            target="_blank">Source Code</a>
+                                        <a class="btn" href="https://ziko-z6.vercel.app/" target="_blank">Website</a>
+                                    </div>
+                                </div>
+                                <a href="https://ziko-z6.vercel.app/" class="project-img" target="_blank">
+                                    <img src="img/projects/mockup_ziko.png" alt="smartphone-img" />
+                                </a>
+                            </div>
+
+
+                            <!-- <div class="project" data-aos="fade-up" data-aos-duration="custom">
+                                        <div class="project-text">
+                                            <h3>Room Home Page</h3>
+                                            <p>Landing Page built with HTML/CSS/Javacript</p>
+                                            <p>Responsive landing page with slider.</p>
+                                            <div class="btn-container">
+                                                <a class="btn" href="https://github.com/mathieufontaine/room-homepage"
+                                                    target="_blank">Source Code</a>
+                                                <a class="btn" href="https://room-homepage.mathieufontaine.vercel.app/"
+                                                    target="_blank">Website</a>
+                                            </div>
+                                        </div>
+                                        <a href="img/projects/room.png" class="project-img" target="_blank">
+                                            <img src="img/projects/mockup_room.png" alt="room-img" />
+                                        </a>
+                                    </div> -->
+                            <!-- <div class="project" data-aos="fade-up" data-aos-duration="custom">
+                    <div class="project-text">
+                      <h3>Soundify Home Page</h3>
+                      <p>Landing Page built with HTML/CSS/JS</p>
+                      <p>Responsive landing page with CSS grid and animations</p>
+                      <div class="btn-container">
+                        <a class="btn" href="https://github.com/mathieufontaine/soundify-lp" target="_blank">Source Code</a>
+                        <a class="btn" href="https://soundify-page.netlify.app/" target="_blank">Website</a>
+                      </div>
+                    </div>
+                    <a href="img/projects/soundify.png" class="project-img" target="_blank">
+                      <img src="img/projects/mockup_soundify.png" alt="soundify-img" />
+                    </a>
+                  </div> -->
+                            <div class="project" id="interface" data-aos="fade-up" data-aos-duration="custom">
+                                <div class="project-text">
+                                    <h3>Sport Interface</h3>
+                                    <p>"Windows like" Sport Interface built with HTML/CSS. Responsive interface with CSS
+                                        grid</p>
+                                    <div class="btn-container">
+                                        <a class="btn" href="https://github.com/mathieufontaine/sport-interface"
+                                            target="_blank">Source Code</a>
+                                        <a class="btn" href="https://sport-interface.vercel.app/"
+                                            target="_blank">Website</a>
+                                    </div>
+                                </div>
+                                <a href="https://sport-interface.vercel.app/" class="project-img" target="_blank">
+                                    <img src="img/projects/mockup_sport-interface.png" alt="sport-interface-img" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                     <div class="container gallery apps">
                         <h2 class="sm-header">Web Apps</h2>
                         <div class="projects">
+                            <div class="project" id="games-app" data-aos="fade-up" data-aos-duration="custom">
+                                <div class="project-text">
+                                    <h3>Video Games Manager App</h3>
+                                    <p>Web Application built with <span>ReactJS </span>.</p>
+                                    <p>It allows users to manage their own video games library and rank their
+                                        favorite
+                                        games.
+                                    </p>
+                                    <p>Users can also search for any game, get detaild info about it and create
+                                        personal
+                                        wishlists for
+                                        the games they want to buy.</p>
+                                    <div class="btn-container">
+                                        <a class="btn" href="https://github.com/mathieufontaine/react-video-games-store"
+                                            target="_blank">Source Code</a>
+                                        <a class="btn" href="https://video-games-manager.vercel.app/"
+                                            target="_blank">Website</a>
+                                    </div>
+                                </div>
+                                <a href="https://video-games-manager.vercel.app/" class="project-img" target="_blank">
+                                    <img src="img/projects/mockup_video-games-manager.png" alt="video-games-manager" />
+                                </a>
+                            </div>
                             <div class="project" id="weather-app" data-aos="fade-up" data-aos-duration="custom">
                                 <div class="project-text">
                                     <h3>Live Weather & Webcam App</h3>
@@ -189,27 +405,25 @@
                                     <img src="img/projects/mockup_live-weather.png" alt="live-weather-webcam" />
                                 </a>
                             </div>
-                            <div class="project" id="games-app" data-aos="fade-up" data-aos-duration="custom">
+                            <div class="project" id="breath-app" data-aos="fade-up" data-aos-duration="custom">
                                 <div class="project-text">
-                                    <h3>Video Games Manager App</h3>
-                                    <p>Web Application built with <span>ReactJS </span>.</p>
-                                    <p>It allows users to manage their own video games library and rank their
-                                        favorite
-                                        games.
-                                    </p>
-                                    <p>Users can also search for any game, get detaild info about it and create
-                                        personal
-                                        wishlists for
-                                        the games they want to buy.</p>
+                                    <h3>Breath Control App</h3>
+                                    <p>Web Application built with <span>Vanilla JS</span>.</p>
+                                    <p>App that allows users to control and improve their breathing.</p>
+                                    <p>Users can play/pause/restart the exercice and they can also choose between 3
+                                        different
+                                        themes with
+                                        its
+                                        own relaxing sound.</p>
                                     <div class="btn-container">
-                                        <a class="btn" href="https://github.com/mathieufontaine/react-video-games-store"
+                                        <a class="btn" href="https://github.com/mathieufontaine/js-breathing-app"
                                             target="_blank">Source Code</a>
-                                        <a class="btn" href="https://video-games-manager.vercel.app/"
+                                        <a class="btn" href="https://breath-control.vercel.app/"
                                             target="_blank">Website</a>
                                     </div>
                                 </div>
-                                <a href="https://video-games-manager.vercel.app/" class="project-img" target="_blank">
-                                    <img src="img/projects/mockup_video-games-manager.png" alt="video-games-manager" />
+                                <a href="https://breath-control.vercel.app/" class="project-img" target="_blank">
+                                    <img src="img/projects/mockup_breath-control.png" alt="breath-control" />
                                 </a>
                             </div>
                             <div class="project" id="movie-app" data-aos="fade-up" data-aos-duration="custom">
@@ -252,148 +466,17 @@
                                     <img src="img/projects/mockup_ip-tracker.png" alt="ip-address-tracker" />
                                 </a>
                             </div>
-                            <div class="project" id="breath-app" data-aos="fade-up" data-aos-duration="custom">
-                                <div class="project-text">
-                                    <h3>Breath Control App</h3>
-                                    <p>Web Application built with <span>Vanilla JS</span>.</p>
-                                    <p>App that allows users to control and improve their breathing.</p>
-                                    <p>Users can play/pause/restart the exercice and they can also choose between 3
-                                        different
-                                        themes with
-                                        its
-                                        own relaxing sound.</p>
-                                    <div class="btn-container">
-                                        <a class="btn" href="https://github.com/mathieufontaine/js-breathing-app"
-                                            target="_blank">Source Code</a>
-                                        <a class="btn" href="https://breath-control.vercel.app/"
-                                            target="_blank">Website</a>
-                                    </div>
-                                </div>
-                                <a href="https://breath-control.vercel.app/" class="project-img" target="_blank">
-                                    <img src="img/projects/mockup_breath-control.png" alt="breath-control" />
-                                </a>
-                            </div>
                         </div>
                     </div>
-                    <div class="container gallery websites">
-                        <h2 class="sm-header">Websites</h2>
-                        <div class="projects">
-                            <div class="project" id="soundwave" data-aos="fade-up" data-aos-duration="custom">
-                                <div class="project-text">
-                                    <h3>Soundwave</h3>
-                                    <p>3 pages website built with HTML/CSS/JS</p>
-                                    <p>Responsive website with sign up form, animations and pages transitions</p>
-                                    <div class="btn-container">
-                                        <a class="btn" href="https://github.com/mathieufontaine/soundwave-website"
-                                            target="_blank">Source Code</a>
-                                        <a class="btn" href="https://soundwave-website.vercel.app/"
-                                            target="_blank">Website</a>
-                                    </div>
-                                </div>
-                                <a href="https://soundwave-website.vercel.app/" class="project-img" target="_blank">
-                                    <img src="img/projects/mockup_soundwave.png" alt="soundwave-img" />
-                                </a>
-                            </div>
-                            <div class="project" id="ziko" data-aos="fade-up" data-aos-duration="custom">
-                                <div class="project-text">
-                                    <h3>Ziko Z6</h3>
-                                    <p>3 pages website built with HTML/CSS/JS</p>
-                                    <p>Full Page responsive website with JS animations between sections.</p>
-                                    <div class="btn-container">
-                                        <a class="btn" href="https://github.com/mathieufontaine/smartphone-website"
-                                            target="_blank">Source Code</a>
-                                        <a class="btn" href="https://ziko-z6.vercel.app/" target="_blank">Website</a>
-                                    </div>
-                                </div>
-                                <a href="https://ziko-z6.vercel.app/" class="project-img" target="_blank">
-                                    <img src="img/projects/mockup_ziko.png" alt="smartphone-img" />
-                                </a>
-                            </div>
-                            <div class="project" id="easybank" data-aos="fade-up" data-aos-duration="custom">
-                                <div class="project-text">
-                                    <h3>Easybank Home Page</h3>
-                                    <p>Landing Page built with HTML/CSS/Javacript</p>
-                                    <p>Responsive landing page with gradient colors and animations.</p>
-                                    <div class="btn-container">
-                                        <a class="btn" href="https://github.com/mathieufontaine/easybank-lp"
-                                            target="_blank">Source Code</a>
-                                        <a class="btn" href="https://easybank-lp.vercel.app/"
-                                            target="_blank">Website</a>
-                                    </div>
-                                </div>
-                                <a href="https://easybank-lp.vercel.app/" class="project-img" target="_blank">
-                                    <img src="img/projects/mockup_easybank.png" alt="easybank-img" />
-                                </a>
-                            </div>
-                            <div class="project" id="mountain" data-aos="fade-up" data-aos-duration="custom">
-                                <div class="project-text">
-                                    <h3>Mountain Park Home Page</h3>
-                                    <p>Landing Page built with HTML/CSS/Javacript</p>
-                                    <p>Responsive landing page with video background, parallax design and animated
-                                        menu.
-                                    </p>
-                                    <div class="btn-container">
-                                        <a class="btn" href="https://github.com/mathieufontaine/mountain-park-lp"
-                                            target="_blank">Source Code</a>
-                                        <a class="btn" href="https://mountain-park.vercel.app/"
-                                            target="_blank">Website</a>
-                                    </div>
-                                </div>
-                                <a href="https://mountain-park.vercel.app/" class="project-img" target="_blank">
-                                    <img src="img/projects/mockup_mountain-park.png" alt="mountain-park-img" />
-                                </a>
-                            </div>
-                            <!-- <div class="project" data-aos="fade-up" data-aos-duration="custom">
-                                <div class="project-text">
-                                    <h3>Room Home Page</h3>
-                                    <p>Landing Page built with HTML/CSS/Javacript</p>
-                                    <p>Responsive landing page with slider.</p>
-                                    <div class="btn-container">
-                                        <a class="btn" href="https://github.com/mathieufontaine/room-homepage"
-                                            target="_blank">Source Code</a>
-                                        <a class="btn" href="https://room-homepage.mathieufontaine.vercel.app/"
-                                            target="_blank">Website</a>
-                                    </div>
-                                </div>
-                                <a href="img/projects/room.png" class="project-img" target="_blank">
-                                    <img src="img/projects/mockup_room.png" alt="room-img" />
-                                </a>
-                            </div> -->
-                            <!-- <div class="project" data-aos="fade-up" data-aos-duration="custom">
-            <div class="project-text">
-              <h3>Soundify Home Page</h3>
-              <p>Landing Page built with HTML/CSS/JS</p>
-              <p>Responsive landing page with CSS grid and animations</p>
-              <div class="btn-container">
-                <a class="btn" href="https://github.com/mathieufontaine/soundify-lp" target="_blank">Source Code</a>
-                <a class="btn" href="https://soundify-page.netlify.app/" target="_blank">Website</a>
-              </div>
-            </div>
-            <a href="img/projects/soundify.png" class="project-img" target="_blank">
-              <img src="img/projects/mockup_soundify.png" alt="soundify-img" />
-            </a>
-          </div> -->
-                            <div class="project" id="interface" data-aos="fade-up" data-aos-duration="custom">
-                                <div class="project-text">
-                                    <h3>Sport Interface</h3>
-                                    <p>"Windows like" Sport Interface built with HTML/CSS. Responsive interface with CSS
-                                        grid</p>
-                                    <div class="btn-container">
-                                        <a class="btn" href="https://github.com/mathieufontaine/sport-interface"
-                                            target="_blank">Source Code</a>
-                                        <a class="btn" href="https://sport-interface.vercel.app/"
-                                            target="_blank">Website</a>
-                                    </div>
-                                </div>
-                                <a href="https://sport-interface.vercel.app/" class="project-img" target="_blank">
-                                    <img src="img/projects/mockup_sport-interface.png" alt="sport-interface-img" />
-                                </a>
-                            </div>
-                        </div>
+                </section>
+                <div class="cta-section">
+                    <div class="container">
+                        <p class="cta">Any project in mind? Let's discuss it and see how I can assist!</p>
+                        <div></div><a class="btn" href="/public/contact.html">Contact Me</a>
                     </div>
-                    <!-- </div> -->
                 </div>
-            </section>
+                </section>
+            </div>
         </div>
 
         <footer>
