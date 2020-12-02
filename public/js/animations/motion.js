@@ -4,7 +4,9 @@ export const initMotion = () => {
   containers.forEach(container => {
     // * Moving elements
     const svg = container.querySelector("svg");
-    const circles = container.querySelectorAll("circle");
+    const circles = container.querySelectorAll(
+      "svg > circle, svg #Layer_1 g > circle"
+    );
 
     // * Animate In
 

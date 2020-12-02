@@ -65,19 +65,19 @@ export const startAnimation = () => {
 
   tl2.to(computer, {
     opacity: 1,
-    scale: 1.2,
+    scale: 1,
     transformOrigin: "center"
   });
   tl2.to(picture, {
     opacity: 1,
-    scale: 1.2,
+    scale: 1,
     transformOrigin: "center"
   });
   tl2.to(
     mobile,
     {
       opacity: 1,
-      scale: 1.2,
+      scale: 1,
       transformOrigin: "center"
     },
     "-=1"
@@ -86,7 +86,7 @@ export const startAnimation = () => {
   tl3.fromTo(
     computer,
     {
-      scale: 1.2
+      scale: 1
     },
     { scale: 0.7 },
     "=5"
@@ -94,7 +94,7 @@ export const startAnimation = () => {
   tl3.fromTo(
     picture,
     {
-      scale: 1.2
+      scale: 1
     },
     { scale: 0.7 },
     "-=1"
@@ -102,7 +102,7 @@ export const startAnimation = () => {
   tl3.fromTo(
     mobile,
     {
-      scale: 1.2
+      scale: 1
     },
     { scale: 0.7 },
     "-=1"

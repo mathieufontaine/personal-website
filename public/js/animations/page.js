@@ -3,7 +3,7 @@ export const pageAnimation = () => {
   const hero = document.querySelectorAll(".hero");
 
   gsap.to([hero, details], {
-    duration: 1,
+    duration: 1.5,
     opacity: 1,
     x: 0,
     ease: "power1.inOut"

@@ -53,8 +53,8 @@ const translate = () => {
     main.querySelector("#work .btn").innerText = language.sectionBtn;
     main.querySelector("#about h1 .text").innerText = language.aboutTitle;
     main.querySelector("#about h2 .text").innerText = language.aboutSubtitle;
-    // main.querySelector("#about h4 .text").innerText = language.aboutText;
-    main.querySelector("#about .btn").innerText = language.sectionBtn;
+    main.querySelector("#about h4 .text").innerText = language.aboutText;
+    main.querySelector("#about .btn").innerText = language.sectionBtn2;
     main.querySelector("#services h1 .text").innerText = language.servicesTitle;
     main.querySelector("#services h2 .text").innerText =
       language.servicesSubtitle;
@@ -230,9 +230,12 @@ const translate = () => {
     main.querySelector(".details h2 .text").innerText =
       language.servicesSubtitle;
     main.querySelector(".details h4 .text").innerText = language.servicesText;
-    main.querySelector(".page-description .container div").innerHTML =
-      language.servicesDesccription;
-    // main.querySelector(".tabs .title h2").innerText = language.servicesTitle;
+    main.querySelector(".service-description-section .title h2").innerHTML =
+      language.servicesDescriptionTitle;
+    main.querySelector(
+      ".service-description-section .service-description div"
+    ).innerHTML = language.servicesDescriptionText;
+    main.querySelector(".tabs .title h2").innerText = language.servicesTitle;
     main.querySelector(".tabs #tab-1 h4").innerText = language.servicesTab1;
     main.querySelector(".tabs #tab-2 h4").innerText = language.servicesTab2;
     main.querySelector(".tabs #tab-3 h4").innerText = language.servicesTab3;
@@ -268,9 +271,8 @@ const translate = () => {
       language.servicesTab1Solution;
     main.querySelector("#website-dev .explanations .intro .text").innerHTML =
       language.servicesWebsiteIntro;
-    main.querySelector(
-      "#website-dev .explanations .intro .offer h4"
-    ).innerHTML = language.servicesWebsiteOffer;
+    main.querySelector("#website-dev .explanations .offer h4").innerHTML =
+      language.servicesWebsiteOffer;
     main.querySelector(
       "#website-dev .explanations .content-intro h3"
     ).innerHTML = language.servicesWebsiteProcessTitle;
@@ -324,7 +326,7 @@ const translate = () => {
     //   language.servicesWebsiteToolsText;
     main.querySelector("#website-dev .cta").innerText =
       language.servicesCtaText;
-    main.querySelector("#website-dev .btn a").innerText = language.ctaBtn;
+    main.querySelector("#website-dev .btn").innerText = language.ctaBtn;
     main.querySelector("#website-dev .cta-faq").innerHTML =
       language.servicesCtaFaq;
     main.querySelector("#web-integration .header .text h3").innerHTML =
@@ -347,7 +349,7 @@ const translate = () => {
     ).innerHTML = language.servicesIntegrationHowList;
     main.querySelector("#web-integration .cta").innerText =
       language.servicesCtaText;
-    main.querySelector("#web-integration .btn a").innerText = language.ctaBtn;
+    main.querySelector("#web-integration .btn").innerText = language.ctaBtn;
     main.querySelector("#app-dev .header .text h3").innerHTML =
       language.servicesTab3;
     main.querySelector("#app-dev .solution").innerHTML =
@@ -355,7 +357,7 @@ const translate = () => {
     main.querySelector("#app-dev .explanations .content").innerHTML =
       language.servicesAppContent;
     main.querySelector("#app-dev .cta").innerText = language.servicesCtaText;
-    main.querySelector("#app-dev .btn a").innerText = language.ctaBtn;
+    main.querySelector("#app-dev .btn").innerText = language.ctaBtn;
     main.querySelector("#marketing .header .text h3").innerHTML =
       language.servicesTab4;
     main.querySelector("#marketing .solution").innerHTML =
@@ -363,7 +365,7 @@ const translate = () => {
     main.querySelector("#marketing .explanations .content").innerHTML =
       language.servicesMarketingContent;
     main.querySelector("#marketing .cta").innerText = language.servicesCtaText;
-    main.querySelector("#marketing .btn a").innerText = language.ctaBtn;
+    main.querySelector("#marketing .btn").innerText = language.ctaBtn;
     main.querySelector("#faq .title p").innerText = language.servicesFAQIntro;
     main.querySelector("#faq #q1 p").innerText = language.servicesFAQq1;
     main.querySelector("#faq #a1").innerHTML = language.servicesFAQa1;
@@ -397,7 +399,7 @@ const translate = () => {
     main.querySelector("#faq #a15").innerHTML = language.servicesFAQa15;
     main.querySelector("#faq #q16 p").innerText = language.servicesFAQq16;
     main.querySelector("#faq #a16").innerHTML = language.servicesFAQa16;
-    main.querySelector("#faq .btn a").innerText = language.ctaBtn;
+    main.querySelector("#faq .btn").innerText = language.ctaBtn;
   }
 
   // * contact

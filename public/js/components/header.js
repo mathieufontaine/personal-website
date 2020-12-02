@@ -8,13 +8,13 @@ class Header extends HTMLElement {
       <header class="nav-page">
       <nav>
           <a href="/public/index.html" class="logo">
-              <img src="img/arrow.png" alt="back-arrow">
+              <img src="img/icons/arrow.png" alt="back-arrow">
               <h3>Home</h3>
           </a>
           <div class="nav-right">
               <div class="languages">
-                  <a href="#" class="en"><img src="img/english.png" alt="english"></a>
-                  <a href="#" class="fr"><img src="img/france.png" alt="français"></a>
+                  <a href="#" class="en"><img src="img/icons/english.png" alt="english"></a>
+                  <a href="#" class="fr"><img src="img/icons/france.png" alt="français"></a>
               </div>
               <svg class="menu" width="43" height="23" viewBox="0 0 43 23" fill="none"
                   xmlns="http://www.w3.org/2000/svg">

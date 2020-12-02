@@ -42,36 +42,57 @@
         <header class="nav-page">
 
             <nav>
-                <a href="/public/index.html" class="logo">
-                    <img src="img/arrow.png" alt="back-arrow">
-                    <h3>Home</h3>
-                </a>
-                <div class="nav-right">
-                    <div class="languages">
-                        <a href="#" class="en"><img src="img/english.png" alt="english"></a>
-                        <a href="#" class="fr"><img src="img/france.png" alt="français"></a>
+                <div class="nav-desktop">
+                    <a href="/public/index.html" class="logo">
+                        <img src="img/icons/arrow.png" alt="back-arrow">
+                        <h3>Home</h3>
+                    </a>
+                    <div class="nav-items">
+                        <ul>
+                            <li><a href="/public/work.html">Portfolio</a></li>
+                            <li class="active"><a href="/public/about.html">About</a></li>
+                            <li><a href="/public/services.html">Services</a></li>
+                            <li><a href="/public/contact.html">Contact</a></li>
+                        </ul>
                     </div>
-                    <svg class="menu" width="43" height="23" viewBox="0 0 43 23" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <line class="line1" y1="1.5" x2="43" y2="1.5" stroke="white" stroke-width="3" />
-                        <line class="line2" y1="11.5" x2="28" y2="11.5" stroke="white" stroke-width="3" />
-                        <line class="line3" y1="21.5" x2="16" y2="21.5" stroke="white" stroke-width="3" />
-                    </svg>
+                    <div class="nav-right">
+                        <div class="languages">
+                            <a href="#" class="en"><img src="img/icons/english.png" alt="english"></a>
+                            <a href="#" class="fr"><img src="img/icons/france.png" alt="français"></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="nav-open">
-                    <ul>
-                        <li><a href="/public/index.html">Home</a></li>
-                        <li><a href="/public/work.html">Work</a></li>
-                        <li class="active"><a href="/public/about.html">About</a></li>
-                        <!-- <li><a href="/public/experience.html">My Path</a></li> -->
-                        <li><a href="/public/services.html">Services</a></li>
-                        <li><a href="/public/contact.html">Contact</a></li>
-                    </ul>
-                    <div class="logos">
-                        <a href="https://www.linkedin.com/in/mathieu-fontaine/" target="_blank"><i
-                                class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        <a href="https://github.com/mathieufontaine" target="_blank"><i class="fa fa-github"
-                                aria-hidden="true"></i></a>
+                <div class="nav-mobile">
+                    <a href="/public/index.html" class="logo">
+                        <img src="img/icons/arrow.png" alt="back-arrow">
+                        <h3>Home</h3>
+                    </a>
+                    <div class="nav-right">
+                        <div class="languages">
+                            <a href="#" class="en"><img src="img/icons/english.png" alt="english"></a>
+                            <a href="#" class="fr"><img src="img/icons/france.png" alt="français"></a>
+                        </div>
+                        <svg class="menu" width="43" height="23" viewBox="0 0 43 23" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <line class="line1" y1="1.5" x2="43" y2="1.5" stroke="white" stroke-width="3" />
+                            <line class="line2" y1="11.5" x2="28" y2="11.5" stroke="white" stroke-width="3" />
+                            <line class="line3" y1="21.5" x2="16" y2="21.5" stroke="white" stroke-width="3" />
+                        </svg>
+                    </div>
+                    <div class="nav-open">
+                        <ul>
+                            <li><a href="/public/index.html">Home</a></li>
+                            <li><a href="/public/work.html">Work</a></li>
+                            <li class="active"><a href="/public/about.html">About</a></li>
+                            <li><a href="/public/services.html">Services</a></li>
+                            <li><a href="/public/contact.html">Contact</a></li>
+                        </ul>
+                        <div class="logos">
+                            <a href="https://www.linkedin.com/in/mathieu-fontaine/" target="_blank"><i
+                                    class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            <a href="https://github.com/mathieufontaine" target="_blank"><i class="fa fa-github"
+                                    aria-hidden="true"></i></a>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -81,7 +102,6 @@
 
             <section class="hero-section">
                 <div class="fullpage">
-
                     <div class="details">
                         <h1 class="hide">
                             <span class="text">About Me</span>
@@ -90,7 +110,7 @@
                             <span class="text">Mathieu Fontaine</span>
                         </h2>
                         <h3 class="hide">
-                            <span class="text"></span>
+                            <span class="text">Frontend Web Developer</span>
                         </h3>
                         <div class="showcase-btn">
                             <a href="#about-content" class="scroll-down-btn"></a>
@@ -165,7 +185,8 @@
                             <div class="card" id="web-dev" data-aos="fade-left" data-aos-duration="1500">
                                 <div class="draw">
                                     <!-- <i class="fas fa-code "></i> -->
-                                    <img class="icon" src="img/undraw_code_typing_7jnv.svg" alt="web-developer">
+                                    <img class="icon" src="img/illustrations/undraw_code_typing_7jnv.svg"
+                                        alt="web-developer">
                                 </div>
                                 <div class="text">
                                     <h2>Web Developer</h2>
@@ -194,13 +215,14 @@
                                     </p>
                                 </div>
                                 <div class="draw">
-                                    <img class="icon" src="img/undraw_static_assets.svg" alt="frontend">
+                                    <img class="icon" src="img/illustrations/undraw_static_assets.svg" alt="frontend">
                                 </div>
                             </div>
                             <div class="card" id="ux" data-aos="fade-left" data-aos-duration="1500">
                                 <div class="draw">
                                     <!-- <i class="fas fa-laptop-house"></i> -->
-                                    <img class="icon" src="img/undraw_mobile_prototyping_grmd.svg" alt="design">
+                                    <img class="icon" src="img/illustrations/undraw_mobile_prototyping_grmd.svg"
+                                        alt="design">
                                 </div>
                                 <div class="text">
                                     <h2>Focus on UI/UX Design</h2>
@@ -232,13 +254,15 @@
                                 </div>
                                 <div class="draw">
                                     <!-- <i class="fas fa-laptop-house"></i> -->
-                                    <img class="icon" src="img/undraw_predictive_analytics_kf9n.svg" alt="marketing">
+                                    <img class="icon" src="img/illustrations/undraw_predictive_analytics_kf9n.svg"
+                                        alt="marketing">
                                 </div>
                             </div>
                             <div class="card" id="remote" data-aos="fade-left" data-aos-duration="1500">
                                 <div class="draw">
                                     <!-- <i class="fas fa-laptop-house"></i> -->
-                                    <img class="icon" src="img/undraw_Freelancer_re_irh4.svg" alt="remote">
+                                    <img class="icon" src="img/illustrations/undraw_Freelancer_re_irh4.svg"
+                                        alt="remote">
                                 </div>
                                 <div class="text">
                                     <h2>Working Remotely</h2>

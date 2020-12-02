@@ -36,6 +36,11 @@ $blue-gradient: linear-gradient(
   rgba(43, 55, 96, 1) 30%,
   rgba(80, 156, 217, 1) 100%
 );
+$dark-gradient: linear-gradient(
+  96deg,
+  rgb(13, 14, 14) 30%,
+  rgba(43, 55, 96, 1) 100%
+);
 $green-gradient: linear-gradient(96deg, #19cc9f 30%, rgba(43, 55, 96, 1) 100%);
 $purple-gradient: linear-gradient(96deg, #551467 30%, rgba(43, 55, 96, 1) 100%);
 
@@ -87,24 +92,24 @@ h3 {
 
 h1 {
   color: $secondary-color;
-  font-size: 4.5rem;
+  font-size: 4rem;
   line-height: 1.5;
   font-weight: 500;
 }
 
 h2 {
   color: $primary-color;
-  font-size: 3rem;
+  font-size: 2.7rem;
   font-weight: 500;
 }
 
 h3 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 400;
 }
 
 h4 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 400;
   margin-bottom: 12px;
 }
@@ -146,6 +151,9 @@ ul {
   padding: 4rem 6rem;
   position: relative;
   height: 100%;
+  max-width: 1200px;
+  margin: auto;
+
   // max-width: 1300px;
   // margin: auto;
 }
