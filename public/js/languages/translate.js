@@ -81,10 +81,10 @@ const translate = () => {
     main.querySelector(".personal-projects-section .title h3").innerText =
       language.workProjectSection2Title;
     main.querySelector(
-      ".personal-projects-section .websites .sm-header"
+      ".personal-projects-section .websites-section .sm-header"
     ).innerText = language.workWebsitesTitle;
     main.querySelector(
-      ".personal-projects-section .apps .sm-header"
+      ".personal-projects-section .apps-section .sm-header"
     ).innerText = language.workAppsTitle;
     main.querySelector("#la-ruee .project-type").innerText =
       language.larueeType;

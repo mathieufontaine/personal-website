@@ -223,6 +223,9 @@
   .page-sections {
     .hero-section {
       display: block;
+      .scroll-down-btn {
+        margin: auto;
+      }
       .fullpage {
         // height: 90vh;
         grid-template-columns: 1fr !important;
