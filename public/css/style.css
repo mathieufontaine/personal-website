@@ -1169,6 +1169,10 @@ nav .nav-open ul {
   margin: 2rem auto;
 }
 
+.experience-page .page-sections {
+  overflow-x: initial;
+}
+
 .experience-page .page-content .city {
   position: -webkit-sticky;
   position: sticky;
