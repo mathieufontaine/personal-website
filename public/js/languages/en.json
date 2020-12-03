@@ -5,8 +5,9 @@
   "nav4": "Services",
   "nav5": "Contact",
   "navBtn": "Get in touch",
+  "logo": "Home",
 
-  "homeTitle": "I help Profesionnals achieve their Web Projects.",
+  "homeTitle": "I help you achieve your web project",
   "homeJob": "Frontend Web Development",
   "homeShowcaseBtn": "My Work",
   "sectionBtn": "See More",
@@ -138,6 +139,11 @@
 
   "servicesWebsiteToolsText": " <p>I use frontend development languages such as <strong>HTML, CSS and Javascript</strong> to make a fast loading and <strong>fully customizable static web pages.</strong></p>",
   "servicesCtaText": "Any project in mind? Don't hesitate to contact me, I will be happy to discuss it with you!",
+  "servicesCtaSite": "Do you need a converting website ? Don't hesitate to contact me!",
+  "servicesCtaInte": "Do you need to convert a design? Don't hesitate to contact !",
+  "servicesCtaApp": "A web app to develop? Don't hesitate to contact me!",
+  "servicesCtaMaketing": "Do you want to increase your traffic? Don't hesitate to contact me!",
+
   "servicesCtaFAQ": "Not sure yet? Check out the <a href=\"#faq\">FAQ section</a>",
   "servicesIntegrationIntro": "<p>A web integration is a phase that allows the final mock-up of a website or web application to be made into a web page.</p> <p>If you are a designer you may need to convert your design into actual code. As a frontend developer <strong>I will create structured and efficient HTML, CSS and JS code to transform your work into a HTML website.</strong></p> <p>If necessary I can also convert your design into a wordpress website.</p>",
   "servicesIntegrationProcessTitle": "Process",

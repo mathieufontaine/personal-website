@@ -21,10 +21,11 @@
       }
       .svg-container {
         z-index: -1;
+        opacity: 0.8;
       }
       .headers-container {
         position: absolute;
-        top: 30%;
+        top: 28%;
         left: 45%;
         transform: translate(-45%, -30%);
         height: 60%;
@@ -47,10 +48,10 @@
             color: $primary-color;
           }
           .subtitle {
-            color: $primary-color;
+            color: $secondary-color;
             font-style: italic;
-            font-weight: 400;
-            padding: 1rem 0;
+            font-weight: 500;
+            padding: 0 0 2rem;
             font-size: 2.5rem;
           }
         }
@@ -70,7 +71,7 @@
   }
   .hero-section {
     .svg-container {
-      opacity: 0.4;
+      opacity: 0.6;
     }
     .fullpage {
       margin-left: 5%;
@@ -106,15 +107,15 @@
     opacity: 0;
     margin-top: 3rem;
     position: absolute;
-    bottom: 20vh;
+    bottom: 22vh;
     left: 0;
     right: 0;
     text-align: center;
     p {
       color: black;
       font-size: 1.8rem;
-      font-weight: bold;
-      color: $secondary-color;
+      font-weight: 500;
+      color: $primary-color;
       // writing-mode: tb-rl;
       // -webkit-transform: rotate(180deg);
       // margin-top: -50px;
@@ -130,16 +131,14 @@
           width: 24px;
           height: 24px;
           margin-left: -12px;
-          border-left: 3px solid black;
-          border-bottom: 3px solid black;
           -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
           -webkit-animation: sdb07 2s infinite;
           animation: sdb07 2s infinite;
           opacity: 0;
           box-sizing: border-box;
-          border-left: 3px solid $secondary-color;
-          border-bottom: 3px solid $secondary-color;
+          border-left: 2px solid $primary-color;
+          border-bottom: 2px solid $primary-color;
           &:nth-of-type(1) {
             -webkit-animation-delay: 0s;
             animation-delay: 0s;

@@ -35,7 +35,9 @@ const translate = () => {
   navbar.querySelector("li:nth-child(4) a").innerText = language.nav4;
   navbar.querySelector("li:nth-child(5) a").innerText = language.nav5;
   // navbar.querySelector("li:nth-child(6) a").innerText = language.nav6;
-
+  if (!main.classList.contains("home-page")) {
+    main.querySelector(".logo h3").innerText = language.logo;
+  }
   // * footer
   document.querySelector("footer .span1").innerText = language.footerSpan1;
 
@@ -325,7 +327,7 @@ const translate = () => {
     // main.querySelector("#website-dev .explanations .tools .text").innerHTML =
     //   language.servicesWebsiteToolsText;
     main.querySelector("#website-dev .cta").innerText =
-      language.servicesCtaText;
+      language.servicesCtaSite;
     main.querySelector("#website-dev .btn").innerText = language.ctaBtn;
     main.querySelector("#website-dev .cta-faq").innerHTML =
       language.servicesCtaFaq;
@@ -348,7 +350,7 @@ const translate = () => {
       "#web-integration .explanations .integration-how .text"
     ).innerHTML = language.servicesIntegrationHowList;
     main.querySelector("#web-integration .cta").innerText =
-      language.servicesCtaText;
+      language.servicesCtaInte;
     main.querySelector("#web-integration .btn").innerText = language.ctaBtn;
     main.querySelector("#app-dev .header .text h3").innerHTML =
       language.servicesTab3;
@@ -356,7 +358,7 @@ const translate = () => {
       language.servicesTab3Solution;
     main.querySelector("#app-dev .explanations .content").innerHTML =
       language.servicesAppContent;
-    main.querySelector("#app-dev .cta").innerText = language.servicesCtaText;
+    main.querySelector("#app-dev .cta").innerText = language.servicesCtaApp;
     main.querySelector("#app-dev .btn").innerText = language.ctaBtn;
     main.querySelector("#marketing .header .text h3").innerHTML =
       language.servicesTab4;
@@ -364,7 +366,8 @@ const translate = () => {
       language.servicesTab4Solution;
     main.querySelector("#marketing .explanations .content").innerHTML =
       language.servicesMarketingContent;
-    main.querySelector("#marketing .cta").innerText = language.servicesCtaText;
+    main.querySelector("#marketing .cta").innerText =
+      language.servicesCtaMarketing;
     main.querySelector("#marketing .btn").innerText = language.ctaBtn;
     main.querySelector("#faq .title p").innerText = language.servicesFAQIntro;
     main.querySelector("#faq #q1 p").innerText = language.servicesFAQq1;
