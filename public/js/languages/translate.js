@@ -43,7 +43,7 @@ const translate = () => {
   if (main.classList.contains("home-page")) {
     document.querySelector(".headers .title").innerHTML = language.homeTitle;
     document.querySelector(".headers .subtitle").innerHTML = language.homeJob;
-    document.querySelector(".headers .btn").innerText = language.ctaBtn;
+    document.querySelector("#showcase .btn").innerText = language.ctaBtn;
     // main.querySelector(".headers h1").innerText = language.homeTitle;
     // main.querySelector(".showcase-btn .btn").innerText =
     //   language.homeShowcaseBtn;

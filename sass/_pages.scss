@@ -21,6 +21,10 @@
         width: 90%;
         margin: auto;
         transition: none;
+        img {
+          object-fit: cover;
+        }
+
         // transform: translateX(100vw);
       }
       .details {

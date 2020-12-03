@@ -1,15 +1,10 @@
 .hero-section {
-  svg {
-    width: 105% !important;
-    height: 100% !important;
-    margin-left: auto !important;
-    transition: all 0.5s ease;
-    transform-origin: bottom right;
-    circle {
-      transition: all 0.5s ease;
-    }
-    // }
-  }
+  position: relative;
+  min-height: 90vh;
+  width: 100%;
+  margin: auto;
+  display: flex;
+
   .svg-container {
     display: flex;
     position: absolute;
@@ -21,15 +16,17 @@
     height: 100%;
     z-index: -1;
   }
-  position: relative;
-  min-height: 90vh;
-  width: 100%;
-  margin: auto;
-  display: flex;
-  &#showcase {
-    margin-bottom: 10vh;
-  }
+  svg {
+    width: 105% !important;
+    height: 100% !important;
+    margin-left: auto !important;
+    transition: all 0.5s ease;
+    transform-origin: bottom right;
 
+    circle {
+      transition: all 0.5s ease;
+    }
+  }
   .fullpage {
     height: 100vh;
     width: 90%;
@@ -41,20 +38,15 @@
     position: relative;
     .hero {
       position: relative;
-      // width: 90%;
-      // height: 60%;
       margin: auto;
       overflow: hidden;
       z-index: 0;
       transition: all 1s ease;
-      //   a {
-      // display: flex;
-
       img {
         height: 100%;
         width: 100%;
-        // object-fit: cover;
         transition: transform 0.3s ease-out;
+        // object-fit: cover;
       }
     }
 
@@ -72,7 +64,7 @@
         }
       }
       h1 .text {
-        font-size: 8rem;
+        font-size: 6rem;
         color: $light-blue;
       }
       h2 .text {

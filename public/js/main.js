@@ -1,8 +1,7 @@
-import { startAnimation, scrollAnimation, scrollDown } from "./pages/home.js";
+import { showcaseAnimation, scrollAnimation } from "./pages/home.js";
 import { formValidation } from "./pages/contact.js";
 import { initMotion } from "./animations/motion.js";
 import { pageAnimation } from "./animations/page.js";
-import { showcaseAnimation } from "./pages/home.js";
 import { toggleMenuAnimation, hideNavbar } from "./pages/navbar.js";
 import { enableTabs } from "./pages/services.js";
 import { initTextTyper } from "./animations/textTyper.js";
@@ -47,9 +46,9 @@ if (main.classList.contains("contact-page")) {
 // * Home function
 if (main.classList.contains("home-page")) {
   showcaseAnimation();
-  startAnimation();
+  // startAnimation();
   // initTextTyper();
   initMotion();
   scrollAnimation();
-  scrollDown();
+  // scrollDown();
 }

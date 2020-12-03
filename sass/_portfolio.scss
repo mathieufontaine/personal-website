@@ -4,6 +4,24 @@
   .page-sections {
     overflow-x: unset;
   }
+
+  .title {
+    position: sticky;
+    top: 0px;
+    z-index: 4;
+    background: $primary-color;
+    color: $light-color;
+    h3 {
+      margin-bottom: 0;
+    }
+  }
+  .btn {
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+  }
+
+  // clients projects
+
   .clients-projects {
     margin: 5rem auto;
     display: grid;
@@ -42,22 +60,10 @@
     }
   }
 
-  .websites {
+  // personnal projects
+
+  .websites-section {
     background: $grey-color;
-  }
-  .title {
-    position: sticky;
-    top: 0px;
-    z-index: 4;
-    background: $primary-color;
-    color: $light-color;
-    h3 {
-      margin-bottom: 0;
-    }
-  }
-  .btn {
-    padding: 0.8rem 2rem;
-    font-size: 1.2rem;
   }
   .gallery {
     padding-top: 0;
@@ -68,6 +74,9 @@
     align-content: center;
     justify-content: center;
     text-align: center;
+    .websites {
+      background: $grey-color;
+    }
     .sm-header {
       position: sticky;
       top: 15rem;

@@ -44,10 +44,6 @@
 
   .tabs {
     background: $main-gradient;
-    .container {
-      // padding-top: 0;
-    }
-    // background: $grey-color;
     .title {
       padding: 3rem 0;
       h2 {
@@ -119,23 +115,18 @@
       text-align: center;
 
       .showcase-btn {
-        align-items: center;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
         p {
           font-weight: 500;
-          // font-size: 2rem;
           color: black;
-        }
-        .scroll-down-btn {
-          border-bottom: 2px solid black;
-          border-left: 2px solid black;
+          // font-size: 2rem;
         }
       }
 
       .problem {
-        // color: #509cd8;
         text-align: left;
-        // font-style: italic;
-        // font-weight: lighter;
         margin-bottom: 2rem;
 
         p:before {
@@ -185,15 +176,33 @@
       .solution {
         color: #df6c81;
       }
+      .showcase-btn {
+        .scroll-down-btn {
+          border-bottom: 4px solid #df6c81;
+          border-left: 4px solid #df6c81;
+        }
+      }
     }
     #tab-3-content {
       .solution {
         color: #19cc9f;
       }
+      .showcase-btn {
+        .scroll-down-btn {
+          border-bottom: 4px solid #19cc9f;
+          border-left: 4px solid #19cc9f;
+        }
+      }
     }
     #tab-4-content {
       .solution {
         color: $third-color;
+      }
+      .showcase-btn {
+        .scroll-down-btn {
+          border-bottom: 4px solid $third-color;
+          border-left: 4px solid $third-color;
+        }
       }
     }
   }
