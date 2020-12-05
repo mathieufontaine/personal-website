@@ -411,17 +411,23 @@
   #fp-nav {
     display: none;
   }
-  .home-page #home-sections #showcase {
-    .headers-container {
-      top: 28%;
+  .home-page {
+    nav .logo h2 {
+      font-size: 2rem;
     }
-    .btn {
-      display: none;
-    }
-    .svg {
-      height: 45%;
+    #home-sections #showcase {
+      .headers-container {
+        top: 28%;
+      }
+      .btn {
+        display: none;
+      }
+      .svg {
+        height: 45%;
+      }
     }
   }
+
   .showcase {
     height: 90vh;
     .container {
@@ -647,9 +653,9 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 350px) {
   html {
-    // font-size: 40%;
+    font-size: 40%;
   }
 }
 
