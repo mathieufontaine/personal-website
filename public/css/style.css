@@ -50,17 +50,17 @@ h1 {
 
 h2 {
   color: #1e1d21;
-  font-size: 2.7rem;
+  font-size: 3rem;
   font-weight: 500;
 }
 
 h3 {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   font-weight: 400;
 }
 
 h4 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 400;
   margin-bottom: 12px;
 }
@@ -2127,7 +2127,7 @@ nav .nav-open ul {
 
 .services-page #website-dev .explanations .content.tools .container div .img-box img {
   width: auto;
-  height: 80%;
+  height: 100%;
   margin: auto;
 }
 
@@ -2553,7 +2553,7 @@ footer span {
 /* Mobile */
 @media (max-width: 1200px) {
   html {
-    font-size: 55%;
+    font-size: 60%;
   }
   .content {
     padding: 0;
@@ -2627,7 +2627,7 @@ footer span {
 
 @media (max-width: 880px) {
   html {
-    font-size: 50%;
+    font-size: 55%;
   }
   h2,
   h1 {
@@ -2908,7 +2908,7 @@ footer span {
 
 @media (max-width: 600px) {
   html {
-    font-size: 45%;
+    font-size: 50%;
   }
   .btn:hover {
     -webkit-transform: initial;
