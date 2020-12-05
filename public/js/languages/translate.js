@@ -230,7 +230,7 @@ const translate = () => {
   else if (main.classList.contains("services-page")) {
     main.querySelector(".details h1 .text").innerText = language.servicesTitle;
     main.querySelector(".details h2 .text").innerText =
-      language.servicesSubtitle;
+      language.servicesSubtitle2;
     main.querySelector(".details h4 .text").innerText = language.servicesText;
     main.querySelector(".service-description-section .title h2").innerHTML =
       language.servicesDescriptionTitle;
