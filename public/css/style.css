@@ -1513,7 +1513,7 @@ nav .nav-open ul {
 .services-page .btn {
   display: block;
   width: 35%;
-  margin: 2rem auto 4rem auto;
+  margin: auto;
   text-align: center;
 }
 
@@ -1530,6 +1530,10 @@ nav .nav-open ul {
   padding: 0;
   color: white;
   margin-bottom: 0;
+}
+
+.services-page .tabs .cta {
+  margin-bottom: 2rem;
 }
 
 .services-page .tabs .tabs-nav {
@@ -1805,7 +1809,7 @@ nav .nav-open ul {
 
 .services-page .services .cta-section .container .cta,
 .services-page .services .cta .cta {
-  margin: 2rem;
+  margin-bottom: 2rem;
 }
 
 .services-page .services .cta-section .container .cta-faq,
@@ -1826,6 +1830,10 @@ nav .nav-open ul {
 
 .services-page #website-dev span {
   color: #509cd9;
+}
+
+.services-page #website-dev .cta-faq {
+  margin-top: 2rem;
 }
 
 .services-page #website-dev .header .text .line {
@@ -1936,7 +1944,7 @@ nav .nav-open ul {
 .services-page #website-dev .explanations .content.process .steps .container .row3,
 .services-page #website-dev .explanations .content.process .steps .container .row4 {
   color: white;
-  margin: 1rem 1rem;
+  margin: 2rem 1rem;
   background: #2b3760;
   display: -ms-grid;
   display: grid;
@@ -1988,7 +1996,7 @@ nav .nav-open ul {
 .services-page #website-dev .explanations .content.process .steps .container .row4 .text {
   background: rgba(255, 255, 255, 0.9);
   height: 100%;
-  padding: 2rem;
+  padding: 3rem;
   padding-top: 2rem;
   color: #1e1d21;
 }
@@ -1999,16 +2007,17 @@ nav .nav-open ul {
 .services-page #website-dev .explanations .content.process .steps .container .row4 .text ul {
   height: 100%;
   font-size: larger;
-  line-height: 4rem;
+  line-height: 3.5rem;
 }
 
 .services-page #website-dev .explanations .content.process .steps .container .row1 .text ul li,
 .services-page #website-dev .explanations .content.process .steps .container .row2 .text ul li,
 .services-page #website-dev .explanations .content.process .steps .container .row3 .text ul li,
 .services-page #website-dev .explanations .content.process .steps .container .row4 .text ul li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 10fr;
+      grid-template-columns: 1fr 10fr;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -2021,6 +2030,7 @@ nav .nav-open ul {
 .services-page #website-dev .explanations .content.process .steps .container .row2 .text ul li span,
 .services-page #website-dev .explanations .content.process .steps .container .row3 .text ul li span,
 .services-page #website-dev .explanations .content.process .steps .container .row4 .text ul li span {
+  display: block;
   font-size: larger;
   width: 4rem;
   color: #2b3760;
@@ -2910,6 +2920,9 @@ footer span {
   html {
     font-size: 50%;
   }
+  .container {
+    padding: 5rem;
+  }
   .btn:hover {
     -webkit-transform: initial;
             transform: initial;
@@ -3020,7 +3033,7 @@ footer span {
     margin: 1rem;
   }
   .services-page .btn {
-    width: 45%;
+    width: 60%;
   }
   .services-page .header .arrow img {
     height: 60%;
@@ -3069,6 +3082,9 @@ footer span {
   }
   .services-page .services .explanations .content.tools {
     padding: 0 !important;
+  }
+  .services-page .services .explanations .content.tools h3 {
+    text-align: center;
   }
   .services-page .services .explanations .content-img {
     margin-bottom: 2rem;
@@ -3120,12 +3136,19 @@ footer span {
   .services-page .services #website-dev .explanations .content.tools .container div {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    grid-gap: 0;
-    margin-bottom: 2rem;
+    grid-gap: 1rem;
+    margin: 5rem;
+  }
+  .services-page .services #website-dev .explanations .content.tools .container div p:before {
+    display: none;
   }
   .services-page .services #website-dev .explanations .content.tools .container div .img-box {
-    width: 100%;
-    margin-left: -4rem;
+    width: auto;
+    height: 90px;
+    margin: auto !important;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
   }
   .services-page .services #web-integration .explanations .content > div .content-img img {
     -webkit-box-ordinal-group: 2;

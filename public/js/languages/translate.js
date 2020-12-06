@@ -266,6 +266,7 @@ const translate = () => {
       language.servicesTabBtn;
     main.querySelector(".tabs #tab-4-content .showcase-btn p").innerText =
       language.servicesTabBtn;
+    main.querySelector(".tabs .cta").innerText = language.servicesCtaText;
     main.querySelector(".tabs .btn").innerText = language.ctaBtn;
     main.querySelector("#website-dev .header .text h3").innerHTML =
       language.servicesTab1;

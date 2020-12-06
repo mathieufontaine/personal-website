@@ -392,7 +392,9 @@
   html {
     font-size: 50%;
   }
-
+  .container {
+    padding: 5rem;
+  }
   .btn:hover {
     transform: initial;
     background: $secondary-color;
@@ -519,7 +521,7 @@
   }
   .services-page {
     .btn {
-      width: 45%;
+      width: 60%;
     }
     .header .arrow img {
       height: 60%;
@@ -568,6 +570,9 @@
           }
           &.tools {
             padding: 0 !important;
+            h3 {
+              text-align: center;
+            }
           }
         }
 
@@ -616,12 +621,16 @@
         }
         .content.tools .container div {
           grid-template-columns: 1fr;
-          grid-gap: 0;
-          // margin-left: 0;
-          margin-bottom: 2rem;
+          grid-gap: 1rem;
+          margin: 5rem;
+          p:before {
+            display: none;
+          }
           .img-box {
-            width: 100%;
-            margin-left: -4rem;
+            width: auto;
+            height: 90px;
+            margin: auto !important;
+            order: -1;
           }
         }
       }
