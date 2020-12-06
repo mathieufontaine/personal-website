@@ -158,20 +158,25 @@
     #home-sections {
       // width: 100%;
       // margin-left: 0;
-      #showcase .container {
-        padding: 2rem 4rem;
+      #showcase {
+        // padding: 2rem 4rem;
         .headers-container {
-          height: 50%;
+          flex-direction: column;
+          justify-content: space-evenly;
+          margin: auto;
+          padding-bottom: 10vh;
           .headers {
             text-align: center;
-            width: 100%;
-            align-items: center;
             padding: 2rem 1rem;
-            .showcase-btn {
-              align-items: flex-start;
-              width: 100%;
-            }
+            margin-top: 0;
           }
+          .hero-img {
+            width: 80%;
+            margin: 2rem auto;
+          }
+        }
+        .svg-container {
+          display: none;
         }
       }
       .hero-section {
@@ -217,7 +222,7 @@
         }
         &#about .fullpage .hero {
           width: 100% !important;
-          margin: 0 0 12vh 0 !important;
+          margin: 0 !important;
           // margin: 0 0 17vh 0 !important;
           img {
             width: 100%;
@@ -413,19 +418,27 @@
   #fp-nav {
     display: none;
   }
+
+  header nav .logo h2 {
+    font-size: 2rem;
+  }
   .home-page {
-    nav .logo h2 {
-      font-size: 2rem;
+    .svg-container {
+      display: none !important;
     }
     #home-sections #showcase {
       .headers-container {
-        top: 28%;
+        flex-direction: column;
+        text-align: center;
+      }
+      .hero-img {
+        width: 70%;
       }
       .btn {
         display: none;
       }
       .svg {
-        height: 45%;
+        width: 70%;
       }
     }
   }
@@ -441,7 +454,7 @@
     .page-content {
       .quote .container {
         flex-direction: column;
-        padding: 4rem 6rem;
+        padding: 2rem 6rem 6rem;
         h3 {
           padding: 0;
         }

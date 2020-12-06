@@ -2,7 +2,7 @@ import { showcaseAnimation, scrollAnimation } from "./pages/home.js";
 import { formValidation } from "./pages/contact.js";
 import { initMotion } from "./animations/motion.js";
 import { pageAnimation } from "./animations/page.js";
-import { toggleMenuAnimation, hideNavbar } from "./pages/navbar.js";
+import { toggleMenuAnimation, hideNavbar, colorMenu } from "./pages/navbar.js";
 import { enableTabs } from "./pages/services.js";
 import { initTextTyper } from "./animations/textTyper.js";
 // import { pageTransition } from "./transitions.js";
@@ -50,5 +50,6 @@ if (main.classList.contains("home-page")) {
   // initTextTyper();
   initMotion();
   scrollAnimation();
+  colorMenu();
   // scrollDown();
 }

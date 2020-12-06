@@ -37,6 +37,8 @@ const translate = () => {
   // navbar.querySelector("li:nth-child(6) a").innerText = language.nav6;
   if (!main.classList.contains("home-page")) {
     main.querySelector(".logo h3").innerText = language.logo;
+    main.querySelector(".nav-desktop .logo h3").innerText = language.logo;
+    // main.querySelector(".nav-mobile .logo h3").innerText = language.logo;
   }
   // * footer
   document.querySelector("footer .span1").innerText = language.footerSpan1;

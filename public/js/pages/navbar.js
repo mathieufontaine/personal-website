@@ -60,3 +60,12 @@ export const hideNavbar = () => {
     prevScrollpos = currentScrollPos;
   };
 };
+
+export const colorMenu = () => {
+  const lines = document.querySelectorAll(".menu line");
+  const header = document.querySelector("header");
+
+  if (header.classList.contains("white-header")) {
+    lines.forEach((line, index) => line.setAttribute("stroke", "black"));
+  }
+};

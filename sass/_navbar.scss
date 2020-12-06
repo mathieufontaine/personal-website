@@ -3,7 +3,24 @@ header {
   top: 0;
   z-index: 30;
   // background: transparent;
-  background-image: $main-gradient;
+  background: $main-gradient;
+  &.home-header {
+    position: fixed;
+    width: 100%;
+  }
+  &.white-header {
+    background: white;
+    position: fixed;
+    nav .nav-desktop {
+      .logo h2,
+      .nav-items ul li a {
+        color: black;
+      }
+    }
+    nav .nav-mobile .logo h2 {
+      color: black;
+    }
+  }
 }
 
 nav {
@@ -57,6 +74,9 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
+    .logo h3 {
+      font-size: 2rem;
+    }
   }
 
   .logo {

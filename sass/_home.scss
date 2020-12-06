@@ -1,54 +1,57 @@
 .home-page {
   color: $primary-color;
-  background: $grey-color;
   overflow-y: hidden;
   #home-sections {
-    width: 90%;
+    // width: 90%;
     margin: auto;
-    // margin-left: 5%;
 
+    // margin-left: 5%;
     #showcase {
-      margin-bottom: 10vh;
-      height: 90vh;
+      background: rgba($color: #000000, $alpha: 0.2);
+      // padding-bottom: 10vh;
+      // min-height: 100vh;
       width: 100%;
       margin: auto;
       position: relative;
-      .svg {
-        height: 60%;
-        margin: 2rem auto;
-        opacity: 0;
-        transform: translateY(-100vh);
-      }
+
       .svg-container {
-        z-index: -1;
-        opacity: 0.8;
+        opacity: 0.2;
+        display: block;
       }
       .headers-container {
-        position: absolute;
-        top: 28%;
-        left: 45%;
-        transform: translate(-45%, -30%);
-        height: 60%;
-        width: 90%;
+        height: 100%;
+        width: 80%;
         margin: auto;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
-        flex-direction: column;
-        text-align: center;
-
+        // flex-direction: column;
+        // text-align: center;
+        // padding-bottom: 10vh;
+        z-index: 1;
+        .hero-img {
+          // position: absolute;
+          // right: 10%;
+          // top: 40%;
+          width: 55%;
+          margin: auto;
+          margin-right: -10%;
+          opacity: 0;
+          transform: translateY(-100vh);
+        }
         .headers {
           opacity: 0;
           transform: translateY(100vh);
           width: 100%;
-          margin: 2rem 0;
+          margin-top: 25vh;
 
+          text-align: left;
           .title {
-            padding: 1rem 0;
-            color: $primary-color;
+            padding: 0 0 3rem 0;
+            color: $light-color;
           }
           .subtitle {
-            color: $secondary-color;
+            color: $grey-color;
             font-style: italic;
             font-weight: 500;
             padding: 0 0 2rem;
@@ -62,19 +65,30 @@
       }
       .btn {
         padding: 1rem 2rem;
-        position: absolute;
+        // position: absolute;
         bottom: 12vh;
-        right: -4%;
+        right: 10%;
+        background: $light-color;
+        color: $secondary-color;
         // border-radius: 10%;
       }
     }
   }
   .hero-section {
+    background: $grey-color;
+    // padding-top: 10vh;
     .svg-container {
       opacity: 0.6;
+      display: none;
     }
     .fullpage {
-      margin-left: 5%;
+      height: 90vh;
+      // padding-top: 10vh;
+      // max-height: 90vh;
+      width: 80%;
+      margin: auto;
+      z-index: 1;
+
       .details {
         h1 .text {
           color: $primary-color;
@@ -97,7 +111,9 @@
       }
     }
     &#about .hero {
-      margin-bottom: 10vh;
+      // margin-bottom: 10vh;
+      margin-top: auto;
+      margin-bottom: 0;
       img {
         width: 115%;
       }
@@ -107,15 +123,14 @@
     opacity: 0;
     margin-top: 3rem;
     position: absolute;
-    bottom: 22vh;
+    bottom: 10vh;
     left: 0;
     right: 0;
     text-align: center;
     p {
-      color: black;
       font-size: 1.8rem;
       font-weight: 500;
-      color: $primary-color;
+      color: rgba(white, 1);
       // writing-mode: tb-rl;
       // -webkit-transform: rotate(180deg);
       // margin-top: -50px;
@@ -137,8 +152,8 @@
           animation: sdb07 2s infinite;
           opacity: 0;
           box-sizing: border-box;
-          border-left: 2px solid $primary-color;
-          border-bottom: 2px solid $primary-color;
+          border-left: 2px solid rgba(white, 1);
+          border-bottom: 2px solid rgba(white, 1);
           &:nth-of-type(1) {
             -webkit-animation-delay: 0s;
             animation-delay: 0s;
@@ -152,11 +167,6 @@
             top: 32px;
             -webkit-animation-delay: 0.3s;
             animation-delay: 0.3s;
-          }
-          p {
-            color: black;
-            font-size: 2rem;
-            font-weight: bold;
           }
           @-webkit-keyframes sdb07 {
             0% {

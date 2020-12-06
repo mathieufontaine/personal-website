@@ -5,7 +5,7 @@ export const showcaseAnimation = () => {
   const header = document.querySelector("header");
   const nav = document.querySelector("nav");
   const titles = document.querySelector(".headers");
-  const svg = document.querySelector(".svg");
+  const hero = document.querySelector(".hero-img");
   const arrow = document.querySelector(".arrows-btn");
 
   let tl = gsap.timeline({
@@ -23,7 +23,7 @@ export const showcaseAnimation = () => {
     ease: "power4.out"
   });
   gsap.to(nav, 1.5, { delay: 0.5, opacity: 1 });
-  tl.to(svg, 1.5, { delay: 0.5, y: 0, opacity: 1 });
+  tl.to(hero, 1.5, { delay: 0.5, y: 0, opacity: 1 });
   tl.to(arrow, 1.5, { delay: 0.5, opacity: 1 });
 };
 
@@ -31,20 +31,35 @@ export const scrollAnimation = () => {
   if (document.querySelector("body").classList.contains("fp-enabled")) {
     fullpage_api.reBuild();
   }
+  const header = document.querySelector("header");
+  const lines = document.querySelectorAll(".menu line");
+  // let currentSection;
+  const getHeaderColor = () => {
+    const currentSection = fullpage_api.getActiveSection();
+    // console.log(currentSection);
+    if (currentSection.index === 0) {
+      header.className = "home-header";
+      lines.forEach((line, index) => line.setAttribute("stroke", "white"));
+    }
+  };
 
   new fullpage("#home-sections", {
     autoScrolling: true,
     navigation: true,
-    scrollingSpeed: 1600,
+    scrollingSpeed: 1500,
     slidesNavigation: true,
     keyboardScrolling: true,
     loopBottom: true,
+    paddingTop: "10vh",
+    // fixedElements: "header",
+    // scrollBar: true,
     // fadingEffect: true,
     easing: "easeInOutCubic",
     onLeave: (origin, destination, direction) => {
       const section = destination.item;
       // console.log(destination);
       // const details = section.querySelector(".details");
+
       const text = section.querySelectorAll(".text");
       const img = section.querySelector(".hero img");
       const btn = section.querySelector(".details .btn");
@@ -73,10 +88,11 @@ export const scrollAnimation = () => {
       );
       tl2.fromTo(arrow, 1, { opacity: 0 }, { opacity: 1 }, "-=1");
 
-      // document.querySelector("body").classList.add("fp-enabled");
+      getHeaderColor();
     }
   });
 };
+
 // export const svgScaleAnimation = () => {
 
 //   const computer = document.querySelector("svg #computer");
