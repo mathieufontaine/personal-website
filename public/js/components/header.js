@@ -26,7 +26,7 @@ class Header extends HTMLElement {
           <div class="nav-open">
               <ul>
                   <li><a href="/public/index.html">Home</a></li>
-                  <li><a href="/public/work.html">Work</a></li>
+                  <li><a href="/public/portfolio.html">Work</a></li>
                   <li class="active"><a href="/public/about.html">About Me</a></li>
                   <li><a href="/public/experience.html">My Path</a></li>
                   <li><a href="/public/contact.html">Contact</a></li>

@@ -137,8 +137,8 @@ const translate = () => {
     main.querySelector(
       "#portfolio_examples .project-text p:nth-child(2)"
     ).innerText = language.sitePortfoliosText;
-    main.querySelector("#soundwave .project-text p:nth-child(2)").innerText =
-      language.siteSoundwaveText;
+    main.querySelector("#volumeup .project-text p:nth-child(2)").innerText =
+      language.siteVolumeUpText;
     main.querySelector("#ziko .project-text p:nth-child(2)").innerText =
       language.siteZikoText;
     main.querySelector("#easybank .project-text p:nth-child(2)").innerText =
