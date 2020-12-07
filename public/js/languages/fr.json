@@ -1,4 +1,8 @@
 {
+  "metaTitleContent": "Mathieu Fontaine - Développeur Web Frontend Freelance",
+  "metaDescrContent": "Développement Web Frontend - Je vous aide à réaliser votre projet web - Je développe votre site, application, landing page..",
+  "metaImgContent": "img/screenshot_mathieu_fontaine_fr.png",
+
   "nav1": "Accueil",
   "nav2": "Portfolio",
   "nav3": "A Propos",
@@ -10,6 +14,7 @@
   "homeTitle": "Je vous aide à réaliser votre projet web",
   "homeJob": "Développement Web Frontend",
   "homeShowcaseBtn": "Voir Portfolio",
+  "homeImgSrc": "img/illustrations/undraw_web_developer_fr.svg",
   "sectionBtn": "Découvrir",
   "sectionBtn2": "En Savoir Plus",
   "workTitle": "Portfolio",

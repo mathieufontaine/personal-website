@@ -1,4 +1,8 @@
 {
+  "metaTitleContent": "Mathieu Fontaine - Freelance Frontend Web Developer",
+  "metaDescrContent": "Frontend Web Development - I help you achieve your web project - I build your website, application, landing page..",
+  "metaImgContent": "img/screenshot_mathieu_fontaine_en.png",
+
   "nav1": "Home",
   "nav2": "Work",
   "nav3": "About",
@@ -10,6 +14,7 @@
   "homeTitle": "I help you achieve your web project",
   "homeJob": "Frontend Web Development",
   "homeShowcaseBtn": "My Work",
+  "homeImgSrc": "img/illustrations/undraw_web_developer_en.svg",
   "sectionBtn": "See More",
   "sectionBtn2": "Learn More",
   "workTitle": "My Work",

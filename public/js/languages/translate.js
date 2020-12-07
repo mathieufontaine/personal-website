@@ -27,6 +27,9 @@ const translate = () => {
   const navbar = document.querySelector("nav .nav-open ul");
   // const page = document.querySelector(".page");
 
+  document.getElementsByTagName("META")[0].content = language.metaTitleContent;
+  document.getElementsByTagName("META")[1].content = language.metaDescrContent;
+  document.getElementsByTagName("META")[2].content = language.metaImgContent;
   // * navbar
   // navbar.querySelector(".logo h3).innerText = language.logoText;
   navbar.querySelector("li:nth-child(1) a").innerText = language.nav1;
@@ -48,6 +51,9 @@ const translate = () => {
     document.querySelector(".headers .title").innerHTML = language.homeTitle;
     document.querySelector(".headers .subtitle").innerHTML = language.homeJob;
     document.querySelector("#showcase .btn").innerText = language.ctaBtn;
+    document
+      .querySelector("#showcase img")
+      .setAttribute("src", language.homeImgSrc);
     // main.querySelector(".headers h1").innerText = language.homeTitle;
     // main.querySelector(".showcase-btn .btn").innerText =
     //   language.homeShowcaseBtn;
