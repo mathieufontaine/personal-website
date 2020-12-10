@@ -41,7 +41,7 @@ const translate = () => {
   if (!main.classList.contains("home-page")) {
     main.querySelector(".logo h3").innerText = language.logo;
     main.querySelector(".nav-desktop .logo h3").innerText = language.logo;
-    // main.querySelector(".nav-mobile .logo h3").innerText = language.logo;
+    main.querySelector(".nav-mobile .logo h3").innerText = language.logo;
   }
   // * footer
   document.querySelector("footer .span1").innerText = language.footerSpan1;
@@ -321,6 +321,8 @@ const translate = () => {
     ).innerHTML = language.servicesWebsiteUpdateText;
     main.querySelector("#website-dev .explanations .tools h3").innerHTML =
       language.servicesWebsiteToolsTitle;
+    main.querySelector("#website-dev .explanations .tools .p1").innerHTML =
+      language.servicesWebsiteToolsSubtitle;
     main.querySelector("#website-dev .explanations .tools .tool1 p").innerHTML =
       language.servicesWebsiteTool1Text;
     main.querySelector("#website-dev .explanations .tools .tool2 p").innerHTML =
@@ -412,15 +414,22 @@ const translate = () => {
     main.querySelector("#faq #q16 p").innerText = language.servicesFAQq16;
     main.querySelector("#faq #a16").innerHTML = language.servicesFAQa16;
     main.querySelector("#faq .btn").innerText = language.ctaBtn;
+    main.querySelector("#faq .cta").innerHTML = language.ctaFaq;
   }
 
   // * contact
   else if (main.classList.contains("contact-page")) {
     main.querySelector(".page-info h2").innerText = language.contactHeader1;
     main.querySelector(".page-info h4").innerText = language.contactHeader2;
-    main.querySelector(".page-info p").innerText = language.contactHeader3;
+    main.querySelector(".page-info .intro").innerHTML = language.contactIntro;
     main.querySelector(".first label").innerText = language.labelFirst;
     main.querySelector(".last label").innerText = language.labelLast;
+    main.querySelector(".company label").innerText = language.labelCompany;
+    main.querySelector(".company input").placeholder =
+      language.placeholderCompany;
+    main.querySelector(".website label").innerText = language.labelWebsite;
+    main.querySelector(".website input").placeholder =
+      language.placeholderWebsite;
     main.querySelector(".subject label").innerText = language.labelSubject;
     main.querySelector(".subject input").placeholder =
       language.placeholderSubject;

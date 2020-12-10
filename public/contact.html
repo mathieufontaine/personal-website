@@ -108,7 +108,11 @@
                 <div class="page-info">
                     <h2>Contact Form</h2>
                     <h4>Let's work together!</h4>
-                    <p>Please fill out the fieds below to start discussing about your project.</p>
+                    <div class="intro">
+                        <p>Are you ready to make your business a success online? I am ready to help.</p>
+                        <p>Please fill out the form below to start discussing your project.</p>
+                        <p>There is no obligation until you decide to hire me. I will get back to you within 2 days.</p>
+                    </div>
                 </div>
                 <div class="form-container">
                     <form name="contact" netlify-honeypot="bot-field" data-netlify="true" method="POST">
@@ -125,10 +129,22 @@
                         </div>
                         <label for="email">Email</label>
                         <input class="input" type="text" id="email" name="email" placeholder="johndoe@gmail.com" />
+                        <div class="names">
+                            <div class="company">
+                                <label for="company">Company</label>
+                                <input class="input" type="text" id="company" name="company"
+                                    placeholder="Your business's name" />
+                            </div>
+                            <div class="website">
+                                <label for="website">Website</label>
+                                <input class="input" type="text" id="website" name="website"
+                                    placeholder="Your business's website" />
+                            </div>
+                        </div>
                         <div class="subject">
                             <label for="subject">Subject</label>
                             <input class="input" type="text" id="subject" name="subject"
-                                placeholder="I need an attractive landing page" />
+                                placeholder="What web service do your need?" />
                         </div>
                         <div class="message">
                             <label for="message">Message</label>

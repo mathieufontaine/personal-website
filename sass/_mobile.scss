@@ -385,10 +385,13 @@
       display: none;
     }
     .page-info {
-      text-align: center;
+      // text-align: center;
     }
     > div .form-container form {
-      width: 90%;
+      // width: 90%;
+      .names {
+        display: block;
+      }
     }
   }
 }

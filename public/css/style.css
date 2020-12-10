@@ -1533,6 +1533,10 @@ nav .nav-open ul {
   text-align: center;
 }
 
+.services-page .cta {
+  margin-bottom: 2rem;
+}
+
 .services-page .tabs {
   background: linear-gradient(96deg, #1e1d20 0%, #2b3760 30%, #348cd2 80%, #509cd9 100%);
   /* tab content */
@@ -1546,10 +1550,6 @@ nav .nav-open ul {
   padding: 0;
   color: white;
   margin-bottom: 0;
-}
-
-.services-page .tabs .cta {
-  margin-bottom: 2rem;
 }
 
 .services-page .tabs .tabs-nav {
@@ -1661,6 +1661,7 @@ nav .nav-open ul {
   padding: 2rem;
   padding-bottom: 2rem;
   color: #509cd9;
+  text-align: left;
 }
 
 .services-page .tabs .tab-content .solution span {
@@ -2136,6 +2137,15 @@ nav .nav-open ul {
   left: -4rem;
 }
 
+.services-page #website-dev .explanations .content.tools .container div .p1 {
+  margin: 2rem 0;
+  font-style: italic;
+}
+
+.services-page #website-dev .explanations .content.tools .container div .p1:before {
+  content: "";
+}
+
 .services-page #website-dev .explanations .content.tools .container div .img-box {
   width: 100px;
   height: 90px;
@@ -2384,7 +2394,7 @@ nav .nav-open ul {
 
 .contact-page .page-content .page-info {
   top: 0;
-  padding: 4rem;
+  padding-top: 4rem;
   text-align: left;
   width: 80%;
   margin: auto;
@@ -2396,9 +2406,8 @@ nav .nav-open ul {
 }
 
 .contact-page .page-content > div .form-container {
-  height: 80%;
   background: transparent;
-  width: 100%;
+  width: 80%;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2407,13 +2416,14 @@ nav .nav-open ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0 4rem;
+  padding: 2rem 0;
+  margin: auto;
 }
 
 .contact-page .page-content > div .form-container form {
   border-radius: 5px;
   padding: 4rem 0;
-  width: 80%;
+  width: 100%;
   max-width: 900px;
   margin: auto;
   /* When moving the mouse over the submit button, add a darker green color */
@@ -2926,11 +2936,8 @@ footer span {
   .contact-page .page-content .img {
     display: none;
   }
-  .contact-page .page-content .page-info {
-    text-align: center;
-  }
-  .contact-page .page-content > div .form-container form {
-    width: 90%;
+  .contact-page .page-content > div .form-container form .names {
+    display: block;
   }
 }
 

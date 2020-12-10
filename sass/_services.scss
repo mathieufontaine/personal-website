@@ -40,6 +40,9 @@
     margin: auto;
     text-align: center;
   }
+  .cta {
+    margin-bottom: 2rem;
+  }
   /* tabs */
 
   .tabs {
@@ -52,9 +55,7 @@
         margin-bottom: 0;
       }
     }
-    .cta {
-      margin-bottom: 2rem;
-    }
+
     .tabs-nav {
       margin-top: 2rem;
       display: grid;
@@ -152,6 +153,7 @@
         // font-weight: bold;
         padding-bottom: 2rem;
         color: $secondary-color;
+        text-align: left;
         // font-size: 3rem;
         span {
           // text-decoration: underline;
@@ -519,6 +521,7 @@
           // background: $white-gradient;
           background: #f8f8ff;
           // color: white !important;
+
           .container {
             div {
               display: grid;
@@ -541,6 +544,13 @@
                   line-height: 100%;
                   position: absolute;
                   left: -4rem;
+                }
+              }
+              .p1 {
+                margin: 2rem 0;
+                font-style: italic;
+                &:before {
+                  content: "";
                 }
               }
               .img-box {

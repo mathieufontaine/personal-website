@@ -20,7 +20,7 @@
     }
     .page-info {
       top: 0;
-      padding: 4rem;
+      padding-top: 4rem;
       text-align: left;
       width: 80%;
       margin: auto;
@@ -29,17 +29,17 @@
     > div {
       height: 100%;
       .form-container {
-        height: 80%;
         background: transparent;
-        width: 100%;
+        width: 80%;
         position: relative;
         display: flex;
         flex-direction: column;
-        padding: 0 4rem;
+        padding: 2rem 0;
+        margin: auto;
         form {
           border-radius: 5px;
           padding: 4rem 0;
-          width: 80%;
+          width: 100%;
           max-width: 900px;
           margin: auto;
           .names {
