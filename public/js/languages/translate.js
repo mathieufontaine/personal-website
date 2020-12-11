@@ -67,8 +67,8 @@ const translate = () => {
     main.querySelector("#about .btn").innerText = language.sectionBtn2;
     main.querySelector("#services h1 .text").innerText = language.servicesTitle;
     main.querySelector("#services h2 .text").innerText =
-      language.servicesSubtitle;
-    // main.querySelector("#services h4 .text").innerText = language.servicesText;
+      language.servicesSubtitle1;
+    main.querySelector("#services h4 .text").innerText = language.servicesText1;
     main.querySelector("#services .btn").innerText = language.sectionBtn;
     // main.querySelector("#contact h1 .text").innerText = language.contactTitle;
     main.querySelector("#contact h2 .text").innerText =
@@ -239,7 +239,7 @@ const translate = () => {
     main.querySelector(".details h1 .text").innerText = language.servicesTitle;
     main.querySelector(".details h2 .text").innerText =
       language.servicesSubtitle2;
-    main.querySelector(".details h4 .text").innerText = language.servicesText;
+    main.querySelector(".details h4 .text").innerText = language.servicesText2;
     main.querySelector(".service-description-section .title h2").innerHTML =
       language.servicesDescriptionTitle;
     main.querySelector(
