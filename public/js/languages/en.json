@@ -198,7 +198,7 @@
 
   "contactHeader1": "Let's work together!",
   "contactHeader2": "",
-  "contactIntro": "<p>Are you ready to make your business a success online? I am ready to help.</p> <p>Please fill out the form below to start discussing your project.</p> <p>There is no obligation until you decide to hire me. I will get back to you within 2 days.</p>",
+  "contactIntro": "<p>Are you ready to make your business a success online? I am ready to help.</p> <p>Please fill out the form below to start discussing your project.</p> <p class='no-obligation'>There is no obligation until you decide to hire me. I will get back to you within 2 days.</p>",
   "labelFirst": "First Name",
   "labelLast": "Last Name",
   "labelCompany": "Company",
@@ -209,6 +209,7 @@
   "placeholderSubject": "I need an attractive landing page",
   "placeholderMessage": "Here, you can give more details about your project..",
   "formSubmit": "Submit",
+  "formEmail": "You can also contat me by email at: <strong>mathieufontaine.dev@gmail.com</strong>",
 
   "footerSpan1": "Designed & Developed By"
 }

@@ -191,7 +191,7 @@
 
   "contactHeader1": "Travaillons ensemble !",
   "contactHeader2": "",
-  "contactIntro": "<p>Êtes-vous prêt à faire de votre site un succès en ligne ? Je suis prêt à vous aider. </p> <p> Veuillez remplir le formulaire ci-dessous pour que l'on puisse commencer à échanger à propos de votre projet. </p> <p> Il n'y a aucune obligation jusqu'à ce que vous acceptiez mon devis. Je vous répondrai dans les 2 jours. </p> ",
+  "contactIntro": "<p>Êtes-vous prêt à faire de votre site un succès en ligne ? Je suis prêt à vous aider. </p> <p> Veuillez remplir le formulaire ci-dessous pour que l'on puisse commencer à échanger à propos de votre projet. </p> <p class='no-obligation'> Il n'y a aucune obligation jusqu'à ce que vous acceptiez mon devis. Je vous répondrai dans les 2 jours. </p> ",
   "contactHeader3": "Remplissez le formulaire ci-dessous pour que je puisse en apprendre davantage sur votre projet.",
   "labelFirst": "Prénom",
   "labelLast": "Nom",
@@ -203,6 +203,7 @@
   "placeholderSubject": "Création d'un site professionnel",
   "placeholderMessage": "Ici, vous pouvez donner davantage d'informations sur votre projet.",
   "formSubmit": "Envoyer",
+  "formEmail": "Vous pouvez également me contacter par email sur : <strong>mathieufontaine.dev@gmail.com</strong>",
 
   "footerSpan1": "Designé & Développé par "
 }

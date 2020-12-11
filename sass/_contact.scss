@@ -25,6 +25,10 @@
       width: 80%;
       margin: auto;
       max-width: 900px;
+      .intro .no-obligation {
+        margin: 1rem 0;
+        font-style: italic;
+      }
     }
     > div {
       height: 100%;
@@ -34,7 +38,7 @@
         position: relative;
         display: flex;
         flex-direction: column;
-        padding: 2rem 0;
+        padding: 2rem 0 4rem 0;
         margin: auto;
         form {
           border-radius: 5px;

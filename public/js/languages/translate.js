@@ -436,6 +436,7 @@ const translate = () => {
     main.querySelector(".message textarea").placeholder =
       language.placeholderMessage;
     main.querySelector("#submit").value = language.formSubmit;
+    main.querySelector(".form-container .email").innerHTML = language.formEmail;
   } else {
     return;
   }
