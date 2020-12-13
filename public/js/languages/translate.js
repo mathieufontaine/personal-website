@@ -48,6 +48,7 @@ const translate = () => {
 
   // * home
   if (main.classList.contains("home-page")) {
+    document.title = language.homePageTitle;
     document.querySelector(".headers .title").innerHTML = language.homeTitle;
     document.querySelector(".headers .subtitle").innerHTML = language.homeJob;
     document.querySelector("#showcase .btn").innerText = language.ctaBtn;
@@ -77,7 +78,7 @@ const translate = () => {
     main.querySelector("#contact .btn").innerText = language.contactBtn;
   }
 
-  // * work
+  // * portfolio
   else if (main.classList.contains("work-page")) {
     main.querySelector(".details h1 .text").innerText = language.workTitle;
     main.querySelector(".details h2 .text").innerText = language.workSubtitle;
@@ -91,10 +92,10 @@ const translate = () => {
     main.querySelector(".personal-projects-section .title h3").innerText =
       language.workProjectSection2Title;
     main.querySelector(
-      ".personal-projects-section .websites-section .sm-header"
+      ".personal-projects-section .websites-section .sm-header h4"
     ).innerText = language.workWebsitesTitle;
     main.querySelector(
-      ".personal-projects-section .apps-section .sm-header"
+      ".personal-projects-section .apps-section .sm-header h4"
     ).innerText = language.workAppsTitle;
     main.querySelector("#la-ruee .project-type").innerText =
       language.larueeType;

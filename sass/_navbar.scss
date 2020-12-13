@@ -25,7 +25,7 @@ header {
 
 nav {
   height: 10vh;
-  width: 90%;
+  width: 80%;
   margin: auto;
 
   .nav-desktop {
@@ -44,7 +44,7 @@ nav {
         height: 100%;
 
         li {
-          width: 11rem;
+          width: 9rem;
           // height: 10rem;
           border-radius: 0%;
           transition: all 0.5s ease;
@@ -61,7 +61,7 @@ nav {
             // background: $primary-color;
           }
           a {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             font-weight: 500;
             line-height: 8rem;
           }
@@ -73,7 +73,7 @@ nav {
     display: none;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    height: 100%;
     .logo h3 {
       font-size: 2rem;
     }
@@ -83,7 +83,7 @@ nav {
     z-index: 2;
     h2 {
       margin-bottom: 0;
-      font-size: 2.5rem;
+      font-size: 2rem;
       color: white;
       // margin-bottom: 0;
     }

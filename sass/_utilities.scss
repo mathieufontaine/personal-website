@@ -92,7 +92,7 @@ h3 {
 
 h1 {
   color: $secondary-color;
-  font-size: 4rem;
+  font-size: 5rem;
   line-height: 1.5;
   font-weight: 500;
 }
@@ -148,12 +148,12 @@ ul {
 }
 
 .container {
-  padding: 4rem 6rem;
+  padding: 4rem 0;
   position: relative;
   height: 100%;
-  max-width: 1200px;
   margin: auto;
-
+  width: 80%;
+  max-width: 1200px;
   // max-width: 1300px;
   // margin: auto;
 }
