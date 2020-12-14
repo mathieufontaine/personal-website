@@ -2772,7 +2772,6 @@ footer span {
     -ms-grid-columns: 1fr !important;
         grid-template-columns: 1fr !important;
     width: 90%;
-    padding: 2rem 0;
   }
   .page-sections .hero-section .fullpage .hero {
     width: 90% !important;
@@ -2905,6 +2904,9 @@ footer span {
   }
   h1 {
     font-size: 4rem;
+  }
+  p {
+    font-size: 1.7rem;
   }
   .btn:hover {
     -webkit-transform: initial;

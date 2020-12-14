@@ -151,6 +151,12 @@ const translate = () => {
     main.querySelector(".cta-section .cta").innerText =
       language.servicesCtaText;
     main.querySelector(".cta-section .btn").innerText = language.ctaBtn;
+    main
+      .querySelectorAll(".btn-visit")
+      .forEach(btn => (btn.innerText = language.workBtnVisit));
+    main
+      .querySelectorAll(".btn-code")
+      .forEach(btn => (btn.innerText = language.workBtnCode));
   }
 
   // * about
@@ -237,6 +243,7 @@ const translate = () => {
 
   // * services
   else if (main.classList.contains("services-page")) {
+    document.title = language.homePageTitle;
     main.querySelector(".details h1 .text").innerText = language.servicesTitle;
     main.querySelector(".details h2 .text").innerText =
       language.servicesSubtitle2;

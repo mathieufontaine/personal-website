@@ -232,7 +232,7 @@
         // height: 90vh;
         grid-template-columns: 1fr !important;
         width: 90%;
-        padding: 2rem 0;
+        // padding: 2rem 0;
 
         // grid-gap: 2rem;
         // grid-template-rows: repeat(2, 1fr);
@@ -392,6 +392,9 @@
   }
   h1 {
     font-size: 4rem;
+  }
+  p {
+    font-size: 1.7rem;
   }
   .btn:hover {
     transform: initial;
