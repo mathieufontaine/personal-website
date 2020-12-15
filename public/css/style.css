@@ -319,7 +319,6 @@ nav .languages {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-right: 5rem;
   margin-left: 2rem;
 }
 
@@ -794,9 +793,8 @@ nav .nav-open ul {
 }
 
 .home-page #home-sections #showcase .headers-container .hero-img {
-  width: 55%;
-  margin: auto;
-  margin-right: -10%;
+  width: 45%;
+  margin: auto 2rem;
   opacity: 0;
   -webkit-transform: translateY(-100vh);
           transform: translateY(-100vh);
@@ -807,7 +805,8 @@ nav .nav-open ul {
   -webkit-transform: translateY(100vh);
           transform: translateY(100vh);
   width: 100%;
-  margin-top: 25vh;
+  margin: auto;
+  margin-right: 2rem;
   text-align: left;
 }
 
@@ -1374,7 +1373,7 @@ nav .nav-open ul {
 .work-page .personal-projects-section .sm-header {
   position: -webkit-sticky;
   position: sticky;
-  top: 12rem;
+  top: 11.5rem;
   width: 100%;
   padding: 2rem 6rem;
   color: #fffefe;
@@ -2943,12 +2942,14 @@ footer span {
   }
   .home-page #home-sections #showcase .headers-container .headers {
     margin-top: 5vh;
+    margin-right: 0;
   }
   .home-page #home-sections #showcase .headers-container .headers h2 {
     font-size: 2rem;
   }
   .home-page #home-sections #showcase .hero-img {
     width: 70%;
+    margin: auto;
   }
   .home-page #home-sections #showcase .btn {
     display: none;

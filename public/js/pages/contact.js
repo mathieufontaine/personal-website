@@ -24,6 +24,8 @@ export const formValidation = () => {
 
     const pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 
+    let language = localStorage.getItem("language");
+
     error_message.style.display = "block";
 
     console.log(fname, lname, subject, email, message.length);
@@ -32,27 +34,35 @@ export const formValidation = () => {
 
     let text;
     if (fname.length < 1) {
-      text = "Please enter your first name";
+      language == "en"
+        ? (text = "Please enter your first name")
+        : (text = "Veuillez entrer votre prénom");
       error_message.innerHTML = text;
       fnameBox.classList.add("redShadow");
       return false;
     }
     if (lname.length < 1) {
-      text = "Please enter your last name";
+      language == "en"
+        ? (text = "Please enter your last name")
+        : (text = "Veuillez entrer votre nom se famille");
       error_message.innerHTML = text;
       lnameBox.classList.add("redShadow");
       return false;
     }
     if (!email.match(pattern)) {
       console.log("no match");
-      text = "Please enter valid email address";
+      language == "en"
+        ? (text = "Please enter a valid email address")
+        : (text = "Veuillez entrer une adresse email valide");
       error_message.innerHTML = text;
       emailBox.classList.add("redShadow");
       return false;
     }
     if (subject.length < 1) {
       console.log(subject);
-      text = "Please enter a subject";
+      language == "en"
+        ? (text = "Please enter a subject")
+        : (text = "Veuillez renseigner le sujet");
       error_message.innerHTML = text;
       subjectBox.classList.add("redShadow");
       return false;
@@ -60,6 +70,9 @@ export const formValidation = () => {
     if (message.length < 10) {
       console.log(message.length);
       text = "Your message should include at least 10 characters";
+      language == "en"
+        ? (text = "Your message should include at least 10 characters")
+        : (text = "Votre message doit inclure au moins 10 caractères");
       error_message.innerHTML = text;
       messageBox.classList.add("redShadow");
       return false;

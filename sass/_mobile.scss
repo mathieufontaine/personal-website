@@ -431,6 +431,7 @@
         text-align: center;
         .headers {
           margin-top: 5vh;
+          margin-right: 0;
           h2 {
             font-size: 2rem;
           }
@@ -438,6 +439,7 @@
       }
       .hero-img {
         width: 70%;
+        margin: auto;
       }
       .btn {
         display: none;
