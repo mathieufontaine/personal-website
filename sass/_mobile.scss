@@ -418,8 +418,13 @@
     display: none;
   }
 
-  header nav .logo h2 {
-    font-size: 2rem;
+  header nav {
+    .languages {
+      margin-right: 2rem;
+    }
+    .logo h2 {
+      font-size: 2rem;
+    }
   }
   .home-page {
     .svg-container {
@@ -565,7 +570,7 @@
       }
     }
     .tabs > .container {
-      width: 85%;
+      width: 90%;
       .tabs-nav {
         grid-template-columns: 1fr;
         .tab-item {
@@ -579,6 +584,16 @@
         }
       }
     }
+    .tabs {
+      .tabs-nav.desktop,
+      .tab-content.desktop {
+        display: none;
+      }
+      .tabs-nav.mobile {
+        display: flex;
+      }
+    }
+
     .services {
       .explanations {
         display: block !important;

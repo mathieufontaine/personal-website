@@ -44,7 +44,7 @@ export const formValidation = () => {
     if (lname.length < 1) {
       language == "en"
         ? (text = "Please enter your last name")
-        : (text = "Veuillez entrer votre nom se famille");
+        : (text = "Veuillez entrer votre nom de famille");
       error_message.innerHTML = text;
       lnameBox.classList.add("redShadow");
       return false;

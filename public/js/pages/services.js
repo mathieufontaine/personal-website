@@ -1,13 +1,17 @@
 export const enableTabs = () => {
-  const introTabItems = document.querySelectorAll(".tabs .container .tab-item");
+  const introTabItems = document.querySelectorAll(".desktop .tab-item");
   const introTabContentItems = document.querySelectorAll(
-    ".tabs .container .tab-content-item"
+    ".desktop .tab-content-item"
   );
-  // const websiteTabItems = document.querySelectorAll("#website-dev .tab-item");
-  // const websiteTabContentItems = document.querySelectorAll(
-  //   "#website-dev .process"
-  // );
+  const mobileTabs = document.querySelectorAll(".mobile .tab-item");
+  const mobileTabsTitles = document.querySelectorAll(
+    ".mobile .tab-item .tab-title"
+  );
+  const mobileTabsBtn = document.querySelectorAll(
+    ".mobile .tab-item .showcase-btn"
+  );
 
+  //* Display the right tab
   const selectIntroItem = event => {
     introTabItems.forEach(item => item.classList.remove("active"));
     introTabContentItems.forEach(item => item.classList.remove("show"));
@@ -17,22 +21,28 @@ export const enableTabs = () => {
       .classList.add("show");
   };
 
-  // const selectWebsiteItem = event => {
-  //   websiteTabItems.forEach(item => item.classList.remove("active"));
-  //   websiteTabContentItems.forEach(item => item.classList.remove("show"));
-  //   event.currentTarget.classList.add("active");
-  //   document
-  //     .querySelector(`#${event.currentTarget.id}-content`)
-  //     .classList.add("show");
-  // };
+  const selectTabItem = e => {
+    if (e.target.parentElement.classList.contains("active")) {
+      mobileTabs.forEach(item => item.classList.remove("active"));
+    } else {
+      mobileTabs.forEach(item => item.classList.remove("active"));
+      e.target.parentElement.classList.add("active");
+    }
+  };
 
   //* Listen for tab click
   introTabItems.forEach(item =>
     item.addEventListener("click", selectIntroItem)
   );
-  // websiteTabItems.forEach(item =>
-  //   item.addEventListener("click", selectWebsiteItem)
-  // );
+  mobileTabsTitles.forEach(item =>
+    item.addEventListener("click", selectTabItem)
+  );
+
+  mobileTabsBtn.forEach(btn => {
+    btn.addEventListener("click", e => {
+      e.stopPropagation();
+    });
+  });
 };
 
 $(".box .question").click(function() {

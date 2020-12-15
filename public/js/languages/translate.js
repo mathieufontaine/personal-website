@@ -274,14 +274,29 @@ const translate = () => {
       language.servicesTab3Solution;
     main.querySelector(".tabs #tab-4-content .solution").innerHTML =
       language.servicesTab4Solution;
-    main.querySelector(".tabs #tab-1-content .showcase-btn p").innerText =
-      language.servicesTabBtn;
-    main.querySelector(".tabs #tab-2-content .showcase-btn p").innerText =
-      language.servicesTabBtn;
-    main.querySelector(".tabs #tab-3-content .showcase-btn p").innerText =
-      language.servicesTabBtn;
-    main.querySelector(".tabs #tab-4-content .showcase-btn p").innerText =
-      language.servicesTabBtn;
+    main.querySelector(".tabs .tab1 h4").innerText = language.servicesTab1;
+    main.querySelector(".tabs .tab2 h4").innerText = language.servicesTab2;
+    main.querySelector(".tabs .tab3 h4").innerText = language.servicesTab3;
+    main.querySelector(".tabs .tab4 h4").innerText = language.servicesTab4;
+    main.querySelector(".tabs .tab1 .tab-content .problem").innerHTML =
+      language.servicesTab1Problem;
+    main.querySelector(".tabs .tab2 .tab-content .problem").innerHTML =
+      language.servicesTab2Problem;
+    main.querySelector(".tabs .tab3 .tab-content .problem").innerHTML =
+      language.servicesTab3Problem;
+    main.querySelector(".tabs .tab4 .tab-content .problem").innerHTML =
+      language.servicesTab4Problem;
+    main.querySelector(".tabs .tab1 .tab-content .solution").innerHTML =
+      language.servicesTab1Solution;
+    main.querySelector(".tabs .tab2 .tab-content .solution").innerHTML =
+      language.servicesTab2Solution;
+    main.querySelector(".tabs .tab3 .tab-content .solution").innerHTML =
+      language.servicesTab3Solution;
+    main.querySelector(".tabs .tab4 .tab-content .solution").innerHTML =
+      language.servicesTab4Solution;
+    main.querySelectorAll(".tabs .showcase-btn p").forEach(btn => {
+      btn.innerText = language.servicesTabBtn;
+    });
     main.querySelector(".tabs .cta").innerText = language.servicesCtaText;
     main.querySelector(".tabs .btn").innerText = language.ctaBtn;
     main.querySelector("#website-dev .header .text h3").innerHTML =
