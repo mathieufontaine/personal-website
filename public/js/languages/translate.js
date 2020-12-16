@@ -218,7 +218,7 @@ const translate = () => {
     main.querySelector("#singapore .card .p1 .span1").innerText =
       language.singaporeText1span1;
     main.querySelector("#singapore .card .p1 .span2").innerText =
-      language.singaporeText1span1;
+      language.singaporeText1span2;
     main.querySelector("#singapore .card .p2").innerText =
       language.singaporeText2;
     main.querySelector("#bangkok .card .p1 span").innerText =
