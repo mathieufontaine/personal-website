@@ -1,14 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;800&display=swap");
+// * Primary colors
 $primary-color: #1e1d21;
-// $secondary-color: #2f6ef5;
 $secondary-color: #509cd9;
 $third-color: #2b3760;
+
+// * Text Colors
 $text-color: #0f0f10;
 $grey-color: #f8f8ff;
 $green-color: #19cc9f;
+
+// * light colors
 $light-color: #fffefe;
 $light-blue: rgb(167, 212, 245);
+
+// * animations
 $easing: cubic-bezier(0.5, 0.7, 0.4, 1);
+
+// * gradients
 $main-gradient: linear-gradient(
   96deg,
   #1e1d20 0%,
@@ -173,8 +181,14 @@ ul {
 }
 
 .cta-section {
+  text-align: center;
   background: $primary-color;
   color: white;
+  .btn {
+    display: block;
+    width: 35%;
+    margin: 2rem auto;
+  }
 }
 
 @keyframes scale {

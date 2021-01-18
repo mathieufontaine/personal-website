@@ -1,0 +1,220 @@
+// * website dev service section
+
+#website-dev {
+  > div.container {
+    padding-bottom: 0;
+  }
+  span {
+    color: $secondary-color;
+  }
+  .header .text .line {
+    border-bottom: 3px solid $secondary-color;
+  }
+}
+
+// * offer box
+
+#website-dev .offer {
+  padding: 3rem;
+  background: $main-gradient;
+  .container {
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    width: 100%;
+    i {
+      margin-right: 2rem;
+      font-size: 3rem;
+    }
+    h4 {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// * content sections
+
+#website-dev .content {
+  padding-top: 0;
+  padding-bottom: 0;
+  h3 {
+    color: $secondary-color;
+    margin-bottom: 2rem;
+    font-weight: 600;
+  }
+  p {
+    margin-bottom: 1rem;
+  }
+  .text,
+  .content-img {
+    padding: 2rem 0;
+  }
+  .content-img {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    img {
+      width: 100px;
+    }
+  }
+}
+
+// * intro section
+
+#website-dev .content.intro {
+  margin: 0rem auto;
+  .container {
+    padding-top: 0;
+    padding-bottom: 0;
+    > div {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      align-items: center;
+      img {
+        height: auto;
+        width: 250px;
+        margin: 0 auto -10px;
+      }
+    }
+  }
+}
+
+// * process section
+
+// #website-dev .content.process {
+// > div {
+//   display: block;
+// }
+// .container > div:nth-of-type(2) {
+#website-dev .steps .container {
+  padding-top: 0;
+  padding-bottom: 0;
+  .row1,
+  .row2,
+  .row3,
+  .row4 {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    color: white;
+    margin: 2rem 1rem;
+    background: $third-color;
+    border-radius: 10px;
+    transition: transform 1s ease, background 1s ease;
+    &:hover {
+      transform: scale(1.05);
+    }
+    .field {
+      display: flex;
+      align-items: center;
+      @extend %center;
+      padding: 2rem 2rem;
+      h4 {
+        font-weight: 400;
+        color: white;
+        margin-bottom: 0;
+        word-break: break-word;
+      }
+    }
+    .text {
+      background: rgba($color: white, $alpha: 0.9);
+      height: 100%;
+      padding: 3rem;
+      padding-top: 2rem;
+      color: $primary-color;
+      ul {
+        height: 100%;
+        font-size: larger;
+        line-height: 3.5rem;
+        li {
+          display: grid;
+          grid-template-columns: 1fr 10fr;
+          align-items: flex-start;
+          justify-content: flex-start;
+          span {
+            display: block;
+            font-size: larger;
+            width: 4rem;
+            color: $third-color;
+            font-weight: 600;
+            // margin-right: 2rem;
+          }
+          p {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+    .img-box {
+      @extend %flex;
+      @extend %full;
+      img {
+        margin: auto;
+        width: 70px;
+      }
+    }
+  }
+  .row1,
+  .row3 {
+    background: $secondary-color;
+    .text ul p span {
+      color: $secondary-color;
+      font-weight: 600;
+    }
+  }
+  .update {
+    padding: 3rem 0;
+    h4 {
+      font-weight: 600;
+    }
+  }
+}
+
+#website-dev .tools {
+  margin: 0;
+  padding: 4rem 6rem;
+  background: #f8f8ff;
+  .container {
+    div {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      grid-gap: 4rem;
+      align-items: center;
+      justify-content: center;
+      margin-left: 4rem;
+      p {
+        &:before {
+          content: "\f0ad";
+          font-family: "Font Awesome 5 Free";
+          display: inline-block;
+          padding-right: 2rem;
+          vertical-align: middle;
+          font-weight: 900;
+          padding-top: 0.5rem;
+          font-size: 2rem;
+          line-height: 100%;
+          position: absolute;
+          left: -4rem;
+        }
+      }
+      .p1 {
+        margin: 2rem 0;
+        font-style: italic;
+        &:before {
+          content: "";
+        }
+      }
+      .img-box {
+        width: 100px;
+        height: 90px;
+        @extend %flex;
+        padding: 1rem;
+        img {
+          height: 100%;
+          width: auto;
+          margin: auto;
+        }
+      }
+    }
+  }
+}

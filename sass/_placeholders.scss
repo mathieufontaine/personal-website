@@ -1,0 +1,23 @@
+%center {
+  align-items: center;
+  justify-content: center;
+}
+
+%grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+%flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+%full {
+  width: 100%;
+  height: 100%;
+}

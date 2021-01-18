@@ -1,117 +1,101 @@
-/* Section about */
+// * Section about *//
 
-.about-page {
-  h3:first-child {
-    text-align: center;
-    padding: 3rem 0 2rem 0;
-    color: white;
+// .about-page {
+//   .fullpage {
+//     grid-template-columns: 1fr 1fr;
+//     .details {
+//       margin: 15% auto;
+//     }
+//     .hero {
+//       margin: 0 auto;
+//       img {
+//         object-fit: unset;
+//         height: auto;
+//         margin: auto;
+//       }
+//     }
+//   }
+// }
+
+.about-page .hero {
+  margin: 0 auto;
+}
+
+.quote {
+  background: $primary-color;
+  color: white;
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    div {
+      margin: 0;
+      font-size: 2.3rem;
+      font-style: italic;
+      font-weight: 400;
+      text-align: left;
+    }
+    // #textTyper {
+    //   font-weight: 600;
+    // }
   }
+}
 
-  .hero-section {
-    // display: flex;
-    .fullpage {
-      grid-template-columns: 1fr 1fr;
-      .details {
-        margin: 15% auto;
-        h3 {
-          color: white;
-        }
-      }
-      .hero {
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        // height: 80%;
+.about-page .cards {
+  // margin: auto;
+  // z-index: 1;
+  // margin-bottom: 3rem;
+  @extend %full;
 
-        img {
-          object-fit: unset;
-          // width: 90%;
-          height: auto;
-          margin: auto;
-        }
-      }
-    }
-  }
-
-  .page-content {
-    .container {
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .quote {
-      background: $primary-color;
-      color: white;
-      .container {
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        div {
-          margin: 0;
-          font-size: 2.3rem;
-          font-style: italic;
-          font-weight: 400;
-          text-align: left;
-        }
-        // #textTyper {
-        //   font-weight: 600;
-        // }
-      }
-    }
-    .content {
-      background: #fffefe no-repeat center center/cover;
-      .cards {
-        margin: auto;
-        margin-bottom: 3rem;
-        z-index: 1;
+  .card {
+    @extend %grid;
+    margin-bottom: 10rem;
+    // :last-child {
+    //   margin-bottom: 0 !important;
+    // }
+    .draw {
+      // height: 100%;
+      @extend %flex;
+      .icon {
+        width: 70%;
         height: 100%;
-        width: 100%;
-
-        .card {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          justify-content: center;
-          align-items: center;
-          margin-bottom: 10rem;
-          > div {
-            // background: $light-color;
-            height: 100%;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            .icon {
-              width: 70%;
-              height: 100%;
-              margin: auto;
-            }
-          }
-          .text {
-            h2 {
-              text-align: left;
-              color: $secondary-color;
-            }
-            background: rgb(255, 254, 254);
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            text-align: left;
-          }
-        }
-        :last-child {
-          margin-bottom: 0 !important;
-        }
+        margin: auto;
       }
     }
-    .cta {
-      padding: 7rem 0 5rem 0;
-      text-align: center;
-      background: $grey-color;
-      h4 {
-        margin-bottom: 10px;
-        font-weight: 400;
+    .text {
+      h2 {
+        text-align: left;
+        color: $secondary-color;
       }
+      background: rgb(255, 254, 254);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
     }
   }
+}
+
+.about-page .cta {
+  padding: 5rem 0;
+  text-align: center;
+  background: $grey-color;
+  h4 {
+    margin-bottom: 10px;
+    font-weight: 400;
+  }
+}
+
+// * experience cta
+#experience {
+  .page-sections {
+    overflow-x: initial;
+  }
+}
+
+.before-title {
+  background: $primary-color;
+  text-align: center;
+  padding: 3rem 0 2rem 0;
+  color: white;
 }

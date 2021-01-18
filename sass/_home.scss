@@ -1,205 +1,125 @@
 .home-page {
   color: $primary-color;
   overflow-y: hidden;
-  #home-sections {
-    // width: 90%;
-    margin: auto;
+}
 
-    // margin-left: 5%;
-    #showcase {
-      background: rgba($color: #000000, $alpha: 0.2);
-      // padding-bottom: 10vh;
-      // min-height: 100vh;
-      width: 100%;
-      margin: auto;
-      position: relative;
+#showcase {
+  background: rgba($color: #000000, $alpha: 0.2);
+  width: 100%;
+  margin: auto;
+  position: relative;
+  // padding-bottom: 10vh;
+  // min-height: 100vh;
 
-      .svg-container {
-        opacity: 0.2;
-        display: block;
-      }
-      .headers-container {
-        height: 100%;
-        width: 80%;
-        margin: auto;
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        // flex-direction: column;
-        // text-align: center;
-        // padding-bottom: 10vh;
-        z-index: 1;
-        .hero-img {
-          // position: absolute;
-          // right: 10%;
-          // top: 40%;
-          width: 45%;
-          margin: auto 2rem;
-          // margin-right: -10%;
-          opacity: 0;
-          transform: translateY(-100vh);
-        }
-        .headers {
-          opacity: 0;
-          transform: translateY(100vh);
-          width: 100%;
-          // margin-top: 25vh;
-          margin: auto;
-          margin-right: 2rem;
-
-          text-align: left;
-          .title {
-            padding: 0 0 3rem 0;
-            color: $light-color;
-          }
-          .subtitle {
-            color: $grey-color;
-            font-style: italic;
-            font-weight: 300;
-            padding: 0 0 2rem;
-            font-size: 2.5rem;
-          }
-        }
-      }
-
-      .fp-tableCell {
-        height: auto !important;
-      }
-      .btn {
-        padding: 1rem 2rem;
-        // position: absolute;
-        bottom: 12vh;
-        right: 10%;
-        background: $light-color;
-        color: $secondary-color;
-        // border-radius: 10%;
-      }
-    }
+  .svg-container {
+    opacity: 0.2;
+    display: block;
   }
-  .hero-section {
-    background: $grey-color;
-    // padding-top: 10vh;
-    .svg-container {
-      opacity: 0.6;
-      display: none;
-    }
-    .fullpage {
-      height: 90vh;
-      // padding-top: 10vh;
-      // max-height: 90vh;
-      width: 80%;
-      margin: auto;
-      z-index: 1;
-
-      .details {
-        h1 .text {
-          color: $primary-color;
-        }
-        h2 .text {
-          color: $secondary-color;
-        }
-        h4 .text {
-          // display: none;
-          color: $primary-color;
-        }
-      }
-    }
-
-    &#work,
-    &#about,
-    &#contact {
-      .fullpage .details h4 .text {
-        display: block;
-      }
-    }
-    &#about .hero {
-      // margin-bottom: 10vh;
-      margin-top: auto;
-      margin-bottom: 0;
-      img {
-        width: 115%;
-      }
-    }
-  }
-  .arrows-btn {
+  .hero-img {
+    // position: absolute;
+    // right: 10%;
+    // top: 40%;
+    // margin-right: -10%;
+    width: 45%;
+    margin: auto 2rem;
     opacity: 0;
-    margin-top: 3rem;
-    position: absolute;
-    bottom: 10vh;
-    left: 0;
-    right: 0;
-    text-align: center;
-    p {
-      font-size: 1.8rem;
-      font-weight: 500;
-      color: rgba(white, 1);
-      // writing-mode: tb-rl;
-      // -webkit-transform: rotate(180deg);
-      // margin-top: -50px;
-    }
-    #scroll-down-btn {
-      div {
-        // padding-top: 20px;
-        position: relative;
-        span {
-          position: absolute;
-          top: 0;
-          left: 50%;
-          width: 24px;
-          height: 24px;
-          margin-left: -12px;
-          -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-          -webkit-animation: sdb07 2s infinite;
-          animation: sdb07 2s infinite;
-          opacity: 0;
-          box-sizing: border-box;
-          border-left: 2px solid rgba(white, 1);
-          border-bottom: 2px solid rgba(white, 1);
-          &:nth-of-type(1) {
-            -webkit-animation-delay: 0s;
-            animation-delay: 0s;
-          }
-          &:nth-of-type(2) {
-            top: 16px;
-            -webkit-animation-delay: 0.15s;
-            animation-delay: 0.15s;
-          }
-          &:nth-of-type(3) {
-            top: 32px;
-            -webkit-animation-delay: 0.3s;
-            animation-delay: 0.3s;
-          }
-          @-webkit-keyframes sdb07 {
-            0% {
-              opacity: 0;
-            }
-            50% {
-              opacity: 1;
-            }
-            100% {
-              opacity: 0;
-            }
-          }
-          @keyframes sdb07 {
-            0% {
-              opacity: 0;
-            }
-            50% {
-              opacity: 1;
-            }
-            100% {
-              opacity: 0;
-            }
-          }
-        }
+    transform: translateY(-100vh);
+  }
+  .headers-container {
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    // flex-direction: column;
+    // text-align: center;
+    // padding-bottom: 10vh;
+    z-index: 1;
+    .headers {
+      opacity: 0;
+      transform: translateY(100vh);
+      width: 100%;
+      // margin-top: 25vh;
+      margin: auto;
+      margin-right: 2rem;
+      text-align: left;
+      .title {
+        padding: 0 0 3rem 0;
+        color: $light-color;
+      }
+      .subtitle {
+        color: $grey-color;
+        font-style: italic;
+        font-weight: 300;
+        padding: 0 0 2rem;
+        font-size: 2.5rem;
       }
     }
   }
-  .arrows-btn.mobile {
-    display: none;
+
+  .fp-tableCell {
+    height: auto !important;
+  }
+  .btn {
+    padding: 1rem 2rem;
+    // position: absolute;
+    bottom: 12vh;
+    right: 10%;
+    background: $light-color;
+    color: $secondary-color;
+    // border-radius: 10%;
   }
 }
+
+.home-page .hero-section {
+  background: $light-color;
+  // padding-top: 10vh;
+  .svg-container {
+    // opacity: 0.6;
+    display: none;
+  }
+  .details {
+    h1 .text {
+      color: $primary-color;
+    }
+    h2 .text {
+      color: $secondary-color;
+    }
+    h4 .text {
+      color: $primary-color;
+    }
+  }
+  .fullpage {
+    // height: 90vh;
+    // width: 80%;
+    // margin: auto;
+    // z-index: 1;
+
+    // padding-top: 10vh;
+    // max-height: 90vh;
+  }
+}
+
+#about .hero {
+  // margin-bottom: 10vh;
+  margin-top: auto;
+  margin-bottom: 0;
+  img {
+    width: 115%;
+  }
+}
+
+// #work,
+// #about,
+// #contact {
+//   .fullpage .details h4 .text {
+//     display: block;
+//   }
+// }
+
+// * left dots navigation
+
 #fp-nav {
   left: 0;
   margin-top: 0 !important;

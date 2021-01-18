@@ -2,13 +2,12 @@
 
 footer {
   background: $main-gradient;
+  display: grid;
+  @extend %center;
   height: 10vh;
   padding-left: 8rem;
-  display: grid;
   grid-template-columns: repeat(3, 1fr);
   text-align: center;
-  align-items: center;
-  justify-content: center;
   color: $light-color;
   // border-top: 2px solid $secondary-color;
   span {
@@ -18,9 +17,7 @@ footer {
 }
 .logos {
   display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
+  @extend %center;
   .fa {
     font-size: 3rem;
     margin-left: 20px;

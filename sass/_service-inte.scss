@@ -1,0 +1,56 @@
+#web-integration {
+  span {
+    color: #ea2967;
+  }
+  .header .text .line {
+    border-bottom: 3px solid #ea2967;
+  }
+  .btn {
+    background: $red-gradient;
+  }
+  &::after {
+    background: linear-gradient(to bottom, #2b3760 0% 0%, #ea2967 70%);
+  }
+  .explanations {
+    .content {
+      h3 {
+        color: #ea2967;
+      }
+      &:first-child {
+        margin: 1rem auto;
+      }
+      > div {
+        @include grid(1fr, 2fr, 2rem);
+        .text {
+          > p {
+            margin-bottom: 2rem;
+          }
+          span {
+            font-size: larger;
+            margin-right: 1rem;
+          }
+        }
+        .content-img {
+          padding: 0;
+          justify-content: space-between;
+          flex-direction: column;
+          img {
+            width: 150px;
+          }
+        }
+      }
+
+      &.integration-how {
+        > div {
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 0;
+          .content-img {
+            img {
+              width: 200px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
