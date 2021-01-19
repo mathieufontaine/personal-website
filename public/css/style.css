@@ -1377,11 +1377,9 @@ nav > div {
 }
 
 .tabs-nav .tab-item {
-  background: #1e1d21;
+  background: rgba(80, 156, 217, 0.2);
   padding: 1rem 0;
   height: 100%;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
   cursor: pointer;
 }
 
@@ -1390,11 +1388,12 @@ nav > div {
   padding: 1rem;
   margin-bottom: 0;
   font-size: 1.8rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .tabs-nav .tab-item:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  background: rgba(80, 156, 217, 0.3);
 }
 
 .tabs-nav .tab-item.active {
@@ -1418,7 +1417,7 @@ nav > div {
 
 .tabs-nav .tab-item#tab-4.active,
 .tabs-nav .tab-item.tab4.active .tab-title {
-  color: #2b3760;
+  background: #2b3760;
 }
 
 .tab-content {
@@ -1481,31 +1480,16 @@ nav > div {
   display: none;
 }
 
-#tab-2-content .solution,
-.tab2 .solution {
-  color: #df6c81;
-}
-
 #tab-2-content .showcase-btn .scroll-down-btn,
 .tab2 .showcase-btn .scroll-down-btn {
   border-bottom: 4px solid #df6c81;
   border-left: 4px solid #df6c81;
 }
 
-#tab-3-content .solution,
-.tab3 .solution {
-  color: #19cc9f;
-}
-
 #tab-3-content .showcase-btn .scroll-down-btn,
 .tab3 .showcase-btn .scroll-down-btn {
   border-bottom: 4px solid #19cc9f;
   border-left: 4px solid #19cc9f;
-}
-
-#tab-4-content .solution,
-.tab4 .solution {
-  color: #2b3760;
 }
 
 #tab-4-content .showcase-btn .scroll-down-btn,
@@ -1860,6 +1844,7 @@ nav > div {
   color: white;
   margin-bottom: 0;
   word-break: break-word;
+  font-size: 1.5rem;
 }
 
 #website-dev .steps .container .row1 .text,

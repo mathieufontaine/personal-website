@@ -24,19 +24,19 @@
   overflow: hidden;
   .tab-item {
     @extend %flex;
-    background: $primary-color;
+    background: rgba($secondary-color, 0.2);
     padding: 1rem 0;
     height: 100%;
-    transition: all 0.5s ease;
     cursor: pointer;
     h4 {
       color: $light-color;
       padding: 1rem;
       margin-bottom: 0;
       font-size: 1.8rem;
+      transition: all 0.5s ease;
     }
     &:hover {
-      transform: scale(1.1);
+      background: rgba($secondary-color, 0.3);
     }
     &.active {
       opacity: 1;
@@ -55,7 +55,7 @@
     }
     &#tab-4.active,
     &.tab4.active .tab-title {
-      color: $third-color;
+      background: $third-color;
     }
   }
 }
@@ -120,9 +120,9 @@
 
 #tab-2-content,
 .tab2 {
-  .solution {
-    color: #df6c81;
-  }
+  // .solution span {
+  //   color: #df6c81;
+  // }
   .showcase-btn {
     .scroll-down-btn {
       border-bottom: 4px solid #df6c81;
@@ -132,9 +132,9 @@
 }
 #tab-3-content,
 .tab3 {
-  .solution {
-    color: #19cc9f;
-  }
+  // .solution span {
+  //   color: #19cc9f;
+  // }
   .showcase-btn {
     .scroll-down-btn {
       border-bottom: 4px solid #19cc9f;
@@ -144,9 +144,9 @@
 }
 #tab-4-content,
 .tab4 {
-  .solution {
-    color: $third-color;
-  }
+  // .solution span {
+  //   color: $third-color;
+  // }
   .showcase-btn {
     .scroll-down-btn {
       border-bottom: 4px solid $third-color;
