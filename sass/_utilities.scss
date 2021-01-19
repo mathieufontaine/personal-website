@@ -155,6 +155,10 @@ ul {
   visibility: hidden;
 }
 
+.show {
+  display: block !important;
+}
+
 .container {
   padding: 4rem 0;
   position: relative;
@@ -162,8 +166,6 @@ ul {
   margin: auto;
   width: 80%;
   max-width: 1200px;
-  // max-width: 1300px;
-  // margin: auto;
 }
 
 .flex {
@@ -175,7 +177,6 @@ ul {
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  // grid-gap: 2rem;
   align-items: center;
   justify-content: center;
 }

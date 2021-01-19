@@ -8,75 +8,60 @@
   width: 100%;
   margin: auto;
   position: relative;
-  // padding-bottom: 10vh;
-  // min-height: 100vh;
-
   .svg-container {
     opacity: 0.2;
     display: block;
   }
   .hero-img {
-    // position: absolute;
-    // right: 10%;
-    // top: 40%;
-    // margin-right: -10%;
     width: 45%;
     margin: auto 2rem;
     opacity: 0;
     transform: translateY(-100vh);
   }
-  .headers-container {
-    height: 100%;
-    width: 80%;
+}
+#showcase .headers-container {
+  @include flex(flex-start, center);
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  z-index: 1;
+  .headers {
+    opacity: 0;
+    width: 100%;
     margin: auto;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    // flex-direction: column;
-    // text-align: center;
-    // padding-bottom: 10vh;
-    z-index: 1;
-    .headers {
-      opacity: 0;
-      transform: translateY(100vh);
-      width: 100%;
-      // margin-top: 25vh;
-      margin: auto;
-      margin-right: 2rem;
-      text-align: left;
-      .title {
-        padding: 0 0 3rem 0;
-        color: $light-color;
-      }
-      .subtitle {
-        color: $grey-color;
-        font-style: italic;
-        font-weight: 300;
-        padding: 0 0 2rem;
-        font-size: 2.5rem;
-      }
+    margin-right: 2rem;
+    text-align: left;
+    transform: translateY(100vh);
+    .title {
+      padding: 0 0 3rem 0;
+      color: $light-color;
+    }
+    .subtitle {
+      color: $grey-color;
+      font-style: italic;
+      font-weight: 300;
+      padding: 0 0 2rem;
+      font-size: 2.5rem;
     }
   }
+}
 
+#showcase {
   .fp-tableCell {
     height: auto !important;
   }
   .btn {
     padding: 1rem 2rem;
-    // position: absolute;
     bottom: 12vh;
     right: 10%;
     background: $light-color;
     color: $secondary-color;
-    // border-radius: 10%;
   }
 }
 
 .home-page .hero-section {
   background: $light-color;
-  // padding-top: 10vh;
   .svg-container {
-    // opacity: 0.6;
     display: none;
   }
   .details {
@@ -90,33 +75,15 @@
       color: $primary-color;
     }
   }
-  .fullpage {
-    // height: 90vh;
-    // width: 80%;
-    // margin: auto;
-    // z-index: 1;
-
-    // padding-top: 10vh;
-    // max-height: 90vh;
-  }
 }
 
 #about .hero {
-  // margin-bottom: 10vh;
   margin-top: auto;
   margin-bottom: 0;
   img {
     width: 115%;
   }
 }
-
-// #work,
-// #about,
-// #contact {
-//   .fullpage .details h4 .text {
-//     display: block;
-//   }
-// }
 
 // * left dots navigation
 

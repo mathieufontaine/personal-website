@@ -99,54 +99,54 @@ const translate = () => {
     ).innerText = language.workAppsTitle;
     main.querySelector("#la-ruee .project-type").innerText =
       language.larueeType;
-    main.querySelector("#la-ruee .project-text p:nth-of-type(2)").innerText =
+    main.querySelector("#la-ruee .text p:nth-of-type(2)").innerText =
       language.larueeText1;
-    main.querySelector("#la-ruee .project-text p:nth-of-type(3)").innerText =
+    main.querySelector("#la-ruee .text p:nth-of-type(3)").innerText =
       language.larueeText2;
     main.querySelector("#cabinet .project-type").innerText =
       language.cabinetType;
-    main.querySelector("#cabinet .project-text p:nth-of-type(2)").innerText =
+    main.querySelector("#cabinet .text p:nth-of-type(2)").innerText =
       language.cabinetText1;
-    main.querySelector("#cabinet .project-text p:nth-of-type(3)").innerText =
+    main.querySelector("#cabinet .text p:nth-of-type(3)").innerText =
       language.cabinetText2;
-    main.querySelector("#weather-app .project-text p:nth-child(2)").innerText =
+    main.querySelector("#weather-app .text p:nth-child(2)").innerText =
       language.appText1;
-    main.querySelector("#weather-app .project-text p:nth-child(3)").innerText =
+    main.querySelector("#weather-app .text p:nth-child(3)").innerText =
       language.appWeatherText2;
-    main.querySelector("#weather-app .project-text p:nth-child(4)").innerText =
+    main.querySelector("#weather-app .text p:nth-child(4)").innerText =
       language.appWeatherText3;
-    main.querySelector("#games-app .project-text p:nth-child(2)").innerText =
+    main.querySelector("#games-app .text p:nth-child(2)").innerText =
       language.appText1;
-    main.querySelector("#games-app .project-text p:nth-child(3)").innerText =
+    main.querySelector("#games-app .text p:nth-child(3)").innerText =
       language.appGamesText2;
-    main.querySelector("#games-app .project-text p:nth-child(4)").innerText =
+    main.querySelector("#games-app .text p:nth-child(4)").innerText =
       language.appGamesText3;
-    main.querySelector("#movie-app .project-text p:nth-child(2)").innerText =
+    main.querySelector("#movie-app .text p:nth-child(2)").innerText =
       language.appText1;
-    main.querySelector("#movie-app .project-text p:nth-child(3)").innerText =
+    main.querySelector("#movie-app .text p:nth-child(3)").innerText =
       language.appMovieText2;
-    main.querySelector("#ip-app .project-text p:nth-child(2)").innerText =
+    main.querySelector("#ip-app .text p:nth-child(2)").innerText =
       language.appText2;
-    main.querySelector("#ip-app .project-text p:nth-child(3)").innerText =
+    main.querySelector("#ip-app .text p:nth-child(3)").innerText =
       language.appIpText2;
-    main.querySelector("#breath-app .project-text p:nth-child(2)").innerText =
+    main.querySelector("#breath-app .text p:nth-child(2)").innerText =
       language.appText2;
-    main.querySelector("#breath-app .project-text p:nth-child(3)").innerText =
+    main.querySelector("#breath-app .text p:nth-child(3)").innerText =
       language.appBreathText2;
-    main.querySelector("#breath-app .project-text p:nth-child(4)").innerText =
+    main.querySelector("#breath-app .text p:nth-child(4)").innerText =
       language.appBreathText3;
     main.querySelector(
-      "#portfolio_examples .project-text p:nth-child(2)"
+      "#portfolio_examples .text p:nth-child(2)"
     ).innerText = language.sitePortfoliosText;
-    main.querySelector("#volumeup .project-text p:nth-child(2)").innerText =
+    main.querySelector("#volumeup .text p:nth-child(2)").innerText =
       language.siteVolumeUpText;
-    main.querySelector("#ziko .project-text p:nth-child(2)").innerText =
+    main.querySelector("#ziko .text p:nth-child(2)").innerText =
       language.siteZikoText;
-    main.querySelector("#easybank .project-text p:nth-child(2)").innerText =
+    main.querySelector("#easybank .text p:nth-child(2)").innerText =
       language.siteEasybankText;
-    main.querySelector("#mountain .project-text p:nth-child(2)").innerText =
+    main.querySelector("#mountain .text p:nth-child(2)").innerText =
       language.siteMountainText;
-    main.querySelector("#interface .project-text p:nth-child(2)").innerText =
+    main.querySelector("#interface .text p:nth-child(2)").innerText =
       language.siteInterfaceText;
     main.querySelector(".cta-section .cta").innerText =
       language.servicesCtaText;

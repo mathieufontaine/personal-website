@@ -1,4 +1,4 @@
-// * Section portfolio
+// * portfolio //
 
 .work-page {
   .page-sections {
@@ -22,7 +22,7 @@
     @extend %flex;
     @extend %full;
     img {
-      width: 85%;
+      width: 100%;
     }
   }
   .btn-container {
@@ -45,9 +45,7 @@
 
 .clients-projects {
   @extend %grid;
-  grid-gap: 8rem;
   margin: 5rem auto;
-
   .project {
     h3 {
       font-weight: 800;
@@ -62,6 +60,9 @@
     .summury {
       font-style: italic;
       margin-bottom: 1rem;
+    }
+    .btn.btn-visit {
+      width: auto;
     }
   }
 }
@@ -89,22 +90,13 @@
   background: $grey-color;
 }
 
-// .gallery {
-//   .projects {
-// display: block;
-// flex-wrap: wrap;
-// align-content: center;
-// justify-content: center;
-// z-index: 3;
-// max-width: 1200px;
-
 .project {
   display: grid;
   grid-template-columns: 2fr 3fr;
   @extend %center;
   grid-gap: 1rem;
   padding: 4rem 0;
-  .project-text {
+  .text {
     display: flex;
     flex-direction: column;
     text-align: left;

@@ -1,21 +1,4 @@
-// * Section about *//
-
-// .about-page {
-//   .fullpage {
-//     grid-template-columns: 1fr 1fr;
-//     .details {
-//       margin: 15% auto;
-//     }
-//     .hero {
-//       margin: 0 auto;
-//       img {
-//         object-fit: unset;
-//         height: auto;
-//         margin: auto;
-//       }
-//     }
-//   }
-// }
+// * about page *//
 
 .about-page .hero {
   margin: 0 auto;
@@ -24,37 +7,21 @@
 .quote {
   background: $primary-color;
   color: white;
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    div {
-      margin: 0;
-      font-size: 2.3rem;
-      font-style: italic;
-      font-weight: 400;
-      text-align: left;
-    }
-    // #textTyper {
-    //   font-weight: 600;
-    // }
+  .container div {
+    margin: 0;
+    font-size: 2.3rem;
+    font-style: italic;
+    font-weight: 400;
+    text-align: left;
   }
 }
 
 .about-page .cards {
-  // margin: auto;
-  // z-index: 1;
-  // margin-bottom: 3rem;
   @extend %full;
-
   .card {
     @extend %grid;
     margin-bottom: 10rem;
-    // :last-child {
-    //   margin-bottom: 0 !important;
-    // }
     .draw {
-      // height: 100%;
       @extend %flex;
       .icon {
         width: 70%;
@@ -87,10 +54,11 @@
 }
 
 // * experience cta
-#experience {
-  .page-sections {
-    overflow-x: initial;
-  }
+.hero-section#experience {
+  padding: 3rem 0;
+  // .page-sections {
+  //   overflow-x: initial;
+  // }
 }
 
 .before-title {

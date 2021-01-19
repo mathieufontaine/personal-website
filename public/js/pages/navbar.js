@@ -45,7 +45,7 @@ export const toggleMenuAnimation = () => {
 };
 
 export const hideNavbar = () => {
-  const navbar = document.querySelector(".nav-page");
+  const navbar = document.querySelector(".page-header");
 
   let prevScrollpos = window.pageYOffset;
   window.onscroll = function() {

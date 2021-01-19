@@ -1,6 +1,5 @@
 .hero-section {
   position: relative;
-  // min-height: 90vh;
   width: 100%;
   margin: auto;
   display: flex;
@@ -29,8 +28,6 @@
   margin: 25% auto;
   overflow: hidden;
   z-index: 0;
-  // transition: all 1s ease;
-  // transition: none;
   transform: translateX(100vw);
   img {
     @extend %full;
@@ -50,7 +47,6 @@
     .text {
       display: inline-block;
       transition: transform 0.5s ease;
-      // transform: translateY(100%);
     }
   }
   .showcase-btn {

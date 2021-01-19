@@ -1,7 +1,8 @@
 .btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border: 0;
-  // background: $secondary-color;
   color: #fff;
   border-radius: 20px;
   padding: 1rem 3rem;
@@ -18,7 +19,6 @@
 .btn:hover {
   background-position: right center;
   transform: scale(1.1) !important;
-  // background: $primary-color;
 }
 
 // * scrollTop
@@ -69,13 +69,8 @@
 .scroll-down-btn {
   position: relative;
   margin: auto;
-  // a {
-  //   position: absolute;
-  //   top: 0;
-  //   left: 50%;
   width: 34px;
   height: 34px;
-  // margin-left: -12px;
   border-left: 4px solid $secondary-color;
   border-bottom: 4px solid $secondary-color;
   -webkit-transform: rotate(-45deg);
@@ -83,8 +78,6 @@
   -webkit-animation: scrollDown 1.5s infinite;
   animation: scrollDown 1.5s infinite;
   box-sizing: border-box;
-  // opacity: 0;
-  //   }
 }
 
 @-webkit-keyframes scrollDown {
@@ -128,13 +121,9 @@
     font-size: 1.8rem;
     font-weight: 500;
     color: rgba(white, 1);
-    // writing-mode: tb-rl;
-    // -webkit-transform: rotate(180deg);
-    // margin-top: -50px;
   }
   #scroll-down-btn {
     div {
-      // padding-top: 20px;
       position: relative;
       span {
         position: absolute;

@@ -1,10 +1,5 @@
 // * services
 
-@import "service-dev";
-@import "service-inte";
-@import "service-tabs";
-@import "faq";
-
 // * intro
 
 .service-description-section {
@@ -39,6 +34,8 @@
     }
   }
 }
+
+@import "service-tabs";
 
 // * content * //
 
@@ -127,6 +124,9 @@
   }
 }
 
+@import "service-dev";
+@import "service-inte";
+
 // * service app dev
 
 #app-dev {
@@ -178,6 +178,8 @@
     );
   }
 }
+
+@import "faq";
 
 // packages
 
