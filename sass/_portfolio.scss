@@ -41,6 +41,34 @@
   }
 }
 
+.project {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  @extend %center;
+  grid-gap: 1rem;
+  padding: 4rem 0;
+  .text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-evenly;
+    @extend %full;
+    color: $primary-color;
+    padding: 3rem;
+    border-radius: 10px;
+    h3 {
+      margin-bottom: 2rem;
+      font-weight: 800;
+    }
+    span {
+      font-weight: 800;
+    }
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
 //* clients projects
 
 .clients-projects {
@@ -59,10 +87,10 @@
     }
     .summury {
       font-style: italic;
-      margin-bottom: 1rem;
     }
     .btn.btn-visit {
       width: auto;
+      margin-right: auto;
     }
   }
 }
@@ -88,29 +116,4 @@
 
 .websites-section {
   background: $grey-color;
-}
-
-.project {
-  display: grid;
-  grid-template-columns: 2fr 3fr;
-  @extend %center;
-  grid-gap: 1rem;
-  padding: 4rem 0;
-  .text {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    justify-content: space-evenly;
-    @extend %full;
-    color: $primary-color;
-    padding: 3rem;
-    border-radius: 10px;
-    h3 {
-      margin-bottom: 2rem;
-      font-weight: 800;
-    }
-    span {
-      font-weight: 800;
-    }
-  }
 }

@@ -97,14 +97,12 @@ const translate = () => {
     main.querySelector(
       ".personal-projects-section .apps-section .sm-header h4"
     ).innerText = language.workAppsTitle;
-    main.querySelector("#la-ruee .project-type").innerText =
-      language.larueeType;
+    main.querySelector("#la-ruee .type").innerText = language.larueeType;
     main.querySelector("#la-ruee .text p:nth-of-type(2)").innerText =
       language.larueeText1;
     main.querySelector("#la-ruee .text p:nth-of-type(3)").innerText =
       language.larueeText2;
-    main.querySelector("#cabinet .project-type").innerText =
-      language.cabinetType;
+    main.querySelector("#cabinet .type").innerText = language.cabinetType;
     main.querySelector("#cabinet .text p:nth-of-type(2)").innerText =
       language.cabinetText1;
     main.querySelector("#cabinet .text p:nth-of-type(3)").innerText =
@@ -135,9 +133,8 @@ const translate = () => {
       language.appBreathText2;
     main.querySelector("#breath-app .text p:nth-child(4)").innerText =
       language.appBreathText3;
-    main.querySelector(
-      "#portfolio_examples .text p:nth-child(2)"
-    ).innerText = language.sitePortfoliosText;
+    main.querySelector("#portfolio_examples .text p:nth-child(2)").innerText =
+      language.sitePortfoliosText;
     main.querySelector("#volumeup .text p:nth-child(2)").innerText =
       language.siteVolumeUpText;
     main.querySelector("#ziko .text p:nth-child(2)").innerText =
@@ -169,17 +166,17 @@ const translate = () => {
     main.querySelector("#web-dev h2").innerText = language.webdevTitle;
     main.querySelector("#frontend h2").innerText = language.frontendTitle;
     main.querySelector("#ux h2").innerText = language.uxTitle;
-    main.querySelector("#marketing h2").innerText = language.marketingTitle;
+    main.querySelector("#web-marketing h2").innerText = language.marketingTitle;
     main.querySelector("#remote h2").innerText = language.remoteTitle;
     main.querySelector("#web-dev p").innerText = language.webdevText;
     main.querySelector("#frontend p").innerText = language.frontendText;
     main.querySelector("#ux p").innerText = language.uxText;
-    main.querySelector("#marketing p").innerText = language.marketingText;
+    main.querySelector("#web-marketing p").innerText = language.marketingText;
     main.querySelector("#remote p").innerText = language.remoteText;
-    main.querySelector(".cta h2").innerText = language.ctaTitle;
+    main.querySelector(".cta h3").innerText = language.ctaTitle;
     main.querySelector(".cta h4").innerText = language.ctaText;
     main.querySelector(".cta .btn").innerText = language.ctaBtn;
-    main.querySelector("#experience h3").innerText =
+    main.querySelector(".before-title").innerText =
       language.experienceBeforeTitle;
     main.querySelector("#experience h1 .text").innerText =
       language.experienceTitle;

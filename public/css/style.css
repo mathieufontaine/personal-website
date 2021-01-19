@@ -691,8 +691,8 @@ nav > div {
 .fullpage {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1.5fr 2fr;
-      grid-template-columns: 1.5fr 2fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   grid-gap: 2rem;
   width: 80%;
   max-width: 1200px;
@@ -702,6 +702,7 @@ nav > div {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  padding: 2rem 0;
 }
 
 .hero {
@@ -1022,6 +1023,10 @@ nav > div {
   margin: 0 auto;
 }
 
+.about-page .fullpage {
+  padding-bottom: 0;
+}
+
 .quote {
   background: #1e1d21;
   color: white;
@@ -1220,54 +1225,6 @@ nav > div {
   background: linear-gradient(87deg, #348cd2 0%, #5cc9f7 100%);
 }
 
-.clients-projects {
-  margin: 5rem auto;
-}
-
-.clients-projects .project h3 {
-  font-weight: 800;
-  margin-bottom: 0;
-}
-
-.clients-projects .project .type {
-  margin-bottom: 2rem;
-  font-weight: 500;
-  color: #509cd9;
-  text-align: center;
-}
-
-.clients-projects .project .summury {
-  font-style: italic;
-  margin-bottom: 1rem;
-}
-
-.clients-projects .project .btn.btn-visit {
-  width: auto;
-}
-
-.work-page .sm-header {
-  position: -webkit-sticky;
-  position: sticky;
-  width: 100%;
-  top: 11.5rem;
-  padding: 2rem 0;
-  background: #509cd9;
-  color: #fffefe;
-  font-size: 2rem;
-  z-index: 2;
-}
-
-.work-page .sm-header h4 {
-  display: block;
-  max-width: calc(1200px - 12rem);
-  width: 80%;
-  margin: auto;
-}
-
-.websites-section {
-  background: #f8f8ff;
-}
-
 .project {
   display: -ms-grid;
   display: grid;
@@ -1301,6 +1258,58 @@ nav > div {
 
 .project .text span {
   font-weight: 800;
+}
+
+.project .text p {
+  margin-bottom: 1rem;
+}
+
+.clients-projects {
+  margin: 5rem auto;
+}
+
+.clients-projects .project h3 {
+  font-weight: 800;
+  margin-bottom: 0;
+}
+
+.clients-projects .project .type {
+  margin-bottom: 2rem;
+  font-weight: 500;
+  color: #509cd9;
+  text-align: center;
+}
+
+.clients-projects .project .summury {
+  font-style: italic;
+}
+
+.clients-projects .project .btn.btn-visit {
+  width: auto;
+  margin-right: auto;
+}
+
+.work-page .sm-header {
+  position: -webkit-sticky;
+  position: sticky;
+  width: 100%;
+  top: 11.5rem;
+  padding: 2rem 0;
+  background: #509cd9;
+  color: #fffefe;
+  font-size: 2rem;
+  z-index: 2;
+}
+
+.work-page .sm-header h4 {
+  display: block;
+  max-width: calc(1200px - 12rem);
+  width: 80%;
+  margin: auto;
+}
+
+.websites-section {
+  background: #f8f8ff;
 }
 
 .service-description-section {
