@@ -283,9 +283,12 @@
     .svg-container {
       display: none !important;
     }
+    #showcase .headers {
+      margin-right: auto;
+    }
     #showcase .hero-img {
       width: 85%;
-      margin: auto;
+      margin-top: 0;
     }
     .btn {
       display: none;
@@ -490,7 +493,7 @@
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 380px) {
   html {
     font-size: 40%;
   }

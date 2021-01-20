@@ -1083,11 +1083,24 @@ nav > div {
   padding: 3rem 0;
 }
 
+.hero-section#experience .photo {
+  border-radius: 10px;
+}
+
 .before-title {
   background: #1e1d21;
   text-align: center;
   padding: 3rem 0 2rem 0;
   color: white;
+}
+
+.experience-page .photo {
+  border-radius: 10px;
+  margin: 4rem;
+}
+
+.experience-page .page-sections {
+  overflow-x: initial;
 }
 
 .city {
@@ -2618,9 +2631,12 @@ footer span {
   .home-page .svg-container {
     display: none !important;
   }
+  .home-page #showcase .headers {
+    margin-right: auto;
+  }
   .home-page #showcase .hero-img {
     width: 85%;
-    margin: auto;
+    margin-top: 0;
   }
   .home-page .btn {
     display: none;
@@ -2805,7 +2821,7 @@ footer span {
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 380px) {
   html {
     font-size: 40%;
   }

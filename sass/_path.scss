@@ -1,5 +1,15 @@
 //* experience page //
 
+.experience-page {
+  .photo {
+    border-radius: 10px;
+    margin: 4rem;
+  }
+  .page-sections {
+    overflow-x: initial;
+  }
+}
+
 .city {
   position: sticky;
   top: 0;
