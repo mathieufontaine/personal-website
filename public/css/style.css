@@ -1296,6 +1296,9 @@ nav .nav-open ul {
 .work-page .btn {
   padding: 0.8rem 2rem;
   font-size: 1.2rem;
+  margin: 0.5rem auto;
+  width: 50%;
+  text-align: center;
 }
 
 .work-page .project-img {
@@ -1336,37 +1339,36 @@ nav .nav-open ul {
   display: block;
 }
 
-.work-page .clients-projects .project h3 {
-  font-weight: 800;
-  margin-bottom: 0;
+.work-page .clients-projects .project .project-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.work-page .clients-projects .project .project-type {
+.work-page .clients-projects .project .project-text h3 {
+  font-weight: 800;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.work-page .clients-projects .project .project-text .project-type {
+  text-align: center;
   margin-bottom: 2rem;
   font-weight: 500;
   color: #509cd9;
 }
 
-.work-page .clients-projects .project p:nth-of-type(2) {
+.work-page .clients-projects .project .project-text p:nth-of-type(2) {
   font-style: italic;
   margin-bottom: 1rem;
 }
 
-.work-page .clients-projects .project .btn-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.work-page .clients-projects .project .btn-container .btn {
-  margin-right: 1rem;
-}
-
-.work-page .clients-projects .project .btn-container .btn.btn-code {
-  background: linear-gradient(96deg, #1e1d20 0%, #2b3760 30%, #348cd2 80%, #509cd9 100%);
-}
-
-.work-page .clients-projects .project .btn-container .btn.btn-visit {
+.work-page .clients-projects .project .project-text .btn.btn-visit {
+  margin: 2rem auto 0;
   background: linear-gradient(87deg, #348cd2 0%, #5cc9f7 100%);
 }
 
@@ -1388,7 +1390,8 @@ nav .nav-open ul {
   margin: auto;
 }
 
-.work-page .personal-projects-section .websites-section {
+.work-page .personal-projects-section .websites-section,
+.work-page .personal-projects-section .apps-section {
   background: #f8f8ff;
 }
 

@@ -97,6 +97,12 @@ const translate = () => {
     main.querySelector(
       ".personal-projects-section .apps-section .sm-header h4"
     ).innerText = language.workAppsTitle;
+    main.querySelector("#skinginie .project-type").innerText =
+      language.skinginieType;
+    main.querySelector("#skinginie .project-text p:nth-of-type(2)").innerText =
+      language.skinginieText1;
+    main.querySelector("#skinginie .project-text p:nth-of-type(3)").innerText =
+      language.skinginieText2;
     main.querySelector("#la-ruee .project-type").innerText =
       language.larueeType;
     main.querySelector("#la-ruee .project-text p:nth-of-type(2)").innerText =
