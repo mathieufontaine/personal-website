@@ -1,91 +1,46 @@
-// pages
+// * all pages
 
 .page-sections {
   overflow-x: hidden;
-
-  .hero-section {
-    min-height: unset;
-    display: block;
-    .fullpage {
-      // min-height: 90vh;
-      height: 100%;
-      width: 80%;
-      margin: auto;
-      max-width: 1200px;
-      .hero,
-      .details {
-        margin: 25% auto;
-      }
-      .hero {
-        transform: translateX(100vw);
-        width: 90%;
-        margin: auto;
-        transition: none;
-        img {
-          object-fit: cover;
-        }
-
-        // transform: translateX(100vw);
-      }
-      .details {
-        transform: translateX(-100vw);
-        opacity: 0;
-
-        // margin: 0 auto 15% 5%;
-        h1 .text {
-          font-size: 3rem;
-        }
-        h2 .text {
-          font-size: 4rem;
-        }
-        .showcase-btn {
-          width: 20%;
-        }
-      }
-    }
-  }
-
   .page-content {
     height: 100%;
     position: relative;
     padding: 0px;
-    // min-height: 100vh;
     min-width: 100%;
     min-height: 90vh;
     background: $light-color;
-    // padding-left: 8rem;
-    .page-description {
-      // background: $primary-color;
-      // color: $light-color !important;
-      text-align: left;
-      width: 100%;
+    .container {
+      max-width: 1200px;
       margin: auto;
-      position: relative;
-      bottom: 0;
-      // background: rgba($color: $secondary-color, $alpha: 0.2);
-      background: $grey-color;
-      color: black;
-      .container {
-        display: grid;
-        grid-template-columns: 1fr 5fr;
-        grid-gap: 3rem;
-        align-items: center;
-        justify-content: space-around;
-        max-width: 1200px;
-        margin: auto;
-        img {
-          height: 100px;
-          margin: auto;
-        }
-        p:before {
-          content: "\f00c";
-          font-family: "Font Awesome 5 Free";
-          display: inline-block;
-          padding-right: 1rem;
-          vertical-align: middle;
-          font-weight: 900;
-        }
-      }
+    }
+  }
+}
+
+.page-description {
+  text-align: left;
+  width: 100%;
+  margin: auto;
+  position: relative;
+  bottom: 0;
+  background: $grey-color;
+  color: black;
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-gap: 3rem;
+    align-items: center;
+    justify-content: space-around;
+    img {
+      height: 100px;
+      margin: auto;
+    }
+    p:before {
+      content: "\f00c";
+      font-family: "Font Awesome 5 Free";
+      display: inline-block;
+      padding-right: 1rem;
+      vertical-align: middle;
+      font-weight: 900;
     }
   }
 }

@@ -1,25 +1,86 @@
 .hero-section {
   position: relative;
-  min-height: 90vh;
   width: 100%;
   margin: auto;
   display: flex;
-
   .scroll-down-btn {
     margin: 0;
   }
+}
 
-  .svg-container {
-    display: flex;
-    position: absolute;
-    opacity: 0.1;
-    position: absolute;
-    bottom: 0%;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
+.fullpage {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  width: 80%;
+  max-width: 1200px;
+  height: 100%;
+  margin: auto;
+  align-items: center;
+  position: relative;
+  padding: 2rem 0;
+}
+
+.hero {
+  display: flex;
+  @extend %center;
+  width: 90%;
+  position: relative;
+  margin: 25% auto;
+  overflow: hidden;
+  z-index: 0;
+  transform: translateX(100vw);
+  img {
+    @extend %full;
+    transition: transform 0.3s ease-out;
+    object-fit: cover;
   }
+}
+
+.details {
+  transform: translateX(-100vw);
+  opacity: 0;
+  width: 100%;
+  z-index: 1;
+  margin: auto;
+  .hide {
+    overflow: hidden;
+    .text {
+      display: inline-block;
+      transition: transform 0.5s ease;
+    }
+  }
+  .showcase-btn {
+    width: 20%;
+  }
+  h1 .text {
+    font-size: 4rem;
+    color: $light-blue;
+  }
+  h2 .text {
+    font-size: 3rem;
+    color: $light-color;
+  }
+  h3 {
+    color: white;
+  }
+  h4 .text {
+    padding: 20px 0;
+    color: $light-color;
+  }
+}
+
+.svg-container {
+  display: flex;
+  position: absolute;
+  opacity: 0.1;
+  position: absolute;
+  bottom: 0%;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+
   svg {
     width: 105% !important;
     height: 100% !important;
@@ -29,55 +90,6 @@
 
     circle {
       transition: all 0.5s ease;
-    }
-  }
-  .fullpage {
-    height: 100%;
-    width: 90%;
-    display: grid;
-    grid-template-columns: 1.5fr 2fr;
-    grid-gap: 2rem;
-    margin: auto;
-    align-items: center;
-    position: relative;
-    .hero {
-      position: relative;
-      margin: auto;
-      overflow: hidden;
-      z-index: 0;
-      transition: all 1s ease;
-      img {
-        height: 100%;
-        width: 100%;
-        transition: transform 0.3s ease-out;
-        // object-fit: cover;
-      }
-    }
-
-    .details {
-      width: 100%;
-      z-index: 1;
-      margin: auto;
-      .hide {
-        overflow: hidden;
-        .text {
-          display: inline-block;
-          transition: transform 0.5s ease;
-          // transform: translateY(100%);
-        }
-      }
-      h1 .text {
-        font-size: 6rem;
-        color: $light-blue;
-      }
-      h2 .text {
-        font-size: 3rem;
-        color: $light-color;
-      }
-      h4 .text {
-        padding: 20px 0;
-        color: $light-color;
-      }
     }
   }
 }

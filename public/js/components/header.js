@@ -5,7 +5,7 @@ class Header extends HTMLElement {
 
   connectedCallback() {
     this.innerHTML = /*html*/ `
-      <header class="nav-page">
+      <header class="page-header">
       <nav>
           <a href="/public/index.html" class="logo">
               <img src="img/icons/arrow.png" alt="back-arrow">

@@ -1,7 +1,8 @@
 .btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border: 0;
-  // background: $secondary-color;
   color: #fff;
   border-radius: 20px;
   padding: 1rem 3rem;
@@ -18,10 +19,9 @@
 .btn:hover {
   background-position: right center;
   transform: scale(1.1) !important;
-  // background: $primary-color;
 }
 
-// scrollTop
+// * scrollTop
 
 #scroll-top-btn {
   display: inline-block;
@@ -64,16 +64,13 @@
   }
 }
 
+// * scroll down
+
 .scroll-down-btn {
   position: relative;
   margin: auto;
-  // a {
-  //   position: absolute;
-  //   top: 0;
-  //   left: 50%;
   width: 34px;
   height: 34px;
-  // margin-left: -12px;
   border-left: 4px solid $secondary-color;
   border-bottom: 4px solid $secondary-color;
   -webkit-transform: rotate(-45deg);
@@ -81,8 +78,6 @@
   -webkit-animation: scrollDown 1.5s infinite;
   animation: scrollDown 1.5s infinite;
   box-sizing: border-box;
-  // opacity: 0;
-  //   }
 }
 
 @-webkit-keyframes scrollDown {
@@ -110,4 +105,82 @@
     transform: rotate(-45deg) translate(-20px, 20px);
     opacity: 0;
   }
+}
+
+// * multiple down arrows button
+
+.arrows-btn {
+  opacity: 0;
+  margin-top: 3rem;
+  position: absolute;
+  bottom: 10vh;
+  left: 0;
+  right: 0;
+  text-align: center;
+  p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: rgba(white, 1);
+  }
+  #scroll-down-btn {
+    div {
+      position: relative;
+      span {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 24px;
+        height: 24px;
+        margin-left: -12px;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        -webkit-animation: sdb07 2s infinite;
+        animation: sdb07 2s infinite;
+        opacity: 0;
+        box-sizing: border-box;
+        border-left: 2px solid rgba(white, 1);
+        border-bottom: 2px solid rgba(white, 1);
+        &:nth-of-type(1) {
+          -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+        }
+        &:nth-of-type(2) {
+          top: 16px;
+          -webkit-animation-delay: 0.15s;
+          animation-delay: 0.15s;
+        }
+        &:nth-of-type(3) {
+          top: 32px;
+          -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+        }
+        @-webkit-keyframes sdb07 {
+          0% {
+            opacity: 0;
+          }
+          50% {
+            opacity: 1;
+          }
+          100% {
+            opacity: 0;
+          }
+        }
+        @keyframes sdb07 {
+          0% {
+            opacity: 0;
+          }
+          50% {
+            opacity: 1;
+          }
+          100% {
+            opacity: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.arrows-btn.mobile {
+  display: none;
 }

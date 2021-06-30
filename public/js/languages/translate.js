@@ -97,62 +97,59 @@ const translate = () => {
     main.querySelector(
       ".personal-projects-section .apps-section .sm-header h4"
     ).innerText = language.workAppsTitle;
-    main.querySelector("#skinginie .project-type").innerText =
-      language.skinginieType;
-    main.querySelector("#skinginie .project-text p:nth-of-type(2)").innerText =
+
+    main.querySelector("#skinginie .type").innerText = language.skinginieType;
+    main.querySelector("#skinginie .text p:nth-of-type(2)").innerText =
       language.skinginieText1;
-    main.querySelector("#skinginie .project-text p:nth-of-type(3)").innerText =
+    main.querySelector("#skinginie .text p:nth-of-type(3)").innerText =
       language.skinginieText2;
-    main.querySelector("#la-ruee .project-type").innerText =
-      language.larueeType;
-    main.querySelector("#la-ruee .project-text p:nth-of-type(2)").innerText =
+    main.querySelector("#la-ruee .type").innerText = language.larueeType;
+    main.querySelector("#la-ruee .text p:nth-of-type(2)").innerText =
       language.larueeText1;
-    main.querySelector("#la-ruee .project-text p:nth-of-type(3)").innerText =
+    main.querySelector("#la-ruee .text p:nth-of-type(3)").innerText =
       language.larueeText2;
-    main.querySelector("#cabinet .project-type").innerText =
-      language.cabinetType;
-    main.querySelector("#cabinet .project-text p:nth-of-type(2)").innerText =
+    main.querySelector("#cabinet .type").innerText = language.cabinetType;
+    main.querySelector("#cabinet .text p:nth-of-type(2)").innerText =
       language.cabinetText1;
-    main.querySelector("#cabinet .project-text p:nth-of-type(3)").innerText =
+    main.querySelector("#cabinet .text p:nth-of-type(3)").innerText =
       language.cabinetText2;
-    main.querySelector("#weather-app .project-text p:nth-child(2)").innerText =
+    main.querySelector("#weather-app .text p:nth-child(2)").innerText =
       language.appText1;
-    main.querySelector("#weather-app .project-text p:nth-child(3)").innerText =
+    main.querySelector("#weather-app .text p:nth-child(3)").innerText =
       language.appWeatherText2;
-    main.querySelector("#weather-app .project-text p:nth-child(4)").innerText =
+    main.querySelector("#weather-app .text p:nth-child(4)").innerText =
       language.appWeatherText3;
-    main.querySelector("#games-app .project-text p:nth-child(2)").innerText =
+    main.querySelector("#games-app .text p:nth-child(2)").innerText =
       language.appText1;
-    main.querySelector("#games-app .project-text p:nth-child(3)").innerText =
+    main.querySelector("#games-app .text p:nth-child(3)").innerText =
       language.appGamesText2;
-    main.querySelector("#games-app .project-text p:nth-child(4)").innerText =
+    main.querySelector("#games-app .text p:nth-child(4)").innerText =
       language.appGamesText3;
-    main.querySelector("#movie-app .project-text p:nth-child(2)").innerText =
+    main.querySelector("#movie-app .text p:nth-child(2)").innerText =
       language.appText1;
-    main.querySelector("#movie-app .project-text p:nth-child(3)").innerText =
+    main.querySelector("#movie-app .text p:nth-child(3)").innerText =
       language.appMovieText2;
-    main.querySelector("#ip-app .project-text p:nth-child(2)").innerText =
+    main.querySelector("#ip-app .text p:nth-child(2)").innerText =
       language.appText2;
-    main.querySelector("#ip-app .project-text p:nth-child(3)").innerText =
+    main.querySelector("#ip-app .text p:nth-child(3)").innerText =
       language.appIpText2;
-    main.querySelector("#breath-app .project-text p:nth-child(2)").innerText =
+    main.querySelector("#breath-app .text p:nth-child(2)").innerText =
       language.appText2;
-    main.querySelector("#breath-app .project-text p:nth-child(3)").innerText =
+    main.querySelector("#breath-app .text p:nth-child(3)").innerText =
       language.appBreathText2;
-    main.querySelector("#breath-app .project-text p:nth-child(4)").innerText =
+    main.querySelector("#breath-app .text p:nth-child(4)").innerText =
       language.appBreathText3;
-    main.querySelector(
-      "#portfolio_examples .project-text p:nth-child(2)"
-    ).innerText = language.sitePortfoliosText;
-    main.querySelector("#volumeup .project-text p:nth-child(2)").innerText =
+    main.querySelector("#portfolio_examples .text p:nth-child(2)").innerText =
+      language.sitePortfoliosText;
+    main.querySelector("#volumeup .text p:nth-child(2)").innerText =
       language.siteVolumeUpText;
-    main.querySelector("#ziko .project-text p:nth-child(2)").innerText =
+    main.querySelector("#ziko .text p:nth-child(2)").innerText =
       language.siteZikoText;
-    main.querySelector("#easybank .project-text p:nth-child(2)").innerText =
+    main.querySelector("#easybank .text p:nth-child(2)").innerText =
       language.siteEasybankText;
-    main.querySelector("#mountain .project-text p:nth-child(2)").innerText =
+    main.querySelector("#mountain .text p:nth-child(2)").innerText =
       language.siteMountainText;
-    main.querySelector("#interface .project-text p:nth-child(2)").innerText =
+    main.querySelector("#interface .text p:nth-child(2)").innerText =
       language.siteInterfaceText;
     main.querySelector(".cta-section .cta").innerText =
       language.servicesCtaText;
@@ -175,17 +172,17 @@ const translate = () => {
     main.querySelector("#web-dev h2").innerText = language.webdevTitle;
     main.querySelector("#frontend h2").innerText = language.frontendTitle;
     main.querySelector("#ux h2").innerText = language.uxTitle;
-    main.querySelector("#marketing h2").innerText = language.marketingTitle;
+    main.querySelector("#web-marketing h2").innerText = language.marketingTitle;
     main.querySelector("#remote h2").innerText = language.remoteTitle;
     main.querySelector("#web-dev p").innerText = language.webdevText;
     main.querySelector("#frontend p").innerText = language.frontendText;
     main.querySelector("#ux p").innerText = language.uxText;
-    main.querySelector("#marketing p").innerText = language.marketingText;
+    main.querySelector("#web-marketing p").innerText = language.marketingText;
     main.querySelector("#remote p").innerText = language.remoteText;
-    main.querySelector(".cta h2").innerText = language.ctaTitle;
+    main.querySelector(".cta h3").innerText = language.ctaTitle;
     main.querySelector(".cta h4").innerText = language.ctaText;
     main.querySelector(".cta .btn").innerText = language.ctaBtn;
-    main.querySelector("#experience h3").innerText =
+    main.querySelector(".before-title").innerText =
       language.experienceBeforeTitle;
     main.querySelector("#experience h1 .text").innerText =
       language.experienceTitle;

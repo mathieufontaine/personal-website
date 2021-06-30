@@ -1,0 +1,35 @@
+// * FAQ
+
+#faq {
+  background: $grey-color;
+  .title h2 {
+    padding: 3rem 0;
+    max-width: 1200px;
+    margin: auto;
+    color: $secondary-color;
+  }
+  .box {
+    margin: 4rem auto;
+    border-radius: 20px;
+    .question {
+      @include flex(center, space-between);
+      padding: 20px;
+      border-bottom: 2px solid white;
+      font-weight: bold;
+      cursor: pointer;
+      img {
+        height: 20px;
+        transition: all 0.5s ease;
+      }
+      &.open img {
+        transform: rotateZ(90deg);
+      }
+    }
+    .answer {
+      display: none;
+      padding: 20px;
+      color: $primary-color;
+      background: white;
+    }
+  }
+}

@@ -46,6 +46,8 @@ if (main.classList.contains("contact-page")) {
 // * Home function
 if (main.classList.contains("home-page")) {
   showcaseAnimation();
+  pageAnimation();
+
   // startAnimation();
   // initTextTyper();
   initMotion();
