@@ -2702,7 +2702,7 @@ footer span {
   }
   .clients-projects .btn {
     width: 50%;
-    margin: 2rem auto;
+    margin: 2rem auto !important;
   }
   .personal-projects-section .sm-header {
     top: 14rem;
